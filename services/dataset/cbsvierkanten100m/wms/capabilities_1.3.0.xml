@@ -1,0 +1,1313 @@
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/pdf</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:25831</CRS>
+      <CRS>EPSG:25832</CRS>
+      <CRS>EPSG:28992</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3035</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>3.1714748549041203</westBoundLongitude>
+        <eastBoundLongitude>7.327649166610487</eastBoundLongitude>
+        <southBoundLatitude>50.069258819165604</southBoundLatitude>
+        <northBoundLatitude>54.22543313087198</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="3.1714748549041203" miny="50.069258819165604" maxx="7.327649166610487" maxy="54.22543313087198"/>
+      <BoundingBox CRS="EPSG:4326" minx="50.069258819165604" miny="3.1714748549041203" maxx="54.22543313087198" maxy="7.327649166610487"/>
+      <BoundingBox CRS="EPSG:4258" minx="50.06925882009383" miny="3.1714748549041203" maxx="54.22543313176625" maxy="7.327649166610487"/>
+      <BoundingBox CRS="EPSG:3035" minx="2998697.1879932834" miny="3832888.4124201387" maxx="3478656.585783251" maxy="4146712.5068485984"/>
+      <BoundingBox CRS="EPSG:3034" minx="2595920.703190096" miny="3528562.9963811487" maxx="3059249.5634576576" maxy="3831434.1329248943"/>
+      <BoundingBox CRS="EPSG:3857" minx="353046.9659115978" miny="6458278.899163463" maxx="815710.1739388349" maxy="7212966.764845056"/>
+      <BoundingBox CRS="EPSG:28992" minx="-3727.608049457456" miny="230924.18534771798" maxx="293869.06491726707" maxy="695621.6190436741"/>
+      <BoundingBox CRS="EPSG:25831" minx="511179.2766712596" miny="5546345.342376264" maxx="809652.4047372118" maxy="6017253.155046095"/>
+      <BoundingBox CRS="EPSG:25832" minx="83014.04335696332" miny="5547670.742962485" maxx="390976.18385886564" maxy="6024299.15249266"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <Layer queryable="1">
+        <Name>autochtonen_2011</Name>
+        <Title>autochtonen_2011</Title>
+        <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>autochtonen_2011</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_p_auto2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=autochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>gem_woz_waarde_woningen_2011</Name>
+        <Title>gem_woz_waarde_woningen_2011</Title>
+        <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
+        <KeywordList>
+          <Keyword>gem_woz_waarde_woningen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_wozwon2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gem_woz_waarde_woningen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2000</Name>
+        <Title>inwoners_2000</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2000</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2001</Name>
+        <Title>inwoners_2001</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2001</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2002</Name>
+        <Title>inwoners_2002</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2002</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2003</Name>
+        <Title>inwoners_2003</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2003</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2004</Name>
+        <Title>inwoners_2004</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2004</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.1714748549041203</westBoundLongitude>
+          <eastBoundLongitude>7.327649166610487</eastBoundLongitude>
+          <southBoundLatitude>50.069258819165604</southBoundLatitude>
+          <northBoundLatitude>54.22543313087198</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.1714748549041203" miny="50.069258819165604" maxx="7.327649166610487" maxy="54.22543313087198"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2005</Name>
+        <Title>inwoners_2005</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2005</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2006</Name>
+        <Title>inwoners_2006</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2007</Name>
+        <Title>inwoners_2007</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2007</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.2122216618816344</westBoundLongitude>
+          <eastBoundLongitude>7.286902359632973</eastBoundLongitude>
+          <southBoundLatitude>50.11000562614312</southBoundLatitude>
+          <northBoundLatitude>54.18468632389446</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.2122216618816344" miny="50.11000562614312" maxx="7.286902359632973" maxy="54.18468632389446"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2008</Name>
+        <Title>inwoners_2008</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2008</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2009</Name>
+        <Title>inwoners_2009</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2009</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2010</Name>
+        <Title>inwoners_2010</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2010</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2011</Name>
+        <Title>inwoners_2011</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2011_20_tot_45_jaar</Name>
+        <Title>inwoners_2011_20_tot_45_jaar</Title>
+        <Abstract>Het aantal inwoners van 20 tot 45 jaar op 1 januari 2011.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_20_tot_45_jaar</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_i2011_2044</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_20_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2011_45_tot_65_jaar</Name>
+        <Title>inwoners_2011_45_tot_65_jaar</Title>
+        <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2011_45_tot_65_jaar</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_i2011_4564</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_45_tot_65_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2011_65_plus_jaar</Name>
+        <Title>inwoners_2011_65_plus_jaar</Title>
+        <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_65_plus_jaar</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_i2011_65PL</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_65_plus_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2011_tot_20_jaar</Name>
+        <Title>inwoners_2011_tot_20_jaar</Title>
+        <Abstract>Het aantal inwoners jonger dan 20 jaar op 1 januari 2011.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_tot_20_jaar</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_i2011_019</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_tot_20_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>inwoners_2012</Name>
+        <Title>inwoners_2012</Title>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>inwoners_2012</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_inw2012</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2012"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>niet_westerse_allochtonen_2011</Name>
+        <Title>niet_westerse_allochtonen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>niet_westerse_allochtonen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_p_nwal2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=niet_westerse_allochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>toename_inwoners_2000_2010</Name>
+        <Title>toename_inwoners_2000_2010</Title>
+        <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+        <KeywordList>
+          <Keyword>toename_inwoners_2000_2010</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_tinw_10_00</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=toename_inwoners_2000_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>westerse_allochtonen_2011</Name>
+        <Title>westerse_allochtonen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>westerse_allochtonen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_p_wal2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=westerse_allochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2000</Name>
+        <Title>woningen_2000</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2000</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2001</Name>
+        <Title>woningen_2001</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2001</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2002</Name>
+        <Title>woningen_2002</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2002</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2003</Name>
+        <Title>woningen_2003</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2003</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2004</Name>
+        <Title>woningen_2004</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2004</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2005</Name>
+        <Title>woningen_2005</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2005</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2006</Name>
+        <Title>woningen_2006</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2007</Name>
+        <Title>woningen_2007</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2007</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2008</Name>
+        <Title>woningen_2008</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2009</Name>
+        <Title>woningen_2009</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>woningen_2009</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2010</Name>
+        <Title>woningen_2010</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>woningen_2010</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>woningen_2011</Name>
+        <Title>woningen_2011</Title>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+        <KeywordList>
+          <Keyword>woningen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.252169511859589</westBoundLongitude>
+          <eastBoundLongitude>7.246954509655018</eastBoundLongitude>
+          <southBoundLatitude>50.73303308142528</southBoundLatitude>
+          <northBoundLatitude>53.5616588686123</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+        <BoundingBox CRS="EPSG:28992" minx="13400.0" miny="306700.0" maxx="278200.0" maxy="619500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73283885196923" miny="3.251115727205743" maxx="53.561465238257" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.732838852893316" miny="3.251115727205743" maxx="53.56146523915796" maxy="7.245882536337195"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073457.456093091" miny="3854449.6245785835" maxx="3402472.686736923" maxy="4138471.449699129"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668106.188455187" miny="3549398.9057772933" maxx="2985604.5881563476" maxy="3823558.7730301935"/>
+        <BoundingBox CRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
+        <BoundingBox CRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
+        <BoundingBox CRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <Style>
+          <Name>cbsvierkanten100m_won2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

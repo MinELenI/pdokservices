@@ -1,0 +1,333 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <VendorSpecificCapabilities/>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:25831</SRS>
+      <SRS>EPSG:25832</SRS>
+      <SRS>EPSG:28992</SRS>
+      <SRS>EPSG:3034</SRS>
+      <SRS>EPSG:3035</SRS>
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4258</SRS>
+      <SRS>EPSG:4326</SRS>
+      <LatLonBoundingBox minx="3.2604645987790053" miny="50.735435492527536" maxx="7.24138474843557" maxy="53.55835246338005"/>
+      <BoundingBox SRS="EPSG:4326" minx="3.2604645987790053" miny="50.735435492527536" maxx="7.24138474843557" maxy="53.55835246338005"/>
+      <BoundingBox SRS="EPSG:4258" minx="3.2604645987790053" miny="50.73543549345161" maxx="7.24138474843557" maxy="53.55835246428104"/>
+      <BoundingBox SRS="EPSG:3035" minx="3845972.093000972" miny="3072980.506186486" maxx="4138221.1902031074" maxy="3404156.8640705715"/>
+      <BoundingBox SRS="EPSG:3034" minx="3541207.129726052" miny="2667648.3102510567" maxx="3823315.4254557993" maxy="2987233.284009058"/>
+      <BoundingBox SRS="EPSG:3857" minx="362953.2588855738" miny="6574628.080447408" maxx="806107.262834025" maxy="7086953.307347781"/>
+      <BoundingBox SRS="EPSG:28992" minx="4790.653821090353" miny="305038.2007861992" maxx="285822.3408283208" maxy="621210.1663832862"/>
+      <BoundingBox SRS="EPSG:25831" minx="517253.5212039587" miny="5620437.332131115" maxx="799251.2892294633" maxy="5942755.471166929"/>
+      <BoundingBox SRS="EPSG:25832" minx="95108.13226961938" miny="5621879.725607693" maxx="383512.24143102375" maxy="5949719.144361062"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>bblbuitenbegrenzing</Name>
+        <Title>bblbuitenbegrenzing</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>bblbuitenbegrenzing</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2844925431800784" miny="50.73887488154655" maxx="7.227612719529143" maxy="53.464700469285525"/>
+        <BoundingBox SRS="EPSG:28992" minx="15228.2230000049" miny="307300.477000006" maxx="277193.505000003" maxy="608707.585000005"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.283438663364429" miny="50.73868065747784" maxx="7.226540949720597" maxy="53.46450683673409"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.283438663364429" miny="50.738680658401904" maxx="7.226540949720597" maxy="53.464506837635994"/>
+        <BoundingBox SRS="EPSG:3035" minx="3856310.2455443977" miny="3074120.0645298674" maxx="4136773.970470709" maxy="3391582.9225481492"/>
+        <BoundingBox SRS="EPSG:3034" minx="3551196.5802558674" miny="2668745.620669341" maxx="3821929.882812578" maxy="2975084.5613713684"/>
+        <BoundingBox SRS="EPSG:3857" minx="365510.720056675" miny="6575198.88372417" maxx="804454.8587196365" maxy="7069385.604226461"/>
+        <BoundingBox SRS="EPSG:25831" minx="518824.96244566224" miny="5620844.8782864185" maxx="790528.586268692" maxy="5930711.945903937"/>
+        <BoundingBox SRS="EPSG:25832" minx="105476.19665237807" miny="5622898.4867664" maxx="382230.5901891322" maxy="5937139.2808454875"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=e47b765b-6270-4876-91fc-e0056beb9a10"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_bblbuiten</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>ehs</Name>
+        <Title>ehs</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>ehs</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2604645987790053" miny="50.735435492527536" maxx="7.24138474843557" maxy="53.55835246338005"/>
+        <BoundingBox SRS="EPSG:28992" minx="13939.3390000053" miny="306952.659750003" maxx="277840.125000004" maxy="619131.812500004"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2594107779721773" miny="50.73524126468111" maxx="7.240312804258069" maxy="53.55815883330335"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2594107779721773" miny="50.73524126560518" maxx="7.240312804258069" maxy="53.55815883420436"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855003.2305577053" miny="3073732.252978778" maxx="4138088.7076438204" maxy="3402070.973995831"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549933.7631176515" miny="2668371.3943468183" maxx="3823189.168463555" maxy="2985217.2955009574"/>
+        <BoundingBox SRS="EPSG:3857" minx="362835.9480899704" miny="6574593.9182947455" maxx="805987.9345540268" maxy="7086917.02011806"/>
+        <BoundingBox SRS="EPSG:25831" minx="517191.3613877486" miny="5620455.547784159" maxx="791186.3429408383" maxy="5941156.4963944685"/>
+        <BoundingBox SRS="EPSG:25832" minx="104170.1802925918" miny="5622519.500943907" maxx="383401.80787124985" maxy="5947628.258137134"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=9e3fac5c-1472-42d1-9727-49e382a75571"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_ehs</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>rods</Name>
+        <Title>rods</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>rods</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="4.239922464095001" miny="51.75590004889045" maxx="5.9364496840342325" maxy="52.69929374242297"/>
+        <BoundingBox SRS="EPSG:28992" minx="77366.3748750053" miny="419156.343750004" maxx="192056.890625004" maxy="523520.986000005"/>
+        <BoundingBox SRS="EPSG:4326" minx="4.238864759034025" miny="51.755706063293225" maxx="5.935384484419242" maxy="52.6991001124991"/>
+        <BoundingBox SRS="EPSG:4258" minx="4.238864759034025" miny="51.755706064209996" maxx="5.935384484419242" maxy="52.69910011340807"/>
+        <BoundingBox SRS="EPSG:3035" minx="3925311.57688887" miny="3191141.989784825" maxx="4046368.586597786" maxy="3302598.2023481303"/>
+        <BoundingBox SRS="EPSG:3034" minx="3617793.1152770435" miny="2781690.074759552" maxx="3734650.942384507" maxy="2889211.503804903"/>
+        <BoundingBox SRS="EPSG:3857" minx="471868.26651721995" miny="6756073.937004565" maxx="660723.9784678465" maxy="6927532.383129756"/>
+        <BoundingBox SRS="EPSG:25831" minx="583726.3998910704" miny="5734622.130867214" maxx="701782.9001092508" maxy="5842701.4087048955"/>
+        <BoundingBox SRS="EPSG:25832" minx="173108.03035209177" miny="5738807.99709646" maxx="292925.728683671" maxy="5848824.248650041"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=667ad9b8-5d0e-4e17-ae87-e33de76d1bf1"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_rods</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

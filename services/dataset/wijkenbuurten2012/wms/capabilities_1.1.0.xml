@@ -1,0 +1,846 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <VendorSpecificCapabilities/>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:25831</SRS>
+      <SRS>EPSG:25832</SRS>
+      <SRS>EPSG:28992</SRS>
+      <SRS>EPSG:3034</SRS>
+      <SRS>EPSG:3035</SRS>
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4258</SRS>
+      <SRS>EPSG:4326</SRS>
+      <LatLonBoundingBox minx="3.2062366163497913" miny="50.73360703625111" maxx="7.245258426200739" maxy="53.58297881426652"/>
+      <BoundingBox SRS="EPSG:4326" minx="3.2062366163497913" miny="50.73360703625111" maxx="7.245258426200739" maxy="53.58297881426652"/>
+      <BoundingBox SRS="EPSG:4258" minx="3.2062366163497913" miny="50.7336070371752" maxx="7.245258426200739" maxy="53.58297881516728"/>
+      <BoundingBox SRS="EPSG:3035" minx="3842143.7964047273" miny="3072766.934745675" maxx="4138583.1056658453" maxy="3407222.008544522"/>
+      <BoundingBox SRS="EPSG:3034" minx="3537507.900982574" miny="2667442.1866267426" maxx="3823662.169484589" maxy="2990189.4526634114"/>
+      <BoundingBox SRS="EPSG:3857" minx="356916.6274948072" miny="6574306.48437403" maxx="806538.478670341" maxy="7091569.761194531"/>
+      <BoundingBox SRS="EPSG:28992" minx="957.1931494897581" miny="304838.41752366535" maxx="286100.9220996738" maxy="624058.0206347154"/>
+      <BoundingBox SRS="EPSG:25831" minx="513653.4580631115" miny="5620221.943715373" maxx="799536.1757768362" maxy="5945508.295954037"/>
+      <BoundingBox SRS="EPSG:25832" minx="91269.3073332127" miny="5621669.93220358" maxx="383836.3267228448" maxy="5952746.127465228"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>cbs_buurten_2012</Name>
+        <Title>cbs_buurten_2012</Title>
+        <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
+        <KeywordList>
+          <Keyword>buurten2012</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2062366163497913" miny="50.73360703625111" maxx="7.245258426200739" maxy="53.58297881426652"/>
+        <BoundingBox SRS="EPSG:28992" minx="10425.1999999993" miny="306846.199999999" maxx="278026.100000001" maxy="621876.300000001"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2051830304397178" miny="50.73341279847763" maxx="7.244186434843209" maxy="53.582785177481995"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2051830304397178" miny="50.73341279940173" maxx="7.244186434843209" maxy="53.582785178382764"/>
+        <BoundingBox SRS="EPSG:3035" minx="3851492.2237810055" miny="3073614.3038763786" maxx="4138450.636205292" maxy="3405033.290657678"/>
+        <BoundingBox SRS="EPSG:3034" minx="3546541.2267699298" miny="2668257.5730382116" maxx="3823535.937632864" maxy="2988074.046517733"/>
+        <BoundingBox SRS="EPSG:3857" minx="356799.34284779086" miny="6574272.321808971" maxx="806419.1451382857" maxy="7091533.4515688"/>
+        <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
+        <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
+        </MetadataURL>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_default</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_huishoudgrootte"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_verweduwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_verweduwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gescheiden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gescheiden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_tot_15_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>cbs_wijken_2012</Name>
+        <Title>cbs_wijken_2012</Title>
+        <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
+        <KeywordList>
+          <Keyword>wijken2012</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2062366163498033" miny="50.73360703625111" maxx="7.245258426200723" maxy="53.58297881426652"/>
+        <BoundingBox SRS="EPSG:28992" minx="10425.2" miny="306846.2" maxx="278026.1" maxy="621876.3"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2051830304397297" miny="50.73341279847763" maxx="7.2441864348431935" maxy="53.582785177481995"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2051830304397297" miny="50.73341279940172" maxx="7.2441864348431935" maxy="53.582785178382764"/>
+        <BoundingBox SRS="EPSG:3035" minx="3851492.223781006" miny="3073614.3038763786" maxx="4138450.636205291" maxy="3405033.290657678"/>
+        <BoundingBox SRS="EPSG:3034" minx="3546541.22676993" miny="2668257.5730382116" maxx="3823535.937632863" maxy="2988074.0465177326"/>
+        <BoundingBox SRS="EPSG:3857" minx="356799.3428477922" miny="6574272.321808971" maxx="806419.1451382842" maxy="7091533.4515688"/>
+        <BoundingBox SRS="EPSG:25831" minx="513590.0555653253" miny="5620234.963471747" maxx="791375.7271484403" maxy="5943906.8368886635"/>
+        <BoundingBox SRS="EPSG:25832" minx="100650.25568198354" miny="5622404.086999423" maxx="383725.9442422808" maxy="5950552.139851025"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
+        </MetadataURL>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_default</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_45_tot_65_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_tot_15_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_huishoudgrootte"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gescheiden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gescheiden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ongehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ongehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_25_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_eenpersoonshuishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_verweduwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_verweduwden"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>gemeenten2012</Name>
+        <Title>gemeenten2012</Title>
+        <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
+        <KeywordList>
+          <Keyword>gemeenten2012</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2062366163497913" miny="50.73360703625111" maxx="7.245258426200739" maxy="53.58297881426652"/>
+        <BoundingBox SRS="EPSG:28992" minx="10425.1999999993" miny="306846.199999999" maxx="278026.100000001" maxy="621876.300000001"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2051830304397178" miny="50.73341279847763" maxx="7.244186434843209" maxy="53.582785177481995"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2051830304397178" miny="50.73341279940173" maxx="7.244186434843209" maxy="53.582785178382764"/>
+        <BoundingBox SRS="EPSG:3035" minx="3851492.2237810055" miny="3073614.3038763786" maxx="4138450.636205292" maxy="3405033.290657678"/>
+        <BoundingBox SRS="EPSG:3034" minx="3546541.2267699298" miny="2668257.5730382116" maxx="3823535.937632864" maxy="2988074.046517733"/>
+        <BoundingBox SRS="EPSG:3857" minx="356799.34284779086" miny="6574272.321808971" maxx="806419.1451382857" maxy="7091533.4515688"/>
+        <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
+        <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
+        </MetadataURL>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_default</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_verweduwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_verweduwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_ongehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_ongehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_tot_15_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

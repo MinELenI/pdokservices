@@ -1,0 +1,240 @@
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/pdf</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:25831</CRS>
+      <CRS>EPSG:25832</CRS>
+      <CRS>EPSG:28992</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3035</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>3.2604645987790053</westBoundLongitude>
+        <eastBoundLongitude>7.24138474843557</eastBoundLongitude>
+        <southBoundLatitude>50.735435492527536</southBoundLatitude>
+        <northBoundLatitude>53.55835246338005</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="3.2604645987790053" miny="50.735435492527536" maxx="7.24138474843557" maxy="53.55835246338005"/>
+      <BoundingBox CRS="EPSG:4326" minx="50.735435492527536" miny="3.2604645987790053" maxx="53.55835246338005" maxy="7.24138474843557"/>
+      <BoundingBox CRS="EPSG:4258" minx="50.73543549345161" miny="3.2604645987790053" maxx="53.55835246428104" maxy="7.24138474843557"/>
+      <BoundingBox CRS="EPSG:3035" minx="3072980.506186486" miny="3845972.093000972" maxx="3404156.8640705715" maxy="4138221.1902031074"/>
+      <BoundingBox CRS="EPSG:3034" minx="2667648.3102510567" miny="3541207.129726052" maxx="2987233.284009058" maxy="3823315.4254557993"/>
+      <BoundingBox CRS="EPSG:3857" minx="362953.2588855738" miny="6574628.080447408" maxx="806107.262834025" maxy="7086953.307347781"/>
+      <BoundingBox CRS="EPSG:28992" minx="4790.653821090353" miny="305038.2007861992" maxx="285822.3408283208" maxy="621210.1663832862"/>
+      <BoundingBox CRS="EPSG:25831" minx="517253.5212039587" miny="5620437.332131115" maxx="799251.2892294633" maxy="5942755.471166929"/>
+      <BoundingBox CRS="EPSG:25832" minx="95108.13226961938" miny="5621879.725607693" maxx="383512.24143102375" maxy="5949719.144361062"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <Layer queryable="1">
+        <Name>bblbuitenbegrenzing</Name>
+        <Title>bblbuitenbegrenzing</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>bblbuitenbegrenzing</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.2844925431800784</westBoundLongitude>
+          <eastBoundLongitude>7.227612719529143</eastBoundLongitude>
+          <southBoundLatitude>50.73887488154655</southBoundLatitude>
+          <northBoundLatitude>53.464700469285525</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.2844925431800784" miny="50.73887488154655" maxx="7.227612719529143" maxy="53.464700469285525"/>
+        <BoundingBox CRS="EPSG:28992" minx="15228.2230000049" miny="307300.477000006" maxx="277193.505000003" maxy="608707.585000005"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73868065747784" miny="3.283438663364429" maxx="53.46450683673409" maxy="7.226540949720597"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.738680658401904" miny="3.283438663364429" maxx="53.464506837635994" maxy="7.226540949720597"/>
+        <BoundingBox CRS="EPSG:3035" minx="3074120.0645298674" miny="3856310.2455443977" maxx="3391582.9225481492" maxy="4136773.970470709"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668745.620669341" miny="3551196.5802558674" maxx="2975084.5613713684" maxy="3821929.882812578"/>
+        <BoundingBox CRS="EPSG:3857" minx="365510.720056675" miny="6575198.88372417" maxx="804454.8587196365" maxy="7069385.604226461"/>
+        <BoundingBox CRS="EPSG:25831" minx="518824.96244566224" miny="5620844.8782864185" maxx="790528.586268692" maxy="5930711.945903937"/>
+        <BoundingBox CRS="EPSG:25832" minx="105476.19665237807" miny="5622898.4867664" maxx="382230.5901891322" maxy="5937139.2808454875"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=e47b765b-6270-4876-91fc-e0056beb9a10"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_bblbuiten</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ehs</Name>
+        <Title>ehs</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>ehs</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.2604645987790053</westBoundLongitude>
+          <eastBoundLongitude>7.24138474843557</eastBoundLongitude>
+          <southBoundLatitude>50.735435492527536</southBoundLatitude>
+          <northBoundLatitude>53.55835246338005</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.2604645987790053" miny="50.735435492527536" maxx="7.24138474843557" maxy="53.55835246338005"/>
+        <BoundingBox CRS="EPSG:28992" minx="13939.3390000053" miny="306952.659750003" maxx="277840.125000004" maxy="619131.812500004"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73524126468111" miny="3.2594107779721773" maxx="53.55815883330335" maxy="7.240312804258069"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73524126560518" miny="3.2594107779721773" maxx="53.55815883420436" maxy="7.240312804258069"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073732.252978778" miny="3855003.2305577053" maxx="3402070.973995831" maxy="4138088.7076438204"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668371.3943468183" miny="3549933.7631176515" maxx="2985217.2955009574" maxy="3823189.168463555"/>
+        <BoundingBox CRS="EPSG:3857" minx="362835.9480899704" miny="6574593.9182947455" maxx="805987.9345540268" maxy="7086917.02011806"/>
+        <BoundingBox CRS="EPSG:25831" minx="517191.3613877486" miny="5620455.547784159" maxx="791186.3429408383" maxy="5941156.4963944685"/>
+        <BoundingBox CRS="EPSG:25832" minx="104170.1802925918" miny="5622519.500943907" maxx="383401.80787124985" maxy="5947628.258137134"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=9e3fac5c-1472-42d1-9727-49e382a75571"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_ehs</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>rods</Name>
+        <Title>rods</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>rods</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>4.239922464095001</westBoundLongitude>
+          <eastBoundLongitude>5.9364496840342325</eastBoundLongitude>
+          <southBoundLatitude>51.75590004889045</southBoundLatitude>
+          <northBoundLatitude>52.69929374242297</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="4.239922464095001" miny="51.75590004889045" maxx="5.9364496840342325" maxy="52.69929374242297"/>
+        <BoundingBox CRS="EPSG:28992" minx="77366.3748750053" miny="419156.343750004" maxx="192056.890625004" maxy="523520.986000005"/>
+        <BoundingBox CRS="EPSG:4326" minx="51.755706063293225" miny="4.238864759034025" maxx="52.6991001124991" maxy="5.935384484419242"/>
+        <BoundingBox CRS="EPSG:4258" minx="51.755706064209996" miny="4.238864759034025" maxx="52.69910011340807" maxy="5.935384484419242"/>
+        <BoundingBox CRS="EPSG:3035" minx="3191141.989784825" miny="3925311.57688887" maxx="3302598.2023481303" maxy="4046368.586597786"/>
+        <BoundingBox CRS="EPSG:3034" minx="2781690.074759552" miny="3617793.1152770435" maxx="2889211.503804903" maxy="3734650.942384507"/>
+        <BoundingBox CRS="EPSG:3857" minx="471868.26651721995" miny="6756073.937004565" maxx="660723.9784678465" maxy="6927532.383129756"/>
+        <BoundingBox CRS="EPSG:25831" minx="583726.3998910704" miny="5734622.130867214" maxx="701782.9001092508" maxy="5842701.4087048955"/>
+        <BoundingBox CRS="EPSG:25832" minx="173108.03035209177" miny="5738807.99709646" maxx="292925.728683671" maxy="5848824.248650041"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=667ad9b8-5d0e-4e17-ae87-e33de76d1bf1"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2007_rods</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

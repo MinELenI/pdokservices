@@ -1,0 +1,72 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.0.0/WMS_MS_Capabilities.dtd" [
+<!ELEMENT VendorSpecificCapabilities EMPTY>
+]>
+<!-- end of DOCTYPE declaration -->
+<WMT_MS_Capabilities version="1.0.0">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>PDOK-achtergrond luchtfoto</Title>
+    <Abstract>PDOK-achtergrond luchtfoto, 2009, resolutie 50cm</Abstract>
+    <OnlineResource>http://geodata1.nationaalgeoregister.nl/luchtfoto/wms</OnlineResource>
+    <Fees>free, fair use</Fees>
+    <AccessConstraints>CC-BY-NC licentie. De luchtfoto mag vrij gebruikt worden voor niet-commerciele toepassingen. Partijen die de luchtfoto willen verwerken in commerciele producten dienen een licentie aan te schaffen bij een zelf te selecteren leverancier.</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <Capabilities>
+        <Format>
+          <WMS_XML/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata1.nationaalgeoregister.nl/luchtfoto/wmts?"/>
+          </HTTP>
+        </DCPType>
+      </Capabilities>
+      <Map>
+        <Format>
+          <JPEG/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata1.nationaalgeoregister.nl/luchtfoto/wmts?"/>
+          </HTTP>
+        </DCPType>
+      </Map>
+      <FeatureInfo>
+        <Format>
+          <MIME/>
+          <MIME/>
+          <GML.1/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata1.nationaalgeoregister.nl/luchtfoto/wmts?"/>
+          </HTTP>
+        </DCPType>
+      </FeatureInfo>
+    </Request>
+    <Exception>
+      <Format>
+        <INIMAGE/>
+        <BLANK/>
+        <WMS_XML/>
+      </Format>
+    </Exception>
+    <Layer>
+      <Title>PDOK-achtergrond luchtfoto</Title>
+      <SRS>EPSG:28992 </SRS>
+      <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+      <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+      <ScaleHint min="0.565685424949"/>
+      <Layer>
+        <Name>luchtfoto</Name>
+        <Title>PDOK-achtergrond luchtfoto</Title>
+        <SRS>EPSG:28992 </SRS>
+        <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+        <ScaleHint min="0.565685424949"/>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

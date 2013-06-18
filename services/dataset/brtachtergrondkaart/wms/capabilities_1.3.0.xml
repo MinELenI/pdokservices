@@ -1,0 +1,811 @@
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/pdf</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:25831</CRS>
+      <CRS>EPSG:25832</CRS>
+      <CRS>EPSG:28992</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3035</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-180.0</westBoundLongitude>
+        <eastBoundLongitude>180.0</eastBoundLongitude>
+        <southBoundLatitude>-90.0</southBoundLatitude>
+        <northBoundLatitude>90.0</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+      <BoundingBox CRS="EPSG:4326" minx="-90.0" miny="-180.0" maxx="90.0" maxy="180.0"/>
+      <BoundingBox CRS="EPSG:4258" minx="-90.0" miny="-180.0" maxx="90.0" maxy="180.0"/>
+      <BoundingBox CRS="EPSG:3035" minx="-8828174.554292856" miny="3086656.974771753" maxx="1.4739361308185186E7" maxy="1.084891673471962E7"/>
+      <BoundingBox CRS="EPSG:28992" minx="-587936.0205635002" miny="-1.683574925825193E8" maxx="5.872170052804859E7" maxy="6.238664232645973E7"/>
+      <BoundingBox CRS="EPSG:25831" minx="-7.33122310327588E7" miny="-2.3137063867654845E8" maxx="3.3507829313169056E8" maxy="2.3137063867654845E8"/>
+      <BoundingBox CRS="EPSG:25832" minx="-5.318367795483098E7" miny="-1.871761339237531E8" maxx="2.7481200945404786E8" maxy="1.871761339237531E8"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <Layer queryable="1">
+        <Name>borders</Name>
+        <Title>borders</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-22.454</westBoundLongitude>
+          <eastBoundLongitude>70.783</eastBoundLongitude>
+          <southBoundLatitude>26.133</southBoundLatitude>
+          <northBoundLatitude>69.537</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-22.454" miny="26.133" maxx="70.783" maxy="69.537"/>
+        <BoundingBox CRS="EPSG:28992" minx="-1027613.541" miny="-1530472.277" maxx="4243161.759" maxy="2432371.551"/>
+        <BoundingBox CRS="EPSG:4326" minx="26.13314117497787" miny="-22.45486920856075" maxx="69.53654304091948" maxy="70.78167018226358"/>
+        <BoundingBox CRS="EPSG:4258" minx="26.13314117572461" miny="-22.45486920856075" maxx="69.53654304153663" maxy="70.78167018226358"/>
+        <BoundingBox CRS="EPSG:3035" minx="1127008.2978732649" miny="2732982.827946198" maxx="5248877.562811084" maxy="7992732.345007698"/>
+        <BoundingBox CRS="EPSG:3034" minx="784744.4200537803" miny="2421786.6338660195" maxx="4795149.606175303" maxy="7644848.85032475"/>
+        <BoundingBox CRS="EPSG:3857" minx="-2499664.606126541" miny="3015580.414650764" maxx="7879379.482187017" maxy="1.0919521497943409E7"/>
+        <BoundingBox CRS="EPSG:25831" minx="-563656.3044386331" miny="3689346.5748739163" maxx="4953818.475787009" maxy="8123132.543352385"/>
+        <BoundingBox CRS="EPSG:25832" minx="-996266.8270244661" miny="3447252.9115884784" maxx="4467202.260045696" maxy="7821153.407693032"/>
+        <Style>
+          <Name>brt-osm_internationalegrenzen</Name>
+          <Title>Nationale grenzen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=borders"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>builtup_areas</Name>
+        <Title>builtup_areas</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-180.0</westBoundLongitude>
+          <eastBoundLongitude>180.0</eastBoundLongitude>
+          <southBoundLatitude>-53.616</southBoundLatitude>
+          <northBoundLatitude>90.0</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-180.0" miny="-53.616" maxx="180.0" maxy="90.0"/>
+        <BoundingBox CRS="EPSG:28992" minx="-2.1788277461E7" miny="-1.6307209065E7" maxx="1.10241474814E8" maxy="9.2188471623E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-53.61636045676844" miny="-180.0" maxx="90.0" maxy="180.0"/>
+        <BoundingBox CRS="EPSG:4258" minx="-53.61636045766898" miny="-180.0" maxx="90.0" maxy="180.0"/>
+        <BoundingBox CRS="EPSG:3035" minx="-6912917.03107506" miny="-6786458.388617506" maxx="1.5842794226178087E7" maxy="1.6926153915791698E7"/>
+        <BoundingBox CRS="EPSG:3034" minx="-1.8586958321270622E7" miny="-2.1161855479731683E7" maxx="2.2301323017628476E7" maxy="2.958177906402047E7"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.994426144948226E7" miny="-7097831.777306895" maxx="1.974843886358506E7" maxy="-1590813.646994437"/>
+        <BoundingBox CRS="EPSG:25831" minx="-1.1350045924379846E8" miny="-2.0649746084976435E8" maxx="1.1308151570865169E8" maxy="3.2798959635608338E7"/>
+        <BoundingBox CRS="EPSG:25832" minx="-1.0531726120917588E8" miny="-2.639863849153085E8" maxx="1.2071878884212321E8" maxy="1.8330319076121446E7"/>
+        <Style>
+          <Name>brt-osm_builtup</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a green line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=builtup_areas"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>countries</Name>
+        <Title>countries</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-180.0</westBoundLongitude>
+          <eastBoundLongitude>180.0</eastBoundLongitude>
+          <southBoundLatitude>-90.0</southBoundLatitude>
+          <northBoundLatitude>90.0</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
+        <BoundingBox CRS="EPSG:28992" minx="-2.8700604255E7" miny="-3.7411303513E7" maxx="7.8155078123E7" maxy="7.0827315855E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="-90.0" miny="-180.0" maxx="90.0" maxy="180.0"/>
+        <BoundingBox CRS="EPSG:4258" minx="-90.0" miny="-180.0" maxx="90.0" maxy="180.0"/>
+        <BoundingBox CRS="EPSG:3035" minx="-8665737.59114627" miny="-7468224.492677091" maxx="1.5749619866511587E7" maxy="1.6795876441078395E7"/>
+        <BoundingBox CRS="EPSG:3034" minx="-1.517963886406225E7" miny="-7.021189960314354E7" maxx="2.1013375559438933E7" maxy="1.0822189440662846E8"/>
+        <BoundingBox CRS="EPSG:3857" minx="-1.96981865081144E7" miny="-1.8615979712690413E7" maxx="1.9786772760657664E7" maxy="-1958613.3239333825"/>
+        <BoundingBox CRS="EPSG:25831" minx="-9.017768377593645E7" miny="-1.9576832421206355E8" maxx="1.0423526600630055E8" maxy="6306906.954326645"/>
+        <BoundingBox CRS="EPSG:25832" minx="-7.802091351493695E7" miny="-1.8943600476381454E8" maxx="1.0582535126644278E8" maxy="-202059.28453449756"/>
+        <Style>
+          <Name>brt-osm_landnamen</Name>
+          <Title>Default polygon style</Title>
+          <Abstract>A sample style that just draws out a solid gray interior with a black 1px outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=countries"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>gemeentenamen</Name>
+        <Title>gemeentenamen</Title>
+        <Abstract>Bestuurlijkegrenzen gemeentenamen Administratieve eenheden</Abstract>
+        <KeywordList>
+          <Keyword>Administratieve eenheden</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.275</westBoundLongitude>
+          <eastBoundLongitude>7.114</eastBoundLongitude>
+          <southBoundLatitude>50.739</southBoundLatitude>
+          <northBoundLatitude>53.487</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.275" miny="50.739" maxx="7.114" maxy="53.487"/>
+        <BoundingBox CRS="EPSG:28992" minx="14662.37" miny="307341.61" maxx="269584.0" maxy="611167.375"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73891249873309" miny="3.273839857103525" maxx="53.486524072085786" maxy="7.112938286140392"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73891249965715" miny="3.273839857103525" maxx="53.48652407298748" maxy="7.112938286140392"/>
+        <BoundingBox CRS="EPSG:3035" minx="3074640.149479983" miny="3855748.5254871813" maxx="3394074.378986746" maxy="4129339.0592416218"/>
+        <BoundingBox CRS="EPSG:3034" minx="2669245.0533009185" miny="3550653.801872319" maxx="2977491.100372886" maxy="3814739.6120214066"/>
+        <BoundingBox CRS="EPSG:3857" minx="364442.18583148794" miny="6575239.664597478" maxx="791808.6680571284" maxy="7073503.693081059"/>
+        <BoundingBox CRS="EPSG:25831" minx="518178.0739710366" miny="5620867.572830754" maxx="782918.1457585541" maxy="5932914.692285958"/>
+        <BoundingBox CRS="EPSG:25832" minx="104912.26197644183" miny="5623312.615478324" maxx="374757.43049782445" maxy="5939627.719228737"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=c5c4a6d6-b850-473c-8ab5-af9c2c550809"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-cbs_gemeentenamen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>inspire_common_DEFAULT</Name>
+          <Title>INSPIRE common default style</Title>
+          <Abstract>INSPIRE common default style</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen&amp;style=inspire_common_DEFAULT"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>lines</Name>
+        <Title>lines</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.218</westBoundLongitude>
+          <eastBoundLongitude>7.246</eastBoundLongitude>
+          <southBoundLatitude>50.734</southBoundLatitude>
+          <northBoundLatitude>53.626</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.218" miny="50.734" maxx="7.246" maxy="53.626"/>
+        <BoundingBox CRS="EPSG:28992" minx="11363.492" miny="306865.217" maxx="277967.084" maxy="626691.125"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.733818574848904" miny="3.2171409333452026" maxx="53.62605158678816" maxy="7.24517494409415"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.733818575772986" miny="3.2171409333452026" maxx="53.626051587688494" maxy="7.24517494409415"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073636.997008558" miny="3852429.0868688244" maxx="3409780.3051689155" maxy="4138701.2423314983"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668279.4638438467" miny="3547446.4837387707" maxx="2992663.222251442" maxy="3823772.6684211767"/>
+        <BoundingBox CRS="EPSG:3857" minx="358130.4905101848" miny="6574343.689971492" maxx="806529.1854847451" maxy="7099650.650300958"/>
+        <BoundingBox CRS="EPSG:25831" minx="514367.3165990003" miny="5620284.464723702" maxx="791316.1028018091" maxy="5948718.866900014"/>
+        <BoundingBox CRS="EPSG:25832" minx="101589.64408428821" miny="5622425.968219551" maxx="383910.0310727318" maxy="5955318.455694002"/>
+        <Style>
+          <Name>brt-osm_roads</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a green line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lines"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ondergrond</Name>
+        <Title>ondergrond</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-77.144</westBoundLongitude>
+          <eastBoundLongitude>95.726</eastBoundLongitude>
+          <southBoundLatitude>17.007</southBoundLatitude>
+          <northBoundLatitude>82.198</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-77.144" miny="17.007" maxx="95.726" maxy="82.198"/>
+        <BoundingBox CRS="EPSG:28992" minx="-3536419.611" miny="-1868265.777" maxx="6094933.317" maxy="4018183.917"/>
+        <BoundingBox CRS="EPSG:4326" minx="17.007021433006756" miny="-77.14448013823666" maxx="82.19752983117439" maxy="95.724689472993"/>
+        <BoundingBox CRS="EPSG:4258" minx="17.007021433535147" miny="-77.14448013823666" maxx="82.1975298314277" maxy="95.724689472993"/>
+        <BoundingBox CRS="EPSG:3035" minx="820407.3579137092" miny="408332.72777256835" maxx="6763542.5116010755" maxy="9483844.561994508"/>
+        <BoundingBox CRS="EPSG:3034" minx="465962.8313223454" miny="-12734.103837281466" maxx="6461669.957591604" maxy="9279528.980415113"/>
+        <BoundingBox CRS="EPSG:3857" minx="-8587684.246500311" miny="1921642.3917361135" maxx="1.0656023688477818E7" maxy="1.712776434151618E7"/>
+        <BoundingBox CRS="EPSG:25831" minx="-3120468.014148897" miny="3016447.4519639118" maxx="7252673.770591657" maxy="1.0606138498076614E7"/>
+        <BoundingBox CRS="EPSG:25832" minx="-3622459.0637865197" miny="2701022.199956669" maxx="6614387.909950996" maxy="9800164.299380401"/>
+        <Style>
+          <Name>brtachtergrond_ondergrond</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ondergrond"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>points</Name>
+        <Title>points</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.253</westBoundLongitude>
+          <eastBoundLongitude>7.244</eastBoundLongitude>
+          <southBoundLatitude>50.737</southBoundLatitude>
+          <northBoundLatitude>53.616</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.253" miny="50.737" maxx="7.244" maxy="53.616"/>
+        <BoundingBox CRS="EPSG:28992" minx="13621.326" miny="307157.548" maxx="277836.355" maxy="625537.68"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.7370040125597" miny="3.251746970623956" maxx="53.61570847600889" maxy="7.242750687062317"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73700401348377" miny="3.251746970623956" maxx="53.61570847690933" maxy="7.242750687062317"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073936.959701328" miny="3854698.883027428" maxx="3408485.8600250185" maxy="4138496.648668127"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668569.0490601556" miny="3549639.625934824" maxx="2991416.1032434073" maxy="3823576.202730012"/>
+        <BoundingBox CRS="EPSG:3857" minx="361982.8169584287" miny="6574903.967917466" maxx="806259.3184264095" maxy="7097709.425742603"/>
+        <BoundingBox CRS="EPSG:25831" minx="516660.886765087" miny="5620649.872622201" maxx="791176.0025242486" maxy="5947561.197213287"/>
+        <BoundingBox CRS="EPSG:25832" minx="103862.09308170254" miny="5622724.258198259" maxx="383721.29756668507" maxy="5954049.614964099"/>
+        <Style>
+          <Name>brt-osm_point</Name>
+          <Title>Default point</Title>
+          <Abstract>A sample style that just prints out a 6px wide red square</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=points"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>polygons</Name>
+        <Title>polygons</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.255</westBoundLongitude>
+          <eastBoundLongitude>7.243</eastBoundLongitude>
+          <southBoundLatitude>50.735</southBoundLatitude>
+          <northBoundLatitude>53.56</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.255" miny="50.735" maxx="7.243" maxy="53.56"/>
+        <BoundingBox CRS="EPSG:28992" minx="13602.35" miny="306937.043" maxx="277924.115" maxy="619314.997"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73501826548818" miny="3.2542489896232127" maxx="53.559802454773326" maxy="7.241650476402179"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73501826641226" miny="3.2542489896232127" maxx="53.55980245567431" maxy="7.241650476402179"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073711.381010407" miny="3854666.2020399747" maxx="3402275.186642948" maxy="4138184.2835167465"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668351.270775736" miny="3549608.109839216" maxx="2985414.071566858" maxy="3823281.359738859"/>
+        <BoundingBox CRS="EPSG:3857" minx="362261.3404393811" miny="6574554.695811037" maxx="806136.8435359575" maxy="7087225.048152671"/>
+        <BoundingBox CRS="EPSG:25831" minx="516848.66868322005" miny="5620428.9938948415" maxx="791270.8315915867" maxy="5941342.490395888"/>
+        <BoundingBox CRS="EPSG:25832" minx="103832.37745797657" miny="5622499.790220573" maxx="383494.89990690385" maxy="5947828.647722543"/>
+        <Style>
+          <Name>brt-osm_polygons</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a green line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=polygons"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>shorelines</Name>
+        <Title>shorelines</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-61.023</westBoundLongitude>
+          <eastBoundLongitude>83.098</eastBoundLongitude>
+          <southBoundLatitude>22.986</southBoundLatitude>
+          <northBoundLatitude>75.574</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-61.023" miny="22.986" maxx="83.098" maxy="75.574"/>
+        <BoundingBox CRS="EPSG:28992" minx="-2975926.309" miny="-1605673.339" maxx="4964447.209" maxy="3175889.274"/>
+        <BoundingBox CRS="EPSG:4326" minx="22.985728384811686" miny="-61.02391786311317" maxx="75.57396287416367" maxy="83.09627023460004"/>
+        <BoundingBox CRS="EPSG:4258" minx="22.985728385490674" miny="-61.02391786311317" maxx="75.57396287461816" maxy="83.09627023460004"/>
+        <BoundingBox CRS="EPSG:3035" minx="1054000.6295351726" miny="903811.7832479533" maxx="6012159.0742388945" maxy="8608065.11978281"/>
+        <BoundingBox CRS="EPSG:3034" minx="713043.2692792474" miny="546058.4051151732" maxx="5538372.993795501" maxy="8317816.757031235"/>
+        <BoundingBox CRS="EPSG:3857" minx="-6793151.462732309" miny="2630292.8183644614" maxx="9250234.489335932" maxy="1.3183844998629164E7"/>
+        <BoundingBox CRS="EPSG:25831" minx="-2528593.0533356997" miny="3527439.329445566" maxx="5798398.3479760215" maxy="9080678.198999865"/>
+        <BoundingBox CRS="EPSG:25832" minx="-3009082.470674836" miny="3245204.24138609" maxx="5264492.729921695" maxy="8799994.32456613"/>
+        <Style>
+          <Name>brt-osm_landmassa</Name>
+          <Title>Buitenland</Title>
+          <Abstract>Buitenland op basis van OSM</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=shorelines"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nl_geolabels</Name>
+        <Title>top10nl_geolabels</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>top10nl_geolabels</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.2450063943053165</westBoundLongitude>
+          <eastBoundLongitude>7.243846538428253</eastBoundLongitude>
+          <southBoundLatitude>50.7289995471473</southBoundLatitude>
+          <northBoundLatitude>53.60295237204207</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.2450063943053165" miny="50.7289995471473" maxx="7.243846538428253" maxy="53.60295237204207"/>
+        <BoundingBox CRS="EPSG:28992" minx="13061.9619140625" miny="306260.3125" maxx="277875.15625" maxy="624096.8125"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.728805316593046" miny="3.2439526201773945" maxx="53.602758741888586" maxy="7.242774529418543"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72880531751718" miny="3.2439526201773945" maxx="53.60275874278916" maxy="7.242774529418543"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073039.1166692236" miny="3854085.0943678804" maxx="3407082.938819351" maxy="4138442.742981841"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667702.143673206" miny="3549046.796120124" maxx="2990059.33379745" maxy="3823525.7527153543"/>
+        <BoundingBox CRS="EPSG:3857" minx="361115.15383565315" miny="6573461.99882396" maxx="806261.9725453637" maxy="7095279.653030996"/>
+        <BoundingBox CRS="EPSG:25831" minx="516150.0384017657" miny="5619735.444438974" maxx="791243.5742045597" maxy="5946121.883989261"/>
+        <BoundingBox CRS="EPSG:25832" minx="103258.95397310145" miny="5621826.503973506" maxx="383687.3096171883" maxy="5952637.543490551"/>
+        <Style>
+          <Name>brt-top10nl_geolabels</Name>
+          <Title>Buurtschappen en bosgebieden</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nl_geolabels"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlfunctioneelgebiedlabels</Name>
+        <Title>top10nlfunctioneelgebiedlabels</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.261</westBoundLongitude>
+          <eastBoundLongitude>7.243</eastBoundLongitude>
+          <southBoundLatitude>50.73</southBoundLatitude>
+          <northBoundLatitude>53.492</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.261" miny="50.73" maxx="7.243" maxy="53.492"/>
+        <BoundingBox CRS="EPSG:28992" minx="13763.968" miny="306341.521" maxx="278134.402" maxy="611782.394"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72970758987201" miny="3.2600458208450873" maxx="53.49212868684508" maxy="7.241890193348277"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72970759079613" miny="3.2600458208450873" maxx="53.49212868774672" maxy="7.241890193348277"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073103.839994274" miny="3854790.2176913167" maxx="3394745.249446016" maxy="4137910.243038021"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667764.7286420213" miny="3549728.107613526" maxx="2978137.8706510887" maxy="3823024.9154314646"/>
+        <BoundingBox CRS="EPSG:3857" minx="362906.64073921466" miny="6573620.676357753" maxx="806163.5287043316" maxy="7074552.317738787"/>
+        <BoundingBox CRS="EPSG:25831" minx="517260.25404999114" miny="5619839.382401268" maxx="791500.2093656822" maxy="5933818.083991308"/>
+        <BoundingBox CRS="EPSG:25832" minx="103965.02656437573" miny="5621894.876995568" maxx="383324.9493424169" maxy="5940288.550124411"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_functioneel</Name>
+          <Title>Functioneel gebied labels</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlfunctioneelgebiedlabels"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlgebouwen</Name>
+        <Title>top10nlgebouwen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.246</westBoundLongitude>
+          <eastBoundLongitude>7.247</eastBoundLongitude>
+          <southBoundLatitude>50.729</southBoundLatitude>
+          <northBoundLatitude>53.549</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.246" miny="50.729" maxx="7.247" maxy="53.549"/>
+        <BoundingBox CRS="EPSG:28992" minx="12967.831" miny="306250.0" maxx="278250.785" maxy="618075.056"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72868944821717" miny="3.2452409649394127" maxx="53.54865957527575" maxy="7.246092463140874"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.728689449141285" miny="3.2452409649394127" maxx="53.54865957617684" maxy="7.246092463140874"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073005.180282667" miny="3853990.5816250476" maxx="3401077.5707003125" maxy="4138430.567738418"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667669.507701644" miny="3548955.474784368" maxx="2984255.6640675194" maxy="3823520.867256154"/>
+        <BoundingBox CRS="EPSG:3857" minx="361258.5717185272" miny="6573441.621950602" maxx="806631.3232378196" maxy="7085137.016286606"/>
+        <BoundingBox CRS="EPSG:25831" minx="516256.0513466362" miny="5619722.08349672" maxx="791619.524001326" maxy="5940113.774987805"/>
+        <BoundingBox CRS="EPSG:25832" minx="103164.30557085288" miny="5621797.791359158" maxx="383758.477729364" maxy="5946621.271781027"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_gebouw</Name>
+          <Title>Gebouwen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgebouwen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlgeografischgebiedlabels</Name>
+        <Title>top10nlgeografischgebiedlabels</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.245</westBoundLongitude>
+          <eastBoundLongitude>7.244</eastBoundLongitude>
+          <southBoundLatitude>50.729</southBoundLatitude>
+          <northBoundLatitude>53.603</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.245" miny="50.729" maxx="7.244" maxy="53.603"/>
+        <BoundingBox CRS="EPSG:28992" minx="13061.962" miny="306260.331" maxx="277875.154" maxy="624096.807"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.7288054828233" miny="3.2439526239501557" maxx="53.60275869245562" maxy="7.242774493313629"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72880548374742" miny="3.2439526239501557" maxx="53.602758693356186" maxy="7.242774493313629"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073039.1352729993" miny="3854085.09560771" maxx="3407082.933323489" maxy="4138442.7403832646"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667702.161635437" miny="3549046.7973130113" maxx="2990059.3284863187" maxy="3823525.750209396"/>
+        <BoundingBox CRS="EPSG:3857" minx="361115.15425563505" miny="6573462.02805762" maxx="806261.968526183" maxy="7095279.643757257"/>
+        <BoundingBox CRS="EPSG:25831" minx="516150.0386703445" miny="5619735.462921317" maxx="791243.5713614321" maxy="5946121.878414095"/>
+        <BoundingBox CRS="EPSG:25832" minx="103258.9549597064" miny="5621826.522555272" maxx="383687.3070933656" maxy="5952637.537986821"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_geografisch</Name>
+          <Title>Buurtschappen en bosgebieden</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgeografischgebiedlabels"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlnationalegrenzen</Name>
+        <Title>top10nlnationalegrenzen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.332</westBoundLongitude>
+          <eastBoundLongitude>7.231</eastBoundLongitude>
+          <southBoundLatitude>50.735</southBoundLatitude>
+          <northBoundLatitude>53.255</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.332" miny="50.735" maxx="7.231" maxy="53.255"/>
+        <BoundingBox CRS="EPSG:28992" minx="17699.647" miny="306838.822" maxx="278026.1" maxy="585401.862"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.735127851307396" miny="3.3306327631194024" maxx="53.2551275604524" maxy="7.230086408807011"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73512785223148" miny="3.3306327631194024" maxx="53.25512756135632" maxy="7.230086408807011"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073606.940966589" miny="3858746.039274145" maxx="3368159.2930068164" maxy="4136109.7879023617"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668250.4637252926" miny="3553550.3049867176" maxx="2952456.924870494" maxy="3821312.80405778"/>
+        <BoundingBox CRS="EPSG:3857" minx="370764.3432098456" miny="6574573.970422519" maxx="804849.5374197644" maxy="7030329.752610928"/>
+        <BoundingBox CRS="EPSG:25831" minx="522066.86868868506" miny="5620464.055221983" maxx="791375.9637407737" maxy="5907436.766834818"/>
+        <BoundingBox CRS="EPSG:25832" minx="107925.4796078119" miny="5622396.72038191" maxx="381888.2948058982" maxy="5913709.374680816"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_nationalegrens</Name>
+          <Title>Nationale grenzen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlnationalegrenzen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlprovinciegrenzen</Name>
+        <Title>top10nlprovinciegrenzen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.709</westBoundLongitude>
+          <eastBoundLongitude>7.121</eastBoundLongitude>
+          <southBoundLatitude>51.21</southBoundLatitude>
+          <northBoundLatitude>53.544</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.709" miny="51.21" maxx="7.121" maxy="53.544"/>
+        <BoundingBox CRS="EPSG:28992" minx="43662.62" miny="359068.914" maxx="269918.65" maxy="617500.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="51.209358115978574" miny="3.7081283192616334" maxx="53.54357287939158" maxy="7.120274824777215"/>
+        <BoundingBox CRS="EPSG:4258" minx="51.2093581168994" miny="3.7081283192616334" maxx="53.54357288029272" maxy="7.120274824777215"/>
+        <BoundingBox CRS="EPSG:3035" minx="3126244.488621887" miny="3887908.3657256113" maxx="3398558.5736064436" maxy="4130079.768858619"/>
+        <BoundingBox CRS="EPSG:3034" minx="2719071.3258687365" miny="3581703.373916619" maxx="2981871.422457943" maxy="3815448.2573018423"/>
+        <BoundingBox CRS="EPSG:3857" minx="412786.95629632234" miny="6658410.636604299" maxx="792625.3678023648" maxy="7084184.017863223"/>
+        <BoundingBox CRS="EPSG:25831" minx="546936.3192859209" miny="5673485.9954142645" maxx="781585.7783084171" maxy="5939257.429908137"/>
+        <BoundingBox CRS="EPSG:25832" minx="136444.26836291293" miny="5674947.526051624" maxx="375410.9961850936" maxy="5944478.892828104"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_provinciegrenzen</Name>
+          <Title>Provinciale grenzen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlprovinciegrenzen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlspoorbaandeellijnen</Name>
+        <Title>top10nlspoorbaandeellijnen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.511</westBoundLongitude>
+          <eastBoundLongitude>7.243</eastBoundLongitude>
+          <southBoundLatitude>50.733</southBoundLatitude>
+          <northBoundLatitude>53.464</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.511" miny="50.733" maxx="7.243" maxy="53.464"/>
+        <BoundingBox CRS="EPSG:28992" minx="30307.487" miny="306250.0" maxx="278250.0" maxy="608566.236"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.732706918726606" miny="3.5103341587302275" maxx="53.46330884491436" maxy="7.242381059184233"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.7327069196507" miny="3.5103341587302275" maxx="53.46330884581628" maxy="7.242381059184233"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073005.229696608" miny="3871282.7305220123" maxx="3390486.6397172688" maxy="4137819.0791989113"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667669.5551389656" miny="3565663.822543976" maxx="2974049.7207390424" maxy="3822940.3505682573"/>
+        <BoundingBox CRS="EPSG:3857" minx="390768.6110640833" miny="6574148.172778715" maxx="806218.171639238" maxy="7069161.593922193"/>
+        <BoundingBox CRS="EPSG:25831" minx="533892.4709590685" miny="5620285.458550708" maxx="791618.7390205807" maxy="5930606.252248012"/>
+        <BoundingBox CRS="EPSG:25832" minx="120505.60930193122" miny="5621797.829845733" maxx="383278.2326652849" maxy="5936228.711182225"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_spoorbaandeel</Name>
+          <Title>Spoorbaandeellijnen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlspoorbaandeellijnen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlwaterdeellijnen</Name>
+        <Title>top10nlwaterdeellijnen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.247</westBoundLongitude>
+          <eastBoundLongitude>7.247</eastBoundLongitude>
+          <southBoundLatitude>50.729</southBoundLatitude>
+          <northBoundLatitude>53.549</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.247" miny="50.729" maxx="7.247" maxy="53.549"/>
+        <BoundingBox CRS="EPSG:28992" minx="12999.999" miny="306250.0" maxx="278250.022" maxy="618088.353"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.728697384409664" miny="3.2457197865326015" maxx="53.548779319161426" maxy="7.246086146593772"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72869738533379" miny="3.2457197865326015" maxx="53.54877932006252" maxy="7.246086146593772"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073005.228311761" miny="3854022.660249063" maxx="3401088.807443506" maxy="4138430.6607257393"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667669.5538095105" miny="3548986.471181498" maxx="2984266.577128226" maxy="3823520.9420901295"/>
+        <BoundingBox CRS="EPSG:3857" minx="361311.8738944618" miny="6573443.017625665" maxx="806630.6200830125" maxy="7085159.451823527"/>
+        <BoundingBox CRS="EPSG:25831" minx="516287.74136083067" miny="5619723.129159085" maxx="791618.7610200408" maxy="5940127.044216381"/>
+        <BoundingBox CRS="EPSG:25832" minx="103196.4788536327" miny="5621797.828767127" maxx="383758.38673640916" maxy="5946632.923311109"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_waterdeel_lijn</Name>
+          <Title>Waterdeellijn</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeellijnen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top10nlwaterdeelvlakken</Name>
+        <Title>top10nlwaterdeelvlakken</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.244</westBoundLongitude>
+          <eastBoundLongitude>7.25</eastBoundLongitude>
+          <southBoundLatitude>50.729</southBoundLatitude>
+          <northBoundLatitude>53.611</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.244" miny="50.729" maxx="7.25" maxy="53.611"/>
+        <BoundingBox CRS="EPSG:28992" minx="12999.999" miny="306250.0" maxx="278250.0" maxy="625000.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.728697384409664" miny="3.2426107560693676" maxx="53.61087600380252" maxy="7.248785536992009"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72869738533379" miny="3.2426107560693676" maxx="53.61087600470301" maxy="7.248785536992009"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073005.229696608" miny="3854022.660249063" maxx="3407988.4762021066" maxy="4138874.818405754"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667669.5551389656" miny="3548986.471181498" maxx="2990934.356106556" maxy="3823942.4421502044"/>
+        <BoundingBox CRS="EPSG:3857" minx="360965.7782064338" miny="6573443.017625665" maxx="806931.1148475965" maxy="7096802.6165709635"/>
+        <BoundingBox CRS="EPSG:25831" minx="516058.1368036829" miny="5619723.129159085" maxx="791618.7390205807" maxy="5947037.59718339"/>
+        <BoundingBox CRS="EPSG:25832" minx="103196.4788536327" miny="5621797.829845733" maxx="384107.1110984123" maxy="5953543.791216533"/>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=29d5310f-dd0d-45ba-abad-b4ffc6b8785f"/>
+        </MetadataURL>
+        <Style>
+          <Name>brt-top10nl_waterdeel_vlak</Name>
+          <Title>Waterdeelvlak</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeelvlakken"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top250nllijnen</Name>
+        <Title>top250nllijnen</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.047</westBoundLongitude>
+          <eastBoundLongitude>7.276</eastBoundLongitude>
+          <southBoundLatitude>50.721</southBoundLatitude>
+          <northBoundLatitude>53.611</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.047" miny="50.721" maxx="7.276" maxy="53.611"/>
+        <BoundingBox CRS="EPSG:28992" minx="0.0" miny="305710.594" maxx="280000.0" maxy="625000.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72049819241802" miny="3.0464264490318493" maxx="53.61074660671367" maxy="7.275203841667622"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.720498193342195" miny="3.0464264490318493" maxx="53.61074660761415" maxy="7.275203841667622"/>
+        <BoundingBox CRS="EPSG:3035" minx="3072356.7730392707" miny="3841025.5301190508" maxx="3408811.7667007577" maxy="4140620.9632124337"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667044.040952678" miny="3536427.731803611" maxx="2991707.4460011367" maxy="3825630.6228222363"/>
+        <BoundingBox CRS="EPSG:3857" minx="339126.64104538603" miny="6572001.21696828" maxx="809871.9870717074" maxy="7096778.336747409"/>
+        <BoundingBox CRS="EPSG:25831" minx="503073.1821448771" miny="5618761.600384811" maxx="793385.9978480384" maxy="5947096.784650311"/>
+        <BoundingBox CRS="EPSG:25832" minx="90167.4086398228" miny="5621173.461409207" maxx="385854.1741227715" maxy="5954209.132902289"/>
+        <Style>
+          <Name>brt-top250vector_lijnen</Name>
+          <Title>Title for style layer</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nllijnen"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top250nlvlakken</Name>
+        <Title>top250nlvlakken</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.047</westBoundLongitude>
+          <eastBoundLongitude>7.267</eastBoundLongitude>
+          <southBoundLatitude>50.723</southBoundLatitude>
+          <northBoundLatitude>53.611</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.047" miny="50.723" maxx="7.267" maxy="53.611"/>
+        <BoundingBox CRS="EPSG:28992" minx="0.0" miny="306021.438" maxx="279406.656" maxy="625000.0"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.723290632793365" miny="3.0464264490318493" maxx="53.61073812262756" maxy="7.266246682357135"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.723290633717525" miny="3.0464264490318493" maxx="53.610738123528044" maxy="7.266246682357135"/>
+        <BoundingBox CRS="EPSG:3035" minx="3072704.327822701" miny="3841044.9169201828" maxx="3408811.7667007577" maxy="4140028.926481104"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667379.4201091835" miny="3536446.3772213277" maxx="2991707.4460011367" maxy="3825058.239587659"/>
+        <BoundingBox CRS="EPSG:3857" minx="339126.64104538603" miny="6572492.229995399" maxx="808874.8806583097" maxy="7096776.744812232"/>
+        <BoundingBox CRS="EPSG:25831" minx="503073.1821448771" miny="5619072.090920588" maxx="792782.6984256234" maxy="5947076.716095274"/>
+        <BoundingBox CRS="EPSG:25832" minx="90182.53650023817" miny="5621512.91326793" maxx="385261.8273654399" maxy="5954209.132902289"/>
+        <Style>
+          <Name>brt-top250vector_vlakken</Name>
+          <Title>BRT-Achtergrondkaart-Top250Vector-vlakken</Title>
+          <Abstract>Deze stylesheet bevat de regels voor de visualisatie van de vlakgerichte objecten uit Top250Vector ten behoeve van de BRT-Achtergrondkaart</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nlvlakken"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

@@ -1,0 +1,537 @@
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:cbsvierkanten100m="http://cbsvierkanten100m.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
+  <Service>
+    <Name>WFS</Name>
+    <Title>GeoServer Web Feature Service</Title>
+    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
+    <Keywords>WFS, PDOK</Keywords>
+    <OnlineResource>http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs</OnlineResource>
+    <Fees>FEES APPLY</Fees>
+    <AccessConstraints>RESTRICTED</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs?request=GetCapabilities"/>
+          </HTTP>
+        </DCPType>
+        <DCPType>
+          <HTTP>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs"/>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <DescribeFeatureType>
+        <SchemaDescriptionLanguage>
+          <XMLSCHEMA/>
+        </SchemaDescriptionLanguage>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs?request=DescribeFeatureType"/>
+          </HTTP>
+        </DCPType>
+        <DCPType>
+          <HTTP>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs"/>
+          </HTTP>
+        </DCPType>
+      </DescribeFeatureType>
+      <GetFeature>
+        <ResultFormat>
+          <GML2/>
+          <GML3/>
+          <SHAPE-ZIP/>
+          <GEOJSON/>
+          <CSV/>
+        </ResultFormat>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs?request=GetFeature"/>
+          </HTTP>
+        </DCPType>
+        <DCPType>
+          <HTTP>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs"/>
+          </HTTP>
+        </DCPType>
+      </GetFeature>
+    </Request>
+  </Capability>
+  <FeatureTypeList>
+    <Operations>
+      <Query/>
+    </Operations>
+    <FeatureType>
+      <Name>cbsvierkanten100m:autochtonen_2011</Name>
+      <Title>autochtonen_2011</Title>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
+      <Keywords>features, autochtonen_2011</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:gem_woz_waarde_woningen_2011</Name>
+      <Title>gem_woz_waarde_woningen_2011</Title>
+      <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
+      <Keywords>gem_woz_waarde_woningen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2000</Name>
+      <Title>inwoners_2000</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2000, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2001</Name>
+      <Title>inwoners_2001</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2001, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2002</Name>
+      <Title>inwoners_2002</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2002, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2003</Name>
+      <Title>inwoners_2003</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2003, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2004</Name>
+      <Title>inwoners_2004</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2004, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.1714748549041203" miny="50.069258819165604" maxx="7.327649166610487" maxy="54.22543313087198"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2005</Name>
+      <Title>inwoners_2005</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2005, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2006</Name>
+      <Title>inwoners_2006</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2006, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2007</Name>
+      <Title>inwoners_2007</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2007, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.2122216618816344" miny="50.11000562614312" maxx="7.286902359632973" maxy="54.18468632389446"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2008</Name>
+      <Title>inwoners_2008</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>features, inwoners_2008</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2009</Name>
+      <Title>inwoners_2009</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>features, inwoners_2009</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2010</Name>
+      <Title>inwoners_2010</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2010, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2011</Name>
+      <Title>inwoners_2011</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2011_20_tot_45_jaar</Name>
+      <Title>inwoners_2011_20_tot_45_jaar</Title>
+      <Abstract>Het aantal inwoners van 20 tot 45 jaar op 1 januari 2011.</Abstract>
+      <Keywords>features, inwoners_2011_20_tot_45_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2011_45_tot_65_jaar</Name>
+      <Title>inwoners_2011_45_tot_65_jaar</Title>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
+      <Keywords>inwoners_2011_45_tot_65_jaar, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2011_65_plus_jaar</Name>
+      <Title>inwoners_2011_65_plus_jaar</Title>
+      <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
+      <Keywords>features, inwoners_2011_65_plus_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2011_tot_20_jaar</Name>
+      <Title>inwoners_2011_tot_20_jaar</Title>
+      <Abstract>Het aantal inwoners jonger dan 20 jaar op 1 januari 2011.</Abstract>
+      <Keywords>features, inwoners_2011_tot_20_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:inwoners_2012</Name>
+      <Title>inwoners_2012</Title>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>inwoners_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:niet_westerse_allochtonen_2011</Name>
+      <Title>niet_westerse_allochtonen_2011</Title>
+      <Abstract/>
+      <Keywords>niet_westerse_allochtonen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:toename_inwoners_2000_2010</Name>
+      <Title>toename_inwoners_2000_2010</Title>
+      <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
+      <Keywords>toename_inwoners_2000_2010, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:westerse_allochtonen_2011</Name>
+      <Title>westerse_allochtonen_2011</Title>
+      <Abstract/>
+      <Keywords>westerse_allochtonen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2000</Name>
+      <Title>woningen_2000</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2000, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2001</Name>
+      <Title>woningen_2001</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2001, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2002</Name>
+      <Title>woningen_2002</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2002, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2003</Name>
+      <Title>woningen_2003</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2003, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2004</Name>
+      <Title>woningen_2004</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2004, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2005</Name>
+      <Title>woningen_2005</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2005, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2006</Name>
+      <Title>woningen_2006</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2006, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2007</Name>
+      <Title>woningen_2007</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2007, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2008</Name>
+      <Title>woningen_2008</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2008, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2009</Name>
+      <Title>woningen_2009</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>features, woningen_2009</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2010</Name>
+      <Title>woningen_2010</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>features, woningen_2010</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten100m:woningen_2011</Name>
+      <Title>woningen_2011</Title>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
+      <Keywords>woningen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
+    </FeatureType>
+  </FeatureTypeList>
+  <ogc:Filter_Capabilities>
+    <ogc:Spatial_Capabilities>
+      <ogc:Spatial_Operators>
+        <ogc:Disjoint/>
+        <ogc:Equals/>
+        <ogc:DWithin/>
+        <ogc:Beyond/>
+        <ogc:Intersect/>
+        <ogc:Touches/>
+        <ogc:Crosses/>
+        <ogc:Within/>
+        <ogc:Contains/>
+        <ogc:Overlaps/>
+        <ogc:BBOX/>
+      </ogc:Spatial_Operators>
+    </ogc:Spatial_Capabilities>
+    <ogc:Scalar_Capabilities>
+      <ogc:Logical_Operators/>
+      <ogc:Comparison_Operators>
+        <ogc:Simple_Comparisons/>
+        <ogc:Between/>
+        <ogc:Like/>
+        <ogc:NullCheck/>
+      </ogc:Comparison_Operators>
+      <ogc:Arithmetic_Operators>
+        <ogc:Simple_Arithmetic/>
+        <ogc:Functions>
+          <ogc:Function_Names>
+            <ogc:Function_Name nArgs="1">abs</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">abs_2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">abs_3</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">abs_4</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">acos</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Area</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">area2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">asin</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">atan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">atan2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">between</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">boundary</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">boundaryDimension</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">buffer</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
+            <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Average</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Bounds</ogc:Function_Name>
+            <ogc:Function_Name nArgs="0">Collection_Count</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Max</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Median</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Min</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Sum</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Collection_Unique</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Concatenate</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">contains</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">convert</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">convexHull</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">cos</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">crosses</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">dateFormat</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">dateParse</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">difference</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">dimension</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">disjoint</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">distance</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">double2bool</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">endAngle</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">endPoint</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">env</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">envelope</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">EqualInterval</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">equalsExact</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">equalsExactTolerance</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">equalTo</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">exp</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">exteriorRing</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">floor</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">geometryType</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">geomFromWKT</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">geomLength</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">getGeometryN</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">getX</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">getY</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">getz</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">greaterEqualThan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">greaterThan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="0">id</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">IEEEremainder</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">if_then_else</ogc:Function_Name>
+            <ogc:Function_Name nArgs="11">in10</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">in2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="4">in3</ogc:Function_Name>
+            <ogc:Function_Name nArgs="5">in4</ogc:Function_Name>
+            <ogc:Function_Name nArgs="6">in5</ogc:Function_Name>
+            <ogc:Function_Name nArgs="7">in6</ogc:Function_Name>
+            <ogc:Function_Name nArgs="8">in7</ogc:Function_Name>
+            <ogc:Function_Name nArgs="9">in8</ogc:Function_Name>
+            <ogc:Function_Name nArgs="10">in9</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">int2bbool</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">int2ddouble</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">interiorPoint</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">interiorRingN</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">Interpolate</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">intersection</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">intersects</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isClosed</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isEmpty</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">isLike</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isNull</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">isometric</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isRing</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isSimple</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">isValid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">isWithinDistance</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">Jenks</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">length</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">lessEqualThan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">lessThan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">log</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">max</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">max_2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">max_3</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">max_4</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">min</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">min_2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">min_3</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">min_4</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">mincircle</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">minimumdiameter</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">minrectangle</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">modulo</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">not</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">notEqualTo</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">numberFormat</ogc:Function_Name>
+            <ogc:Function_Name nArgs="5">numberFormat2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">numGeometries</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">numInteriorRing</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">numPoints</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">octagonalenvelope</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">offset</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">overlaps</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">parseBoolean</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">parseDouble</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">parseInt</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">parseLong</ogc:Function_Name>
+            <ogc:Function_Name nArgs="0">pi</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">pointN</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">pow</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">property</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">PropertyExists</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">Quantile</ogc:Function_Name>
+            <ogc:Function_Name nArgs="0">random</ogc:Function_Name>
+            <ogc:Function_Name nArgs="5">Recode</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">relate</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">relatePattern</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">rint</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">round</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">round_2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">roundDouble</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">setCRS</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">sin</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">sqrt</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">StandardDeviation</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">startAngle</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">startPoint</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">strCapitalize</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strConcat</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strEndsWith</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strEqualsIgnoreCase</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strIndexOf</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strLastIndexOf</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">strLength</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strMatches</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">strPosition</ogc:Function_Name>
+            <ogc:Function_Name nArgs="4">strReplace</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strStartsWith</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">strSubstring</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">strSubstringStart</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">strToLowerCase</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">strToUpperCase</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">strTrim</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">strTrim2</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">symDifference</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">tan</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">toDegrees</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">toRadians</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">touches</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">toWKT</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">union</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">UniqueInterval</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">vertices</ogc:Function_Name>
+            <ogc:Function_Name nArgs="2">within</ogc:Function_Name>
+          </ogc:Function_Names>
+        </ogc:Functions>
+      </ogc:Arithmetic_Operators>
+    </ogc:Scalar_Capabilities>
+  </ogc:Filter_Capabilities>
+</WFS_Capabilities>

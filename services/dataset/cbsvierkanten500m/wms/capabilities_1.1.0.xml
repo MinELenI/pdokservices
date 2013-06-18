@@ -1,0 +1,3071 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>View Service PDOK</Title>
+    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>PDOK</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>no conditions apply</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <VendorSpecificCapabilities/>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer>
+      <Title>View Service PDOK</Title>
+      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:25831</SRS>
+      <SRS>EPSG:25832</SRS>
+      <SRS>EPSG:28992</SRS>
+      <SRS>EPSG:3034</SRS>
+      <SRS>EPSG:3035</SRS>
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4258</SRS>
+      <SRS>EPSG:4326</SRS>
+      <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+      <BoundingBox SRS="EPSG:4326" minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+      <BoundingBox SRS="EPSG:4258" minx="3.246139402583425" miny="50.731137683784745" maxx="7.251478204813933" maxy="53.561658000666604"/>
+      <BoundingBox SRS="EPSG:3035" minx="3844921.9524617507" miny="3072475.9061173713" maxx="4138903.6986012147" maxy="3404611.5838381997"/>
+      <BoundingBox SRS="EPSG:3034" minx="3540192.5207892573" miny="2667161.328769697" maxx="3823974.821121696" maxy="2987671.129444222"/>
+      <BoundingBox SRS="EPSG:3857" minx="361358.58533956815" miny="6573872.184723236" maxx="807230.8612584085" maxy="7087572.806761479"/>
+      <BoundingBox SRS="EPSG:28992" minx="3765.5986617357994" miny="304560.35031020653" maxx="286546.9509397795" maxy="621606.1666414854"/>
+      <BoundingBox SRS="EPSG:25831" minx="516303.33198956994" miny="5619955.9621297" maxx="799990.6640257052" maxy="5943162.825553329"/>
+      <BoundingBox SRS="EPSG:25832" minx="94061.00746483397" miny="5621384.977339599" maxx="384189.78414096637" maxy="5950163.052852191"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>autochtonen_2011</Name>
+        <Title>autochtonen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>autochtonen_2011</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.p_auto2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=autochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>gem_woz_waarde_woningen_2011</Name>
+        <Title>gem_woz_waarde_woningen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>gem_woz_waarde_woningen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.wozwon2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gem_woz_waarde_woningen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2000</Name>
+        <Title>inwoners_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2000</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2001</Name>
+        <Title>inwoners_2001</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2001</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2002</Name>
+        <Title>inwoners_2002</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2002</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2003</Name>
+        <Title>inwoners_2003</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2003</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2004</Name>
+        <Title>inwoners_2004</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2004</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2005</Name>
+        <Title>inwoners_2005</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2005</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2006</Name>
+        <Title>inwoners_2006</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2007</Name>
+        <Title>inwoners_2007</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2007</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2008</Name>
+        <Title>inwoners_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2008</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2009</Name>
+        <Title>inwoners_2009</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2009</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2010</Name>
+        <Title>inwoners_2010</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2010</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2011</Name>
+        <Title>inwoners_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2011_20_tot_45_jaar</Name>
+        <Title>inwoners_2011_20_tot_45_jaar</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_20_tot_45_jaar</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.i2011_2044</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_20_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2011_45_tot_65_jaar</Name>
+        <Title>inwoners_2011_45_tot_65_jaar</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2011_45_tot_65_jaar</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten100m_i2011_4564</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_45_tot_65_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2011_65_plus_jaar</Name>
+        <Title>inwoners_2011_65_plus_jaar</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_65_plus_jaar</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.i2011_65pl</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_65_plus_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2011_tot_20_jaar</Name>
+        <Title>inwoners_2011_tot_20_jaar</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>inwoners_2011_tot_20_jaar</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.i2011_019</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2011_tot_20_jaar"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>inwoners_2012</Name>
+        <Title>inwoners_2012</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>inwoners_2012</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.inwoners_2012</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=inwoners_2012"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>niet_westerse_allochtonen_2011</Name>
+        <Title>niet_westerse_allochtonen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>niet_westerse_allochtonen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.p_nwal2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=niet_westerse_allochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2000</Name>
+        <Title>omgevings_adres_dichtheid_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2000</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2001</Name>
+        <Title>omgevings_adres_dichtheid_2001</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2001</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2002</Name>
+        <Title>omgevings_adres_dichtheid_2002</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2002</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2003</Name>
+        <Title>omgevings_adres_dichtheid_2003</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2003</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2004</Name>
+        <Title>omgevings_adres_dichtheid_2004</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2004</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2005</Name>
+        <Title>omgevings_adres_dichtheid_2005</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2005</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2006</Name>
+        <Title>omgevings_adres_dichtheid_2006</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2007</Name>
+        <Title>omgevings_adres_dichtheid_2007</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>omgevings_adres_dichtheid_2007</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2008</Name>
+        <Title>omgevings_adres_dichtheid_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>omgevings_adres_dichtheid_2008</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2009</Name>
+        <Title>omgevings_adres_dichtheid_2009</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>omgevings_adres_dichtheid_2009</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2010</Name>
+        <Title>omgevings_adres_dichtheid_2010</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2010</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>omgevings_adres_dichtheid_2011</Name>
+        <Title>omgevings_adres_dichtheid_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>omgevings_adres_dichtheid_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.oad2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=omgevings_adres_dichtheid_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2000</Name>
+        <Title>stedelijkheid_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2000</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2001</Name>
+        <Title>stedelijkheid_2001</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2001</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2002</Name>
+        <Title>stedelijkheid_2002</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2002</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2003</Name>
+        <Title>stedelijkheid_2003</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2003</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2004</Name>
+        <Title>stedelijkheid_2004</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2004</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2005</Name>
+        <Title>stedelijkheid_2005</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2005</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2006</Name>
+        <Title>stedelijkheid_2006</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>stedelijkheid_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2007</Name>
+        <Title>stedelijkheid_2007</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>stedelijkheid_2007</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2008</Name>
+        <Title>stedelijkheid_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>stedelijkheid_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2009</Name>
+        <Title>stedelijkheid_2009</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>stedelijkheid_2009</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2010</Name>
+        <Title>stedelijkheid_2010</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2010</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>stedelijkheid_2011</Name>
+        <Title>stedelijkheid_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>stedelijkheid_2011</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.sted2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=stedelijkheid_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>toename_inwoners_2000_2010</Name>
+        <Title>toename_inwoners_2000_2010</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>toename_inwoners_2000_2010</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.tinw_10_00</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=toename_inwoners_2000_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>westerse_allochtonen_2011</Name>
+        <Title>westerse_allochtonen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>westerse_allochtonen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.p_wal2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=westerse_allochtonen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2000</Name>
+        <Title>woningen_2000</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2000</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2000</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2000"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2001</Name>
+        <Title>woningen_2001</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2001</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2001</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2001"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2002</Name>
+        <Title>woningen_2002</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2002</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2002</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2002"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2003</Name>
+        <Title>woningen_2003</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2003</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2003</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2003"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2004</Name>
+        <Title>woningen_2004</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2004</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2004</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2004"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2005</Name>
+        <Title>woningen_2005</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2005</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2005</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2005"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2006</Name>
+        <Title>woningen_2006</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2006</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2006</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2006"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2007</Name>
+        <Title>woningen_2007</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2007</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2007</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2007"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2008</Name>
+        <Title>woningen_2008</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2008</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2008</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2008"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2009</Name>
+        <Title>woningen_2009</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>woningen_2009</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2009</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2009"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2010</Name>
+        <Title>woningen_2010</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>woningen_2010</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2010</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2010"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1">
+        <Name>woningen_2011</Name>
+        <Title>woningen_2011</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>woningen_2011</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+        <BoundingBox SRS="EPSG:28992" minx="13000.0" miny="306500.0" maxx="278500.0" maxy="619500.0"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.245085645510762" miny="50.73094345220896" maxx="7.25040621106005" maxy="53.561464369177024"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.245085645510762" miny="50.73094345313307" maxx="7.25040621106005" maxy="53.561464370078"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854038.2577987183" miny="3073238.980855484" maxx="4138770.7904442074" maxy="3402498.021670153"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549001.473154681" miny="2667895.3429742334" maxx="3823848.166929461" maxy="2985628.394193553"/>
+        <BoundingBox SRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
+        <BoundingBox SRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
+        <BoundingBox SRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <Style>
+          <Name>cbsvierkanten500m.won2011</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=woningen_2011"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>
