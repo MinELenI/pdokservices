@@ -175,12 +175,30 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_vrouwen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_huishoudens"/>
           </LegendURL>
         </Style>
         <Style>
@@ -229,6 +247,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
           <Title/>
           <Abstract/>
@@ -244,6 +271,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_personenautos"/>
           </LegendURL>
         </Style>
         <Style>
@@ -280,6 +316,24 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_tot_15_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_mannen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers"/>
           </LegendURL>
         </Style>
         <Style>
@@ -325,6 +379,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2012&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_inwoners"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -403,6 +466,24 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_huishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
           <Title/>
           <Abstract/>
@@ -418,6 +499,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_huishoudgrootte"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_mannen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -445,6 +535,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_personenautos"/>
           </LegendURL>
         </Style>
         <Style>
@@ -511,12 +610,39 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_vrouwen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2012&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -577,6 +703,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
           <Title/>
           <Abstract/>
@@ -604,6 +739,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
           <Title/>
           <Abstract/>
@@ -628,6 +772,24 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -703,6 +865,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
           <Title/>
           <Abstract/>
@@ -730,12 +901,30 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2012/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2012&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen"/>
           </LegendURL>
         </Style>
         <Style>

@@ -244,6 +244,24 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_inkomensontvangers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_inkomensontvangers"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_huishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_verweduwden</Name>
           <Title/>
           <Abstract/>
@@ -352,6 +370,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_personenautos"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Name>
           <Title/>
           <Abstract/>
@@ -424,6 +451,24 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_woningen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_woningen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_mannen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_industrie</Name>
           <Title/>
           <Abstract/>
@@ -487,6 +532,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
           <Title/>
           <Abstract/>
@@ -529,6 +583,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_vrouwen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -631,6 +694,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
           <Title/>
           <Abstract/>
@@ -691,6 +763,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_laag_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers"/>
           </LegendURL>
         </Style>
         <Style>
@@ -772,6 +853,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_combinatiebedrijven"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2010&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -880,12 +970,30 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_huishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_mannen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1132,6 +1240,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
           <Title/>
           <Abstract/>
@@ -1204,6 +1321,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Name>
           <Title/>
           <Abstract/>
@@ -1267,6 +1393,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_personenautos"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ongehuwden</Name>
           <Title/>
           <Abstract/>
@@ -1321,6 +1456,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_agrarische_bedrijven</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_agrarische_bedrijven"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
           <Title/>
           <Abstract/>
@@ -1339,12 +1483,30 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inkomensontvangers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inkomensontvangers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_vrouwen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1363,6 +1525,24 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_woningen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2010&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_woningen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1441,6 +1621,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1597,6 +1786,24 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_woningen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_woningen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
           <Title/>
           <Abstract/>
@@ -1732,6 +1939,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Name>
           <Title/>
           <Abstract/>
@@ -1756,6 +1972,24 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1849,6 +2083,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inkomensontvangers</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_inkomensontvangers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
           <Title/>
           <Abstract/>
@@ -1873,6 +2116,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_agrarische_bedrijven</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_agrarische_bedrijven"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1948,6 +2200,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
           <Title/>
           <Abstract/>
@@ -1972,6 +2233,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2010&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen"/>
           </LegendURL>
         </Style>
         <Style>
