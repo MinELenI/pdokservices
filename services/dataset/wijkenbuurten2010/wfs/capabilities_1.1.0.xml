@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:wfs="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd" updateSequence="1914">
   <ows:ServiceIdentification>
     <ows:Title>GeoServer Web Feature Service</ows:Title>
     <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
@@ -71,9 +71,9 @@
       <ows:Parameter name="outputFormat">
         <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
         <ows:Value>GML2</ows:Value>
-        <ows:Value>GML2-GZIP</ows:Value>
         <ows:Value>SHAPE-ZIP</ows:Value>
         <ows:Value>application/gml+xml; version=3.2</ows:Value>
+        <ows:Value>application/json</ows:Value>
         <ows:Value>csv</ows:Value>
         <ows:Value>gml3</ows:Value>
         <ows:Value>gml32</ows:Value>
@@ -98,7 +98,7 @@
     <Operations>
       <Operation>Query</Operation>
     </Operations>
-    <FeatureType xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2010:cbs_buurten_2010</Name>
       <Title>cbs_buurten_2010</Title>
       <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -117,8 +117,9 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=c7288314-afde-472a-8181-b2b73ebf3c8c</MetadataURL>
     </FeatureType>
-    <FeatureType xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2010:cbs_wijken_2010</Name>
       <Title>cbs_wijken_2010</Title>
       <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -137,8 +138,9 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=c7288314-afde-472a-8181-b2b73ebf3c8c</MetadataURL>
     </FeatureType>
-    <FeatureType xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2010:gemeenten2010</Name>
       <Title>gemeenten2010</Title>
       <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -157,6 +159,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=c7288314-afde-472a-8181-b2b73ebf3c8c</MetadataURL>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -203,20 +206,28 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">abs_3</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">abs_4</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">acos</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">AddCoverages</ogc:FunctionName>
+            <ogc:FunctionName nArgs="4">Aggregate</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">Area</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">area2</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">AreaGrid</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">asin</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">atan</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">atan2</ogc:FunctionName>
+            <ogc:FunctionName nArgs="14">BarnesSurface</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">between</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">boundary</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">boundaryDimension</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Bounds</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">buffer</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">BufferFeatureCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">Collection_Average</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">Collection_Bounds</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">Collection_Count</ogc:FunctionName>
@@ -227,16 +238,21 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">Collection_Unique</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">Concatenate</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">contains</ogc:FunctionName>
+            <ogc:FunctionName nArgs="7">Contour</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">convert</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">convexHull</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">cos</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Count</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">CropCoverage</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">crosses</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">dateFormat</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">dateParse</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">difference</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">dimension</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">disjoint</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">disjoint3D</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">distance</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">distance3D</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">double2bool</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">endAngle</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">endPoint</ogc:FunctionName>
@@ -248,6 +264,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="2">equalTo</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">exp</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">exteriorRing</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Feature</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">floor</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">geometryType</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">geomFromWKT</ogc:FunctionName>
@@ -258,6 +275,8 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">getz</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">greaterEqualThan</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">greaterThan</ogc:FunctionName>
+            <ogc:FunctionName nArgs="5">Grid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="7">Heatmap</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">id</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">IEEEremainder</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">if_then_else</ogc:FunctionName>
@@ -270,14 +289,18 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="8">in7</ogc:FunctionName>
             <ogc:FunctionName nArgs="9">in8</ogc:FunctionName>
             <ogc:FunctionName nArgs="10">in9</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">InclusionFeatureCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">int2bbool</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">int2ddouble</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">interiorPoint</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">interiorRingN</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">Interpolate</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">intersection</ogc:FunctionName>
+            <ogc:FunctionName nArgs="7">IntersectionFeatureCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">intersects</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">intersects3D</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">isClosed</ogc:FunctionName>
+            <ogc:FunctionName nArgs="0">isCoverage</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">isEmpty</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">isLike</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">isNull</ogc:FunctionName>
@@ -286,11 +309,15 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">isSimple</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">isValid</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">isWithinDistance</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">isWithinDistance3D</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Jenks</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">length</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">lessEqualThan</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">lessThan</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">log</ogc:FunctionName>
+            <ogc:FunctionName nArgs="4">LRSGeocode</ogc:FunctionName>
+            <ogc:FunctionName nArgs="5">LRSMeasure</ogc:FunctionName>
+            <ogc:FunctionName nArgs="5">LRSSegment</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">max</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">max_2</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">max_3</ogc:FunctionName>
@@ -303,6 +330,8 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">minimumdiameter</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">minrectangle</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">modulo</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">MultiplyCoverages</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Nearest</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">not</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">notEqualTo</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">numberFormat</ogc:FunctionName>
@@ -313,26 +342,40 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">octagonalenvelope</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">offset</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">overlaps</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">parameter</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">parseBoolean</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">parseDouble</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">parseInt</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">parseLong</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">pi</ogc:FunctionName>
+            <ogc:FunctionName nArgs="4">PointBuffers</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">pointN</ogc:FunctionName>
+            <ogc:FunctionName nArgs="7">PointStacker</ogc:FunctionName>
+            <ogc:FunctionName nArgs="6">PolygonExtraction</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">pow</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">property</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">PropertyExists</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Quantile</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Query</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">random</ogc:FunctionName>
+            <ogc:FunctionName nArgs="5">RangeLookup</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">RasterAsPointCollection</ogc:FunctionName>
+            <ogc:FunctionName nArgs="4">RasterZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="5">Recode</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">RectangularClip</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">relate</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">relatePattern</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Reproject</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">rint</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">round</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">round_2</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">roundDouble</ogc:FunctionName>
+            <ogc:FunctionName nArgs="6">ScaleCoverage</ogc:FunctionName>
+            <ogc:FunctionName nArgs="4">sdo_nn</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">setCRS</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Simplify</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">sin</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">Snap</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">sqrt</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">StandardDeviation</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">startAngle</ogc:FunctionName>
@@ -354,14 +397,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="1">strToUpperCase</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">strTrim</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">strTrim2</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">StyleCoverage</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">symDifference</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">tan</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">toDegrees</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">toRadians</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">touches</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">toWKT</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">Transform</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">union</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">UnionFeatureCollection</ogc:FunctionName>
+            <ogc:FunctionName nArgs="2">Unique</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">UniqueInterval</ogc:FunctionName>
+            <ogc:FunctionName nArgs="6">VectorToRaster</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">VectorZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">vertices</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">within</ogc:FunctionName>
           </ogc:FunctionNames>

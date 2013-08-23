@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -92,6 +92,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -142,7 +143,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer>
+    <Layer queryable="0" opaque="0" noSubsets="0">
       <Title>View Service PDOK</Title>
       <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -164,7 +165,7 @@
       <BoundingBox SRS="EPSG:25831" minx="511179.2766712596" miny="5546345.342376264" maxx="809652.4047372118" maxy="6017253.155046095"/>
       <BoundingBox SRS="EPSG:25832" minx="83014.04335696332" miny="5547670.742962485" maxx="390976.18385886564" maxy="6024299.15249266"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -188,7 +189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>autochtonen_2011</Name>
         <Title>autochtonen_2011</Title>
         <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
@@ -238,7 +239,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>gem_woz_waarde_woningen_2011</Name>
         <Title>gem_woz_waarde_woningen_2011</Title>
         <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
@@ -288,7 +289,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2000</Name>
         <Title>inwoners_2000</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -338,7 +339,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2001</Name>
         <Title>inwoners_2001</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -388,7 +389,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2002</Name>
         <Title>inwoners_2002</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -438,7 +439,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2003</Name>
         <Title>inwoners_2003</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -488,7 +489,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2004</Name>
         <Title>inwoners_2004</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -538,7 +539,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2005</Name>
         <Title>inwoners_2005</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -588,7 +589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2006</Name>
         <Title>inwoners_2006</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -638,7 +639,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2007</Name>
         <Title>inwoners_2007</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -688,7 +689,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2008</Name>
         <Title>inwoners_2008</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -738,7 +739,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2009</Name>
         <Title>inwoners_2009</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -788,7 +789,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2010</Name>
         <Title>inwoners_2010</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -838,7 +839,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011</Name>
         <Title>inwoners_2011</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -888,7 +889,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_20_tot_45_jaar</Name>
         <Title>inwoners_2011_20_tot_45_jaar</Title>
         <Abstract>Het aantal inwoners van 20 tot 45 jaar op 1 januari 2011.</Abstract>
@@ -938,7 +939,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_45_tot_65_jaar</Name>
         <Title>inwoners_2011_45_tot_65_jaar</Title>
         <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
@@ -988,7 +989,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_65_plus_jaar</Name>
         <Title>inwoners_2011_65_plus_jaar</Title>
         <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
@@ -1038,7 +1039,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_tot_20_jaar</Name>
         <Title>inwoners_2011_tot_20_jaar</Title>
         <Abstract>Het aantal inwoners jonger dan 20 jaar op 1 januari 2011.</Abstract>
@@ -1088,7 +1089,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012</Name>
         <Title>inwoners_2012</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1138,7 +1139,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
         <Abstract/>
@@ -1188,7 +1189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>toename_inwoners_2000_2010</Name>
         <Title>toename_inwoners_2000_2010</Title>
         <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1238,7 +1239,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
         <Abstract/>
@@ -1288,7 +1289,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2000</Name>
         <Title>woningen_2000</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1338,7 +1339,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2001</Name>
         <Title>woningen_2001</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1388,7 +1389,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2002</Name>
         <Title>woningen_2002</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1438,7 +1439,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2003</Name>
         <Title>woningen_2003</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1488,7 +1489,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2004</Name>
         <Title>woningen_2004</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1538,7 +1539,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2005</Name>
         <Title>woningen_2005</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1588,7 +1589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2006</Name>
         <Title>woningen_2006</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1638,7 +1639,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2007</Name>
         <Title>woningen_2007</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1688,7 +1689,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2008</Name>
         <Title>woningen_2008</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1738,7 +1739,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2009</Name>
         <Title>woningen_2009</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1788,7 +1789,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2010</Name>
         <Title>woningen_2010</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -1838,7 +1839,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2011</Name>
         <Title>woningen_2011</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>

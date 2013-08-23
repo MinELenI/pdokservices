@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -92,6 +92,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -142,7 +143,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer>
+    <Layer queryable="0" opaque="0" noSubsets="0">
       <Title>View Service PDOK</Title>
       <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -164,7 +165,7 @@
       <BoundingBox SRS="EPSG:25831" minx="517253.5212039587" miny="5620437.332131115" maxx="799251.2892294633" maxy="5942755.471166929"/>
       <BoundingBox SRS="EPSG:25832" minx="95108.13226961938" miny="5621879.725607693" maxx="383512.24143102375" maxy="5949719.144361062"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -188,7 +189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>bblbuitenbegrenzing</Name>
         <Title>bblbuitenbegrenzing</Title>
         <Abstract/>
@@ -242,7 +243,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>ehs</Name>
         <Title>ehs</Title>
         <Abstract/>
@@ -296,7 +297,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>rods</Name>
         <Title>rods</Title>
         <Abstract/>

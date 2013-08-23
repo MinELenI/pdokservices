@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wijkenbuurten2009="http://wijkenbuurten2009.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wijkenbuurten2009="http://wijkenbuurten2009.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1914">
   <ows:ServiceIdentification>
     <ows:Title>GeoServer Web Feature Service</ows:Title>
     <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
@@ -81,9 +81,9 @@
         <ows:AllowedValues>
           <ows:Value>text/xml; subtype=gml/3.2</ows:Value>
           <ows:Value>GML2</ows:Value>
-          <ows:Value>GML2-GZIP</ows:Value>
           <ows:Value>SHAPE-ZIP</ows:Value>
           <ows:Value>application/gml+xml; version=3.2</ows:Value>
+          <ows:Value>application/json</ows:Value>
           <ows:Value>csv</ows:Value>
           <ows:Value>gml3</ows:Value>
           <ows:Value>gml32</ows:Value>
@@ -213,7 +213,7 @@
     </ows:Constraint>
   </ows:OperationsMetadata>
   <FeatureTypeList>
-    <FeatureType xmlns:wijkenbuurten2009="http://wijkenbuurten2009.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2009:cbs_buurten_2009</Name>
       <Title>cbs_buurten_2009</Title>
       <Abstract>De wijk- en buurtkaart 2009 (11Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -232,8 +232,9 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
     </FeatureType>
-    <FeatureType xmlns:wijkenbuurten2009="http://wijkenbuurten2009.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2009:cbs_wijken_2009</Name>
       <Title>cbs_wijken_2009</Title>
       <Abstract>De wijk- en buurtkaart 2009 (11Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -252,8 +253,9 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
     </FeatureType>
-    <FeatureType xmlns:wijkenbuurten2009="http://wijkenbuurten2009.geonovum.nl">
+    <FeatureType>
       <Name>wijkenbuurten2009:gemeenten2009</Name>
       <Title>gemeenten2009</Title>
       <Abstract>De wijk- en buurtkaart 2009 (11Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -272,6 +274,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
@@ -432,6 +435,34 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="AddCoverages">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverageA">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="coverageB">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Aggregate">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="aggregationAttribute">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="function">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="singlePass">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="Area">
         <fes:Returns>xs:double</fes:Returns>
         <fes:Arguments>
@@ -445,6 +476,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <fes:Arguments>
           <fes:Argument name="geometry">
             <fes:Type>gml:AbstractGeometryType</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="AreaGrid">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="envelope">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="width">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="height">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -472,6 +517,53 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
           <fes:Argument name="y">
             <fes:Type>xs:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="BarnesSurface">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="valueAttr">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="dataLimit">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="scale">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="convergence">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="passes">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="minObservations">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="maxObservationDistance">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="noDataValue">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="pixelsPerCell">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="queryBuffer">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputBBOX">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputWidth">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputHeight">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -505,6 +597,14 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Bounds">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="buffer">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -513,6 +613,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
           <fes:Argument name="distance">
             <fes:Type>xs:float</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="BufferFeatureCollection">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="distance">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="attributeName">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -579,6 +693,25 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
           <fes:Argument name="classifer">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Clip">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="clip">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="CollectGeometries">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
@@ -661,6 +794,32 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Contour">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="band">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="levels">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="interval">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="simplify">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="smooth">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="roi">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="convert">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -685,6 +844,25 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <fes:Arguments>
           <fes:Argument name="radians">
             <fes:Type>xs:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Count">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="CropCoverage">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverage">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="cropShape">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -751,7 +929,29 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="disjoint3D">
+        <fes:Returns>xs:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry1">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="geometry2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="distance">
+        <fes:Returns>xs:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry1">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="geometry2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="distance3D">
         <fes:Returns>xs:double</fes:Returns>
         <fes:Arguments>
           <fes:Argument name="geometry1">
@@ -865,6 +1065,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Feature">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="crs">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="typeName">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="floor">
         <fes:Returns>xs:double</fes:Returns>
         <fes:Arguments>
@@ -950,6 +1164,52 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
           <fes:Argument name="object2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Grid">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="bounds">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="width">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="height">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="vertexSpacing">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="mode">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Heatmap">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="radiusPixels">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="weightAttr">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="pixelsPerCell">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputBBOX">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputWidth">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputHeight">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
@@ -1216,6 +1476,17 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="InclusionFeatureCollection">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="first">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="second">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="int2bbool">
         <fes:Returns>xs:boolean</fes:Returns>
         <fes:Arguments>
@@ -1276,8 +1547,45 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="IntersectionFeatureCollection">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="first feature collection">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="second feature collection">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="first attributes to retain">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="second attributes to retain">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="intersectionMode">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="percentagesEnabled">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="areasEnabled">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="intersects">
         <fes:Returns>xs:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry1">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="geometry2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="intersects3D">
+        <fes:Returns>xs:double</fes:Returns>
         <fes:Arguments>
           <fes:Argument name="geometry1">
             <fes:Type>xs:string</fes:Type>
@@ -1294,6 +1602,9 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="isCoverage">
+        <fes:Returns>xs:string</fes:Returns>
       </fes:Function>
       <fes:Function name="isEmpty">
         <fes:Returns>xs:boolean</fes:Returns>
@@ -1371,6 +1682,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="isWithinDistance3D">
+        <fes:Returns>xs:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry1">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="geometry2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="distance">
+            <fes:Type>xs:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="Jenks">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -1417,6 +1742,63 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <fes:Arguments>
           <fes:Argument name="value">
             <fes:Type>xs:float</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="LRSGeocode">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="from_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="to_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="measure">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="LRSMeasure">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="from_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="to_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="point">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="crs">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="LRSSegment">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="from_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="to_measure_attb">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="from_measure">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="to_measure">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -1543,6 +1925,31 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="MultiplyCoverages">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverageA">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="coverageB">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Nearest">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="point">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="crs">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="not">
         <fes:Returns>xs:boolean</fes:Returns>
         <fes:Arguments>
@@ -1650,6 +2057,14 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="parameter">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="parseBoolean">
         <fes:Returns>xs:boolean</fes:Returns>
         <fes:Arguments>
@@ -1685,6 +2100,23 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
       <fes:Function name="pi">
         <fes:Returns>xs:string</fes:Returns>
       </fes:Function>
+      <fes:Function name="PointBuffers">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="center">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="crs">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="distances">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="quadrantSegments">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="pointN">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -1693,6 +2125,55 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
           <fes:Argument name="index">
             <fes:Type>xs:int</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="PointStacker">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="cellSize">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="normalize">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="preserveLocation">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputBBOX">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputWidth">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputHeight">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="PolygonExtraction">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="band">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="insideEdges">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="roi">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="nodata">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="ranges">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -1734,8 +2215,67 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Query">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="attribute">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="filter">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="random">
         <fes:Returns>xs:string</fes:Returns>
+      </fes:Function>
+      <fes:Function name="RangeLookup">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverage">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="band">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="ranges">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputPixelValues">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="noData">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="RasterAsPointCollection">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="RasterZonalStatistics">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="band">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="zones">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="classification">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
       </fes:Function>
       <fes:Function name="Recode">
         <fes:Returns>xs:string</fes:Returns>
@@ -1753,6 +2293,17 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
           <fes:Argument name="Value 2">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="RectangularClip">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="clip">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
@@ -1778,6 +2329,20 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
           <fes:Argument name="pattern">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Reproject">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="forcedCRS">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="targetCRS">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
@@ -1814,6 +2379,46 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="ScaleCoverage">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverage">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="xScale">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="yScale">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="xTranslate">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="yTranslate">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="interpolation">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="sdo_nn">
+        <fes:Returns>xs:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="sdo_num_res">
+            <fes:Type>xs:int</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="cql_filter">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="sdo_batch_size">
+            <fes:Type>xs:int</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="setCRS">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -1825,11 +2430,39 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Simplify">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="distance">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="preserveTopology">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="sin">
         <fes:Returns>xs:double</fes:Returns>
         <fes:Arguments>
           <fes:Argument name="radians">
             <fes:Type>xs:float</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Snap">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="point">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="crs">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -2055,6 +2688,17 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="StyleCoverage">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="coverage">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="style">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="symDifference">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -2109,6 +2753,17 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="Transform">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="transform">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="union">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -2120,6 +2775,28 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
+      <fes:Function name="UnionFeatureCollection">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="first">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="second">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Unique">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="attribute">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
       <fes:Function name="UniqueInterval">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
@@ -2128,6 +2805,43 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
           <fes:Argument name="classes">
             <fes:Type>xs:int</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="VectorToRaster">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="rasterWidth">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="rasterHeight">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="title">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="attribute">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="bounds">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="VectorZonalStatistics">
+        <fes:Returns>xs:string</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="data">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="dataAttribute">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="zones">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

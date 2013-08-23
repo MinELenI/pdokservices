@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -92,6 +92,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -142,7 +143,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer>
+    <Layer queryable="0" opaque="0" noSubsets="0">
       <Title>View Service PDOK</Title>
       <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -164,7 +165,7 @@
       <BoundingBox SRS="EPSG:25831" minx="516890.8833708092" miny="5620387.562994036" maxx="799438.5219724628" maxy="5942948.945330169"/>
       <BoundingBox SRS="EPSG:25832" minx="94719.1269888375" miny="5621826.920487525" maxx="383689.97535031725" maxy="5949931.403131658"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -188,7 +189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>cbs_buurten_2011</Name>
         <Title>cbs_buurten_2011</Title>
         <Abstract>Het gegeneraliseerde Bestand Wijken en Buurten bevat gegeneraliseerde geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2013 wordt een tweede versie gepubliceerd. Via het Kadaster is tegen betaling ook een niet gegeneraliseerde versie verkrijgbaar. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/72DBDC1B-8DF9-4529-BA59-&#13;
@@ -723,7 +724,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>cbs_wijken_2011</Name>
         <Title>cbs_wijken_2011</Title>
         <Abstract>Het gegeneraliseerde Bestand Wijken en Buurten bevat gegeneraliseerde geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2013 wordt een tweede versie gepubliceerd. Via het Kadaster is tegen betaling ook een niet gegeneraliseerde versie verkrijgbaar. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/72DBDC1B-8DF9-4529-BA59-&#13;
@@ -1258,7 +1259,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>gemeenten2011</Name>
         <Title>gemeenten2011</Title>
         <Abstract>Het gegeneraliseerde Bestand Wijken en Buurten bevat gegeneraliseerde geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2013 wordt een tweede versie gepubliceerd. Via het Kadaster is tegen betaling ook een niet gegeneraliseerde versie verkrijgbaar. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/72DBDC1B-8DF9-4529-BA59-&#13;

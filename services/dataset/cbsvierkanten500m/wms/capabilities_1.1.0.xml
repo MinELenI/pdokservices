@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -92,6 +92,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -142,7 +143,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer>
+    <Layer queryable="0" opaque="0" noSubsets="0">
       <Title>View Service PDOK</Title>
       <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -164,7 +165,7 @@
       <BoundingBox SRS="EPSG:25831" minx="516303.33198956994" miny="5619955.9621297" maxx="799990.6640257052" maxy="5943162.825553329"/>
       <BoundingBox SRS="EPSG:25832" minx="94061.00746483397" miny="5621384.977339599" maxx="384189.78414096637" maxy="5950163.052852191"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -188,7 +189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>autochtonen_2011</Name>
         <Title>autochtonen_2011</Title>
         <Abstract/>
@@ -238,7 +239,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>gem_woz_waarde_woningen_2011</Name>
         <Title>gem_woz_waarde_woningen_2011</Title>
         <Abstract/>
@@ -288,7 +289,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2000</Name>
         <Title>inwoners_2000</Title>
         <Abstract/>
@@ -338,7 +339,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2001</Name>
         <Title>inwoners_2001</Title>
         <Abstract/>
@@ -388,7 +389,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2002</Name>
         <Title>inwoners_2002</Title>
         <Abstract/>
@@ -438,7 +439,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2003</Name>
         <Title>inwoners_2003</Title>
         <Abstract/>
@@ -488,7 +489,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2004</Name>
         <Title>inwoners_2004</Title>
         <Abstract/>
@@ -538,7 +539,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2005</Name>
         <Title>inwoners_2005</Title>
         <Abstract/>
@@ -588,7 +589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2006</Name>
         <Title>inwoners_2006</Title>
         <Abstract/>
@@ -638,7 +639,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2007</Name>
         <Title>inwoners_2007</Title>
         <Abstract/>
@@ -688,7 +689,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2008</Name>
         <Title>inwoners_2008</Title>
         <Abstract/>
@@ -738,7 +739,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2009</Name>
         <Title>inwoners_2009</Title>
         <Abstract/>
@@ -788,7 +789,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2010</Name>
         <Title>inwoners_2010</Title>
         <Abstract/>
@@ -838,7 +839,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011</Name>
         <Title>inwoners_2011</Title>
         <Abstract/>
@@ -888,7 +889,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_20_tot_45_jaar</Name>
         <Title>inwoners_2011_20_tot_45_jaar</Title>
         <Abstract/>
@@ -938,7 +939,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_45_tot_65_jaar</Name>
         <Title>inwoners_2011_45_tot_65_jaar</Title>
         <Abstract/>
@@ -988,7 +989,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_65_plus_jaar</Name>
         <Title>inwoners_2011_65_plus_jaar</Title>
         <Abstract/>
@@ -1038,7 +1039,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_tot_20_jaar</Name>
         <Title>inwoners_2011_tot_20_jaar</Title>
         <Abstract/>
@@ -1088,7 +1089,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012</Name>
         <Title>inwoners_2012</Title>
         <Abstract/>
@@ -1138,7 +1139,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
         <Abstract/>
@@ -1188,7 +1189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2000</Name>
         <Title>omgevings_adres_dichtheid_2000</Title>
         <Abstract/>
@@ -1238,7 +1239,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2001</Name>
         <Title>omgevings_adres_dichtheid_2001</Title>
         <Abstract/>
@@ -1288,7 +1289,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2002</Name>
         <Title>omgevings_adres_dichtheid_2002</Title>
         <Abstract/>
@@ -1338,7 +1339,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2003</Name>
         <Title>omgevings_adres_dichtheid_2003</Title>
         <Abstract/>
@@ -1388,7 +1389,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2004</Name>
         <Title>omgevings_adres_dichtheid_2004</Title>
         <Abstract/>
@@ -1438,7 +1439,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2005</Name>
         <Title>omgevings_adres_dichtheid_2005</Title>
         <Abstract/>
@@ -1488,7 +1489,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2006</Name>
         <Title>omgevings_adres_dichtheid_2006</Title>
         <Abstract/>
@@ -1538,7 +1539,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2007</Name>
         <Title>omgevings_adres_dichtheid_2007</Title>
         <Abstract/>
@@ -1588,7 +1589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2008</Name>
         <Title>omgevings_adres_dichtheid_2008</Title>
         <Abstract/>
@@ -1638,7 +1639,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2009</Name>
         <Title>omgevings_adres_dichtheid_2009</Title>
         <Abstract/>
@@ -1688,7 +1689,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2010</Name>
         <Title>omgevings_adres_dichtheid_2010</Title>
         <Abstract/>
@@ -1738,7 +1739,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>omgevings_adres_dichtheid_2011</Name>
         <Title>omgevings_adres_dichtheid_2011</Title>
         <Abstract/>
@@ -1788,7 +1789,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2000</Name>
         <Title>stedelijkheid_2000</Title>
         <Abstract/>
@@ -1838,7 +1839,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2001</Name>
         <Title>stedelijkheid_2001</Title>
         <Abstract/>
@@ -1888,7 +1889,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2002</Name>
         <Title>stedelijkheid_2002</Title>
         <Abstract/>
@@ -1938,7 +1939,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2003</Name>
         <Title>stedelijkheid_2003</Title>
         <Abstract/>
@@ -1988,7 +1989,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2004</Name>
         <Title>stedelijkheid_2004</Title>
         <Abstract/>
@@ -2038,7 +2039,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2005</Name>
         <Title>stedelijkheid_2005</Title>
         <Abstract/>
@@ -2088,7 +2089,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2006</Name>
         <Title>stedelijkheid_2006</Title>
         <Abstract/>
@@ -2138,7 +2139,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2007</Name>
         <Title>stedelijkheid_2007</Title>
         <Abstract/>
@@ -2188,7 +2189,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2008</Name>
         <Title>stedelijkheid_2008</Title>
         <Abstract/>
@@ -2238,7 +2239,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2009</Name>
         <Title>stedelijkheid_2009</Title>
         <Abstract/>
@@ -2288,7 +2289,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2010</Name>
         <Title>stedelijkheid_2010</Title>
         <Abstract/>
@@ -2338,7 +2339,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>stedelijkheid_2011</Name>
         <Title>stedelijkheid_2011</Title>
         <Abstract/>
@@ -2388,7 +2389,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>toename_inwoners_2000_2010</Name>
         <Title>toename_inwoners_2000_2010</Title>
         <Abstract/>
@@ -2438,7 +2439,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
         <Abstract/>
@@ -2488,7 +2489,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2000</Name>
         <Title>woningen_2000</Title>
         <Abstract/>
@@ -2538,7 +2539,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2001</Name>
         <Title>woningen_2001</Title>
         <Abstract/>
@@ -2588,7 +2589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2002</Name>
         <Title>woningen_2002</Title>
         <Abstract/>
@@ -2638,7 +2639,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2003</Name>
         <Title>woningen_2003</Title>
         <Abstract/>
@@ -2688,7 +2689,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2004</Name>
         <Title>woningen_2004</Title>
         <Abstract/>
@@ -2738,7 +2739,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2005</Name>
         <Title>woningen_2005</Title>
         <Abstract/>
@@ -2788,7 +2789,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2006</Name>
         <Title>woningen_2006</Title>
         <Abstract/>
@@ -2838,7 +2839,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2007</Name>
         <Title>woningen_2007</Title>
         <Abstract/>
@@ -2888,7 +2889,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2008</Name>
         <Title>woningen_2008</Title>
         <Abstract/>
@@ -2938,7 +2939,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2009</Name>
         <Title>woningen_2009</Title>
         <Abstract/>
@@ -2988,7 +2989,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2010</Name>
         <Title>woningen_2010</Title>
         <Abstract/>
@@ -3038,7 +3039,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2011</Name>
         <Title>woningen_2011</Title>
         <Abstract/>

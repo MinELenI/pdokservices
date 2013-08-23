@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -92,6 +92,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -142,7 +143,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer>
+    <Layer queryable="0" opaque="0" noSubsets="0">
       <Title>View Service PDOK</Title>
       <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -162,7 +163,7 @@
       <BoundingBox SRS="EPSG:25831" minx="-7.33122310327588E7" miny="-2.3137063867654845E8" maxx="3.3507829313169056E8" maxy="2.3137063867654845E8"/>
       <BoundingBox SRS="EPSG:25832" minx="-5.318367795483098E7" miny="-1.871761339237531E8" maxx="2.7481200945404786E8" maxy="1.871761339237531E8"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -186,7 +187,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>borders</Name>
         <Title>borders</Title>
         <Abstract/>
@@ -210,6 +211,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=borders"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="768001.0" max="1.2288E7"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -233,7 +235,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>builtup_areas</Name>
         <Title>builtup_areas</Title>
         <Abstract/>
@@ -257,6 +259,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=builtup_areas"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="768000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -280,7 +283,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>countries</Name>
         <Title>countries</Title>
         <Abstract/>
@@ -304,6 +307,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=countries"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="3072001.0" max="1.2288E7"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -327,7 +331,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>gemeentenamen</Name>
         <Title>gemeentenamen</Title>
         <Abstract>Bestuurlijkegrenzen gemeentenamen Administratieve eenheden</Abstract>
@@ -389,7 +393,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>lines</Name>
         <Title>lines</Title>
         <Abstract/>
@@ -413,6 +417,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lines"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="3072000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -436,7 +441,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>ondergrond</Name>
         <Title>ondergrond</Title>
         <Abstract/>
@@ -483,7 +488,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>points</Name>
         <Title>points</Title>
         <Abstract/>
@@ -507,6 +512,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=points"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="48000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -530,7 +536,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>polygons</Name>
         <Title>polygons</Title>
         <Abstract/>
@@ -554,6 +560,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=polygons"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="12000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -577,7 +584,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>shorelines</Name>
         <Title>shorelines</Title>
         <Abstract/>
@@ -601,6 +608,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=shorelines"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="1.2288E7"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -624,7 +632,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nl_geolabels</Name>
         <Title>top10nl_geolabels</Title>
         <Abstract/>
@@ -651,6 +659,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nl_geolabels"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="6001.0" max="192000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -674,7 +683,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlfunctioneelgebiedlabels</Name>
         <Title>top10nlfunctioneelgebiedlabels</Title>
         <Abstract/>
@@ -698,6 +707,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlfunctioneelgebiedlabels"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="48000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -721,7 +731,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlgebouwen</Name>
         <Title>top10nlgebouwen</Title>
         <Abstract/>
@@ -745,6 +755,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgebouwen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="6000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -768,7 +779,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlgeografischgebiedlabels</Name>
         <Title>top10nlgeografischgebiedlabels</Title>
         <Abstract/>
@@ -792,6 +803,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgeografischgebiedlabels"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="6001.0" max="48000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -815,7 +827,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlnationalegrenzen</Name>
         <Title>top10nlnationalegrenzen</Title>
         <Abstract/>
@@ -839,6 +851,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlnationalegrenzen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="768000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -862,7 +875,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlprovinciegrenzen</Name>
         <Title>top10nlprovinciegrenzen</Title>
         <Abstract/>
@@ -886,6 +899,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlprovinciegrenzen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="6144000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -909,7 +923,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlspoorbaandeellijnen</Name>
         <Title>top10nlspoorbaandeellijnen</Title>
         <Abstract/>
@@ -933,6 +947,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlspoorbaandeellijnen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="48000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -956,7 +971,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlwaterdeellijnen</Name>
         <Title>top10nlwaterdeellijnen</Title>
         <Abstract/>
@@ -980,6 +995,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeellijnen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="12000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -1003,7 +1019,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top10nlwaterdeelvlakken</Name>
         <Title>top10nlwaterdeelvlakken</Title>
         <Abstract/>
@@ -1027,6 +1043,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeelvlakken"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="48000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -1050,7 +1067,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top250nllijnen</Name>
         <Title>top250nllijnen</Title>
         <Abstract/>
@@ -1074,6 +1091,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nllijnen"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="48001.0" max="768000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -1097,7 +1115,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1">
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>top250nlvlakken</Name>
         <Title>top250nlvlakken</Title>
         <Abstract/>
@@ -1121,6 +1139,7 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nlvlakken"/>
           </LegendURL>
         </Style>
+        <ScaleHint min="0.0" max="1.25E7"/>
       </Layer>
     </Layer>
   </Capability>

@@ -1,4 +1,4 @@
-<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1914" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
   <Service>
     <Name>WMS</Name>
     <Title>View Service PDOK</Title>
@@ -73,6 +73,7 @@
         <Format>application/vnd.ogc.gml</Format>
         <Format>application/vnd.ogc.gml/3.1.1</Format>
         <Format>text/html</Format>
+        <Format>application/json</Format>
         <DCPType>
           <HTTP>
             <Get>
@@ -144,9 +145,11 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=borders"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=borders"/>
           </LegendURL>
         </Style>
+        <MinScaleDenominator>768001.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.2288E7</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>builtup_areas</Name>
@@ -176,9 +179,10 @@
           <Abstract>A sample style that just prints out a green line</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=builtup_areas"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=builtup_areas"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>768000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>countries</Name>
@@ -208,9 +212,11 @@
           <Abstract>A sample style that just draws out a solid gray interior with a black 1px outline</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=countries"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=countries"/>
           </LegendURL>
         </Style>
+        <MinScaleDenominator>3072001.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.2288E7</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>gemeentenamen</Name>
@@ -246,7 +252,7 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -255,7 +261,7 @@
           <Abstract>INSPIRE common default style</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen&amp;style=inspire_common_DEFAULT"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeentenamen&amp;style=inspire_common_DEFAULT"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -287,9 +293,10 @@
           <Abstract>A sample style that just prints out a green line</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lines"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lines"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>3072000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>ondergrond</Name>
@@ -319,7 +326,7 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ondergrond"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ondergrond"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -351,9 +358,10 @@
           <Abstract>A sample style that just prints out a 6px wide red square</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=points"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=points"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>48000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>polygons</Name>
@@ -383,9 +391,10 @@
           <Abstract>A sample style that just prints out a green line</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=polygons"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=polygons"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>12000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>shorelines</Name>
@@ -415,9 +424,10 @@
           <Abstract>Buitenland op basis van OSM</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=shorelines"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=shorelines"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>1.2288E7</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nl_geolabels</Name>
@@ -450,9 +460,11 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nl_geolabels"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nl_geolabels"/>
           </LegendURL>
         </Style>
+        <MinScaleDenominator>6001.0</MinScaleDenominator>
+        <MaxScaleDenominator>192000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlfunctioneelgebiedlabels</Name>
@@ -486,9 +498,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlfunctioneelgebiedlabels"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlfunctioneelgebiedlabels"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>48000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlgebouwen</Name>
@@ -522,9 +535,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgebouwen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgebouwen"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>6000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlgeografischgebiedlabels</Name>
@@ -558,9 +572,11 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgeografischgebiedlabels"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlgeografischgebiedlabels"/>
           </LegendURL>
         </Style>
+        <MinScaleDenominator>6001.0</MinScaleDenominator>
+        <MaxScaleDenominator>48000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlnationalegrenzen</Name>
@@ -594,9 +610,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlnationalegrenzen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlnationalegrenzen"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>768000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlprovinciegrenzen</Name>
@@ -630,9 +647,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlprovinciegrenzen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlprovinciegrenzen"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>6144000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlspoorbaandeellijnen</Name>
@@ -666,9 +684,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlspoorbaandeellijnen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlspoorbaandeellijnen"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>48000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlwaterdeellijnen</Name>
@@ -702,9 +721,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeellijnen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeellijnen"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>12000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top10nlwaterdeelvlakken</Name>
@@ -738,9 +758,10 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeelvlakken"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top10nlwaterdeelvlakken"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>48000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top250nllijnen</Name>
@@ -770,9 +791,11 @@
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nllijnen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nllijnen"/>
           </LegendURL>
         </Style>
+        <MinScaleDenominator>48001.0</MinScaleDenominator>
+        <MaxScaleDenominator>768000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
         <Name>top250nlvlakken</Name>
@@ -802,9 +825,10 @@
           <Abstract>Deze stylesheet bevat de regels voor de visualisatie van de vlakgerichte objecten uit Top250Vector ten behoeve van de BRT-Achtergrondkaart</Abstract>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nlvlakken"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=top250nlvlakken"/>
           </LegendURL>
         </Style>
+        <MaxScaleDenominator>1.25E7</MaxScaleDenominator>
       </Layer>
     </Layer>
   </Capability>
