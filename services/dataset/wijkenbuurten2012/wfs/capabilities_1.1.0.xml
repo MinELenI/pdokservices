@@ -222,7 +222,7 @@
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>

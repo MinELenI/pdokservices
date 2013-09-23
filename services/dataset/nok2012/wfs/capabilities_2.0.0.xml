@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nok2011="http://nok2011.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nok2012="http://nok2012.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
     <ows:Title>GeoServer Web Feature Service</ows:Title>
     <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
@@ -34,8 +34,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="AcceptVersions">
@@ -54,8 +54,8 @@
     <ows:Operation name="DescribeFeatureType">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -67,8 +67,8 @@
     <ows:Operation name="GetFeature">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -104,8 +104,8 @@
     <ows:Operation name="GetPropertyValue">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resolve">
@@ -117,31 +117,31 @@
     <ows:Operation name="ListStoredQueries">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="DescribeStoredQueries">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="CreateStoredQuery">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="DropStoredQuery">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
@@ -214,37 +214,60 @@
   </ows:OperationsMetadata>
   <FeatureTypeList>
     <FeatureType>
-      <Name>nok2011:begrenzing</Name>
+      <Name>nok2012:begrenzing</Name>
       <Title>begrenzing</Title>
       <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>begrenzing</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.273 50.736</ows:LowerCorner>
-        <ows:UpperCorner>7.237 53.455</ows:UpperCorner>
+        <ows:LowerCorner>3.273177427249599 50.73555903908458</ows:LowerCorner>
+        <ows:UpperCorner>7.236967252202821 53.45503123262401</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=7e9beee4-c085-45e5-9dc6-b2a21a3e00f6"/>
     </FeatureType>
     <FeatureType>
-      <Name>nok2011:planologischeehs</Name>
+      <Name>nok2012:beheer</Name>
+      <Title>beheer</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>beheer</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.262790613120794 50.73631719272513</ows:LowerCorner>
+        <ows:UpperCorner>7.24126635685729 53.55517643185978</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>nok2012:planologischeehs</Name>
       <Title>planologischeehs</Title>
       <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>planologischeehs</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.267 50.736</ows:LowerCorner>
-        <ows:UpperCorner>7.241 53.558</ows:UpperCorner>
+        <ows:LowerCorner>3.267408751366541 50.7355482159032</ows:LowerCorner>
+        <ows:UpperCorner>7.241427162611644 53.558356389063924</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ce9b07f5-e89a-4d70-9865-ac39a250d794"/>
     </FeatureType>
     <FeatureType>
-      <Name>nok2011:verwervinginrichting</Name>
+      <Name>nok2012:verwervinginrichting</Name>
       <Title>verwervinginrichting</Title>
       <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>verwervinginrichting</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.276 50.736</ows:LowerCorner>
-        <ows:UpperCorner>7.237 53.461</ows:UpperCorner>
+        <ows:LowerCorner>3.2776947559244047 50.736003797859254</ows:LowerCorner>
+        <ows:UpperCorner>7.237132902387805 53.460797724708684</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=1cf5b1a8-865a-4b1e-8f59-ce87a137631c"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
@@ -648,11 +671,11 @@
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="centroid">
+      <fes:Function name="Centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="geometry">
-            <fes:Type>gml:AbstractGeometryType</fes:Type>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

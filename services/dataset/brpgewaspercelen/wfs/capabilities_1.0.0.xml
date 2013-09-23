@@ -1,10 +1,10 @@
-<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2011="http://nok2011.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:brpgewaspercelen="http://brpgewaspercelen.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
     <Title>GeoServer Web Feature Service</Title>
     <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
     <Keywords>WFS, PDOK</Keywords>
-    <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2011/wfs</OnlineResource>
+    <OnlineResource>http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs</OnlineResource>
     <Fees>FEES APPLY</Fees>
     <AccessConstraints>RESTRICTED</AccessConstraints>
   </Service>
@@ -13,12 +13,12 @@
       <GetCapabilities>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=GetCapabilities"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs?request=GetCapabilities"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs"/>
           </HTTP>
         </DCPType>
       </GetCapabilities>
@@ -28,12 +28,12 @@
         </SchemaDescriptionLanguage>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=DescribeFeatureType"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs?request=DescribeFeatureType"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs"/>
           </HTTP>
         </DCPType>
       </DescribeFeatureType>
@@ -47,12 +47,12 @@
         </ResultFormat>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=GetFeature"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs?request=GetFeature"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs"/>
           </HTTP>
         </DCPType>
       </GetFeature>
@@ -63,28 +63,12 @@
       <Query/>
     </Operations>
     <FeatureType>
-      <Name>nok2011:begrenzing</Name>
-      <Title>begrenzing</Title>
+      <Name>brpgewaspercelen:brpgewaspercelen</Name>
+      <Title>brpgewaspercelen</Title>
       <Abstract/>
-      <Keywords/>
+      <Keywords>features, brpgewaspercelen</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.273" miny="50.736" maxx="7.237" maxy="53.455"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2011:planologischeehs</Name>
-      <Title>planologischeehs</Title>
-      <Abstract/>
-      <Keywords/>
-      <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.267" miny="50.736" maxx="7.241" maxy="53.558"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2011:verwervinginrichting</Name>
-      <Title>verwervinginrichting</Title>
-      <Abstract/>
-      <Keywords/>
-      <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.276" miny="50.736" maxx="7.237" maxy="53.461"/>
+      <LatLongBoundingBox minx="3.259159432380033" miny="50.73446149153095" maxx="7.238658240062288" maxy="53.498235483266065"/>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>

@@ -1,10 +1,10 @@
-<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2011="http://nok2011.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2012="http://nok2012.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
     <Title>GeoServer Web Feature Service</Title>
     <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
     <Keywords>WFS, PDOK</Keywords>
-    <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2011/wfs</OnlineResource>
+    <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2012/wfs</OnlineResource>
     <Fees>FEES APPLY</Fees>
     <AccessConstraints>RESTRICTED</AccessConstraints>
   </Service>
@@ -13,12 +13,12 @@
       <GetCapabilities>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=GetCapabilities"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs?request=GetCapabilities"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
           </HTTP>
         </DCPType>
       </GetCapabilities>
@@ -28,12 +28,12 @@
         </SchemaDescriptionLanguage>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=DescribeFeatureType"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs?request=DescribeFeatureType"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
           </HTTP>
         </DCPType>
       </DescribeFeatureType>
@@ -47,12 +47,12 @@
         </ResultFormat>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs?request=GetFeature"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs?request=GetFeature"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2011/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
           </HTTP>
         </DCPType>
       </GetFeature>
@@ -63,28 +63,36 @@
       <Query/>
     </Operations>
     <FeatureType>
-      <Name>nok2011:begrenzing</Name>
+      <Name>nok2012:begrenzing</Name>
       <Title>begrenzing</Title>
       <Abstract/>
-      <Keywords/>
+      <Keywords>begrenzing, features</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.273" miny="50.736" maxx="7.237" maxy="53.455"/>
+      <LatLongBoundingBox minx="3.273177427249599" miny="50.73555903908458" maxx="7.236967252202821" maxy="53.45503123262401"/>
     </FeatureType>
     <FeatureType>
-      <Name>nok2011:planologischeehs</Name>
+      <Name>nok2012:beheer</Name>
+      <Title>beheer</Title>
+      <Abstract/>
+      <Keywords>features, beheer</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.262790613120794" miny="50.73631719272513" maxx="7.24126635685729" maxy="53.55517643185978"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>nok2012:planologischeehs</Name>
       <Title>planologischeehs</Title>
       <Abstract/>
-      <Keywords/>
+      <Keywords>planologischeehs, features</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.267" miny="50.736" maxx="7.241" maxy="53.558"/>
+      <LatLongBoundingBox minx="3.267408751366541" miny="50.7355482159032" maxx="7.241427162611644" maxy="53.558356389063924"/>
     </FeatureType>
     <FeatureType>
-      <Name>nok2011:verwervinginrichting</Name>
+      <Name>nok2012:verwervinginrichting</Name>
       <Title>verwervinginrichting</Title>
       <Abstract/>
-      <Keywords/>
+      <Keywords>verwervinginrichting, features</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.276" miny="50.736" maxx="7.237" maxy="53.461"/>
+      <LatLongBoundingBox minx="3.2776947559244047" miny="50.736003797859254" maxx="7.237132902387805" maxy="53.460797724708684"/>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
