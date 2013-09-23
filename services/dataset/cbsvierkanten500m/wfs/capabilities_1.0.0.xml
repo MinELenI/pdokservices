@@ -71,10 +71,26 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:autochtonen_2012</Name>
+      <Title>autochtonen_2012</Title>
+      <Abstract/>
+      <Keywords>features, autochtonen_2012</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2011</Name>
       <Title>gem_woz_waarde_woningen_2011</Title>
       <Abstract/>
       <Keywords>gem_woz_waarde_woningen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2012</Name>
+      <Title>gem_woz_waarde_woningen_2012</Title>
+      <Abstract/>
+      <Keywords>gem_woz_waarde_woningen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
@@ -175,10 +191,18 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
-      <Name>cbsvierkanten500m:inwoners_2011_20_tot_45_jaar</Name>
-      <Title>inwoners_2011_20_tot_45_jaar</Title>
+      <Name>cbsvierkanten500m:inwoners_2011_15_tot_25_jaar</Name>
+      <Title>inwoners_2011_15_tot_25_jaar</Title>
       <Abstract/>
-      <Keywords>features, inwoners_2011_20_tot_45_jaar</Keywords>
+      <Keywords>inwoners_2011_15_tot_25_jaar, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2011_25_tot_45_jaar</Name>
+      <Title>inwoners_2011_25_tot_45_jaar</Title>
+      <Abstract/>
+      <Keywords>features, inwoners_2011_25_tot_45_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
@@ -199,10 +223,10 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
-      <Name>cbsvierkanten500m:inwoners_2011_tot_20_jaar</Name>
-      <Title>inwoners_2011_tot_20_jaar</Title>
+      <Name>cbsvierkanten500m:inwoners_2011_tot_15_jaar</Name>
+      <Title>inwoners_2011_tot_15_jaar</Title>
       <Abstract/>
-      <Keywords>features, inwoners_2011_tot_20_jaar</Keywords>
+      <Keywords>features, inwoners_2011_tot_15_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
@@ -215,10 +239,82 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_15_tot_25_jaar</Name>
+      <Title>inwoners_2012_15_tot_25_jaar</Title>
+      <Abstract/>
+      <Keywords>features, inwoners_2012_15_tot_25_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_25_tot_45_jaar</Name>
+      <Title>inwoners_2012_25_tot_45_jaar</Title>
+      <Abstract/>
+      <Keywords>features, inwoners_2012_25_tot_45_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_45_tot_65_jaar</Name>
+      <Title>inwoners_2012_45_tot_65_jaar</Title>
+      <Abstract/>
+      <Keywords>inwoners_2012_45_tot_65_jaar, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_65_plus_jaar</Name>
+      <Title>inwoners_2012_65_plus_jaar</Title>
+      <Abstract/>
+      <Keywords>inwoners_2012_65_plus_jaar, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_tot_15_jaar</Name>
+      <Title>inwoners_2012_tot_15_jaar</Title>
+      <Abstract/>
+      <Keywords>features, inwoners_2012_tot_15_jaar</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2013</Name>
+      <Title>inwoners_2013</Title>
+      <Abstract/>
+      <Keywords>inwoners_2013, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:mannen_2011</Name>
+      <Title>mannen_2011</Title>
+      <Abstract/>
+      <Keywords>mannen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:mannen_2012</Name>
+      <Title>mannen_2012</Title>
+      <Abstract/>
+      <Keywords>mannen_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
       <Abstract/>
       <Keywords>niet_westerse_allochtonen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:niet_westerse_allochtonen_2012</Name>
+      <Title>niet_westerse_allochtonen_2012</Title>
+      <Abstract/>
+      <Keywords>niet_westerse_allochtonen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
@@ -319,6 +415,30 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2012</Name>
+      <Title>omgevings_adres_dichtheid_2012</Title>
+      <Abstract/>
+      <Keywords>omgevings_adres_dichtheid_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:perc_hoog_inkomen_huishouden_2010</Name>
+      <Title>perc_hoog_inkomen_huishouden_2010</Title>
+      <Abstract/>
+      <Keywords>features, perc_hoog_inkomen_huishouden_2010</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:perc_laag_inkomen_huishouden_2010</Name>
+      <Title>perc_laag_inkomen_huishouden_2010</Title>
+      <Abstract/>
+      <Keywords>perc_laag_inkomen_huishouden_2010, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2000</Name>
       <Title>stedelijkheid_2000</Title>
       <Abstract/>
@@ -415,6 +535,14 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:stedelijkheid_2012</Name>
+      <Title>stedelijkheid_2012</Title>
+      <Abstract/>
+      <Keywords>stedelijkheid_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:toename_inwoners_2000_2010</Name>
       <Title>toename_inwoners_2000_2010</Title>
       <Abstract/>
@@ -423,10 +551,34 @@
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:vrouwen_2011</Name>
+      <Title>vrouwen_2011</Title>
+      <Abstract/>
+      <Keywords>vrouwen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:vrouwen_2012</Name>
+      <Title>vrouwen_2012</Title>
+      <Abstract/>
+      <Keywords>vrouwen_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2011</Name>
       <Title>westerse_allochtonen_2011</Title>
       <Abstract/>
       <Keywords>westerse_allochtonen_2011, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:westerse_allochtonen_2012</Name>
+      <Title>westerse_allochtonen_2012</Title>
+      <Abstract/>
+      <Keywords>features, westerse_allochtonen_2012</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
@@ -526,6 +678,14 @@
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
     </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:woningen_2012</Name>
+      <Title>woningen_2012</Title>
+      <Abstract/>
+      <Keywords>woningen_2012, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
+    </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
     <ogc:Spatial_Capabilities>
@@ -578,7 +738,7 @@
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

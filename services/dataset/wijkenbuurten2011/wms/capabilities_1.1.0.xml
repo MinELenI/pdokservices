@@ -1,12 +1,16 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>INSPIRE View Service PDOK</Title>
+    <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
     <KeywordList>
       <Keyword>WMS</Keyword>
       <Keyword>PDOK</Keyword>
+      <Keyword>Hydrografie</Keyword>
+      <Keyword>Vervoersnetwerken</Keyword>
+      <Keyword>Beschermde gebieden</Keyword>
+      <Keyword>Geografische namen</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -141,11 +145,10 @@
       <Format>application/vnd.ogc.se_xml</Format>
       <Format>application/vnd.ogc.se_inimage</Format>
     </Exception>
-    <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
     <Layer queryable="0" opaque="0" noSubsets="0">
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>INSPIRE View Service PDOK</Title>
+      <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
       <!--Limited list of EPSG projections:-->
       <SRS>EPSG:25831</SRS>
       <SRS>EPSG:25832</SRS>

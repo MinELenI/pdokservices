@@ -1,11 +1,15 @@
-<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1914" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
   <Service>
     <Name>WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>INSPIRE View Service PDOK</Title>
+    <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
     <KeywordList>
       <Keyword>WMS</Keyword>
       <Keyword>PDOK</Keyword>
+      <Keyword>Hydrografie</Keyword>
+      <Keyword>Vervoersnetwerken</Keyword>
+      <Keyword>Beschermde gebieden</Keyword>
+      <Keyword>Geografische namen</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -88,9 +92,26 @@
       <Format>INIMAGE</Format>
       <Format>BLANK</Format>
     </Exception>
+    <inspire_vs:ExtendedCapabilities>
+      <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+        <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?SERVICE=CSW&amp;REQUEST=GetRecordById&amp;version=2.0.2&amp;elementSetName=full&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;ID=1f93a0e9-123a-4996-b7a4-fc9f68204bed</inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>dut</inspire_common:Language>
+        </inspire_common:DefaultLanguage>
+        <inspire_common:SupportedLanguage>
+          <inspire_common:Language>dut</inspire_common:Language>
+        </inspire_common:SupportedLanguage>
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:Language>dut</inspire_common:Language>
+      </inspire_common:ResponseLanguage>
+    </inspire_vs:ExtendedCapabilities>
     <Layer>
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>INSPIRE View Service PDOK</Title>
+      <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
       <!--Limited list of EPSG projections:-->
       <CRS>EPSG:25831</CRS>
       <CRS>EPSG:25832</CRS>

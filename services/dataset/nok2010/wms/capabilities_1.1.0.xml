@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1914">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>View Service PDOK</Title>
@@ -155,15 +155,15 @@
       <SRS>EPSG:3857</SRS>
       <SRS>EPSG:4258</SRS>
       <SRS>EPSG:4326</SRS>
-      <LatLonBoundingBox minx="3.2201899999999997" miny="50.116189999999996" maxx="7.28081" maxy="54.17681"/>
-      <BoundingBox SRS="EPSG:4326" minx="3.2201899999999997" miny="50.116189999999996" maxx="7.28081" maxy="54.17681"/>
-      <BoundingBox SRS="EPSG:4258" minx="3.2201899999999997" miny="50.11619000092795" maxx="7.280809999999999" maxy="54.17681000089478"/>
-      <BoundingBox SRS="EPSG:3035" minx="3836835.471146968" miny="3004037.0748352525" maxx="4143452.639576772" maxy="3472967.773979046"/>
-      <BoundingBox SRS="EPSG:3034" minx="3532378.6644580346" miny="2601076.567588129" maxx="3828288.336042228" maxy="3053753.636990869"/>
-      <BoundingBox SRS="EPSG:3857" minx="358469.91105759155" miny="6466422.270363948" maxx="810496.061762574" maxy="7203713.360536773"/>
-      <BoundingBox SRS="EPSG:28992" minx="-86.32374902712763" miny="236145.47204745925" maxx="290381.36699047865" maxy="690112.619447267"/>
-      <BoundingBox SRS="EPSG:25831" minx="514372.11167209275" miny="5551572.57995639" maxx="806002.5999384513" maxy="6011661.613279161"/>
-      <BoundingBox SRS="EPSG:25832" minx="86901.91374496714" miny="5552964.528341608" maxx="387791.2496976037" maxy="6018636.377203257"/>
+      <LatLonBoundingBox minx="3.26" miny="50.735" maxx="7.241" maxy="53.558"/>
+      <BoundingBox SRS="EPSG:4326" minx="3.26" miny="50.735" maxx="7.241" maxy="53.558"/>
+      <BoundingBox SRS="EPSG:4258" minx="3.26" miny="50.73500000092408" maxx="7.2410000000000005" maxy="53.55800000090101"/>
+      <BoundingBox SRS="EPSG:3035" minx="3845935.028912244" miny="3072933.114435224" maxx="4138194.2013693694" maxy="3404120.6466532582"/>
+      <BoundingBox SRS="EPSG:3034" minx="3541171.3289779774" miny="2667602.5416277274" maxx="3823289.3788148016" maxy="2987198.229701933"/>
+      <BoundingBox SRS="EPSG:3857" minx="362901.5399860718" miny="6574551.4831717545" maxx="806064.4328340939" maxy="7086887.254098978"/>
+      <BoundingBox SRS="EPSG:28992" minx="4756.454885389394" miny="304989.8083611138" maxx="285796.4086853445" maxy="621171.8598532369"/>
+      <BoundingBox SRS="EPSG:25831" minx="517222.8887715893" miny="5620388.790733353" maxx="799226.9319507126" maxy="5942714.771279588"/>
+      <BoundingBox SRS="EPSG:25832" minx="95071.61450453888" miny="5621831.949348964" maxx="383485.7900781712" maxy="5949682.475125877"/>
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
@@ -217,6 +217,15 @@ PROJCS["Amersfoort / RD New",
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing"/>
           </LegendURL>
         </Style>
+        <Style>
+          <Name>nok2010_bblbuiten_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing&amp;style=nok2010_bblbuiten_orgineel"/>
+          </LegendURL>
+        </Style>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -246,7 +255,7 @@ PROJCS["Amersfoort / RD New",
         <Abstract/>
         <KeywordList/>
         <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="3.2201899999999997" miny="50.116189999999996" maxx="7.28081" maxy="54.17681"/>
+        <LatLonBoundingBox minx="3.26" miny="50.735" maxx="7.241" maxy="53.558"/>
         <BoundingBox SRS="EPSG:28992" minx="13939.339" miny="306952.66" maxx="277842.938" maxy="619131.812"/>
         <BoundingBox SRS="EPSG:4326" minx="3.2594107781952677" miny="50.735241266927126" maxx="7.240355218048103" maxy="53.55815885294968"/>
         <BoundingBox SRS="EPSG:4258" minx="3.2594107781952677" miny="50.735241267851215" maxx="7.240355218048103" maxy="53.55815885385068"/>
@@ -266,6 +275,15 @@ PROJCS["Amersfoort / RD New",
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>nok2010_ehs_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs&amp;style=nok2010_ehs_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -317,6 +335,15 @@ PROJCS["Amersfoort / RD New",
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>nok2010_rods_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods&amp;style=nok2010_rods_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>

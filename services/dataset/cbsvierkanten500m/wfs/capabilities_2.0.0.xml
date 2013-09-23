@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cbsvierkanten500m="http://cbsvierkanten500m.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1914">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://schemas.opengis.net/gml" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:cbsvierkanten500m="http://cbsvierkanten500m.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
     <ows:Title>GeoServer Web Feature Service</ows:Title>
     <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
@@ -211,6 +211,22 @@
         <ows:Value>wfs:StoredQuery</ows:Value>
       </ows:AllowedValues>
     </ows:Constraint>
+    <ows:ExtendedCapabilities>
+      <inspire_dls:ExtendedCapabilities>
+        <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+          <inspire_common:URL/>
+          <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+          <inspire_common:DefaultLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+          </inspire_common:DefaultLanguage>
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+          <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:ResponseLanguage>
+      </inspire_dls:ExtendedCapabilities>
+    </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
   <FeatureTypeList>
     <FeatureType>
@@ -228,11 +244,39 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:autochtonen_2012</Name>
+      <Title>autochtonen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>autochtonen_2012</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2011</Name>
       <Title>gem_woz_waarde_woningen_2011</Title>
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>gem_woz_waarde_woningen_2011</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2012</Name>
+      <Title>gem_woz_waarde_woningen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>gem_woz_waarde_woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
@@ -410,12 +454,26 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
-      <Name>cbsvierkanten500m:inwoners_2011_20_tot_45_jaar</Name>
-      <Title>inwoners_2011_20_tot_45_jaar</Title>
+      <Name>cbsvierkanten500m:inwoners_2011_15_tot_25_jaar</Name>
+      <Title>inwoners_2011_15_tot_25_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>inwoners_2011_15_tot_25_jaar</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2011_25_tot_45_jaar</Name>
+      <Title>inwoners_2011_25_tot_45_jaar</Title>
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
-        <ows:Keyword>inwoners_2011_20_tot_45_jaar</ows:Keyword>
+        <ows:Keyword>inwoners_2011_25_tot_45_jaar</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
@@ -452,12 +510,12 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
-      <Name>cbsvierkanten500m:inwoners_2011_tot_20_jaar</Name>
-      <Title>inwoners_2011_tot_20_jaar</Title>
+      <Name>cbsvierkanten500m:inwoners_2011_tot_15_jaar</Name>
+      <Title>inwoners_2011_tot_15_jaar</Title>
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
-        <ows:Keyword>inwoners_2011_tot_20_jaar</ows:Keyword>
+        <ows:Keyword>inwoners_2011_tot_15_jaar</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
@@ -480,11 +538,137 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_15_tot_25_jaar</Name>
+      <Title>inwoners_2012_15_tot_25_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>inwoners_2012_15_tot_25_jaar</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_25_tot_45_jaar</Name>
+      <Title>inwoners_2012_25_tot_45_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>inwoners_2012_25_tot_45_jaar</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_45_tot_65_jaar</Name>
+      <Title>inwoners_2012_45_tot_65_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>inwoners_2012_45_tot_65_jaar</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_65_plus_jaar</Name>
+      <Title>inwoners_2012_65_plus_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>inwoners_2012_65_plus_jaar</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2012_tot_15_jaar</Name>
+      <Title>inwoners_2012_tot_15_jaar</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>inwoners_2012_tot_15_jaar</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:inwoners_2013</Name>
+      <Title>inwoners_2013</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>inwoners_2013</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:mannen_2011</Name>
+      <Title>mannen_2011</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>mannen_2011</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:mannen_2012</Name>
+      <Title>mannen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>mannen_2012</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>niet_westerse_allochtonen_2011</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:niet_westerse_allochtonen_2012</Name>
+      <Title>niet_westerse_allochtonen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>niet_westerse_allochtonen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
@@ -662,6 +846,48 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2012</Name>
+      <Title>omgevings_adres_dichtheid_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>omgevings_adres_dichtheid_2012</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:perc_hoog_inkomen_huishouden_2010</Name>
+      <Title>perc_hoog_inkomen_huishouden_2010</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>perc_hoog_inkomen_huishouden_2010</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:perc_laag_inkomen_huishouden_2010</Name>
+      <Title>perc_laag_inkomen_huishouden_2010</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>perc_laag_inkomen_huishouden_2010</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2000</Name>
       <Title>stedelijkheid_2000</Title>
       <Abstract/>
@@ -830,11 +1056,53 @@
       </ows:WGS84BoundingBox>
     </FeatureType>
     <FeatureType>
+      <Name>cbsvierkanten500m:stedelijkheid_2012</Name>
+      <Title>stedelijkheid_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>stedelijkheid_2012</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
       <Name>cbsvierkanten500m:toename_inwoners_2000_2010</Name>
       <Title>toename_inwoners_2000_2010</Title>
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>toename_inwoners_2000_2010</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:vrouwen_2011</Name>
+      <Title>vrouwen_2011</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>vrouwen_2011</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:vrouwen_2012</Name>
+      <Title>vrouwen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>vrouwen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
@@ -850,6 +1118,20 @@
       <ows:Keywords>
         <ows:Keyword>westerse_allochtonen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:westerse_allochtonen_2012</Name>
+      <Title>westerse_allochtonen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>westerse_allochtonen_2012</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
@@ -1017,6 +1299,20 @@
       <Abstract/>
       <ows:Keywords>
         <ows:Keyword>woningen_2011</ows:Keyword>
+        <ows:Keyword>features</ows:Keyword>
+      </ows:Keywords>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
+        <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+    </FeatureType>
+    <FeatureType>
+      <Name>cbsvierkanten500m:woningen_2012</Name>
+      <Title>woningen_2012</Title>
+      <Abstract/>
+      <ows:Keywords>
+        <ows:Keyword>woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
