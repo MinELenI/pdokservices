@@ -2,11 +2,17 @@
 <WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>Natuurmeting Op Kaart 2010 WMS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2010 (NOK2010) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2010. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2010-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS. Voor meer informatie: zie het rapport 'Natuurmeting op Kaart 2010 - De realisatie van EHS en RodS op 1-1-2010'.</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
+      <Keyword>Bos</Keyword>
+      <Keyword>Grondverwerving/grondzaken</Keyword>
+      <Keyword>Landbouw</Keyword>
+      <Keyword>Landschap</Keyword>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Recreatie</Keyword>
+      <Keyword>Wettelijke begrenzing (beleid)</Keyword>
+      <Keyword>Kadastrale grenzen</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -28,8 +34,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -144,8 +151,8 @@
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
     <Layer queryable="0" opaque="0" noSubsets="0">
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>Natuurmeting Op Kaart 2010 WMS</Title>
+      <Abstract>De Natuurmeting Op Kaart 2010 (NOK2010) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2010. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2010-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS. Voor meer informatie: zie het rapport 'Natuurmeting op Kaart 2010 - De realisatie van EHS en RodS op 1-1-2010'.</Abstract>
       <!--Limited list of EPSG projections:-->
       <SRS>EPSG:25831</SRS>
       <SRS>EPSG:25832</SRS>
@@ -206,7 +213,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25832" minx="104866.36236680363" miny="5622897.220394566" maxx="382235.2857148154" maxy="5936752.01506586"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_bblbuiten</Name>
@@ -266,7 +273,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25832" minx="104170.1803047586" miny="5622519.363271415" maxx="383404.6161784581" maxy="5947628.257637191"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_ehs</Name>
@@ -326,7 +333,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25832" minx="173108.03048944334" miny="5738808.023343361" maxx="292925.2046212397" maxy="5848824.248643749"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_rods</Name>

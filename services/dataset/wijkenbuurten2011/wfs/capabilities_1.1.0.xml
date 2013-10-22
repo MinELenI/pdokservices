@@ -1,15 +1,20 @@
 <wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://schemas.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:wijkenbuurten2011="http://wijkenbuurten2011.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>GeoServer Web Feature Service</ows:Title>
-    <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
+    <ows:Title>CBS Wijken en Buurten 2011 versie 2 WFS</ows:Title>
+    <ows:Abstract>Het Bestand Wijk- en Buurtkaart 2011 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze tweede versie bevat een deel van de kerncijfers. Begin 2014 wordt een derde versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/0514C636-FE23-45E6-BC14-
+07AD83AA3B1D/0/20132011b68pub.pdf</ows:Abstract>
     <ows:Keywords>
-      <ows:Keyword>WFS</ows:Keyword>
-      <ows:Keyword>PDOK</ows:Keyword>
+      <ows:Keyword>wijken</ows:Keyword>
+      <ows:Keyword>buurten</ows:Keyword>
+      <ows:Keyword>gemeenten</ows:Keyword>
+      <ows:Keyword>statistiek</ows:Keyword>
+      <ows:Keyword>bevolking</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
-    <ows:Fees>FEES APPLY</ows:Fees>
-    <ows:AccessConstraints>RESTRICTED</ows:AccessConstraints>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>copyright;
+        bronvermelding Kadaster, CBS verplicht</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -96,17 +101,20 @@
     <ows:ExtendedCapabilities>
       <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-          <inspire_common:URL/>
+          <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=a64a4f8a-bee0-4f48-84b9-7b930c0fa231</inspire_common:URL>
           <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
           <inspire_common:DefaultLanguage>
-            <inspire_common:Language>eng</inspire_common:Language>
+            <inspire_common:Language>dut</inspire_common:Language>
           </inspire_common:DefaultLanguage>
         </inspire_common:SupportedLanguages>
         <inspire_common:ResponseLanguage>
-          <inspire_common:Language>eng</inspire_common:Language>
+          <inspire_common:Language>dut</inspire_common:Language>
         </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>a64a4f8a-bee0-4f48-84b9-7b930c0fa231</inspire_common:Code>
+        </inspire_dls:SpatialDataSetIdentifier>
       </inspire_dls:ExtendedCapabilities>
     </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
@@ -131,7 +139,7 @@
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>wijkenbuurten2011:cbs_wijken_2011</Name>
@@ -150,7 +158,7 @@
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>wijkenbuurten2011:gemeenten2011</Name>
@@ -169,7 +177,7 @@
         <ows:LowerCorner>3.255 50.735</ows:LowerCorner>
         <ows:UpperCorner>7.244 53.56</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
+      <MetadataURL type="TC211" format="text/plain">http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=37bb3886-38d9-430b-9eee-b1c1745b8510</MetadataURL>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -234,7 +242,7 @@
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>

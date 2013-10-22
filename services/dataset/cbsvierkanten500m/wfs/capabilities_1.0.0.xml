@@ -1,12 +1,26 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:cbsvierkanten500m="http://cbsvierkanten500m.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>Vierkanten 500m x 500m WFS</Title>
+    <Abstract>Het bestand CBS vierkanten 500m bevat statistische gegevens per 500m x 500m vierkant.
+Nieuwe publicatie per 24 juli 2012.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 500m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt in een kolomnaam voor de gehele dataset de grootte van het vierkant vermeld en de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen vanaf 1 januari 2000 tm 1 januari 2012 de jaarlijkse inwonertallen en vanaf 1 januari 2000 tm 1 januari 2011 de jaarlijkse woningaantallen, de omgevingadressendichtheid en de stedelijkheid. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. Voor het jaar 2011 bevat het de groepering naar herkomst en leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pd</Abstract>
+    <Keywords>vierkant, grid, statistiek, bevolking, inwoners, woning, leeftijd, etniciteit, WOZ, stedelijkheid, dichtheid, concentratie</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/cbsvierkanten500m/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -65,7 +79,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:autochtonen_2011</Name>
       <Title>autochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <Keywords>features, autochtonen_2011</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -73,7 +87,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:autochtonen_2012</Name>
       <Title>autochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <Keywords>features, autochtonen_2012</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -81,7 +95,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2011</Name>
       <Title>gem_woz_waarde_woningen_2011</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
       <Keywords>gem_woz_waarde_woningen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -89,7 +103,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2012</Name>
       <Title>gem_woz_waarde_woningen_2012</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
       <Keywords>gem_woz_waarde_woningen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -97,7 +111,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2000</Name>
       <Title>inwoners_2000</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2000, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -105,7 +119,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2001</Name>
       <Title>inwoners_2001</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2001, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -113,7 +127,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2002</Name>
       <Title>inwoners_2002</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2002, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -121,7 +135,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2003</Name>
       <Title>inwoners_2003</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2003, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -129,7 +143,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2004</Name>
       <Title>inwoners_2004</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2004, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -137,7 +151,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2005</Name>
       <Title>inwoners_2005</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2005, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -145,7 +159,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2006</Name>
       <Title>inwoners_2006</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2006, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -153,7 +167,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2007</Name>
       <Title>inwoners_2007</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2007, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -161,7 +175,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2008</Name>
       <Title>inwoners_2008</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>features, inwoners_2008</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -169,7 +183,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2009</Name>
       <Title>inwoners_2009</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>features, inwoners_2009</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -177,7 +191,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2010</Name>
       <Title>inwoners_2010</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2010, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -185,7 +199,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011</Name>
       <Title>inwoners_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -193,7 +207,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_15_tot_25_jaar</Name>
       <Title>inwoners_2011_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
       <Keywords>inwoners_2011_15_tot_25_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -201,7 +215,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_25_tot_45_jaar</Name>
       <Title>inwoners_2011_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
       <Keywords>features, inwoners_2011_25_tot_45_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -209,7 +223,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_45_tot_65_jaar</Name>
       <Title>inwoners_2011_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
       <Keywords>inwoners_2011_45_tot_65_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -217,7 +231,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_65_plus_jaar</Name>
       <Title>inwoners_2011_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
       <Keywords>features, inwoners_2011_65_plus_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -225,7 +239,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_tot_15_jaar</Name>
       <Title>inwoners_2011_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
       <Keywords>features, inwoners_2011_tot_15_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -233,7 +247,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012</Name>
       <Title>inwoners_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -241,7 +255,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_15_tot_25_jaar</Name>
       <Title>inwoners_2012_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_15_tot_25_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -249,7 +263,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_25_tot_45_jaar</Name>
       <Title>inwoners_2012_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_25_tot_45_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -257,7 +271,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_45_tot_65_jaar</Name>
       <Title>inwoners_2012_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
       <Keywords>inwoners_2012_45_tot_65_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -265,7 +279,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_65_plus_jaar</Name>
       <Title>inwoners_2012_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
       <Keywords>inwoners_2012_65_plus_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -273,7 +287,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_tot_15_jaar</Name>
       <Title>inwoners_2012_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_tot_15_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -281,7 +295,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2013</Name>
       <Title>inwoners_2013</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2013, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -289,7 +303,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2011</Name>
       <Title>mannen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
       <Keywords>mannen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -297,7 +311,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2012</Name>
       <Title>mannen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
       <Keywords>mannen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -305,7 +319,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
       <Keywords>niet_westerse_allochtonen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -313,7 +327,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2012</Name>
       <Title>niet_westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
       <Keywords>niet_westerse_allochtonen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -321,7 +335,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2000</Name>
       <Title>omgevings_adres_dichtheid_2000</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2000.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2000, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -329,7 +343,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2001</Name>
       <Title>omgevings_adres_dichtheid_2001</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2001.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2001, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -337,7 +351,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2002</Name>
       <Title>omgevings_adres_dichtheid_2002</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2002.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2002, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -345,7 +359,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2003</Name>
       <Title>omgevings_adres_dichtheid_2003</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van &#233;&#233;n kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2003, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -353,7 +367,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2004</Name>
       <Title>omgevings_adres_dichtheid_2004</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2004.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2004, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -361,7 +375,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2005</Name>
       <Title>omgevings_adres_dichtheid_2005</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2005.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2005, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -369,7 +383,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2006</Name>
       <Title>omgevings_adres_dichtheid_2006</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2006.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2006, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -377,7 +391,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2007</Name>
       <Title>omgevings_adres_dichtheid_2007</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2007.</Abstract>
       <Keywords>features, omgevings_adres_dichtheid_2007</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -385,7 +399,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2008</Name>
       <Title>omgevings_adres_dichtheid_2008</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2008.</Abstract>
       <Keywords>features, omgevings_adres_dichtheid_2008</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -393,7 +407,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2009</Name>
       <Title>omgevings_adres_dichtheid_2009</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2009.</Abstract>
       <Keywords>features, omgevings_adres_dichtheid_2009</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -401,7 +415,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2010</Name>
       <Title>omgevings_adres_dichtheid_2010</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2010.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2010, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -409,7 +423,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2011</Name>
       <Title>omgevings_adres_dichtheid_2011</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2011.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -417,7 +431,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2012</Name>
       <Title>omgevings_adres_dichtheid_2012</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2012.</Abstract>
       <Keywords>omgevings_adres_dichtheid_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -425,7 +439,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:perc_hoog_inkomen_huishouden_2010</Name>
       <Title>perc_hoog_inkomen_huishouden_2010</Title>
-      <Abstract/>
+      <Abstract>Percentage aantal huishoudens met een hoog inkomen op 1 januari 2010.</Abstract>
       <Keywords>features, perc_hoog_inkomen_huishouden_2010</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -433,7 +447,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:perc_laag_inkomen_huishouden_2010</Name>
       <Title>perc_laag_inkomen_huishouden_2010</Title>
-      <Abstract/>
+      <Abstract>Percentage van aantal huishoudens met een laag inkomen op 1 januari 2010.</Abstract>
       <Keywords>perc_laag_inkomen_huishouden_2010, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -441,7 +455,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2000</Name>
       <Title>stedelijkheid_2000</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2000.</Abstract>
       <Keywords>features, stedelijkheid_2000</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -449,7 +469,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2001</Name>
       <Title>stedelijkheid_2001</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2001.</Abstract>
       <Keywords>features, stedelijkheid_2001</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -457,7 +483,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2002</Name>
       <Title>stedelijkheid_2002</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2002.</Abstract>
       <Keywords>features, stedelijkheid_2002</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -465,7 +497,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2003</Name>
       <Title>stedelijkheid_2003</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2003.</Abstract>
       <Keywords>features, stedelijkheid_2003</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -473,7 +511,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2004</Name>
       <Title>stedelijkheid_2004</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2004.</Abstract>
       <Keywords>features, stedelijkheid_2004</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -481,7 +525,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2005</Name>
       <Title>stedelijkheid_2005</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2005.</Abstract>
       <Keywords>features, stedelijkheid_2005</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -489,7 +539,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2006</Name>
       <Title>stedelijkheid_2006</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2006.</Abstract>
       <Keywords>stedelijkheid_2006, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -497,7 +553,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2007</Name>
       <Title>stedelijkheid_2007</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2007.</Abstract>
       <Keywords>stedelijkheid_2007, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -505,7 +567,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2008</Name>
       <Title>stedelijkheid_2008</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2008.</Abstract>
       <Keywords>stedelijkheid_2008, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -513,7 +581,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2009</Name>
       <Title>stedelijkheid_2009</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2009.</Abstract>
       <Keywords>stedelijkheid_2009, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -521,7 +595,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2010</Name>
       <Title>stedelijkheid_2010</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2010.</Abstract>
       <Keywords>features, stedelijkheid_2010</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -529,7 +609,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2011</Name>
       <Title>stedelijkheid_2011</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2011.</Abstract>
       <Keywords>features, stedelijkheid_2011</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -537,7 +623,13 @@
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2012</Name>
       <Title>stedelijkheid_2012</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum 1 januari 2012.</Abstract>
       <Keywords>stedelijkheid_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -545,7 +637,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:toename_inwoners_2000_2010</Name>
       <Title>toename_inwoners_2000_2010</Title>
-      <Abstract/>
+      <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>toename_inwoners_2000_2010, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -553,7 +645,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2011</Name>
       <Title>vrouwen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
       <Keywords>vrouwen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -561,7 +653,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2012</Name>
       <Title>vrouwen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
       <Keywords>vrouwen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -569,7 +661,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2011</Name>
       <Title>westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
       <Keywords>westerse_allochtonen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -577,7 +669,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2012</Name>
       <Title>westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
       <Keywords>features, westerse_allochtonen_2012</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -585,7 +677,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2000</Name>
       <Title>woningen_2000</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2000, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -593,7 +685,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2001</Name>
       <Title>woningen_2001</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2001, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -601,7 +693,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2002</Name>
       <Title>woningen_2002</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2002, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -609,7 +701,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2003</Name>
       <Title>woningen_2003</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2003, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -617,7 +709,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2004</Name>
       <Title>woningen_2004</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2004, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -625,7 +717,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2005</Name>
       <Title>woningen_2005</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2005, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -633,7 +725,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2006</Name>
       <Title>woningen_2006</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2006, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -641,7 +733,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2007</Name>
       <Title>woningen_2007</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2007, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -649,7 +741,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2008</Name>
       <Title>woningen_2008</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2008, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -657,7 +749,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2009</Name>
       <Title>woningen_2009</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>features, woningen_2009</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -665,7 +757,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2010</Name>
       <Title>woningen_2010</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>features, woningen_2010</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -673,7 +765,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2011</Name>
       <Title>woningen_2011</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -681,7 +773,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2012</Name>
       <Title>woningen_2012</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.246139402583425" miny="50.73113768286063" maxx="7.251478204813933" maxy="53.56165799976563"/>
@@ -738,7 +830,7 @@
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

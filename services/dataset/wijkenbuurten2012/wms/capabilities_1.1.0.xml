@@ -2,15 +2,17 @@
 <WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
-    <Title>INSPIRE View Service PDOK</Title>
-    <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+    <Title>CBS Wijken en Buurten 2012 versie 1 WMS</Title>
+    <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-
+FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
-      <Keyword>Hydrografie</Keyword>
-      <Keyword>Vervoersnetwerken</Keyword>
-      <Keyword>Beschermde gebieden</Keyword>
-      <Keyword>Geografische namen</Keyword>
+      <Keyword>wijken</Keyword>
+      <Keyword>buurten</Keyword>
+      <Keyword>gemeenten</Keyword>
+      <Keyword>statistiek</Keyword>
+      <Keyword>bevolking</Keyword>
+      <Keyword>Statistische eenheden</Keyword>
+      <Keyword>Spreiding van de bevolking - demografie</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -32,8 +34,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        Geo gedeeld licentie; http://geogedeeld.geonovum.nl/cache/1353945477.xml</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -147,8 +150,9 @@
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
     <Layer queryable="0" opaque="0" noSubsets="0">
-      <Title>INSPIRE View Service PDOK</Title>
-      <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+      <Title>CBS Wijken en Buurten 2012 versie 1 WMS</Title>
+      <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-
+FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
       <!--Limited list of EPSG projections:-->
       <SRS>EPSG:25831</SRS>
       <SRS>EPSG:25832</SRS>
@@ -210,13 +214,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="356799.34284779086" miny="6574272.321808971" maxx="806419.1451382857" maxy="7091533.4515688"/>
         <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_buurten_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -225,7 +233,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -234,7 +242,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -243,7 +251,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_vrouwen</Name>
-          <Title/>
+          <Title>buurt_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -252,7 +260,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -261,7 +269,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_huishoudens</Name>
-          <Title/>
+          <Title>buurt_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -270,7 +278,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -279,7 +287,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -288,7 +296,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -297,7 +305,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -306,7 +314,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -315,7 +323,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>buurt_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -324,7 +332,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -333,7 +341,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -342,7 +350,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_personenautos</Name>
-          <Title/>
+          <Title>buurt_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -351,7 +359,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -360,7 +368,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -369,7 +377,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -378,7 +386,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -387,7 +395,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_mannen</Name>
-          <Title/>
+          <Title>buurt_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -396,7 +404,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>buurt_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -405,7 +413,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -414,7 +422,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -423,7 +431,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -432,7 +440,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -441,7 +449,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -450,7 +458,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_inwoners</Name>
-          <Title/>
+          <Title>buurt_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -498,13 +506,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="356799.3428477922" miny="6574272.321808971" maxx="806419.1451382842" maxy="7091533.4515688"/>
         <BoundingBox SRS="EPSG:25831" minx="513590.0555653253" miny="5620234.963471747" maxx="791375.7271484403" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198354" miny="5622404.086999423" maxx="383725.9442422808" maxy="5950552.139851025"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.2</Identifier>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_wijken_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -513,7 +525,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -522,7 +534,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -531,7 +543,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -540,7 +552,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -549,7 +561,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>wijk_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -558,7 +570,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_huishoudens</Name>
-          <Title/>
+          <Title>wijk_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -567,7 +579,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -576,7 +588,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -585,7 +597,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_mannen</Name>
-          <Title/>
+          <Title>wijk_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -594,7 +606,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -603,7 +615,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -612,7 +624,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -621,7 +633,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_personenautos</Name>
-          <Title/>
+          <Title>wijk_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -630,7 +642,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -639,7 +651,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -648,7 +660,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -657,7 +669,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -666,7 +678,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -675,7 +687,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -684,7 +696,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -693,7 +705,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_vrouwen</Name>
-          <Title/>
+          <Title>wijk_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -702,7 +714,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
-          <Title/>
+          <Title>wijk_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -711,7 +723,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -720,7 +732,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>wijk_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -729,7 +741,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -738,7 +750,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -786,13 +798,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="356799.34284779086" miny="6574272.321808971" maxx="806419.1451382857" maxy="7091533.4515688"/>
         <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.3</Identifier>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=d25fe199-2430-48fd-ad57-5b5f79f73cdf"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -801,7 +817,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>gemeente_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -810,7 +826,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -819,7 +835,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -828,7 +844,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -837,7 +853,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners</Name>
-          <Title/>
+          <Title>gemeente_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -846,7 +862,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -855,7 +871,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -864,7 +880,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -873,7 +889,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos</Name>
-          <Title/>
+          <Title>gemeente_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -882,7 +898,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen</Name>
-          <Title/>
+          <Title>gemeente_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -891,7 +907,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -900,7 +916,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -909,7 +925,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -918,7 +934,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -927,7 +943,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -936,7 +952,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -945,7 +961,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -954,7 +970,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -963,7 +979,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen</Name>
-          <Title/>
+          <Title>gemeente_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -972,7 +988,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -981,7 +997,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -990,7 +1006,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -999,7 +1015,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens</Name>
-          <Title/>
+          <Title>gemeente_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1008,7 +1024,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1017,7 +1033,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>gemeente_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1026,7 +1042,7 @@ PROJCS["Amersfoort / RD New",
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

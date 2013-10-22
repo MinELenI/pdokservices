@@ -1,12 +1,18 @@
 <WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
   <Service>
     <Name>WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>Nulmeting Op Kaart 2007 WMS</Title>
+    <Abstract>De Nulmeting op Kaart 2007 (NOK2007) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2007. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2007-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS.</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
-      <Keyword>infoMapAccessService</Keyword>
+      <Keyword>Bos</Keyword>
+      <Keyword>Grondverwerving/grondzaken</Keyword>
+      <Keyword>Landbouw</Keyword>
+      <Keyword>Landschap</Keyword>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Recreatie</Keyword>
+      <Keyword>Wettelijke begrenzing (beleid)</Keyword>
+      <Keyword>Kadastrale grenzen</Keyword>
+      <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
     <ContactInformation>
@@ -27,8 +33,8 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>Geen beperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -89,8 +95,8 @@
       <Format>BLANK</Format>
     </Exception>
     <Layer>
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>Nulmeting Op Kaart 2007 WMS</Title>
+      <Abstract>De Nulmeting op Kaart 2007 (NOK2007) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2007. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2007-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS.</Abstract>
       <!--Limited list of EPSG projections:-->
       <CRS>EPSG:25831</CRS>
       <CRS>EPSG:25832</CRS>
@@ -146,7 +152,7 @@
         <BoundingBox CRS="EPSG:25832" minx="105476.19665237807" miny="5622898.4867664" maxx="382230.5901891322" maxy="5937139.2808454875"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=e47b765b-6270-4876-91fc-e0056beb9a10"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=e47b765b-6270-4876-91fc-e0056beb9a10"/>
         </MetadataURL>
         <Style>
           <Name>nok2007_bblbuiten</Name>
@@ -194,7 +200,7 @@
         <BoundingBox CRS="EPSG:25832" minx="104170.1802925918" miny="5622519.500943907" maxx="383401.80787124985" maxy="5947628.258137134"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=9e3fac5c-1472-42d1-9727-49e382a75571"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=9e3fac5c-1472-42d1-9727-49e382a75571"/>
         </MetadataURL>
         <Style>
           <Name>nok2007_ehs</Name>
@@ -242,7 +248,7 @@
         <BoundingBox CRS="EPSG:25832" minx="173108.03035209177" miny="5738807.99709646" maxx="292925.728683671" maxy="5848824.248650041"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=667ad9b8-5d0e-4e17-ae87-e33de76d1bf1"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=667ad9b8-5d0e-4e17-ae87-e33de76d1bf1"/>
         </MetadataURL>
         <Style>
           <Name>nok2007_rods</Name>

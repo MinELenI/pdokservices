@@ -1,12 +1,18 @@
 <WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
   <Service>
     <Name>WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>Natuurmeting Op Kaart 2010 WMS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2010 (NOK2010) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2010. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2010-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS. Voor meer informatie: zie het rapport 'Natuurmeting op Kaart 2010 - De realisatie van EHS en RodS op 1-1-2010'.</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
-      <Keyword>infoMapAccessService</Keyword>
+      <Keyword>Bos</Keyword>
+      <Keyword>Grondverwerving/grondzaken</Keyword>
+      <Keyword>Landbouw</Keyword>
+      <Keyword>Landschap</Keyword>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Recreatie</Keyword>
+      <Keyword>Wettelijke begrenzing (beleid)</Keyword>
+      <Keyword>Kadastrale grenzen</Keyword>
+      <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
     <ContactInformation>
@@ -27,8 +33,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -89,8 +96,8 @@
       <Format>BLANK</Format>
     </Exception>
     <Layer>
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>Natuurmeting Op Kaart 2010 WMS</Title>
+      <Abstract>De Natuurmeting Op Kaart 2010 (NOK2010) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2010. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2010-kaart bestaat uit drie onderdelen: voortgang van de EHS, voortgang van RodS en eigendommen van BBL buiten de begrenzingen van EHS en RodS. Voor meer informatie: zie het rapport 'Natuurmeting op Kaart 2010 - De realisatie van EHS en RodS op 1-1-2010'.</Abstract>
       <!--Limited list of EPSG projections:-->
       <CRS>EPSG:25831</CRS>
       <CRS>EPSG:25832</CRS>
@@ -102,20 +109,20 @@
       <CRS>EPSG:4326</CRS>
       <CRS>CRS:84</CRS>
       <EX_GeographicBoundingBox>
-        <westBoundLongitude>3.2201899999999997</westBoundLongitude>
-        <eastBoundLongitude>7.28081</eastBoundLongitude>
-        <southBoundLatitude>50.116189999999996</southBoundLatitude>
-        <northBoundLatitude>54.17681</northBoundLatitude>
+        <westBoundLongitude>3.26</westBoundLongitude>
+        <eastBoundLongitude>7.241</eastBoundLongitude>
+        <southBoundLatitude>50.735</southBoundLatitude>
+        <northBoundLatitude>53.558</northBoundLatitude>
       </EX_GeographicBoundingBox>
-      <BoundingBox CRS="CRS:84" minx="3.2201899999999997" miny="50.116189999999996" maxx="7.28081" maxy="54.17681"/>
-      <BoundingBox CRS="EPSG:4326" minx="50.116189999999996" miny="3.2201899999999997" maxx="54.17681" maxy="7.28081"/>
-      <BoundingBox CRS="EPSG:4258" minx="50.11619000092795" miny="3.2201899999999997" maxx="54.17681000089478" maxy="7.280809999999999"/>
-      <BoundingBox CRS="EPSG:3035" minx="3004037.0748352525" miny="3836835.471146968" maxx="3472967.773979046" maxy="4143452.639576772"/>
-      <BoundingBox CRS="EPSG:3034" minx="2601076.567588129" miny="3532378.6644580346" maxx="3053753.636990869" maxy="3828288.336042228"/>
-      <BoundingBox CRS="EPSG:3857" minx="358469.91105759155" miny="6466422.270363948" maxx="810496.061762574" maxy="7203713.360536773"/>
-      <BoundingBox CRS="EPSG:28992" minx="-86.32374902712763" miny="236145.47204745925" maxx="290381.36699047865" maxy="690112.619447267"/>
-      <BoundingBox CRS="EPSG:25831" minx="514372.11167209275" miny="5551572.57995639" maxx="806002.5999384513" maxy="6011661.613279161"/>
-      <BoundingBox CRS="EPSG:25832" minx="86901.91374496714" miny="5552964.528341608" maxx="387791.2496976037" maxy="6018636.377203257"/>
+      <BoundingBox CRS="CRS:84" minx="3.26" miny="50.735" maxx="7.241" maxy="53.558"/>
+      <BoundingBox CRS="EPSG:4326" minx="50.735" miny="3.26" maxx="53.558" maxy="7.241"/>
+      <BoundingBox CRS="EPSG:4258" minx="50.73500000092408" miny="3.26" maxx="53.55800000090101" maxy="7.2410000000000005"/>
+      <BoundingBox CRS="EPSG:3035" minx="3072933.114435224" miny="3845935.028912244" maxx="3404120.6466532582" maxy="4138194.2013693694"/>
+      <BoundingBox CRS="EPSG:3034" minx="2667602.5416277274" miny="3541171.3289779774" maxx="2987198.229701933" maxy="3823289.3788148016"/>
+      <BoundingBox CRS="EPSG:3857" minx="362901.5399860718" miny="6574551.4831717545" maxx="806064.4328340939" maxy="7086887.254098978"/>
+      <BoundingBox CRS="EPSG:28992" minx="4756.454885389394" miny="304989.8083611138" maxx="285796.4086853445" maxy="621171.8598532369"/>
+      <BoundingBox CRS="EPSG:25831" minx="517222.8887715893" miny="5620388.790733353" maxx="799226.9319507126" maxy="5942714.771279588"/>
+      <BoundingBox CRS="EPSG:25832" minx="95071.61450453888" miny="5621831.949348964" maxx="383485.7900781712" maxy="5949682.475125877"/>
       <AuthorityURL name="PDOK">
         <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
@@ -143,7 +150,7 @@
         <BoundingBox CRS="EPSG:25832" minx="104866.36236680363" miny="5622897.220394566" maxx="382235.2857148154" maxy="5936752.01506586"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_bblbuiten</Name>
@@ -172,12 +179,12 @@
         <CRS>EPSG:28992</CRS>
         <CRS>CRS:84</CRS>
         <EX_GeographicBoundingBox>
-          <westBoundLongitude>3.2201899999999997</westBoundLongitude>
-          <eastBoundLongitude>7.28081</eastBoundLongitude>
-          <southBoundLatitude>50.116189999999996</southBoundLatitude>
-          <northBoundLatitude>54.17681</northBoundLatitude>
+          <westBoundLongitude>3.26</westBoundLongitude>
+          <eastBoundLongitude>7.241</eastBoundLongitude>
+          <southBoundLatitude>50.735</southBoundLatitude>
+          <northBoundLatitude>53.558</northBoundLatitude>
         </EX_GeographicBoundingBox>
-        <BoundingBox CRS="CRS:84" minx="3.2201899999999997" miny="50.116189999999996" maxx="7.28081" maxy="54.17681"/>
+        <BoundingBox CRS="CRS:84" minx="3.26" miny="50.735" maxx="7.241" maxy="53.558"/>
         <BoundingBox CRS="EPSG:28992" minx="13939.339" miny="306952.66" maxx="277842.938" maxy="619131.812"/>
         <BoundingBox CRS="EPSG:4326" minx="50.735241266927126" miny="3.2594107781952677" maxx="53.55815885294968" maxy="7.240355218048103"/>
         <BoundingBox CRS="EPSG:4258" minx="50.735241267851215" miny="3.2594107781952677" maxx="53.55815885385068" maxy="7.240355218048103"/>
@@ -188,7 +195,7 @@
         <BoundingBox CRS="EPSG:25832" minx="104170.1803047586" miny="5622519.363271415" maxx="383404.6161784581" maxy="5947628.257637191"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_ehs</Name>
@@ -233,7 +240,7 @@
         <BoundingBox CRS="EPSG:25832" minx="173108.03048944334" miny="5738808.023343361" maxx="292925.2046212397" maxy="5848824.248643749"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
           <Name>nok_rods</Name>

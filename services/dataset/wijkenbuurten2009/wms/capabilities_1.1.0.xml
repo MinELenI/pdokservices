@@ -2,11 +2,14 @@
 <WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
-    <Title>View Service PDOK</Title>
-    <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+    <Title>CBS Wijken en Buurten 2009 Gegeneraliseerd versie 3 WMS</Title>
+    <Abstract>Het gegeneraliseerde Bestand Wijken en Buurten bevat gegeneraliseerde geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit het TOPgrenzen-bestand van het Kadaster. Deze derde versie bevat het maximale aantal kerncijfers en zal hierna niet meer aangevuld worden. Via het Kadaster is tegen betaling ook een niet gegeneraliseerde versie verkrijgbaar. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/A829CFAB-2368-4318-8601-1C8F75DBE6F7/0/2009b68update2web.pdf</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
+      <Keyword>wijken</Keyword>
+      <Keyword>buurten</Keyword>
+      <Keyword>gemeenten</Keyword>
+      <Keyword>statistiek</Keyword>
+      <Keyword>bevolking</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -28,8 +31,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding Kadaster, CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -144,8 +148,8 @@
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
     <Layer queryable="0" opaque="0" noSubsets="0">
-      <Title>View Service PDOK</Title>
-      <Abstract>De View Service PDOK is een overkoepelende View Service voor datasets die via PDOK worden ontsloten.</Abstract>
+      <Title>CBS Wijken en Buurten 2009 Gegeneraliseerd versie 3 WMS</Title>
+      <Abstract>Het gegeneraliseerde Bestand Wijken en Buurten bevat gegeneraliseerde geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit het TOPgrenzen-bestand van het Kadaster. Deze derde versie bevat het maximale aantal kerncijfers en zal hierna niet meer aangevuld worden. Via het Kadaster is tegen betaling ook een niet gegeneraliseerde versie verkrijgbaar. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/A829CFAB-2368-4318-8601-1C8F75DBE6F7/0/2009b68update2web.pdf</Abstract>
       <!--Limited list of EPSG projections:-->
       <SRS>EPSG:25831</SRS>
       <SRS>EPSG:25832</SRS>
@@ -215,11 +219,11 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_buurten_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -228,7 +232,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -237,7 +241,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -246,7 +250,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_inkomensontvangers</Name>
-          <Title/>
+          <Title>buurt_aantal_inkomensontvangers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -255,7 +259,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -264,7 +268,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_huishoudens</Name>
-          <Title/>
+          <Title>buurt_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -273,7 +277,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -282,7 +286,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -291,7 +295,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_actieven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_actieven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -300,7 +304,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_koopwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -309,7 +313,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -318,7 +322,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -327,7 +331,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -336,7 +340,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -345,7 +349,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -354,7 +358,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -363,7 +367,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -372,7 +376,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -381,7 +385,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_personenautos</Name>
-          <Title/>
+          <Title>buurt_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -390,7 +394,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -399,7 +403,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huurwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huurwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -408,7 +412,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -417,7 +421,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -426,7 +430,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -435,7 +439,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -444,7 +448,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -453,7 +457,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -462,7 +466,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_woningen</Name>
-          <Title/>
+          <Title>buurt_aantal_woningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -471,7 +475,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_mannen</Name>
-          <Title/>
+          <Title>buurt_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -480,7 +484,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_industrie</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_industrie</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -489,7 +493,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -498,7 +502,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -507,7 +511,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -516,7 +520,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -525,7 +529,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -534,7 +538,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -543,7 +547,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_inwoners</Name>
-          <Title/>
+          <Title>buurt_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -552,7 +556,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -561,7 +565,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -570,7 +574,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -579,7 +583,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -588,7 +592,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -597,7 +601,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_vrouwen</Name>
-          <Title/>
+          <Title>buurt_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -606,7 +610,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_veeteeltbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_veeteeltbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -615,7 +619,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -624,7 +628,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -633,7 +637,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -642,7 +646,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -651,7 +655,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -660,7 +664,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -669,7 +673,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -678,7 +682,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -687,7 +691,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -696,7 +700,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -705,7 +709,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>buurt_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -714,7 +718,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -723,7 +727,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -732,7 +736,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -741,7 +745,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -750,7 +754,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -759,7 +763,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -768,7 +772,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -777,7 +781,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>buurt_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -786,7 +790,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -795,7 +799,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -804,7 +808,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -813,7 +817,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -822,7 +826,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -831,7 +835,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -840,7 +844,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gewassenbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gewassenbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -849,7 +853,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -858,7 +862,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_combinatiebedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_combinatiebedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -867,7 +871,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven</Name>
-          <Title/>
+          <Title>buurt_aantal_agrarische_bedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -923,11 +927,11 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_wijken_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -936,7 +940,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -945,7 +949,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -954,7 +958,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -963,7 +967,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -972,7 +976,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -981,7 +985,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_huishoudens</Name>
-          <Title/>
+          <Title>wijk_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -990,7 +994,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -999,7 +1003,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_mannen</Name>
-          <Title/>
+          <Title>wijk_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1008,7 +1012,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1017,7 +1021,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1026,7 +1030,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1035,7 +1039,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1044,7 +1048,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1053,7 +1057,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1062,7 +1066,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1071,7 +1075,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1080,7 +1084,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1089,7 +1093,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1098,7 +1102,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_veeteeltbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_veeteeltbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1107,7 +1111,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1116,7 +1120,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1125,7 +1129,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1134,7 +1138,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1143,7 +1147,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1152,7 +1156,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1161,7 +1165,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1170,7 +1174,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1179,7 +1183,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1188,7 +1192,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1197,7 +1201,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_industrie</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_industrie</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1206,7 +1210,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1215,7 +1219,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_koopwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1224,7 +1228,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1233,7 +1237,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1242,7 +1246,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_niet_actieven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_actieven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1251,7 +1255,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>wijk_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1260,7 +1264,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1269,7 +1273,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1278,7 +1282,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1287,7 +1291,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1296,7 +1300,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1305,7 +1309,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1314,7 +1318,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1323,7 +1327,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>wijk_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1332,7 +1336,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huurwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huurwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1341,7 +1345,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1350,7 +1354,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1359,7 +1363,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1368,7 +1372,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1377,7 +1381,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1386,7 +1390,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1395,7 +1399,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1404,7 +1408,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_combinatiebedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_combinatiebedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1413,7 +1417,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_personenautos</Name>
-          <Title/>
+          <Title>wijk_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1422,7 +1426,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1431,7 +1435,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1440,7 +1444,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1449,7 +1453,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1458,7 +1462,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gewassenbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gewassenbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1467,7 +1471,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1476,7 +1480,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_agrarische_bedrijven</Name>
-          <Title/>
+          <Title>wijk_aantal_agrarische_bedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1485,7 +1489,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1494,7 +1498,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1503,7 +1507,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_inkomensontvangers</Name>
-          <Title/>
+          <Title>wijk_aantal_inkomensontvangers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1512,7 +1516,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1521,7 +1525,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_vrouwen</Name>
-          <Title/>
+          <Title>wijk_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1530,7 +1534,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
-          <Title/>
+          <Title>wijk_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1539,7 +1543,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1548,7 +1552,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1557,7 +1561,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_wijk_aantal_woningen</Name>
-          <Title/>
+          <Title>wijk_aantal_woningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1566,7 +1570,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1575,7 +1579,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1631,11 +1635,11 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/nl/main.home?searchuuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=ee1afda3-d3a4-40ae-8951-0da84b6b7ed6"/>
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_default</Name>
-          <Title/>
+          <Title>default</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1644,7 +1648,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers</Name>
-          <Title/>
+          <Title>gemeente_aantal_motortweewielers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1653,7 +1657,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_arbeidsongeschiktheiduitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1662,7 +1666,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1671,7 +1675,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1680,7 +1684,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1689,7 +1693,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_45_tot_65_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1698,7 +1702,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1707,7 +1711,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1716,7 +1720,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gewassenbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gewassenbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1725,7 +1729,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1734,7 +1738,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bibliotheek</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1743,7 +1747,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1752,7 +1756,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1761,7 +1765,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1770,7 +1774,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_vanaf_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1779,7 +1783,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1788,7 +1792,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1797,7 +1801,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1806,7 +1810,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1815,7 +1819,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_mannen</Name>
-          <Title/>
+          <Title>gemeente_aantal_mannen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1824,7 +1828,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_woningen</Name>
-          <Title/>
+          <Title>gemeente_aantal_woningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1833,7 +1837,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1842,7 +1846,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huurwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huurwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1851,7 +1855,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1860,7 +1864,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1869,7 +1873,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1878,7 +1882,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_combinatiebedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_combinatiebedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1887,7 +1891,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1896,7 +1900,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1905,7 +1909,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_bevolkingsdichtheid_inwoners_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1914,7 +1918,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ww_uitkeringen_15_tot_65</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1923,7 +1927,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1932,7 +1936,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_verweduwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_verweduwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1941,7 +1945,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1950,7 +1954,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1959,7 +1963,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_treinstation</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1968,7 +1972,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_ongehuwden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_ongehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1977,7 +1981,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inwoners</Name>
-          <Title/>
+          <Title>gemeente_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1986,7 +1990,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_kinderdagverblijf</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1995,7 +1999,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_WOZwoningwaarde</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2004,7 +2008,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_met_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2013,7 +2017,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_personenautos</Name>
-          <Title/>
+          <Title>gemeente_aantal_personenautos</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2022,7 +2026,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_vrouwen</Name>
-          <Title/>
+          <Title>gemeente_aantal_vrouwen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2031,7 +2035,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2040,7 +2044,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_koopwoningen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2049,7 +2053,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2058,7 +2062,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2067,7 +2071,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2076,7 +2080,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2085,7 +2089,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2094,7 +2098,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2103,7 +2107,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_tot_15_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_tot_15_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2112,7 +2116,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inkomensontvangers</Name>
-          <Title/>
+          <Title>gemeente_aantal_inkomensontvangers</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2121,7 +2125,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2130,7 +2134,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2139,7 +2143,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2148,7 +2152,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_agrarische_bedrijven</Name>
-          <Title/>
+          <Title>gemeente_aantal_agrarische_bedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2157,7 +2161,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_VMBO_school</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2166,7 +2170,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2175,7 +2179,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_industrie</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_industrie</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2184,7 +2188,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_commerciele_dienstverlening</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2193,7 +2197,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_niet_actieven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_niet_actieven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2202,7 +2206,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2211,7 +2215,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_bouwjaarklasse_tot_2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2220,7 +2224,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_autos_per_km2</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2229,7 +2233,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_huishoudens</Name>
-          <Title/>
+          <Title>gemeente_aantal_huishoudens</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2238,7 +2242,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2247,7 +2251,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_huishoudgrootte</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddelde_huishoudgrootte</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2256,7 +2260,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen</Name>
-          <Title/>
+          <Title>gemeente_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2265,7 +2269,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2274,7 +2278,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_veeteeltbedrijven</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_percentage_veeteeltbedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2283,7 +2287,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </Style>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
-          <Title/>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

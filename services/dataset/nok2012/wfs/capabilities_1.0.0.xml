@@ -1,12 +1,12 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2012="http://nok2012.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>Natuurmeting Op Kaart 2012 WFS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2012 (NOK2012) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2012. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2012 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
+    <Keywords>Natuur, Wettelijke begrenzing (beleid)</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2012/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>

@@ -1,12 +1,14 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>CBS Wijken en Buurten 2010 versie 3 WFS</Title>
+    <Abstract>Het Bestand Wijk- en Buurtkaart 2010 bevat geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit het TOPgrenzen bestand van het Kadaster. Deze derde versie bevat het maximale aantal attributen en zal hierna niet meer geupdate worden. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/C51D26F7-3938-4175-8510-
+8BE74D2EDB0F/0/20132010b68pub.pdf</Abstract>
+    <Keywords>wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding Kadaster, CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -141,7 +143,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

@@ -1,12 +1,13 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2011="http://nok2011.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>Natuurmeting Op Kaart 2011 WFS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2011 (NOK2011) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) 
+                    en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2011-kaart bestaat uit drie onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, en 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen).</Abstract>
+    <Keywords>Natuur, Ruimtelijke ordening/planning, Wettelijke begrenzing (beleid)</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2011/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -138,7 +139,7 @@
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

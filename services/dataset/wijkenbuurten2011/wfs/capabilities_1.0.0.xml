@@ -1,12 +1,14 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:wijkenbuurten2011="http://wijkenbuurten2011.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>CBS Wijken en Buurten 2011 versie 2 WFS</Title>
+    <Abstract>Het Bestand Wijk- en Buurtkaart 2011 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze tweede versie bevat een deel van de kerncijfers. Begin 2014 wordt een derde versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/0514C636-FE23-45E6-BC14-
+07AD83AA3B1D/0/20132011b68pub.pdf</Abstract>
+    <Keywords>wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding Kadaster, CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>

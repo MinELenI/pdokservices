@@ -1,15 +1,18 @@
 <wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:brpgewaspercelen="http://brpgewaspercelen.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>GeoServer Web Feature Service</ows:Title>
-    <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
+    <ows:Title>BRP Gewaspercelen WFS</ows:Title>
+    <ows:Abstract>BRP Gewaspercelen bestaat uit de locatie van landbouwpercelen met daaraan gekoppeld het geteelde gewas. Het bestand is een selectie van informatie uit de Basisregistratie Percelen (BRP) van Dienst Regelingen. De omgrenzingen van de landbouwpercelen zijn gebaseerd op de Top10vector. De gebruiker van het perceel dient aan te geven welk gewas wordt geteeld op het betreffende perceel.</ows:Abstract>
     <ows:Keywords>
-      <ows:Keyword>WFS</ows:Keyword>
-      <ows:Keyword>PDOK</ows:Keyword>
+      <ows:Keyword>BRP</ows:Keyword>
+      <ows:Keyword>Gewaspercelen</ows:Keyword>
+      <ows:Keyword>Basisregistratie</ows:Keyword>
+      <ows:Keyword>BRP Gewaspercelen</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
-    <ows:Fees>FEES APPLY</ows:Fees>
-    <ows:AccessConstraints>RESTRICTED</ows:AccessConstraints>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -629,11 +632,11 @@
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="centroid">
+      <fes:Function name="Centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="geometry">
-            <fes:Type>gml:AbstractGeometryType</fes:Type>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

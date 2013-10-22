@@ -1,15 +1,18 @@
 <wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:brpgewaspercelen="http://brpgewaspercelen.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>GeoServer Web Feature Service</ows:Title>
-    <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
+    <ows:Title>BRP Gewaspercelen WFS</ows:Title>
+    <ows:Abstract>BRP Gewaspercelen bestaat uit de locatie van landbouwpercelen met daaraan gekoppeld het geteelde gewas. Het bestand is een selectie van informatie uit de Basisregistratie Percelen (BRP) van Dienst Regelingen. De omgrenzingen van de landbouwpercelen zijn gebaseerd op de Top10vector. De gebruiker van het perceel dient aan te geven welk gewas wordt geteeld op het betreffende perceel.</ows:Abstract>
     <ows:Keywords>
-      <ows:Keyword>WFS</ows:Keyword>
-      <ows:Keyword>PDOK</ows:Keyword>
+      <ows:Keyword>BRP</ows:Keyword>
+      <ows:Keyword>Gewaspercelen</ows:Keyword>
+      <ows:Keyword>Basisregistratie</ows:Keyword>
+      <ows:Keyword>BRP Gewaspercelen</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
-    <ows:Fees>FEES APPLY</ows:Fees>
-    <ows:AccessConstraints>RESTRICTED</ows:AccessConstraints>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -175,7 +178,7 @@
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>

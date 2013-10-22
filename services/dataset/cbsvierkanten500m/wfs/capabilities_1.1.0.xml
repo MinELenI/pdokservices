@@ -1,15 +1,28 @@
 <wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://schemas.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:cbsvierkanten500m="http://cbsvierkanten500m.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>GeoServer Web Feature Service</ows:Title>
-    <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
+    <ows:Title>Vierkanten 500m x 500m WFS</ows:Title>
+    <ows:Abstract>Het bestand CBS vierkanten 500m bevat statistische gegevens per 500m x 500m vierkant.
+Nieuwe publicatie per 24 juli 2012.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 500m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt in een kolomnaam voor de gehele dataset de grootte van het vierkant vermeld en de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen vanaf 1 januari 2000 tm 1 januari 2012 de jaarlijkse inwonertallen en vanaf 1 januari 2000 tm 1 januari 2011 de jaarlijkse woningaantallen, de omgevingadressendichtheid en de stedelijkheid. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. Voor het jaar 2011 bevat het de groepering naar herkomst en leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pd</ows:Abstract>
     <ows:Keywords>
-      <ows:Keyword>WFS</ows:Keyword>
-      <ows:Keyword>PDOK</ows:Keyword>
+      <ows:Keyword>vierkant, grid, statistiek, bevolking, inwoners, woning, leeftijd, etniciteit, WOZ, stedelijkheid, dichtheid, concentratie</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
-    <ows:Fees>FEES APPLY</ows:Fees>
-    <ows:AccessConstraints>RESTRICTED</ows:AccessConstraints>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>copyright;
+        bronvermelding CBS verplicht</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -96,17 +109,20 @@
     <ows:ExtendedCapabilities>
       <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-          <inspire_common:URL/>
+          <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=0f048018-e19f-48c7-8aab-973bd461e85e</inspire_common:URL>
           <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
           <inspire_common:DefaultLanguage>
-            <inspire_common:Language>eng</inspire_common:Language>
+            <inspire_common:Language>dut</inspire_common:Language>
           </inspire_common:DefaultLanguage>
         </inspire_common:SupportedLanguages>
         <inspire_common:ResponseLanguage>
-          <inspire_common:Language>eng</inspire_common:Language>
+          <inspire_common:Language>dut</inspire_common:Language>
         </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>0f048018-e19f-48c7-8aab-973bd461e85e</inspire_common:Code>
+        </inspire_dls:SpatialDataSetIdentifier>
       </inspire_dls:ExtendedCapabilities>
     </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
@@ -117,7 +133,7 @@
     <FeatureType>
       <Name>cbsvierkanten500m:autochtonen_2011</Name>
       <Title>autochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>autochtonen_2011</ows:Keyword>
@@ -127,11 +143,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:autochtonen_2012</Name>
       <Title>autochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>autochtonen_2012</ows:Keyword>
@@ -141,11 +158,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2011</Name>
       <Title>gem_woz_waarde_woningen_2011</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
       <ows:Keywords>
         <ows:Keyword>gem_woz_waarde_woningen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -155,11 +173,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2012</Name>
       <Title>gem_woz_waarde_woningen_2012</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>gem_woz_waarde_woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -169,11 +188,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2000</Name>
       <Title>inwoners_2000</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2000</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -183,11 +203,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2001</Name>
       <Title>inwoners_2001</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2001</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -197,11 +218,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2002</Name>
       <Title>inwoners_2002</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2002</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -211,11 +233,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2003</Name>
       <Title>inwoners_2003</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2003</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -225,11 +248,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2004</Name>
       <Title>inwoners_2004</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2004</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -239,11 +263,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2005</Name>
       <Title>inwoners_2005</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2005</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -253,11 +278,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2006</Name>
       <Title>inwoners_2006</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2006</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -267,11 +293,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2007</Name>
       <Title>inwoners_2007</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2007</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -281,11 +308,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2008</Name>
       <Title>inwoners_2008</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2008</ows:Keyword>
@@ -295,11 +323,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2009</Name>
       <Title>inwoners_2009</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2009</ows:Keyword>
@@ -309,11 +338,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2010</Name>
       <Title>inwoners_2010</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2010</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -323,11 +353,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011</Name>
       <Title>inwoners_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -337,11 +368,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_15_tot_25_jaar</Name>
       <Title>inwoners_2011_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2011_15_tot_25_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -351,11 +383,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_25_tot_45_jaar</Name>
       <Title>inwoners_2011_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2011_25_tot_45_jaar</ows:Keyword>
@@ -365,11 +398,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_45_tot_65_jaar</Name>
       <Title>inwoners_2011_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2011_45_tot_65_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -379,11 +413,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_65_plus_jaar</Name>
       <Title>inwoners_2011_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2011_65_plus_jaar</ows:Keyword>
@@ -393,11 +428,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_tot_15_jaar</Name>
       <Title>inwoners_2011_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2011_tot_15_jaar</ows:Keyword>
@@ -407,11 +443,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012</Name>
       <Title>inwoners_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -421,11 +458,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_15_tot_25_jaar</Name>
       <Title>inwoners_2012_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_15_tot_25_jaar</ows:Keyword>
@@ -435,11 +473,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_25_tot_45_jaar</Name>
       <Title>inwoners_2012_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_25_tot_45_jaar</ows:Keyword>
@@ -449,11 +488,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_45_tot_65_jaar</Name>
       <Title>inwoners_2012_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2012_45_tot_65_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -463,11 +503,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_65_plus_jaar</Name>
       <Title>inwoners_2012_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2012_65_plus_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -477,11 +518,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_tot_15_jaar</Name>
       <Title>inwoners_2012_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_tot_15_jaar</ows:Keyword>
@@ -491,11 +533,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2013</Name>
       <Title>inwoners_2013</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2013</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -505,11 +548,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2011</Name>
       <Title>mannen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>mannen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -519,11 +563,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2012</Name>
       <Title>mannen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>mannen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -533,11 +578,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>niet_westerse_allochtonen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -547,11 +593,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2012</Name>
       <Title>niet_westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>niet_westerse_allochtonen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -561,11 +608,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2000</Name>
       <Title>omgevings_adres_dichtheid_2000</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2000.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2000</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -575,11 +623,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2001</Name>
       <Title>omgevings_adres_dichtheid_2001</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2001.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2001</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -589,11 +638,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2002</Name>
       <Title>omgevings_adres_dichtheid_2002</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2002.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2002</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -603,11 +653,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2003</Name>
       <Title>omgevings_adres_dichtheid_2003</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van &#233;&#233;n kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2003</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -617,11 +668,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2004</Name>
       <Title>omgevings_adres_dichtheid_2004</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2004.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2004</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -631,11 +683,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2005</Name>
       <Title>omgevings_adres_dichtheid_2005</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2005.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2005</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -645,11 +698,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2006</Name>
       <Title>omgevings_adres_dichtheid_2006</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2006.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2006</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -659,11 +713,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2007</Name>
       <Title>omgevings_adres_dichtheid_2007</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2007.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>omgevings_adres_dichtheid_2007</ows:Keyword>
@@ -673,11 +728,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2008</Name>
       <Title>omgevings_adres_dichtheid_2008</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2008.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>omgevings_adres_dichtheid_2008</ows:Keyword>
@@ -687,11 +743,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2009</Name>
       <Title>omgevings_adres_dichtheid_2009</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2009.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>omgevings_adres_dichtheid_2009</ows:Keyword>
@@ -701,11 +758,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2010</Name>
       <Title>omgevings_adres_dichtheid_2010</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2010.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2010</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -715,11 +773,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2011</Name>
       <Title>omgevings_adres_dichtheid_2011</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -729,11 +788,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2012</Name>
       <Title>omgevings_adres_dichtheid_2012</Title>
-      <Abstract/>
+      <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>omgevings_adres_dichtheid_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -743,11 +803,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:perc_hoog_inkomen_huishouden_2010</Name>
       <Title>perc_hoog_inkomen_huishouden_2010</Title>
-      <Abstract/>
+      <Abstract>Percentage aantal huishoudens met een hoog inkomen op 1 januari 2010.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>perc_hoog_inkomen_huishouden_2010</ows:Keyword>
@@ -757,11 +818,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:perc_laag_inkomen_huishouden_2010</Name>
       <Title>perc_laag_inkomen_huishouden_2010</Title>
-      <Abstract/>
+      <Abstract>Percentage van aantal huishoudens met een laag inkomen op 1 januari 2010.</Abstract>
       <ows:Keywords>
         <ows:Keyword>perc_laag_inkomen_huishouden_2010</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -771,11 +833,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2000</Name>
       <Title>stedelijkheid_2000</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2000.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2000</ows:Keyword>
@@ -785,11 +854,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2001</Name>
       <Title>stedelijkheid_2001</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2001.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2001</ows:Keyword>
@@ -799,11 +875,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2002</Name>
       <Title>stedelijkheid_2002</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2002.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2002</ows:Keyword>
@@ -813,11 +896,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2003</Name>
       <Title>stedelijkheid_2003</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2003.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2003</ows:Keyword>
@@ -827,11 +917,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2004</Name>
       <Title>stedelijkheid_2004</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2004.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2004</ows:Keyword>
@@ -841,11 +938,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2005</Name>
       <Title>stedelijkheid_2005</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2005.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2005</ows:Keyword>
@@ -855,11 +959,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2006</Name>
       <Title>stedelijkheid_2006</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2006.</Abstract>
       <ows:Keywords>
         <ows:Keyword>stedelijkheid_2006</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -869,11 +980,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2007</Name>
       <Title>stedelijkheid_2007</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2007.</Abstract>
       <ows:Keywords>
         <ows:Keyword>stedelijkheid_2007</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -883,11 +1001,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2008</Name>
       <Title>stedelijkheid_2008</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2008.</Abstract>
       <ows:Keywords>
         <ows:Keyword>stedelijkheid_2008</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -897,11 +1022,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2009</Name>
       <Title>stedelijkheid_2009</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2009.</Abstract>
       <ows:Keywords>
         <ows:Keyword>stedelijkheid_2009</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -911,11 +1043,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2010</Name>
       <Title>stedelijkheid_2010</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2010.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2010</ows:Keyword>
@@ -925,11 +1064,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2011</Name>
       <Title>stedelijkheid_2011</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>stedelijkheid_2011</ows:Keyword>
@@ -939,11 +1085,18 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2012</Name>
       <Title>stedelijkheid_2012</Title>
-      <Abstract/>
+      <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>stedelijkheid_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -953,11 +1106,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:toename_inwoners_2000_2010</Name>
       <Title>toename_inwoners_2000_2010</Title>
-      <Abstract/>
+      <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>toename_inwoners_2000_2010</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -967,11 +1121,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2011</Name>
       <Title>vrouwen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>vrouwen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -981,11 +1136,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2012</Name>
       <Title>vrouwen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>vrouwen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -995,11 +1151,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2011</Name>
       <Title>westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>westerse_allochtonen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1009,11 +1166,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2012</Name>
       <Title>westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>westerse_allochtonen_2012</ows:Keyword>
@@ -1023,11 +1181,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2000</Name>
       <Title>woningen_2000</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2000</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1037,11 +1196,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2001</Name>
       <Title>woningen_2001</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2001</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1051,11 +1211,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2002</Name>
       <Title>woningen_2002</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2002</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1065,11 +1226,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2003</Name>
       <Title>woningen_2003</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2003</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1079,11 +1241,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2004</Name>
       <Title>woningen_2004</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2004</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1093,11 +1256,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2005</Name>
       <Title>woningen_2005</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2005</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1107,11 +1271,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2006</Name>
       <Title>woningen_2006</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2006</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1121,11 +1286,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2007</Name>
       <Title>woningen_2007</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2007</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1135,11 +1301,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2008</Name>
       <Title>woningen_2008</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2008</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1149,11 +1316,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2009</Name>
       <Title>woningen_2009</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>woningen_2009</ows:Keyword>
@@ -1163,11 +1331,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2010</Name>
       <Title>woningen_2010</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>woningen_2010</ows:Keyword>
@@ -1177,11 +1346,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2011</Name>
       <Title>woningen_2011</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1191,11 +1361,12 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2012</Name>
       <Title>woningen_2012</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -1205,6 +1376,7 @@
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e</MetadataURL>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -1269,7 +1441,7 @@
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>

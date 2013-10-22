@@ -1,12 +1,13 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:brpgewaspercelen="http://brpgewaspercelen.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>BRP Gewaspercelen WFS</Title>
+    <Abstract>BRP Gewaspercelen bestaat uit de locatie van landbouwpercelen met daaraan gekoppeld het geteelde gewas. Het bestand is een selectie van informatie uit de Basisregistratie Percelen (BRP) van Dienst Regelingen. De omgrenzingen van de landbouwpercelen zijn gebaseerd op de Top10vector. De gebruiker van het perceel dient aan te geven welk gewas wordt geteeld op het betreffende perceel.</Abstract>
+    <Keywords>BRP, Gewaspercelen, Basisregistratie, BRP Gewaspercelen</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/brpgewaspercelen/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl</AccessConstraints>
   </Service>
   <Capability>
     <Request>
