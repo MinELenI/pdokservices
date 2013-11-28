@@ -97,7 +97,7 @@
     </Exception>
     <inspire_vs:ExtendedCapabilities>
       <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-        <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=0847036d-cff2-4ee9-a7f5-d8c01d322d11</inspire_common:URL>
+        <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=0847036d-cff2-4ee9-a7f5-d8c01d322d11</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
       </inspire_common:MetadataUrl>
       <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">

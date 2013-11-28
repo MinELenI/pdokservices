@@ -227,7 +227,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
     <ows:ExtendedCapabilities>
       <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-          <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=0f048018-e19f-48c7-8aab-973bd461e85e</inspire_common:URL>
+          <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=0f048018-e19f-48c7-8aab-973bd461e85e</inspire_common:URL>
           <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
@@ -258,7 +258,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:autochtonen_2012</Name>
@@ -273,7 +273,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2011</Name>
@@ -288,7 +288,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:gem_woz_waarde_woningen_2012</Name>
@@ -303,7 +303,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2000</Name>
@@ -318,7 +318,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2001</Name>
@@ -333,7 +333,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2002</Name>
@@ -348,7 +348,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2003</Name>
@@ -363,7 +363,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2004</Name>
@@ -378,7 +378,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2005</Name>
@@ -393,7 +393,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2006</Name>
@@ -408,7 +408,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2007</Name>
@@ -423,7 +423,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2008</Name>
@@ -438,7 +438,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2009</Name>
@@ -453,7 +453,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2010</Name>
@@ -468,7 +468,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011</Name>
@@ -483,7 +483,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_15_tot_25_jaar</Name>
@@ -498,7 +498,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_25_tot_45_jaar</Name>
@@ -513,7 +513,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_45_tot_65_jaar</Name>
@@ -528,7 +528,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_65_plus_jaar</Name>
@@ -543,7 +543,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2011_tot_15_jaar</Name>
@@ -558,7 +558,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012</Name>
@@ -573,7 +573,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_15_tot_25_jaar</Name>
@@ -588,7 +588,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_25_tot_45_jaar</Name>
@@ -603,7 +603,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_45_tot_65_jaar</Name>
@@ -618,7 +618,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_65_plus_jaar</Name>
@@ -633,7 +633,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2012_tot_15_jaar</Name>
@@ -648,7 +648,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:inwoners_2013</Name>
@@ -663,7 +663,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2011</Name>
@@ -678,7 +678,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:mannen_2012</Name>
@@ -693,7 +693,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2011</Name>
@@ -708,7 +708,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:niet_westerse_allochtonen_2012</Name>
@@ -723,7 +723,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2000</Name>
@@ -738,7 +738,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2001</Name>
@@ -753,7 +753,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2002</Name>
@@ -768,7 +768,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2003</Name>
@@ -783,7 +783,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2004</Name>
@@ -798,7 +798,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2005</Name>
@@ -813,7 +813,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2006</Name>
@@ -828,7 +828,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2007</Name>
@@ -843,7 +843,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2008</Name>
@@ -858,7 +858,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2009</Name>
@@ -873,7 +873,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2010</Name>
@@ -888,7 +888,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2011</Name>
@@ -903,7 +903,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:omgevings_adres_dichtheid_2012</Name>
@@ -918,7 +918,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:perc_hoog_inkomen_huishouden_2010</Name>
@@ -933,7 +933,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:perc_laag_inkomen_huishouden_2010</Name>
@@ -948,7 +948,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2000</Name>
@@ -969,7 +969,7 @@ Peildatum per 1 januari 2000.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2001</Name>
@@ -990,7 +990,7 @@ Peildatum per 1 januari 2001.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2002</Name>
@@ -1011,7 +1011,7 @@ Peildatum per 1 januari 2002.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2003</Name>
@@ -1032,7 +1032,7 @@ Peildatum per 1 januari 2003.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2004</Name>
@@ -1053,7 +1053,7 @@ Peildatum per 1 januari 2004.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2005</Name>
@@ -1074,7 +1074,7 @@ Peildatum per 1 januari 2005.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2006</Name>
@@ -1095,7 +1095,7 @@ Peildatum per 1 januari 2006.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2007</Name>
@@ -1116,7 +1116,7 @@ Peildatum per 1 januari 2007.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2008</Name>
@@ -1137,7 +1137,7 @@ Peildatum per 1 januari 2008.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2009</Name>
@@ -1158,7 +1158,7 @@ Peildatum per 1 januari 2009.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2010</Name>
@@ -1179,7 +1179,7 @@ Peildatum per 1 januari 2010.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2011</Name>
@@ -1200,7 +1200,7 @@ Peildatum per 1 januari 2011.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:stedelijkheid_2012</Name>
@@ -1221,7 +1221,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:toename_inwoners_2000_2010</Name>
@@ -1236,7 +1236,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2011</Name>
@@ -1251,7 +1251,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:vrouwen_2012</Name>
@@ -1266,7 +1266,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2011</Name>
@@ -1281,7 +1281,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:westerse_allochtonen_2012</Name>
@@ -1296,7 +1296,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2000</Name>
@@ -1311,7 +1311,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2001</Name>
@@ -1326,7 +1326,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2002</Name>
@@ -1341,7 +1341,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2003</Name>
@@ -1356,7 +1356,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2004</Name>
@@ -1371,7 +1371,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2005</Name>
@@ -1386,7 +1386,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2006</Name>
@@ -1401,7 +1401,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2007</Name>
@@ -1416,7 +1416,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2008</Name>
@@ -1431,7 +1431,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2009</Name>
@@ -1446,7 +1446,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2010</Name>
@@ -1461,7 +1461,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2011</Name>
@@ -1476,7 +1476,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten500m:woningen_2012</Name>
@@ -1491,7 +1491,7 @@ Peildatum 1 januari 2012.</Abstract>
         <ows:LowerCorner>3.246139402583425 50.73113768286063</ows:LowerCorner>
         <ows:UpperCorner>7.251478204813933 53.56165799976563</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=0f048018-e19f-48c7-8aab-973bd461e85e"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
@@ -1895,11 +1895,11 @@ Peildatum 1 januari 2012.</Abstract>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

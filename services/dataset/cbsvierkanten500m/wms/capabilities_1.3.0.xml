@@ -1,16 +1,37 @@
-<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1933" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
   <Service>
     <Name>WMS</Name>
-    <Title>INSPIRE View Service PDOK</Title>
-    <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+    <Title>Vierkanten 500m x 500m WMS</Title>
+    <Abstract>Het bestand CBS vierkanten 500m bevat statistische gegevens per 500m x 500m vierkant.
+Nieuwe publicatie per 24 juli 2012.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 500m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt in een kolomnaam voor de gehele dataset de grootte van het vierkant vermeld en de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen vanaf 1 januari 2000 tm 1 januari 2012 de jaarlijkse inwonertallen en vanaf 1 januari 2000 tm 1 januari 2011 de jaarlijkse woningaantallen, de omgevingadressendichtheid en de stedelijkheid. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. Voor het jaar 2011 bevat het de groepering naar herkomst en leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pd</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
-      <Keyword>Hydrografie</Keyword>
-      <Keyword>Vervoersnetwerken</Keyword>
-      <Keyword>Beschermde gebieden</Keyword>
-      <Keyword>Geografische namen</Keyword>
-      <Keyword>infoMapAccessService</Keyword>
+      <Keyword>vierkant</Keyword>
+      <Keyword>grid</Keyword>
+      <Keyword>statistiek</Keyword>
+      <Keyword>bevolking</Keyword>
+      <Keyword>inwoners</Keyword>
+      <Keyword>woning</Keyword>
+      <Keyword>leeftijd</Keyword>
+      <Keyword>etniciteit</Keyword>
+      <Keyword>WOZ</Keyword>
+      <Keyword>stedelijkheid</Keyword>
+      <Keyword>bevolkingsdichtheid</Keyword>
+      <Keyword>concentratie</Keyword>
+      <Keyword>Statistische eenheden</Keyword>
+      <Keyword>Spreiding van de bevolking - demografie</Keyword>
+      <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
     <ContactInformation>
@@ -31,8 +52,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -94,7 +116,7 @@
     </Exception>
     <inspire_vs:ExtendedCapabilities>
       <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-        <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?SERVICE=CSW&amp;REQUEST=GetRecordById&amp;version=2.0.2&amp;elementSetName=full&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;ID=1f93a0e9-123a-4996-b7a4-fc9f68204bed</inspire_common:URL>
+        <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/eng/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=a1ed239b-59fd-47e7-aff4-9e7297d03b4a</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
       </inspire_common:MetadataUrl>
       <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
@@ -110,8 +132,21 @@
       </inspire_common:ResponseLanguage>
     </inspire_vs:ExtendedCapabilities>
     <Layer>
-      <Title>INSPIRE View Service PDOK</Title>
-      <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+      <Title>Vierkanten 500m x 500m WMS</Title>
+      <Abstract>Het bestand CBS vierkanten 500m bevat statistische gegevens per 500m x 500m vierkant.
+Nieuwe publicatie per 24 juli 2012.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 500m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt in een kolomnaam voor de gehele dataset de grootte van het vierkant vermeld en de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen vanaf 1 januari 2000 tm 1 januari 2012 de jaarlijkse inwonertallen en vanaf 1 januari 2000 tm 1 januari 2011 de jaarlijkse woningaantallen, de omgevingadressendichtheid en de stedelijkheid. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. Voor het jaar 2011 bevat het de groepering naar herkomst en leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pd</Abstract>
       <!--Limited list of EPSG projections:-->
       <CRS>EPSG:25831</CRS>
       <CRS>EPSG:25832</CRS>
@@ -143,7 +178,7 @@
       <Layer queryable="1">
         <Name>autochtonen_2011</Name>
         <Title>autochtonen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>autochtonen_2011</Keyword>
@@ -165,9 +200,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_auto2011</Name>
-          <Title/>
+          <Title>P_AUTO</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -178,7 +221,7 @@
       <Layer queryable="1">
         <Name>autochtonen_2012</Name>
         <Title>autochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>autochtonen_2012</Keyword>
@@ -200,9 +243,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_auto2012</Name>
-          <Title/>
+          <Title>P_AUTOYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -213,7 +264,7 @@
       <Layer queryable="1">
         <Name>gem_woz_waarde_woningen_2011</Name>
         <Title>gem_woz_waarde_woningen_2011</Title>
-        <Abstract/>
+        <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
         <KeywordList>
           <Keyword>gem_woz_waarde_woningen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -235,9 +286,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.wozwon2011</Name>
-          <Title/>
+          <Title>WOZ_GEM</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -248,7 +307,7 @@
       <Layer queryable="1">
         <Name>gem_woz_waarde_woningen_2012</Name>
         <Title>gem_woz_waarde_woningen_2012</Title>
-        <Abstract/>
+        <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>gem_woz_waarde_woningen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -270,9 +329,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.wozwon2012</Name>
-          <Title/>
+          <Title>WOZWONYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -283,7 +350,7 @@
       <Layer queryable="1">
         <Name>inwoners_2000</Name>
         <Title>inwoners_2000</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2000</Keyword>
           <Keyword>features</Keyword>
@@ -305,9 +372,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2000</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -318,7 +393,7 @@
       <Layer queryable="1">
         <Name>inwoners_2001</Name>
         <Title>inwoners_2001</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2001</Keyword>
           <Keyword>features</Keyword>
@@ -340,9 +415,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2001</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -353,7 +436,7 @@
       <Layer queryable="1">
         <Name>inwoners_2002</Name>
         <Title>inwoners_2002</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2002</Keyword>
           <Keyword>features</Keyword>
@@ -375,9 +458,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2002</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -388,7 +479,7 @@
       <Layer queryable="1">
         <Name>inwoners_2003</Name>
         <Title>inwoners_2003</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2003</Keyword>
           <Keyword>features</Keyword>
@@ -410,9 +501,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2003</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -423,7 +522,7 @@
       <Layer queryable="1">
         <Name>inwoners_2004</Name>
         <Title>inwoners_2004</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2004</Keyword>
           <Keyword>features</Keyword>
@@ -445,9 +544,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2004</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -458,7 +565,7 @@
       <Layer queryable="1">
         <Name>inwoners_2005</Name>
         <Title>inwoners_2005</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2005</Keyword>
           <Keyword>features</Keyword>
@@ -480,9 +587,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2005</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -493,7 +608,7 @@
       <Layer queryable="1">
         <Name>inwoners_2006</Name>
         <Title>inwoners_2006</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2006</Keyword>
           <Keyword>features</Keyword>
@@ -515,9 +630,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2006</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -528,7 +651,7 @@
       <Layer queryable="1">
         <Name>inwoners_2007</Name>
         <Title>inwoners_2007</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2007</Keyword>
           <Keyword>features</Keyword>
@@ -550,9 +673,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2007</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -563,7 +694,7 @@
       <Layer queryable="1">
         <Name>inwoners_2008</Name>
         <Title>inwoners_2008</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2008</Keyword>
@@ -585,9 +716,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2008</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -598,7 +737,7 @@
       <Layer queryable="1">
         <Name>inwoners_2009</Name>
         <Title>inwoners_2009</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2009</Keyword>
@@ -620,9 +759,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2009</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -633,7 +780,7 @@
       <Layer queryable="1">
         <Name>inwoners_2010</Name>
         <Title>inwoners_2010</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2010</Keyword>
           <Keyword>features</Keyword>
@@ -655,9 +802,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2010</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -668,7 +823,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011</Name>
         <Title>inwoners_2011</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2011</Keyword>
           <Keyword>features</Keyword>
@@ -690,9 +845,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2011</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -703,7 +866,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011_15_tot_25_jaar</Name>
         <Title>inwoners_2011_15_tot_25_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2011_15_tot_25_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -725,9 +888,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2011_1524</Name>
-          <Title/>
+          <Title>IYYYY_1524</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -738,7 +909,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011_25_tot_45_jaar</Name>
         <Title>inwoners_2011_25_tot_45_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2011_25_tot_45_jaar</Keyword>
@@ -760,9 +931,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2011_2544</Name>
-          <Title/>
+          <Title>IYYYY_2544</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -773,7 +952,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011_45_tot_65_jaar</Name>
         <Title>inwoners_2011_45_tot_65_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2011_45_tot_65_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -795,9 +974,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2011_4564</Name>
-          <Title/>
+          <Title>INW4564</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -808,7 +995,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011_65_plus_jaar</Name>
         <Title>inwoners_2011_65_plus_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2011_65_plus_jaar</Keyword>
@@ -830,9 +1017,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2011_65pl</Name>
-          <Title/>
+          <Title>INW65PL</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -843,7 +1038,7 @@
       <Layer queryable="1">
         <Name>inwoners_2011_tot_15_jaar</Name>
         <Title>inwoners_2011_tot_15_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2011_tot_15_jaar</Keyword>
@@ -865,9 +1060,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2011_014</Name>
-          <Title/>
+          <Title>IYYYY_014</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -878,7 +1081,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012</Name>
         <Title>inwoners_2012</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2012</Keyword>
           <Keyword>features</Keyword>
@@ -900,9 +1103,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2012</Name>
-          <Title/>
+          <Title>AANT_INW</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -913,7 +1124,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012_15_tot_25_jaar</Name>
         <Title>inwoners_2012_15_tot_25_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_15_tot_25_jaar</Keyword>
@@ -935,9 +1146,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2012_1524</Name>
-          <Title/>
+          <Title>IYYYY_1524</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -948,7 +1167,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012_25_tot_45_jaar</Name>
         <Title>inwoners_2012_25_tot_45_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_25_tot_45_jaar</Keyword>
@@ -970,9 +1189,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2012_2544</Name>
-          <Title/>
+          <Title>IYYYY_2544</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -983,7 +1210,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012_45_tot_65_jaar</Name>
         <Title>inwoners_2012_45_tot_65_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2012_45_tot_65_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -1005,9 +1232,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2012_4564</Name>
-          <Title/>
+          <Title>IYYYY_4564</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1018,7 +1253,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012_65_plus_jaar</Name>
         <Title>inwoners_2012_65_plus_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2012_65_plus_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -1040,9 +1275,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2012_65pl</Name>
-          <Title/>
+          <Title>IYYYY_65PL</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1053,7 +1296,7 @@
       <Layer queryable="1">
         <Name>inwoners_2012_tot_15_jaar</Name>
         <Title>inwoners_2012_tot_15_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_tot_15_jaar</Keyword>
@@ -1075,9 +1318,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.i2012_014</Name>
-          <Title/>
+          <Title>IYYYY_014</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1088,7 +1339,7 @@
       <Layer queryable="1">
         <Name>inwoners_2013</Name>
         <Title>inwoners_2013</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2013</Keyword>
           <Keyword>features</Keyword>
@@ -1110,9 +1361,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.inwoners_2013</Name>
-          <Title/>
+          <Title>INWYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1123,7 +1382,7 @@
       <Layer queryable="1">
         <Name>mannen_2011</Name>
         <Title>mannen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>mannen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1145,9 +1404,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.man_2011</Name>
-          <Title/>
+          <Title>MAN_YYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1158,7 +1425,7 @@
       <Layer queryable="1">
         <Name>mannen_2012</Name>
         <Title>mannen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>mannen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1180,9 +1447,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.man_2012</Name>
-          <Title/>
+          <Title>MAN_YYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1193,7 +1468,7 @@
       <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1215,9 +1490,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_nwal2011</Name>
-          <Title/>
+          <Title>P_NWAL</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1228,7 +1511,7 @@
       <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2012</Name>
         <Title>niet_westerse_allochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1250,9 +1533,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_nwal2012</Name>
-          <Title/>
+          <Title>P_NWALYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1263,7 +1554,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2000</Name>
         <Title>omgevings_adres_dichtheid_2000</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2000.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2000</Keyword>
           <Keyword>features</Keyword>
@@ -1285,9 +1576,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2000</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1298,7 +1597,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2001</Name>
         <Title>omgevings_adres_dichtheid_2001</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2001.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2001</Keyword>
           <Keyword>features</Keyword>
@@ -1320,9 +1619,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2001</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1333,7 +1640,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2002</Name>
         <Title>omgevings_adres_dichtheid_2002</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2002.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2002</Keyword>
           <Keyword>features</Keyword>
@@ -1355,9 +1662,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2002</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1368,7 +1683,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2003</Name>
         <Title>omgevings_adres_dichtheid_2003</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van &#233;&#233;n kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2003</Keyword>
           <Keyword>features</Keyword>
@@ -1390,9 +1705,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2003</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1403,7 +1726,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2004</Name>
         <Title>omgevings_adres_dichtheid_2004</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2004.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2004</Keyword>
           <Keyword>features</Keyword>
@@ -1425,9 +1748,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2004</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1438,7 +1769,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2005</Name>
         <Title>omgevings_adres_dichtheid_2005</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2005.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2005</Keyword>
           <Keyword>features</Keyword>
@@ -1460,9 +1791,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2005</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1473,7 +1812,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2006</Name>
         <Title>omgevings_adres_dichtheid_2006</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2006.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2006</Keyword>
           <Keyword>features</Keyword>
@@ -1495,9 +1834,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2006</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1508,7 +1855,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2007</Name>
         <Title>omgevings_adres_dichtheid_2007</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2007.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>omgevings_adres_dichtheid_2007</Keyword>
@@ -1530,9 +1877,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2007</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1543,7 +1898,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2008</Name>
         <Title>omgevings_adres_dichtheid_2008</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2008.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>omgevings_adres_dichtheid_2008</Keyword>
@@ -1565,9 +1920,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2008</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1578,7 +1941,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2009</Name>
         <Title>omgevings_adres_dichtheid_2009</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2009.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>omgevings_adres_dichtheid_2009</Keyword>
@@ -1600,9 +1963,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2009</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1613,7 +1984,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2010</Name>
         <Title>omgevings_adres_dichtheid_2010</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2010.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2010</Keyword>
           <Keyword>features</Keyword>
@@ -1635,9 +2006,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2010</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1648,7 +2027,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2011</Name>
         <Title>omgevings_adres_dichtheid_2011</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1670,9 +2049,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2011</Name>
-          <Title/>
+          <Title>OAD</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1683,7 +2070,7 @@
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2012</Name>
         <Title>omgevings_adres_dichtheid_2012</Title>
-        <Abstract/>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van een kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok. Peildatum op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1705,9 +2092,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.oad2012</Name>
-          <Title/>
+          <Title>OADYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1718,7 +2113,7 @@
       <Layer queryable="1">
         <Name>perc_hoog_inkomen_huishouden_2010</Name>
         <Title>perc_hoog_inkomen_huishouden_2010</Title>
-        <Abstract/>
+        <Abstract>Percentage aantal huishoudens met een hoog inkomen op 1 januari 2010.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>perc_hoog_inkomen_huishouden_2010</Keyword>
@@ -1740,9 +2135,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_hinh2010</Name>
-          <Title/>
+          <Title>P_HINHYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1753,7 +2156,7 @@
       <Layer queryable="1">
         <Name>perc_laag_inkomen_huishouden_2010</Name>
         <Title>perc_laag_inkomen_huishouden_2010</Title>
-        <Abstract/>
+        <Abstract>Percentage van aantal huishoudens met een laag inkomen op 1 januari 2010.</Abstract>
         <KeywordList>
           <Keyword>perc_laag_inkomen_huishouden_2010</Keyword>
           <Keyword>features</Keyword>
@@ -1775,9 +2178,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_linh2010</Name>
-          <Title/>
+          <Title>P_LINHYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1788,7 +2199,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2000</Name>
         <Title>stedelijkheid_2000</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2000.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2000</Keyword>
@@ -1810,9 +2227,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2000</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1823,7 +2248,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2001</Name>
         <Title>stedelijkheid_2001</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2001.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2001</Keyword>
@@ -1845,9 +2276,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2001</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1858,7 +2297,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2002</Name>
         <Title>stedelijkheid_2002</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2002.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2002</Keyword>
@@ -1880,9 +2325,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2002</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1893,7 +2346,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2003</Name>
         <Title>stedelijkheid_2003</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2003.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2003</Keyword>
@@ -1915,9 +2374,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2003</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1928,7 +2395,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2004</Name>
         <Title>stedelijkheid_2004</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2004.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2004</Keyword>
@@ -1950,9 +2423,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2004</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1963,7 +2444,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2005</Name>
         <Title>stedelijkheid_2005</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2005.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2005</Keyword>
@@ -1985,9 +2472,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2005</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1998,7 +2493,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2006</Name>
         <Title>stedelijkheid_2006</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2006.</Abstract>
         <KeywordList>
           <Keyword>stedelijkheid_2006</Keyword>
           <Keyword>features</Keyword>
@@ -2020,9 +2521,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2006</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2033,7 +2542,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2007</Name>
         <Title>stedelijkheid_2007</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2007.</Abstract>
         <KeywordList>
           <Keyword>stedelijkheid_2007</Keyword>
           <Keyword>features</Keyword>
@@ -2055,9 +2570,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2007</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2068,7 +2591,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2008</Name>
         <Title>stedelijkheid_2008</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2008.</Abstract>
         <KeywordList>
           <Keyword>stedelijkheid_2008</Keyword>
           <Keyword>features</Keyword>
@@ -2090,9 +2619,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2008</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2103,7 +2640,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2009</Name>
         <Title>stedelijkheid_2009</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2009.</Abstract>
         <KeywordList>
           <Keyword>stedelijkheid_2009</Keyword>
           <Keyword>features</Keyword>
@@ -2125,9 +2668,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2009</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2138,7 +2689,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2010</Name>
         <Title>stedelijkheid_2010</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2010.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2010</Keyword>
@@ -2160,9 +2717,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2010</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2173,7 +2738,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2011</Name>
         <Title>stedelijkheid_2011</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum per 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>stedelijkheid_2011</Keyword>
@@ -2195,9 +2766,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2011</Name>
-          <Title/>
+          <Title>STED</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2208,7 +2787,13 @@
       <Layer queryable="1">
         <Name>stedelijkheid_2012</Name>
         <Title>stedelijkheid_2012</Title>
-        <Abstract/>
+        <Abstract>De indeling naar stedelijkheid van een vierkant. &#13;
+1. Zeer sterk stedelijk (omgevingsadressendichtheid van 2500 of meer adressen/km2).&#13;
+2. Sterk stedelijk (omgevingsadressendichtheid van 1500 tot 2500 adressen/km2).&#13;
+3. Matig stedelijk (omgevingsadressendichtheid van 1000 tot 1500 adressen/km2).&#13;
+4. Weinig stedelijk (omgevingsadressendichtheid van 500 tot 1000 adressen/km2).&#13;
+5. Niet-stedelijk (omgevingsadressendichtheid van minder dan 500 adressen/km2).&#13;
+Peildatum 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>stedelijkheid_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2230,9 +2815,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.sted2012</Name>
-          <Title/>
+          <Title>STEDYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2243,7 +2836,7 @@
       <Layer queryable="1">
         <Name>toename_inwoners_2000_2010</Name>
         <Title>toename_inwoners_2000_2010</Title>
-        <Abstract/>
+        <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>toename_inwoners_2000_2010</Keyword>
           <Keyword>features</Keyword>
@@ -2265,9 +2858,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.tinw_10_00</Name>
-          <Title/>
+          <Title>tinw_10_00</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2278,7 +2879,7 @@
       <Layer queryable="1">
         <Name>vrouwen_2011</Name>
         <Title>vrouwen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>vrouwen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -2300,9 +2901,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.vrouw_2011</Name>
-          <Title/>
+          <Title>VROUW_YYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2313,7 +2922,7 @@
       <Layer queryable="1">
         <Name>vrouwen_2012</Name>
         <Title>vrouwen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>vrouwen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2335,9 +2944,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.vrouw_2012</Name>
-          <Title/>
+          <Title>VROUW_YYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2348,7 +2965,7 @@
       <Layer queryable="1">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -2370,9 +2987,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_wal2011</Name>
-          <Title/>
+          <Title>P_WAL</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2383,7 +3008,7 @@
       <Layer queryable="1">
         <Name>westerse_allochtonen_2012</Name>
         <Title>westerse_allochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>westerse_allochtonen_2012</Keyword>
@@ -2405,9 +3030,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_wal2012</Name>
-          <Title/>
+          <Title>P_WALYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2418,7 +3051,7 @@
       <Layer queryable="1">
         <Name>woningen_2000</Name>
         <Title>woningen_2000</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2000</Keyword>
           <Keyword>features</Keyword>
@@ -2440,9 +3073,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2000</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2453,7 +3094,7 @@
       <Layer queryable="1">
         <Name>woningen_2001</Name>
         <Title>woningen_2001</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2001</Keyword>
           <Keyword>features</Keyword>
@@ -2475,9 +3116,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2001</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2488,7 +3137,7 @@
       <Layer queryable="1">
         <Name>woningen_2002</Name>
         <Title>woningen_2002</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2002</Keyword>
           <Keyword>features</Keyword>
@@ -2510,9 +3159,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2002</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2523,7 +3180,7 @@
       <Layer queryable="1">
         <Name>woningen_2003</Name>
         <Title>woningen_2003</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2003</Keyword>
           <Keyword>features</Keyword>
@@ -2545,9 +3202,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2003</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2558,7 +3223,7 @@
       <Layer queryable="1">
         <Name>woningen_2004</Name>
         <Title>woningen_2004</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2004</Keyword>
           <Keyword>features</Keyword>
@@ -2580,9 +3245,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2004</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2593,7 +3266,7 @@
       <Layer queryable="1">
         <Name>woningen_2005</Name>
         <Title>woningen_2005</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2005</Keyword>
           <Keyword>features</Keyword>
@@ -2615,9 +3288,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2005</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2628,7 +3309,7 @@
       <Layer queryable="1">
         <Name>woningen_2006</Name>
         <Title>woningen_2006</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2006</Keyword>
           <Keyword>features</Keyword>
@@ -2650,9 +3331,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2006</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2663,7 +3352,7 @@
       <Layer queryable="1">
         <Name>woningen_2007</Name>
         <Title>woningen_2007</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2007</Keyword>
           <Keyword>features</Keyword>
@@ -2685,9 +3374,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2007</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2698,7 +3395,7 @@
       <Layer queryable="1">
         <Name>woningen_2008</Name>
         <Title>woningen_2008</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2008</Keyword>
           <Keyword>features</Keyword>
@@ -2720,9 +3417,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2008</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2733,7 +3438,7 @@
       <Layer queryable="1">
         <Name>woningen_2009</Name>
         <Title>woningen_2009</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>woningen_2009</Keyword>
@@ -2755,9 +3460,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2009</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2768,7 +3481,7 @@
       <Layer queryable="1">
         <Name>woningen_2010</Name>
         <Title>woningen_2010</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>woningen_2010</Keyword>
@@ -2790,9 +3503,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2010</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2803,7 +3524,7 @@
       <Layer queryable="1">
         <Name>woningen_2011</Name>
         <Title>woningen_2011</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -2825,9 +3546,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2011</Name>
-          <Title/>
+          <Title>AANT_WON</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2838,7 +3567,7 @@
       <Layer queryable="1">
         <Name>woningen_2012</Name>
         <Title>woningen_2012</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2860,9 +3589,17 @@
         <BoundingBox CRS="EPSG:3857" minx="361241.2816388195" miny="6573838.025211577" maxx="807111.5274595928" maxy="7087536.516600304"/>
         <BoundingBox CRS="EPSG:25831" minx="516240.85556434456" miny="5619972.852861651" maxx="791860.7170932542" maxy="5941546.923899938"/>
         <BoundingBox CRS="EPSG:25832" minx="103208.651063141" miny="5622035.186486136" maxx="384079.1612600512" maxy="5948044.422020559"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=f605a24f-60cd-4c40-94c8-2186aba3ddd0"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.won2012</Name>
-          <Title/>
+          <Title>WONYYYY</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

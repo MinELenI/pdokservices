@@ -1,12 +1,26 @@
 <WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:cbsvierkanten100m="http://cbsvierkanten100m.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>GeoServer Web Feature Service</Title>
-    <Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</Abstract>
-    <Keywords>WFS, PDOK</Keywords>
+    <Title>Vierkanten 100m x 100m WFS</Title>
+    <Abstract>Het bestand CBS vierkanten 100m bevat statistische gegevens per 100m x 100m vierkant.
+Met ingang van 24 juli 2012 is het aantal kerncijfers aanzienlijk uitgebreid.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 100m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt voor de gehele dataset in een kolom de grootte van het vierkant vermeld en de EPSG-code van de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is daarbij de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen de jaarlijkse inwonertallen vanaf 1 januari 2000 tm 1 januari 2012 en woningaantallen vanaf 1 januari 2000 tm 1 januari 2011. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. En voor het jaar 2011 de indeling naar herkomst, een leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pdf</Abstract>
+    <Keywords>vierkant, grid, statistiek, bevolking, inwoners, leeftijd, etniciteit, woningen, WOZ</Keywords>
     <OnlineResource>http://geodata.nationaalgeoregister.nl/cbsvierkanten100m/wfs</OnlineResource>
-    <Fees>FEES APPLY</Fees>
-    <AccessConstraints>RESTRICTED</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -73,7 +87,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:autochtonen_2012</Name>
       <Title>autochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <Keywords>features, autochtonen_2012</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -89,7 +103,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:gem_woz_waarde_woningen_2012</Name>
       <Title>gem_woz_waarde_woningen_2012</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
       <Keywords>gem_woz_waarde_woningen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -193,7 +207,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_15_tot_25_jaar</Name>
       <Title>inwoners_2011_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
       <Keywords>inwoners_2011_15_tot_25_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -201,7 +215,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_25_tot_45_jaar</Name>
       <Title>inwoners_2011_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
       <Keywords>features, inwoners_2011_25_tot_45_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -225,7 +239,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_tot_15_jaar</Name>
       <Title>inwoners_2011_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
       <Keywords>features, inwoners_2011_tot_15_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -241,7 +255,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_15_tot_25_jaar</Name>
       <Title>inwoners_2012_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_15_tot_25_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -249,7 +263,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_25_tot_45_jaar</Name>
       <Title>inwoners_2012_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_25_tot_45_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -257,7 +271,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_45_tot_65_jaar</Name>
       <Title>inwoners_2012_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
       <Keywords>inwoners_2012_45_tot_65_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -265,7 +279,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_65_plus_jaar</Name>
       <Title>inwoners_2012_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
       <Keywords>inwoners_2012_65_plus_jaar, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -273,7 +287,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_tot_15_jaar</Name>
       <Title>inwoners_2012_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
       <Keywords>features, inwoners_2012_tot_15_jaar</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -281,7 +295,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2013</Name>
       <Title>inwoners_2013</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <Keywords>inwoners_2013, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -289,7 +303,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:mannen_2011</Name>
       <Title>mannen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
       <Keywords>mannen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -297,7 +311,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:mannen_2012</Name>
       <Title>mannen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
       <Keywords>mannen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -305,7 +319,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
       <Keywords>niet_westerse_allochtonen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -313,7 +327,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:niet_westerse_allochtonen_2012</Name>
       <Title>niet_westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
       <Keywords>niet_westerse_allochtonen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -329,7 +343,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:vrouwen_2011</Name>
       <Title>vrouwen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
       <Keywords>vrouwen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -337,7 +351,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:vrouwen_2012</Name>
       <Title>vrouwen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
       <Keywords>vrouwen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -345,7 +359,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:westerse_allochtonen_2011</Name>
       <Title>westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
       <Keywords>westerse_allochtonen_2011, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -353,7 +367,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:westerse_allochtonen_2012</Name>
       <Title>westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
       <Keywords>features, westerse_allochtonen_2012</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -457,7 +471,7 @@
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2012</Name>
       <Title>woningen_2012</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <Keywords>woningen_2012, features</Keywords>
       <SRS>EPSG:28992</SRS>
       <LatLongBoundingBox minx="3.252169511859589" miny="50.73303308142528" maxx="7.246954509655018" maxy="53.5616588686123"/>
@@ -514,7 +528,7 @@
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

@@ -1,16 +1,34 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1933">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
   <Service>
     <Name>OGC:WMS</Name>
-    <Title>INSPIRE View Service PDOK</Title>
-    <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+    <Title>Vierkanten 100m x 100m WMS</Title>
+    <Abstract>Het bestand CBS vierkanten 100m bevat statistische gegevens per 100m x 100m vierkant.
+Met ingang van 24 juli 2012 is het aantal kerncijfers aanzienlijk uitgebreid.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 100m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt voor de gehele dataset in een kolom de grootte van het vierkant vermeld en de EPSG-code van de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is daarbij de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen de jaarlijkse inwonertallen vanaf 1 januari 2000 tm 1 januari 2012 en woningaantallen vanaf 1 januari 2000 tm 1 januari 2011. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. En voor het jaar 2011 de indeling naar herkomst, een leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pdf</Abstract>
     <KeywordList>
-      <Keyword>WMS</Keyword>
-      <Keyword>PDOK</Keyword>
-      <Keyword>Hydrografie</Keyword>
-      <Keyword>Vervoersnetwerken</Keyword>
-      <Keyword>Beschermde gebieden</Keyword>
-      <Keyword>Geografische namen</Keyword>
+      <Keyword>vierkant</Keyword>
+      <Keyword>grid</Keyword>
+      <Keyword>statistiek</Keyword>
+      <Keyword>bevolking</Keyword>
+      <Keyword>inwoners</Keyword>
+      <Keyword>leeftijd</Keyword>
+      <Keyword>etniciteit</Keyword>
+      <Keyword>woningen</Keyword>
+      <Keyword>WOZ</Keyword>
+      <Keyword>Statistische eenheden</Keyword>
+      <Keyword>Spreiding van de bevolking - demografie</Keyword>
       <Keyword>infoMapAccessService</Keyword>
     </KeywordList>
     <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
@@ -32,8 +50,9 @@
       <ContactFacsimileTelephone/>
       <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
     </ContactInformation>
-    <Fees>no conditions apply</Fees>
-    <AccessConstraints>none</AccessConstraints>
+    <Fees>NONE</Fees>
+    <AccessConstraints>copyright;
+        bronvermelding CBS verplicht</AccessConstraints>
   </Service>
   <Capability>
     <Request>
@@ -147,8 +166,21 @@
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
     <Layer queryable="0" opaque="0" noSubsets="0">
-      <Title>INSPIRE View Service PDOK</Title>
-      <Abstract>De INSPIRE View Service PDOK is een overkoepelende View Service die voor de volgende datasets INSPIRE datasets ontsluit: Hydrografie, Vervoersnetwerken, Beschermde gebieden, Geografische namen</Abstract>
+      <Title>Vierkanten 100m x 100m WMS</Title>
+      <Abstract>Het bestand CBS vierkanten 100m bevat statistische gegevens per 100m x 100m vierkant.
+Met ingang van 24 juli 2012 is het aantal kerncijfers aanzienlijk uitgebreid.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 100m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt voor de gehele dataset in een kolom de grootte van het vierkant vermeld en de EPSG-code van de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is daarbij de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen de jaarlijkse inwonertallen vanaf 1 januari 2000 tm 1 januari 2012 en woningaantallen vanaf 1 januari 2000 tm 1 januari 2011. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. En voor het jaar 2011 de indeling naar herkomst, een leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pdf</Abstract>
       <!--Limited list of EPSG projections:-->
       <SRS>EPSG:25831</SRS>
       <SRS>EPSG:25832</SRS>
@@ -210,9 +242,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_auto2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_auto2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -245,7 +285,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>autochtonen_2012</Name>
         <Title>autochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>autochtonen_2012</Keyword>
@@ -260,9 +300,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_auto2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_auto2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -310,9 +358,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_wozwon2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_wozwon2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -345,7 +401,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>gem_woz_waarde_woningen_2012</Name>
         <Title>gem_woz_waarde_woningen_2012</Title>
-        <Abstract/>
+        <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>gem_woz_waarde_woningen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -360,9 +416,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_wozwon2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_wozwon2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -410,9 +474,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2000</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -460,9 +532,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2001</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2001</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -510,9 +590,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2002</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2002</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -560,9 +648,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2003</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2003</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -610,9 +706,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2004</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2004</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -660,9 +764,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2005</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2005</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -710,9 +822,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2006</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2006</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -760,9 +880,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2007</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2007</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -810,9 +938,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2008</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2008</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -860,9 +996,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2009</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2009</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -910,9 +1054,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2010</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2010</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -960,9 +1112,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -995,7 +1155,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_15_tot_25_jaar</Name>
         <Title>inwoners_2011_15_tot_25_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2011_15_tot_25_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -1010,9 +1170,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2011_1524</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2011_1524</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1045,7 +1213,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_25_tot_45_jaar</Name>
         <Title>inwoners_2011_25_tot_45_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2011_25_tot_45_jaar</Keyword>
@@ -1060,9 +1228,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2011_2544</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2011_2544</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1110,9 +1286,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2011_4564</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2011_4564</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1160,9 +1344,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2011_65PL</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2011_65PL</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1195,7 +1387,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2011_tot_15_jaar</Name>
         <Title>inwoners_2011_tot_15_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2011_tot_15_jaar</Keyword>
@@ -1210,9 +1402,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2011_014</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2011_014</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1260,9 +1460,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1295,7 +1503,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012_15_tot_25_jaar</Name>
         <Title>inwoners_2012_15_tot_25_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_15_tot_25_jaar</Keyword>
@@ -1310,9 +1518,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2012_1524</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2012_1524</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1345,7 +1561,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012_25_tot_45_jaar</Name>
         <Title>inwoners_2012_25_tot_45_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_25_tot_45_jaar</Keyword>
@@ -1360,9 +1576,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2012_2544</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2012_2544</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1395,7 +1619,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012_45_tot_65_jaar</Name>
         <Title>inwoners_2012_45_tot_65_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2012_45_tot_65_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -1410,9 +1634,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2012_4564</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2012_4564</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1445,7 +1677,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012_65_plus_jaar</Name>
         <Title>inwoners_2012_65_plus_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>inwoners_2012_65_plus_jaar</Keyword>
           <Keyword>features</Keyword>
@@ -1460,9 +1692,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2012_65pl</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2012_65pl</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1495,7 +1735,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2012_tot_15_jaar</Name>
         <Title>inwoners_2012_tot_15_jaar</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>inwoners_2012_tot_15_jaar</Keyword>
@@ -1510,9 +1750,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_i2012_014</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_i2012_014</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1545,7 +1793,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>inwoners_2013</Name>
         <Title>inwoners_2013</Title>
-        <Abstract/>
+        <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
         <KeywordList>
           <Keyword>inwoners_2013</Keyword>
           <Keyword>features</Keyword>
@@ -1560,9 +1808,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_inw2013</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_inw2013</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1595,7 +1851,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>mannen_2011</Name>
         <Title>mannen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>mannen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1610,9 +1866,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_man_2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_man_2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1645,7 +1909,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>mannen_2012</Name>
         <Title>mannen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>mannen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1660,9 +1924,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_man_2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_man_2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1695,7 +1967,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1710,9 +1982,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_nwal2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_nwal2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1745,7 +2025,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>niet_westerse_allochtonen_2012</Name>
         <Title>niet_westerse_allochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1760,9 +2040,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_nwal2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_nwal2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1810,9 +2098,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_tinw_10_00</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_tinw_10_00</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1845,7 +2141,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>vrouwen_2011</Name>
         <Title>vrouwen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>vrouwen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1860,9 +2156,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_vrouw_2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_vrouw_2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1895,7 +2199,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>vrouwen_2012</Name>
         <Title>vrouwen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>vrouwen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -1910,9 +2214,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_vrouw_2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_vrouw_2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1945,7 +2257,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1960,9 +2272,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_wal2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_wal2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1995,7 +2315,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>westerse_allochtonen_2012</Name>
         <Title>westerse_allochtonen_2012</Title>
-        <Abstract/>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>westerse_allochtonen_2012</Keyword>
@@ -2010,9 +2330,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_p_wal2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_p_wal2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2060,9 +2388,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2000</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2000</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2110,9 +2446,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2001</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2001</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2160,9 +2504,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2002</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2002</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2210,9 +2562,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2003</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2003</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2260,9 +2620,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2004</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2004</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2310,9 +2678,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2005</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2005</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2360,9 +2736,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2006</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2006</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2410,9 +2794,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2007</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2007</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2460,9 +2852,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2008</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2008</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2510,9 +2910,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2009</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2009</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2560,9 +2968,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2010</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2010</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2610,9 +3026,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2011</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2645,7 +3069,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>woningen_2012</Name>
         <Title>woningen_2012</Title>
-        <Abstract/>
+        <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
         <KeywordList>
           <Keyword>woningen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2660,9 +3084,17 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:3857" minx="361912.54726254666" miny="6574171.376849601" maxx="806607.9542929301" maxy="7087536.679482526"/>
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
+        <AuthorityURL name="EZ">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="EZ">nl.ez.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
+        </MetadataURL>
         <Style>
           <Name>cbsvierkanten100m_won2012</Name>
-          <Title/>
+          <Title>cbsvierkanten100m_won2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

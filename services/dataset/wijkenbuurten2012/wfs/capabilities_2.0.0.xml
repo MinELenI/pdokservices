@@ -219,7 +219,7 @@ FA9CCB17D4DB/0/20132012b68pub.pdf</ows:Abstract>
     <ows:ExtendedCapabilities>
       <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-          <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=aeba6452-2025-444b-86aa-6ff4b23b3878</inspire_common:URL>
+          <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=aeba6452-2025-444b-86aa-6ff4b23b3878</inspire_common:URL>
           <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
@@ -684,11 +684,11 @@ FA9CCB17D4DB/0/20132012b68pub.pdf</ows:Abstract>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

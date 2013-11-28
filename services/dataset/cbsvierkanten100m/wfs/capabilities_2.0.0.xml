@@ -1,15 +1,28 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://schemas.opengis.net/gml" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:cbsvierkanten100m="http://cbsvierkanten100m.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1933">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://schemas.opengis.net/gml" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:cbsvierkanten100m="http://cbsvierkanten100m.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>GeoServer Web Feature Service</ows:Title>
-    <ows:Abstract>This is the reference implementation of WFS 1.0.0 and WFS 1.1.0</ows:Abstract>
+    <ows:Title>Vierkanten 100m x 100m WFS</ows:Title>
+    <ows:Abstract>Het bestand CBS vierkanten 100m bevat statistische gegevens per 100m x 100m vierkant.
+Met ingang van 24 juli 2012 is het aantal kerncijfers aanzienlijk uitgebreid.
+
+Het bestand bestrijkt het terrein van als land geklassificeerd Nederlands gebied volgens het Bestand Bodemgebruik 2008 van het CBS, aangevuld met het gebied bestreken door de afgesloten zeearmen, het Markenmeer, de Veluwe randmeren en de grote rivieren. Daarnaast is een gebied van 100m buiten deze terreinen toegevoegd aan het bestand.
+
+Aan ieder vierkant wordt een codering van de locatie toegekend, opgebouwd uit een Oost en een Noord co?rdinaat van het linksonderpunt van het vierkant. 
+Daarnaast wordt voor de gehele dataset in een kolom de grootte van het vierkant vermeld en de EPSG-code van de projectie van het onderliggend gebied waarop de vierkanten als rechthoekig net betrekking hebben.
+
+De onderliggende projectie is die volgens het stelsel van Rijksdriehoeksmeting. Het snijpunt van de oost- en noord co?rdinaat, het 0,0 punt, is daarbij de linksonderhoek van een vierkant.
+
+De huidige versie bevat als tijdreeksen de jaarlijkse inwonertallen vanaf 1 januari 2000 tm 1 januari 2012 en woningaantallen vanaf 1 januari 2000 tm 1 januari 2011. Verder bevat het de toename van het aantal inwoners in de periode 2000-2010. En voor het jaar 2011 de indeling naar herkomst, een leeftijdsverdeling naar 4 leeftijdsklassen voor inwoners en de gemiddelde WOZ waarde voor woningen.
+
+Lees voor meer informatie:
+http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73updatepub.pdf</ows:Abstract>
     <ows:Keywords>
-      <ows:Keyword>WFS</ows:Keyword>
-      <ows:Keyword>PDOK</ows:Keyword>
+      <ows:Keyword>vierkant, grid, statistiek, bevolking, inwoners, leeftijd, etniciteit, woningen, WOZ</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
-    <ows:Fees>FEES APPLY</ows:Fees>
-    <ows:AccessConstraints>RESTRICTED</ows:AccessConstraints>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>copyright;
+        bronvermelding CBS verplicht</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -214,17 +227,20 @@
     <ows:ExtendedCapabilities>
       <inspire_dls:ExtendedCapabilities>
         <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
-          <inspire_common:URL/>
+          <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=de1511e3-6578-457a-b676-97682c788c65</inspire_common:URL>
           <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
         </inspire_common:MetadataUrl>
         <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
           <inspire_common:DefaultLanguage>
-            <inspire_common:Language>eng</inspire_common:Language>
+            <inspire_common:Language>dut</inspire_common:Language>
           </inspire_common:DefaultLanguage>
         </inspire_common:SupportedLanguages>
         <inspire_common:ResponseLanguage>
-          <inspire_common:Language>eng</inspire_common:Language>
+          <inspire_common:Language>dut</inspire_common:Language>
         </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>de1511e3-6578-457a-b676-97682c788c65</inspire_common:Code>
+        </inspire_dls:SpatialDataSetIdentifier>
       </inspire_dls:ExtendedCapabilities>
     </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
@@ -242,11 +258,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:autochtonen_2012</Name>
       <Title>autochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>autochtonen_2012</ows:Keyword>
@@ -256,6 +273,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:gem_woz_waarde_woningen_2011</Name>
@@ -270,11 +288,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:gem_woz_waarde_woningen_2012</Name>
       <Title>gem_woz_waarde_woningen_2012</Title>
-      <Abstract/>
+      <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>gem_woz_waarde_woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -284,6 +303,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2000</Name>
@@ -298,6 +318,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2001</Name>
@@ -312,6 +333,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2002</Name>
@@ -326,6 +348,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2003</Name>
@@ -340,6 +363,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2004</Name>
@@ -354,6 +378,7 @@
         <ows:LowerCorner>3.1714748549041203 50.069258819165604</ows:LowerCorner>
         <ows:UpperCorner>7.327649166610487 54.22543313087198</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2005</Name>
@@ -368,6 +393,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2006</Name>
@@ -382,6 +408,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2007</Name>
@@ -396,6 +423,7 @@
         <ows:LowerCorner>3.2122216618816344 50.11000562614312</ows:LowerCorner>
         <ows:UpperCorner>7.286902359632973 54.18468632389446</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2008</Name>
@@ -410,6 +438,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2009</Name>
@@ -424,6 +453,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2010</Name>
@@ -438,6 +468,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011</Name>
@@ -452,11 +483,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_15_tot_25_jaar</Name>
       <Title>inwoners_2011_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2011_15_tot_25_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -466,11 +498,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_25_tot_45_jaar</Name>
       <Title>inwoners_2011_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2011_25_tot_45_jaar</ows:Keyword>
@@ -480,6 +513,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_45_tot_65_jaar</Name>
@@ -494,6 +528,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_65_plus_jaar</Name>
@@ -508,11 +543,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2011_tot_15_jaar</Name>
       <Title>inwoners_2011_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2011_tot_15_jaar</ows:Keyword>
@@ -522,6 +558,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012</Name>
@@ -536,11 +573,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_15_tot_25_jaar</Name>
       <Title>inwoners_2012_15_tot_25_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_15_tot_25_jaar</ows:Keyword>
@@ -550,11 +588,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_25_tot_45_jaar</Name>
       <Title>inwoners_2012_25_tot_45_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_25_tot_45_jaar</ows:Keyword>
@@ -564,11 +603,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_45_tot_65_jaar</Name>
       <Title>inwoners_2012_45_tot_65_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2012_45_tot_65_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -578,11 +618,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_65_plus_jaar</Name>
       <Title>inwoners_2012_65_plus_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2012_65_plus_jaar</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -592,11 +633,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2012_tot_15_jaar</Name>
       <Title>inwoners_2012_tot_15_jaar</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>inwoners_2012_tot_15_jaar</ows:Keyword>
@@ -606,11 +648,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:inwoners_2013</Name>
       <Title>inwoners_2013</Title>
-      <Abstract/>
+      <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
       <ows:Keywords>
         <ows:Keyword>inwoners_2013</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -620,11 +663,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:mannen_2011</Name>
       <Title>mannen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>mannen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -634,11 +678,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:mannen_2012</Name>
       <Title>mannen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>mannen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -648,11 +693,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:niet_westerse_allochtonen_2011</Name>
       <Title>niet_westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>niet_westerse_allochtonen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -662,11 +708,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:niet_westerse_allochtonen_2012</Name>
       <Title>niet_westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>niet_westerse_allochtonen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -676,6 +723,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:toename_inwoners_2000_2010</Name>
@@ -690,11 +738,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:vrouwen_2011</Name>
       <Title>vrouwen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>vrouwen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -704,11 +753,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:vrouwen_2012</Name>
       <Title>vrouwen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>vrouwen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -718,11 +768,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:westerse_allochtonen_2011</Name>
       <Title>westerse_allochtonen_2011</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
       <ows:Keywords>
         <ows:Keyword>westerse_allochtonen_2011</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -732,11 +783,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:westerse_allochtonen_2012</Name>
       <Title>westerse_allochtonen_2012</Title>
-      <Abstract/>
+      <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
       <ows:Keywords>
         <ows:Keyword>features</ows:Keyword>
         <ows:Keyword>westerse_allochtonen_2012</ows:Keyword>
@@ -746,6 +798,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2000</Name>
@@ -760,6 +813,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2001</Name>
@@ -774,6 +828,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2002</Name>
@@ -788,6 +843,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2003</Name>
@@ -802,6 +858,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2004</Name>
@@ -816,6 +873,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2005</Name>
@@ -830,6 +888,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2006</Name>
@@ -844,6 +903,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2007</Name>
@@ -858,6 +918,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2008</Name>
@@ -872,6 +933,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2009</Name>
@@ -886,6 +948,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2010</Name>
@@ -900,6 +963,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2011</Name>
@@ -914,11 +978,12 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
     <FeatureType>
       <Name>cbsvierkanten100m:woningen_2012</Name>
       <Title>woningen_2012</Title>
-      <Abstract/>
+      <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
       <ows:Keywords>
         <ows:Keyword>woningen_2012</ows:Keyword>
         <ows:Keyword>features</ows:Keyword>
@@ -928,6 +993,7 @@
         <ows:LowerCorner>3.252169511859589 50.73303308142528</ows:LowerCorner>
         <ows:UpperCorner>7.246954509655018 53.5616588686123</ows:UpperCorner>
       </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=1462bbce-ccd3-4362-83d8-4535ca8f44eb"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
@@ -1331,11 +1397,11 @@
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
