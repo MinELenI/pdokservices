@@ -1,26 +1,24 @@
-<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:wijkenbuurten2010="http://wijkenbuurten2010.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2013="http://nok2013.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>CBS Wijken en Buurten 2010 versie 3 WFS</Title>
-    <Abstract>Het Bestand Wijk- en Buurtkaart 2010 bevat geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit het TOPgrenzen bestand van het Kadaster. Deze derde versie bevat het maximale aantal attributen en zal hierna niet meer geupdate worden. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/C51D26F7-3938-4175-8510-
-8BE74D2EDB0F/0/20132010b68pub.pdf</Abstract>
-    <Keywords>wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
-    <OnlineResource>http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs</OnlineResource>
+    <Title>Natuurmeting Op Kaart 2013 WFS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
+    <Keywords>Natuur, Wettelijke begrenzing (beleid)</Keywords>
+    <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2013/wfs</OnlineResource>
     <Fees>NONE</Fees>
-    <AccessConstraints>copyright;
-        bronvermelding Kadaster, CBS verplicht</AccessConstraints>
+    <AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
       <GetCapabilities>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs?request=GetCapabilities"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=GetCapabilities"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
           </HTTP>
         </DCPType>
       </GetCapabilities>
@@ -30,12 +28,12 @@
         </SchemaDescriptionLanguage>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs?request=DescribeFeatureType"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=DescribeFeatureType"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
           </HTTP>
         </DCPType>
       </DescribeFeatureType>
@@ -49,12 +47,12 @@
         </ResultFormat>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs?request=GetFeature"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=GetFeature"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/wijkenbuurten2010/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
           </HTTP>
         </DCPType>
       </GetFeature>
@@ -65,31 +63,40 @@
       <Query/>
     </Operations>
     <FeatureType>
-      <Name>wijkenbuurten2010:cbs_buurten_2010</Name>
-      <Title>cbs_buurten_2010</Title>
-      <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
-De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op land volgen de kaart van gemeentegrenzen van het Kadaster; de buurtgrenzen hebben de opgave van gemeenten als basis en de grens van het land met grotere wateren is gebaseerd op de meest recente kaart van het Bestand Bodemgebruik van het CBS. Alle gemeentegrenzen en de grenzen tussen land en water zijn gegeneraliseerd.</Abstract>
-      <Keywords>buurten2010, features, wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
+      <Name>nok2013:beheer</Name>
+      <Title>Beheer</Title>
+      <Abstract>De dataset Beheer is samengesteld uit het bestand Beheer_RODS dat de eindbeheerder voor de begrensde RodS weergeeft en wordt aangeleverd door de provincies en Beheer_DR dat het type beheer voor de EHS weergeeft en wordt aangeleverd door DR.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+      <Keywords>features, beheer</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.255" miny="50.735" maxx="7.244" maxy="53.56"/>
+      <LatLongBoundingBox minx="3.2627399209981434" miny="50.73552601275698" maxx="7.241310567806656" maxy="53.55619801539111"/>
     </FeatureType>
     <FeatureType>
-      <Name>wijkenbuurten2010:cbs_wijken_2010</Name>
-      <Title>cbs_wijken_2010</Title>
-      <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
-De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op land volgen de kaart van gemeentegrenzen van het Kadaster; de buurtgrenzen hebben de opgave van gemeenten als basis en de grens van het land met grotere wateren is gebaseerd op de meest recente kaart van het Bestand Bodemgebruik van het CBS. Alle gemeentegrenzen en de grenzen tussen land en water zijn gegeneraliseerd.</Abstract>
-      <Keywords>wijken2010, features, wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
+      <Name>nok2013:planologischeehs</Name>
+      <Title>Planologische EHS</Title>
+      <Abstract>De Planologische EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+      <Keywords>planologischeehs, features</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.255" miny="50.735" maxx="7.244" maxy="53.56"/>
+      <LatLongBoundingBox minx="3.2674087513666508" miny="50.73554821590326" maxx="7.241427162611707" maxy="53.55835638906398"/>
     </FeatureType>
     <FeatureType>
-      <Name>wijkenbuurten2010:gemeenten2010</Name>
-      <Title>gemeenten2010</Title>
-      <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
-De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op land volgen de kaart van gemeentegrenzen van het Kadaster; de buurtgrenzen hebben de opgave van gemeenten als basis en de grens van het land met grotere wateren is gebaseerd op de meest recente kaart van het Bestand Bodemgebruik van het CBS. Alle gemeentegrenzen en de grenzen tussen land en water zijn gegeneraliseerd.</Abstract>
-      <Keywords>gemeenten2010, features, wijken, buurten, gemeenten, statistiek, bevolking</Keywords>
+      <Name>nok2013:verwervinginrichting</Name>
+      <Title>Verwerving inrichting</Title>
+      <Abstract>De status van de verwerving en inrichting van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Opgenomen zijn alle concreet begrensde rijksdoelen aangevuld met verworven en/of ingerichte gronden binnen zoekgebieden (exclusief zoekgebied bufferzone).&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit is de vereenvoudigde versie ten behoeve van de mapservices.</Abstract>
+      <Keywords>verwervinginrichting, features</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.255" miny="50.735" maxx="7.244" maxy="53.56"/>
+      <LatLongBoundingBox minx="3.277694742764297" miny="50.73563690808754" maxx="7.23713290426836" maxy="53.460797724702644"/>
+    </FeatureType>
+    <FeatureType>
+      <Name>nok2013:begrenzing</Name>
+      <Title>begrenzing</Title>
+      <Abstract>De begrenzing van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Zowel concrete begrenzingen als zoekgebieden zijn opgenomen voor nieuwe natuur, Recreatie om de Stad (RodS), Robuuste Ecologische VerbindingsZones (REVZ) en bufferzones.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+      <Keywords>begrenzing, features</Keywords>
+      <SRS>EPSG:28992</SRS>
+      <LatLongBoundingBox minx="3.273177427360282" miny="50.73555903683857" maxx="7.2369672521062" maxy="53.45503123037789"/>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -143,7 +150,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>

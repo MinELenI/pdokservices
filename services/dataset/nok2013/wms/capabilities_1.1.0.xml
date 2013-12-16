@@ -1,0 +1,399 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>Natuurmeting Op Kaart 2013 WMS</Title>
+    <Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
+    <KeywordList>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Wettelijke begrenzing (beleid)</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.
+Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.
+Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)
+Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <VendorSpecificCapabilities/>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer queryable="0" opaque="0" noSubsets="0">
+      <Title>Natuurmeting Op Kaart 2013 WMS</Title>
+      <Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:25831</SRS>
+      <SRS>EPSG:25832</SRS>
+      <SRS>EPSG:28992</SRS>
+      <SRS>EPSG:3034</SRS>
+      <SRS>EPSG:3035</SRS>
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4258</SRS>
+      <SRS>EPSG:4326</SRS>
+      <LatLonBoundingBox minx="3.2627399209981434" miny="50.73552601275698" maxx="7.241427162611707" maxy="53.55835638906398"/>
+      <BoundingBox SRS="EPSG:4326" minx="3.2627399209981434" miny="50.73552601275698" maxx="7.241427162611707" maxy="53.55835638906398"/>
+      <BoundingBox SRS="EPSG:4258" minx="3.2627399209981434" miny="50.73552601368106" maxx="7.241427162611707" maxy="53.55835638996499"/>
+      <BoundingBox SRS="EPSG:3035" minx="3846132.862635415" miny="3072990.4568128297" maxx="4138224.01570828" maxy="3404143.2994643496"/>
+      <BoundingBox SRS="EPSG:3034" minx="3541362.4777584737" miny="2667657.9191644853" maxx="3823318.156513387" maxy="2987220.430728977"/>
+      <BoundingBox SRS="EPSG:3857" minx="363206.5465963989" miny="6574644.00182714" maxx="806111.984358515" maxy="7086954.043041997"/>
+      <BoundingBox SRS="EPSG:28992" minx="4951.539096908295" miny="305048.11867467896" maxx="285825.07987128576" maxy="621206.141657458"/>
+      <BoundingBox SRS="EPSG:25831" minx="517404.2396519984" miny="5620447.965442482" maxx="799253.7030232509" maxy="5942756.075041205"/>
+      <BoundingBox SRS="EPSG:25832" minx="95269.31774617138" miny="5621889.719259063" maxx="383515.06140214135" maxy="5949707.4141161265"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+      </AuthorityURL>
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>bgtstandaard</Name>
+        <Title>bgtstandaard</Title>
+        <Abstract>test</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.85231443841115" miny="51.44575525385219" maxx="6.075042717515363" maxy="51.51751863878046"/>
+        <BoundingBox SRS="EPSG:28992" minx="187259.661" miny="384276.54" maxx="202669.929" maxy="392138.971"/>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>begrenzing</Name>
+        <Title>begrenzing</Title>
+        <Abstract>De begrenzing van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Zowel concrete begrenzingen als zoekgebieden zijn opgenomen voor nieuwe natuur, Recreatie om de Stad (RodS), Robuuste Ecologische VerbindingsZones (REVZ) en bufferzones.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+        <KeywordList>
+          <Keyword>begrenzing</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.273177427360282" miny="50.73555903683857" maxx="7.2369672521062" maxy="53.45503123037789"/>
+        <BoundingBox SRS="EPSG:28992" minx="14444.3201250061" miny="306952.659500006" maxx="277842.938000005" maxy="607631.527000009"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2721236043361865" miny="50.735364810425715" maxx="7.235895451747859" maxy="53.4548375971026"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2721236043361865" miny="50.73536481134978" maxx="7.235895451747859" maxy="53.45483759800461"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855506.8117923536" miny="3073732.0756515465" maxx="4137352.8995438656" maxy="3390558.3255440365"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550420.3536685077" miny="2668371.2241158066" maxx="3822490.7249838496" maxy="2974093.2222735193"/>
+        <BoundingBox SRS="EPSG:3857" minx="364251.13344735524" miny="6574615.648368376" maxx="805496.197121936" maxy="7067577.7511127675"/>
+        <BoundingBox SRS="EPSG:25831" minx="518077.64789439214" miny="5620471.962360273" maxx="791189.1558762877" maxy="5929657.933700543"/>
+        <BoundingBox SRS="EPSG:25832" minx="104675.23979462084" miny="5622519.362772195" maxx="382824.7262935426" maxy="5936103.322711537"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=93BBF464-ADD3-40E3-BFA2-6E02DE1F04FE"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2013_begrenzing</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=begrenzing"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>beheer</Name>
+        <Title>Beheer</Title>
+        <Abstract>De dataset Beheer is samengesteld uit het bestand Beheer_RODS dat de eindbeheerder voor de begrensde RodS weergeeft en wordt aangeleverd door de provincies en Beheer_DR dat het type beheer voor de EHS weergeeft en wordt aangeleverd door DR.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>beheer</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2627399209981434" miny="50.73552601275698" maxx="7.241310567806656" maxy="53.55619801539111"/>
+        <BoundingBox SRS="EPSG:28992" minx="14083.1830000058" miny="306958.813000006" maxx="277841.393000003" maxy="618891.876625008"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2616860909512773" miny="50.73533178532058" maxx="7.240238626556149" maxy="53.556004385561735"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2616860909512773" miny="50.73533178624466" maxx="7.240238626556149" maxy="53.55600438646276"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855147.059594809" miny="3073738.3138279957" maxx="4138074.556168994" maxy="3401822.341194833"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550072.737747163" miny="2668377.2468891866" maxx="3823175.7603851464" maxy="2984977.2668262036"/>
+        <BoundingBox SRS="EPSG:3857" minx="363089.2347721992" miny="6574609.839680569" maxx="805979.6771300208" maxy="7086513.277207689"/>
+        <BoundingBox SRS="EPSG:25831" minx="517343.0127401169" miny="5620466.370070147" maxx="791187.4135844982" maxy="5940916.640405926"/>
+        <BoundingBox SRS="EPSG:25832" minx="104314.34643671592" miny="5622525.582537102" maxx="383390.9694936364" maxy="5947380.996982204"/>
+        <Style>
+          <Name>nok2013_beheer</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=beheer"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>planologischeehs</Name>
+        <Title>Planologische EHS</Title>
+        <Abstract>De Planologische EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013.&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+        <KeywordList>
+          <Keyword>planologischeehs</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2674087513666508" miny="50.73554821590326" maxx="7.241427162611707" maxy="53.55835638906398"/>
+        <BoundingBox SRS="EPSG:28992" minx="14400.0001250058" miny="306952.660000005" maxx="277842.938000005" maxy="619131.812500005"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2663548988020388" miny="50.73535398936445" maxx="7.240355218242612" maxy="53.55816276006923"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2663548988020388" miny="50.73535399028854" maxx="7.240355218242612" maxy="53.558162760970234"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855462.614638082" miny="3073732.076150528" maxx="4138091.5144637492" maxy="3402041.796278904"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550377.6477420987" miny="2668371.224597599" maxx="3823191.8820109474" maxy="2985189.876444391"/>
+        <BoundingBox SRS="EPSG:3857" minx="363608.9640847576" miny="6574613.745083548" maxx="805992.6560571886" maxy="7086917.756011666"/>
+        <BoundingBox SRS="EPSG:25831" minx="517651.5020524078" miny="5620470.522220286" maxx="791189.1558602534" maxy="5941156.591437816"/>
+        <BoundingBox SRS="EPSG:25832" minx="104630.91302126623" miny="5622519.3632714255" maxx="383404.6162036874" maxy="5947604.711718469"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=E8C96F1E-B0BD-48B6-BDC2-987D0EF952EG"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2013_planologischeehs</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=planologischeehs"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>verwervinginrichting</Name>
+        <Title>Verwerving inrichting</Title>
+        <Abstract>De status van de verwerving en inrichting van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Opgenomen zijn alle concreet begrensde rijksdoelen aangevuld met verworven en/of ingerichte gronden binnen zoekgebieden (exclusief zoekgebied bufferzone).&#13;
+In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit is de vereenvoudigde versie ten behoeve van de mapservices.</Abstract>
+        <KeywordList>
+          <Keyword>verwervinginrichting</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.277694742764297" miny="50.73563690808754" maxx="7.23713290426836" maxy="53.460797724702644"/>
+        <BoundingBox SRS="EPSG:28992" minx="14763.5377500057" miny="306952.659625006" maxx="277837.454750005" maxy="608273.047000005"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2766408960422826" miny="50.73544268258243" maxx="7.236061096270614" maxy="53.460604092403294"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2766408960422826" miny="50.735442683506506" maxx="7.236061096270614" maxy="53.46060409330524"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855825.145109051" miny="3073732.420945695" maxx="4137388.613339409" maxy="3391178.5472030593"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550727.946139425" miny="2668371.555590073" maxx="3822524.541631437" maxy="2974693.0539017413"/>
+        <BoundingBox SRS="EPSG:3857" minx="364753.99605984247" miny="6574629.3450872945" maxx="805514.6365858616" maxy="7068655.860431863"/>
+        <BoundingBox SRS="EPSG:25831" minx="518375.2169960921" miny="5620482.338677217" maxx="791183.6727637757" maxy="5930299.185746405"/>
+        <BoundingBox SRS="EPSG:25832" minx="104994.50591965695" miny="5622519.631742124" maxx="382851.58512243925" maxy="5936728.496931945"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=92884061-83C7-4252-85CC-0C4A47D17141"/>
+        </MetadataURL>
+        <Style>
+          <Name>nok2013_verwervinginrichting</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=verwervinginrichting"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

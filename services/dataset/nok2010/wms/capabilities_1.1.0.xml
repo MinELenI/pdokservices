@@ -174,6 +174,14 @@
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>bgtstandaard</Name>
+        <Title>bgtstandaard</Title>
+        <Abstract>test</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.85231443841115" miny="51.44575525385219" maxx="6.075042717515363" maxy="51.51751863878046"/>
+        <BoundingBox SRS="EPSG:28992" minx="187259.661" miny="384276.54" maxx="202669.929" maxy="392138.971"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -216,21 +224,12 @@ PROJCS["Amersfoort / RD New",
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
-          <Name>nok_bblbuiten</Name>
+          <Name>nok2010_bblbuiten</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing"/>
-          </LegendURL>
-        </Style>
-        <Style>
-          <Name>nok2010_bblbuiten_orgineel</Name>
-          <Title/>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing&amp;style=nok2010_bblbuiten_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -276,21 +275,12 @@ PROJCS["Amersfoort / RD New",
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
-          <Name>nok_ehs</Name>
+          <Name>nok2010_ehs</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs"/>
-          </LegendURL>
-        </Style>
-        <Style>
-          <Name>nok2010_ehs_orgineel</Name>
-          <Title/>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs&amp;style=nok2010_ehs_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -336,21 +326,12 @@ PROJCS["Amersfoort / RD New",
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=%7B8437e420-dd40-484f-ad5c-37aa5c8056f9%7D"/>
         </MetadataURL>
         <Style>
-          <Name>nok_rods</Name>
+          <Name>nok2010_rods</Name>
           <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods"/>
-          </LegendURL>
-        </Style>
-        <Style>
-          <Name>nok2010_rods_orgineel</Name>
-          <Title/>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2010/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods&amp;style=nok2010_rods_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>

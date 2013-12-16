@@ -164,6 +164,14 @@
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>bgtstandaard</Name>
+        <Title>bgtstandaard</Title>
+        <Abstract>test</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.85231443841115" miny="51.44575525385219" maxx="6.075042717515363" maxy="51.51751863878046"/>
+        <BoundingBox SRS="EPSG:28992" minx="187259.661" miny="384276.54" maxx="202669.929" maxy="392138.971"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
