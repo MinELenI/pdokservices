@@ -255,7 +255,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_auto2011</Name>
-          <Title>P_AUTO</Title>
+          <Title>cbsvierkanten500m_p_auto2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -313,7 +313,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_auto2012</Name>
-          <Title>P_AUTOYYYY</Title>
+          <Title>cbsvierkanten500m_p_auto2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1995,7 +1995,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_nwal2011</Name>
-          <Title>P_NWAL</Title>
+          <Title>cbsvierkanten500m_p_nwal2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -2053,7 +2053,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_nwal2012</Name>
-          <Title>P_NWALYYYY</Title>
+          <Title>cbsvierkanten500m_p_nwal2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -3987,7 +3987,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_wal2011</Name>
-          <Title>P_WAL</Title>
+          <Title>cbsvierkanten500m_p_wal2011</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -4045,7 +4045,7 @@ PROJCS["Amersfoort / RD New",
         </MetadataURL>
         <Style>
           <Name>cbsvierkanten500m.p_wal2012</Name>
-          <Title>P_WALYYYY</Title>
+          <Title>cbsvierkanten500m_p_wal2012</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

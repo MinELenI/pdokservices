@@ -1,7 +1,7 @@
 <WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
   <Service>
     <Name>WMS</Name>
-    <Title>CBS Wijken en Buurten 2011 versie 2 WMS</Title>
+    <Title>CBS Wijken en Buurten 2011 versie 3 WMS</Title>
     <Abstract>Het Bestand Wijk- en Buurtkaart 2011 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze tweede versie bevat een deel van de kerncijfers. Begin 2014 wordt een derde versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/0514C636-FE23-45E6-BC14-
 07AD83AA3B1D/0/20132011b68pub.pdf</Abstract>
     <KeywordList>
@@ -113,7 +113,7 @@
       </inspire_common:ResponseLanguage>
     </inspire_vs:ExtendedCapabilities>
     <Layer>
-      <Title>CBS Wijken en Buurten 2011 versie 2 WMS</Title>
+      <Title>CBS Wijken en Buurten 2011 versie 3 WMS</Title>
       <Abstract>Het Bestand Wijk- en Buurtkaart 2011 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze tweede versie bevat een deel van de kerncijfers. Begin 2014 wordt een derde versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/0514C636-FE23-45E6-BC14-
 07AD83AA3B1D/0/20132011b68pub.pdf</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -183,11 +183,38 @@
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_buurten_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_inkomensontvangers</Name>
+          <Title>buurt_aantal_inkomensontvangers</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_inkomensontvangers"/>
           </LegendURL>
         </Style>
         <Style>
@@ -218,12 +245,12 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Title>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_koopwoningen</Name>
+          <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_koopwoningen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -236,12 +263,30 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_koopwoningen</Name>
-          <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_koopwoningen"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_restaurant"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning"/>
           </LegendURL>
         </Style>
         <Style>
@@ -317,12 +362,12 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Title>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -332,6 +377,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_ziekenhuis_excl_buitenpoli"/>
           </LegendURL>
         </Style>
         <Style>
@@ -398,6 +452,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Name>
           <Title>gemeentewijkbuurt_aantal_bijstandsuitkeringen_per_1000_inw</Title>
           <Abstract/>
@@ -416,21 +479,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_inwoners</Name>
           <Title>buurt_aantal_inwoners</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_inwoners"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt"/>
           </LegendURL>
         </Style>
         <Style>
@@ -506,6 +569,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Name>
           <Title>gemeentewijkbuurt_gemiddeld_aantal_HAVO_VWO_scholen_binnen_5_km</Title>
           <Abstract/>
@@ -521,6 +593,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_niet_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -551,6 +632,33 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_aandeel_stadsverwarming"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_westerse_allochtonen</Name>
           <Title>gemeentewijkbuurt_percentage_westerse_allochtonen</Title>
           <Abstract/>
@@ -578,6 +686,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_perc_huish_met_laag_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_buurten_buurt_aantal_motortweewielers</Name>
           <Title>buurt_aantal_motortweewielers</Title>
           <Abstract/>
@@ -596,21 +713,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Name>
           <Title>gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddeld_aantal_kinderdagverblijven_binnen_3_km"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_gemiddelde_afstand_tot_HAVO_VWO_school"/>
           </LegendURL>
         </Style>
         <Style>
@@ -650,21 +767,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven</Name>
-          <Title>buurt_aantal_agrarische_bedrijven</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_combinatiebedrijven</Name>
           <Title>gemeentewijkbuurt_percentage_combinatiebedrijven</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_gemeentewijkbuurt_percentage_combinatiebedrijven"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven</Name>
+          <Title>buurt_aantal_agrarische_bedrijven</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_buurten_2011&amp;style=wijkenbuurten_thema_buurten_buurt_aantal_agrarische_bedrijven"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -707,7 +824,7 @@
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_wijken_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -730,6 +847,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min"/>
           </LegendURL>
         </Style>
         <Style>
@@ -793,6 +919,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_zwembad"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk"/>
           </LegendURL>
         </Style>
         <Style>
@@ -868,12 +1003,12 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
-          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2"/>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning"/>
           </LegendURL>
         </Style>
         <Style>
@@ -883,6 +1018,42 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huishoudens_met_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Name>
+          <Title>gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_omgevingsadressendichtheid_adres_km2"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inwoner"/>
           </LegendURL>
         </Style>
         <Style>
@@ -904,12 +1075,30 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_laag_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_koopwoningen</Name>
           <Title>gemeentewijkbuurt_percentage_koopwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_koopwoningen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_lage_koopkracht"/>
           </LegendURL>
         </Style>
         <Style>
@@ -928,6 +1117,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_bedrijfsmotorvoertuigen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_aandeel_stadsverwarming"/>
           </LegendURL>
         </Style>
         <Style>
@@ -985,21 +1183,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
-          <Title>wijk_aantal_motortweewielers</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huurwoningen</Name>
           <Title>gemeentewijkbuurt_percentage_huurwoningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_huurwoningen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers</Name>
+          <Title>wijk_aantal_motortweewielers</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_motortweewielers"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1027,6 +1225,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_perc_huish_met_hoog_inkomen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1093,6 +1300,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_personen_met_laag_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gewassenbedrijven</Name>
           <Title>gemeentewijkbuurt_percentage_gewassenbedrijven</Title>
           <Abstract/>
@@ -1129,6 +1345,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inkomensontvangers</Name>
+          <Title>wijk_aantal_inkomensontvangers</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inkomensontvangers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Name>
           <Title>gemeentewijkbuurt_gemiddeld_aantal_VMBO_scholen_binnen_5_km</Title>
           <Abstract/>
@@ -1147,21 +1372,30 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
-          <Title>wijk_aantal_inwoners</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inwoners"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden</Name>
           <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_wijken_wijk_aantal_inwoners</Name>
+          <Title>wijk_aantal_inwoners</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cbs_wijken_2011&amp;style=wijkenbuurten_thema_wijken_wijk_aantal_inwoners"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1231,7 +1465,7 @@
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1245,6 +1479,24 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_motortweewielers"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_hoog_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_hoog_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_aandeel_stadsverwarming</Name>
+          <Title>gemeentewijkbuurt_aandeel_stadsverwarming</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_aandeel_stadsverwarming"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1266,21 +1518,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Name>
-          <Title>gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden</Name>
           <Title>gemeentewijkbuurt_percentage_gescheiden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gescheiden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_basisscholen_binnen_3_km"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1329,12 +1581,39 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Name>
+          <Title>gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huish_onder_rond_sociaal_min"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_gasverbruik_particuliere_woning"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Name>
           <Title>gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_restaurants_binnen_3_km"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_laag_inkomen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1347,21 +1626,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_woningen</Name>
           <Title>gemeente_aantal_woningen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_woningen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_bioscoop"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1374,21 +1653,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
-          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden</Name>
           <Title>gemeentewijkbuurt_percentage_gehuwden</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_gehuwden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Name>
+          <Title>gemeentewijkbuurt_percentage_eenpersoonshuishoudens</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_eenpersoonshuishoudens"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1416,6 +1695,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_grote_supermarkt"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Name>
+          <Title>gemeentewijkbuurt_percentage_personen_met_laag_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_personen_met_laag_inkomen"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1536,21 +1824,21 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_huisartspraktijk"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Name>
           <Title>gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_grote_supermarkten_binnen_3_km"/>
-          </LegendURL>
-        </Style>
-        <Style>
-          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Name>
-          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1563,6 +1851,24 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Name>
+          <Title>gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddelde_afstand_tot_basisonderwijs"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_hoog_inkomen</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_hoog_inkomen"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Name>
           <Title>gemeentewijkbuurt_perc_personen_15_tot_25_jaar</Title>
           <Abstract/>
@@ -1572,21 +1878,21 @@
           </LegendURL>
         </Style>
         <Style>
-          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
-          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
-          <Abstract/>
-          <LegendURL width="20" height="20">
-            <Format>image/png</Format>
-            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
-          </LegendURL>
-        </Style>
-        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Name>
           <Title>gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen</Title>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_huishoudens_zonder_kinderen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Name>
+          <Title>gemeentewijkbuurt_perc_personen_65_jaar_en_ouder</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_65_jaar_en_ouder"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1608,6 +1914,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_inkomensontvangers</Name>
+          <Title>gemeente_aantal_inkomensontvangers</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeente_aantal_inkomensontvangers"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Name>
           <Title>gemeentewijkbuurt_perc_personen_25_tot_45_jaar</Title>
           <Abstract/>
@@ -1623,6 +1938,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_aantal_autos_per_huishouden"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_elektricteitsverbruik_totaal"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1650,6 +1974,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_westerse_allochtonen"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Name>
+          <Title>gemeentewijkbuurt_perc_huish_met_lage_koopkracht</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_perc_huish_met_lage_koopkracht"/>
           </LegendURL>
         </Style>
         <Style>
@@ -1698,6 +2031,15 @@
           </LegendURL>
         </Style>
         <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inwoner</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inwoner"/>
+          </LegendURL>
+        </Style>
+        <Style>
           <Name>wijkenbuurten_thema_gemeenten_gemeente_aantal_bedrijfsmotorvoertuigen</Name>
           <Title>gemeente_aantal_bedrijfsmotorvoertuigen</Title>
           <Abstract/>
@@ -1713,6 +2055,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_percentage_veeteeltbedrijven"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Name>
+          <Title>gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/wijkenbuurten2011/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gemeenten2011&amp;style=wijkenbuurten_thema_gemeenten_gemeentewijkbuurt_gemiddeld_inkomen_inkomensontvanger"/>
           </LegendURL>
         </Style>
       </Layer>

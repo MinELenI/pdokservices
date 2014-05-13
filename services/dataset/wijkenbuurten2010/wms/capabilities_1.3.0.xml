@@ -185,7 +185,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_buurten_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -873,7 +873,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_wijken_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
@@ -1561,7 +1561,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         </MetadataURL>
         <Style>
           <Name>wijkenbuurten_thema_gemeenten_default</Name>
-          <Title>default</Title>
+          <Title/>
           <Abstract/>
           <LegendURL width="20" height="20">
             <Format>image/png</Format>

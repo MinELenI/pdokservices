@@ -1397,11 +1397,11 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

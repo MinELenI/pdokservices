@@ -117,6 +117,68 @@
         <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
       <Layer queryable="1">
+        <Name>brtachtergrondkaartgrijstijdelijk</Name>
+        <Title>BRT achtergrondkaart Grijs tijdelijk</Title>
+        <Abstract>Layer-Group type layer: brtachtergrondkaartgrijstijdelijk</Abstract>
+        <CRS>EPSG:28992</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-2.515569233091625</westBoundLongitude>
+          <eastBoundLongitude>13.667407319104775</eastBoundLongitude>
+          <southBoundLatitude>48.07461500980887</southBoundLatitude>
+          <northBoundLatitude>56.2731295551848</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="EPSG:28992" minx="-337571.0309986633" miny="32926.910190036986" maxx="671196.1660122878" maxy="921515.1592079261"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>brtachtergrondkaarttijdelijk</Name>
+        <Title>BRT achtergrondkaart tijdelijk</Title>
+        <Abstract>Layer-Group type layer: brtachtergrondkaarttijdelijk</Abstract>
+        <CRS>EPSG:28992</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-2.515569233091625</westBoundLongitude>
+          <eastBoundLongitude>13.667407319104775</eastBoundLongitude>
+          <southBoundLatitude>48.07461500980887</southBoundLatitude>
+          <northBoundLatitude>56.2731295551848</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="EPSG:28992" minx="-337571.0309986633" miny="32926.910190036986" maxx="671196.1660122878" maxy="921515.1592079261"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>annotaties</Name>
+        <Title>annotaties</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>annotaties</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.260506922568734</westBoundLongitude>
+          <eastBoundLongitude>7.236205735045091</eastBoundLongitude>
+          <southBoundLatitude>50.737403620381286</southBoundLatitude>
+          <northBoundLatitude>53.49798798846995</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.260506922568734" miny="50.737403620381286" maxx="7.236205735045091" maxy="53.49798798846995"/>
+        <BoundingBox CRS="EPSG:28992" minx="13743.266465175" miny="307177.074947084" maxx="277669.394044805" maxy="612413.454849814"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73720939205176" miny="3.2594531341428947" maxx="53.49779435497985" maxy="7.23513388668798"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.737209392975835" miny="3.2594531341428947" maxx="53.49779435588144" maxy="7.23513388668798"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073966.956999696" miny="3854821.703536842" maxx="3395376.5478768917" maxy="4137486.7801764705"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668597.95442085" miny="3549758.297174925" maxx="2978747.8652471476" maxy="3822614.838738929"/>
+        <BoundingBox CRS="EPSG:3857" minx="362840.66315732663" miny="6574940.092863504" maxx="805411.4200872642" maxy="7075612.506361571"/>
+        <BoundingBox CRS="EPSG:25831" minx="517218.62330282276" miny="5620673.341998707" maxx="791008.4196865575" maxy="5934433.363597697"/>
+        <BoundingBox CRS="EPSG:25832" minx="103985.00380886259" miny="5622751.9413436605" maxx="382892.522842949" maxy="5940920.609792846"/>
+        <Style>
+          <Name>brtachtergrondkaart_Annotatie_kleur</Name>
+          <Title>Annotatie_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=annotaties"/>
+          </LegendURL>
+        </Style>
+        <MaxScaleDenominator>3072000.0</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
         <Name>borders</Name>
         <Title>borders</Title>
         <Abstract/>
@@ -265,6 +327,42 @@
         </Style>
       </Layer>
       <Layer queryable="1">
+        <Name>lijnen</Name>
+        <Title>lijnen</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>lijnen</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-1.248399333551651</westBoundLongitude>
+          <eastBoundLongitude>12.343826530651256</eastBoundLongitude>
+          <southBoundLatitude>48.28996417226703</southBoundLatitude>
+          <northBoundLatitude>56.081872346049174</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-1.248399333551651" miny="48.28996417226703" maxx="12.343826530651256" maxy="56.081872346049174"/>
+        <BoundingBox CRS="EPSG:28992" minx="-260030.619537875" miny="50045.1175096069" maxx="590113.619695059" maxy="900190.850347294"/>
+        <BoundingBox CRS="EPSG:4326" minx="48.28977322466361" miny="-1.2494320200853346" maxx="56.081678918652315" maxy="12.342726531966665"/>
+        <BoundingBox CRS="EPSG:4258" minx="48.28977322560044" miny="-1.2494320200853346" maxx="56.08167891952531" maxy="12.342726531966665"/>
+        <BoundingBox CRS="EPSG:3035" minx="2798146.1382036484" miny="3566363.8093266273" maxx="3699727.505622408" maxy="4467650.449207253"/>
+        <BoundingBox CRS="EPSG:3034" minx="2402151.3228631834" miny="3270585.0933125922" maxx="3272456.5424951212" maxy="4142094.3350233277"/>
+        <BoundingBox CRS="EPSG:3857" minx="-139086.1362567106" miny="6155198.880571927" maxx="1373986.0325391565" maxy="7574692.830961101"/>
+        <BoundingBox CRS="EPSG:25831" minx="234426.37775010418" miny="5355014.0631905375" maxx="1111605.8286668563" maxy="6233323.549664659"/>
+        <BoundingBox CRS="EPSG:25832" minx="-182256.80565938074" miny="5350951.901597578" maxx="709028.0890419877" maxy="6243298.215247362"/>
+        <Style>
+          <Name>brtachtergrondkaart_Lijn_kleur</Name>
+          <Title>Lijn_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lijnen"/>
+          </LegendURL>
+        </Style>
+        <MaxScaleDenominator>1.2288E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
         <Name>lines</Name>
         <Title>lines</Title>
         <Abstract/>
@@ -396,6 +494,42 @@
         <MaxScaleDenominator>12000.0</MaxScaleDenominator>
       </Layer>
       <Layer queryable="1">
+        <Name>punten</Name>
+        <Title>punten</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>punten</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.245619578527686</westBoundLongitude>
+          <eastBoundLongitude>7.248405359555187</eastBoundLongitude>
+          <southBoundLatitude>50.72971346350691</southBoundLatitude>
+          <northBoundLatitude>53.57990526944802</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="3.245619578527686" miny="50.72971346350691" maxx="7.248405359555187" maxy="53.57990526944802"/>
+        <BoundingBox CRS="EPSG:28992" minx="13026.0855540762" miny="306340.760161459" maxx="278243.627023406" maxy="621531.22267696"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72951923287736" miny="3.2445658140098432" maxx="53.57971163909499" maxy="7.247333357705467"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.729519233801476" miny="3.2445658140098432" maxx="53.57971163999579" maxy="7.247333357705467"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073096.205219503" miny="3854054.336462764" maxx="3404524.0793713867" maxy="4138645.507955548"/>
+        <BoundingBox CRS="EPSG:3034" minx="2667757.395069985" miny="3549017.053620074" maxx="2987586.3837713767" maxy="3823724.7318096836"/>
+        <BoundingBox CRS="EPSG:3857" minx="361183.4142608389" miny="6573587.550860393" maxx="806769.4589888782" maxy="7090957.14208305"/>
+        <BoundingBox CRS="EPSG:25831" minx="516199.43867024564" miny="5619814.636969901" maxx="791609.4560824807" maxy="5943569.167229321"/>
+        <BoundingBox CRS="EPSG:25832" minx="103226.98827354884" miny="5621888.762265837" maxx="383925.6966142901" maxy="5950074.087741715"/>
+        <Style>
+          <Name>brtachtergrondkaart_Punten</Name>
+          <Title>Punt_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=punten"/>
+          </LegendURL>
+        </Style>
+        <MaxScaleDenominator>24000.0</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
         <Name>shorelines</Name>
         <Title>shorelines</Title>
         <Abstract/>
@@ -412,7 +546,7 @@
         <BoundingBox CRS="EPSG:28992" minx="-2975926.309" miny="-1605673.339" maxx="4964447.209" maxy="3175889.274"/>
         <BoundingBox CRS="EPSG:4326" minx="22.985728384811686" miny="-61.02391786311317" maxx="75.57396287416367" maxy="83.09627023460004"/>
         <BoundingBox CRS="EPSG:4258" minx="22.985728385490674" miny="-61.02391786311317" maxx="75.57396287461816" maxy="83.09627023460004"/>
-        <BoundingBox CRS="EPSG:3035" minx="1054000.6295351726" miny="903811.7832479528" maxx="6012159.0742388945" maxy="8608065.11978281"/>
+        <BoundingBox CRS="EPSG:3035" minx="1054000.6295351726" miny="903811.7832479533" maxx="6012159.0742388945" maxy="8608065.11978281"/>
         <BoundingBox CRS="EPSG:3034" minx="713043.2692792474" miny="546058.4051151732" maxx="5538372.993795501" maxy="8317816.757031235"/>
         <BoundingBox CRS="EPSG:3857" minx="-6793151.462732309" miny="2630292.8183644614" maxx="9250234.489335932" maxy="1.3183844998629164E7"/>
         <BoundingBox CRS="EPSG:25831" minx="-2528593.0533356997" miny="3527439.329445566" maxx="5798398.3479760215" maxy="9080678.198999865"/>
@@ -828,6 +962,42 @@
           </LegendURL>
         </Style>
         <MaxScaleDenominator>1.25E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>vlakken</Name>
+        <Title>vlakken</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>vlakken</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-1.24841742081615</westBoundLongitude>
+          <eastBoundLongitude>12.343826530651256</eastBoundLongitude>
+          <southBoundLatitude>48.28996417226703</southBoundLatitude>
+          <northBoundLatitude>56.08187235770792</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-1.24841742081615" miny="48.28996417226703" maxx="12.343826530651256" maxy="56.08187235770792"/>
+        <BoundingBox CRS="EPSG:28992" minx="-260031.758184782" miny="50045.1175096069" maxx="590113.619695059" maxy="900190.850347294"/>
+        <BoundingBox CRS="EPSG:4326" minx="48.28977322466361" miny="-1.249450107259831" maxx="56.081678930308094" maxy="12.342726531966665"/>
+        <BoundingBox CRS="EPSG:4258" minx="48.28977322560044" miny="-1.249450107259831" maxx="56.081678931181074" maxy="12.342726531966665"/>
+        <BoundingBox CRS="EPSG:3035" minx="2798146.1382036484" miny="3566362.67661748" maxx="3699727.5768816834" maxy="4467650.449207253"/>
+        <BoundingBox CRS="EPSG:3034" minx="2402151.3228631834" miny="3270583.9971475773" maxx="3272456.6067997827" maxy="4142094.3350233277"/>
+        <BoundingBox CRS="EPSG:3857" minx="-139088.14971176544" miny="6155198.880571927" maxx="1373986.0325391565" maxy="7574692.833286351"/>
+        <BoundingBox CRS="EPSG:25831" minx="234425.2416003929" miny="5355014.025348736" maxx="1111605.8286668563" maxy="6233323.549664659"/>
+        <BoundingBox CRS="EPSG:25832" minx="-182257.9468920643" miny="5350951.901597578" maxx="709028.0890419877" maxy="6243298.277777582"/>
+        <Style>
+          <Name>brtachtergrondkaart_Vlak_kleur</Name>
+          <Title>Vlak_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=vlakken"/>
+          </LegendURL>
+        </Style>
+        <MaxScaleDenominator>1.2288E7</MaxScaleDenominator>
       </Layer>
     </Layer>
   </Capability>

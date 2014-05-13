@@ -1,8 +1,7 @@
 <wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://schemas.opengis.net/gml" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:wijkenbuurten2012="http://wijkenbuurten2012.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1913">
   <ows:ServiceIdentification>
-    <ows:Title>CBS Wijken en Buurten 2012 versie 1 WFS</ows:Title>
-    <ows:Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-
-FA9CCB17D4DB/0/20132012b68pub.pdf</ows:Abstract>
+    <ows:Title>CBS Wijken en Buurten 2012 versie 2 WFS</ows:Title>
+    <ows:Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</ows:Abstract>
     <ows:Keywords>
       <ows:Keyword>wijken</ows:Keyword>
       <ows:Keyword>buurten</ows:Keyword>
@@ -684,11 +683,11 @@ FA9CCB17D4DB/0/20132012b68pub.pdf</ows:Abstract>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>

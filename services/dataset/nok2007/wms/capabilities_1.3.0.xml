@@ -163,6 +163,15 @@
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing"/>
           </LegendURL>
         </Style>
+        <Style>
+          <Name>nok2007_bblbuiten_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bblbuitenbegrenzing&amp;style=nok2007_bblbuiten_orgineel"/>
+          </LegendURL>
+        </Style>
       </Layer>
       <Layer queryable="1">
         <Name>ehs</Name>
@@ -202,6 +211,15 @@
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs"/>
           </LegendURL>
         </Style>
+        <Style>
+          <Name>nok2007_ehs_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ehs&amp;style=nok2007_ehs_orgineel"/>
+          </LegendURL>
+        </Style>
       </Layer>
       <Layer queryable="1">
         <Name>rods</Name>
@@ -239,6 +257,15 @@
           <LegendURL width="20" height="20">
             <Format>image/png</Format>
             <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>nok2007_rods_orgineel</Name>
+          <Title/>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/nok2007/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rods&amp;style=nok2007_rods_orgineel"/>
           </LegendURL>
         </Style>
       </Layer>

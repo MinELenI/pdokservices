@@ -164,13 +164,56 @@
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
       </AuthorityURL>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
       <Layer queryable="1" opaque="0" noSubsets="0">
-        <Name>bgtstandaard</Name>
-        <Title>bgtstandaard</Title>
-        <Abstract>test</Abstract>
+        <Name>annotaties</Name>
+        <Title>annotaties</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>annotaties</Keyword>
+        </KeywordList>
         <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="5.85231443841115" miny="51.44575525385219" maxx="6.075042717515363" maxy="51.51751863878046"/>
-        <BoundingBox SRS="EPSG:28992" minx="187259.661" miny="384276.54" maxx="202669.929" maxy="392138.971"/>
+        <LatLonBoundingBox minx="3.260506922568734" miny="50.737403620381286" maxx="7.236205735045091" maxy="53.49798798846995"/>
+        <BoundingBox SRS="EPSG:28992" minx="13743.266465175" miny="307177.074947084" maxx="277669.394044805" maxy="612413.454849814"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2594531341428947" miny="50.73720939205176" maxx="7.23513388668798" maxy="53.49779435497985"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2594531341428947" miny="50.737209392975835" maxx="7.23513388668798" maxy="53.49779435588144"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854821.703536842" miny="3073966.956999696" maxx="4137486.7801764705" maxy="3395376.5478768917"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549758.297174925" miny="2668597.95442085" maxx="3822614.838738929" maxy="2978747.8652471476"/>
+        <BoundingBox SRS="EPSG:3857" minx="362840.66315732663" miny="6574940.092863504" maxx="805411.4200872642" maxy="7075612.506361571"/>
+        <BoundingBox SRS="EPSG:25831" minx="517218.62330282276" miny="5620673.341998707" maxx="791008.4196865575" maxy="5934433.363597697"/>
+        <BoundingBox SRS="EPSG:25832" minx="103985.00380886259" miny="5622751.9413436605" maxx="382892.522842949" maxy="5940920.609792846"/>
+        <Style>
+          <Name>brtachtergrondkaart_Annotatie_kleur</Name>
+          <Title>Annotatie_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=annotaties"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.0" max="3072000.0"/>
       </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -401,6 +444,57 @@ PROJCS["Amersfoort / RD New",
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
       <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>lijnen</Name>
+        <Title>lijnen</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>lijnen</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="-1.248399333551651" miny="48.28996417226703" maxx="12.343826530651256" maxy="56.081872346049174"/>
+        <BoundingBox SRS="EPSG:28992" minx="-260030.619537875" miny="50045.1175096069" maxx="590113.619695059" maxy="900190.850347294"/>
+        <BoundingBox SRS="EPSG:4326" minx="-1.2494320200853346" miny="48.28977322466361" maxx="12.342726531966665" maxy="56.081678918652315"/>
+        <BoundingBox SRS="EPSG:4258" minx="-1.2494320200853346" miny="48.28977322560044" maxx="12.342726531966665" maxy="56.08167891952531"/>
+        <BoundingBox SRS="EPSG:3035" minx="3566363.8093266273" miny="2798146.1382036484" maxx="4467650.449207253" maxy="3699727.505622408"/>
+        <BoundingBox SRS="EPSG:3034" minx="3270585.0933125922" miny="2402151.3228631834" maxx="4142094.3350233277" maxy="3272456.5424951212"/>
+        <BoundingBox SRS="EPSG:3857" minx="-139086.1362567106" miny="6155198.880571927" maxx="1373986.0325391565" maxy="7574692.830961101"/>
+        <BoundingBox SRS="EPSG:25831" minx="234426.37775010418" miny="5355014.0631905375" maxx="1111605.8286668563" maxy="6233323.549664659"/>
+        <BoundingBox SRS="EPSG:25832" minx="-182256.80565938074" miny="5350951.901597578" maxx="709028.0890419877" maxy="6243298.215247362"/>
+        <Style>
+          <Name>brtachtergrondkaart_Lijn_kleur</Name>
+          <Title>Lijn_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lijnen"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.0" max="1.2288E7"/>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>lines</Name>
         <Title>lines</Title>
         <Abstract/>
@@ -592,6 +686,57 @@ PROJCS["Amersfoort / RD New",
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
       <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>punten</Name>
+        <Title>punten</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>punten</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.245619578527686" miny="50.72971346350691" maxx="7.248405359555187" maxy="53.57990526944802"/>
+        <BoundingBox SRS="EPSG:28992" minx="13026.0855540762" miny="306340.760161459" maxx="278243.627023406" maxy="621531.22267696"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2445658140098432" miny="50.72951923287736" maxx="7.247333357705467" maxy="53.57971163909499"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2445658140098432" miny="50.729519233801476" maxx="7.247333357705467" maxy="53.57971163999579"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854054.336462764" miny="3073096.205219503" maxx="4138645.507955548" maxy="3404524.0793713867"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549017.053620074" miny="2667757.395069985" maxx="3823724.7318096836" maxy="2987586.3837713767"/>
+        <BoundingBox SRS="EPSG:3857" minx="361183.4142608389" miny="6573587.550860393" maxx="806769.4589888782" maxy="7090957.14208305"/>
+        <BoundingBox SRS="EPSG:25831" minx="516199.43867024564" miny="5619814.636969901" maxx="791609.4560824807" maxy="5943569.167229321"/>
+        <BoundingBox SRS="EPSG:25832" minx="103226.98827354884" miny="5621888.762265837" maxx="383925.6966142901" maxy="5950074.087741715"/>
+        <Style>
+          <Name>brtachtergrondkaart_Punten</Name>
+          <Title>Punt_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=punten"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.0" max="24000.0"/>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
         <Name>shorelines</Name>
         <Title>shorelines</Title>
         <Abstract/>
@@ -601,7 +746,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:28992" minx="-2975926.309" miny="-1605673.339" maxx="4964447.209" maxy="3175889.274"/>
         <BoundingBox SRS="EPSG:4326" minx="-61.02391786311317" miny="22.985728384811686" maxx="83.09627023460004" maxy="75.57396287416367"/>
         <BoundingBox SRS="EPSG:4258" minx="-61.02391786311317" miny="22.985728385490674" maxx="83.09627023460004" maxy="75.57396287461816"/>
-        <BoundingBox SRS="EPSG:3035" minx="903811.7832479528" miny="1054000.6295351726" maxx="8608065.11978281" maxy="6012159.0742388945"/>
+        <BoundingBox SRS="EPSG:3035" minx="903811.7832479533" miny="1054000.6295351726" maxx="8608065.11978281" maxy="6012159.0742388945"/>
         <BoundingBox SRS="EPSG:3034" minx="546058.4051151732" miny="713043.2692792474" maxx="8317816.757031235" maxy="5538372.993795501"/>
         <BoundingBox SRS="EPSG:3857" minx="-6793151.462732309" miny="2630292.8183644614" maxx="9250234.489335932" maxy="1.3183844998629164E7"/>
         <BoundingBox SRS="EPSG:25831" minx="-2528593.0533356997" miny="3527439.329445566" maxx="5798398.3479760215" maxy="9080678.198999865"/>
@@ -1147,6 +1292,57 @@ PROJCS["Amersfoort / RD New",
           </LegendURL>
         </Style>
         <ScaleHint min="0.0" max="1.25E7"/>
+      </Layer>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>vlakken</Name>
+        <Title>vlakken</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>vlakken</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="-1.24841742081615" miny="48.28996417226703" maxx="12.343826530651256" maxy="56.08187235770792"/>
+        <BoundingBox SRS="EPSG:28992" minx="-260031.758184782" miny="50045.1175096069" maxx="590113.619695059" maxy="900190.850347294"/>
+        <BoundingBox SRS="EPSG:4326" minx="-1.249450107259831" miny="48.28977322466361" maxx="12.342726531966665" maxy="56.081678930308094"/>
+        <BoundingBox SRS="EPSG:4258" minx="-1.249450107259831" miny="48.28977322560044" maxx="12.342726531966665" maxy="56.081678931181074"/>
+        <BoundingBox SRS="EPSG:3035" minx="3566362.67661748" miny="2798146.1382036484" maxx="4467650.449207253" maxy="3699727.5768816834"/>
+        <BoundingBox SRS="EPSG:3034" minx="3270583.9971475773" miny="2402151.3228631834" maxx="4142094.3350233277" maxy="3272456.6067997827"/>
+        <BoundingBox SRS="EPSG:3857" minx="-139088.14971176544" miny="6155198.880571927" maxx="1373986.0325391565" maxy="7574692.833286351"/>
+        <BoundingBox SRS="EPSG:25831" minx="234425.2416003929" miny="5355014.025348736" maxx="1111605.8286668563" maxy="6233323.549664659"/>
+        <BoundingBox SRS="EPSG:25832" minx="-182257.9468920643" miny="5350951.901597578" maxx="709028.0890419877" maxy="6243298.277777582"/>
+        <Style>
+          <Name>brtachtergrondkaart_Vlak_kleur</Name>
+          <Title>Vlak_style</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/brtachtergrondkaart/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=vlakken"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0.0" max="1.2288E7"/>
       </Layer>
     </Layer>
   </Capability>
