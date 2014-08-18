@@ -42,6 +42,7 @@
         </DCPType>
       </GetCapabilities>
       <GetMap>
+        <Format>image/png</Format>
         <Format>image/jpeg</Format>
         <DCPType>
           <HTTP>
@@ -71,14 +72,31 @@
     </Exception>
     <Layer>
       <Title>PDOK-achtergrond luchtfoto</Title>
-      <SRS>EPSG:28992 </SRS>
+      <SRS>EPSG:28992 CRS:84 EPSG:4326 EPSG:4258 EPSG:25831 EPSG:25832 </SRS>
       <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
-      <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+      <BoundingBox SRS="EPSG:4326" minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
       <ScaleHint min="0.565685424949"/>
       <Layer>
         <Name>luchtfoto</Name>
         <Title>PDOK-achtergrond luchtfoto</Title>
         <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:4326" minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+        <ScaleHint min="0.565685424949"/>
+      </Layer>
+      <Layer>
+        <Name>luchtfoto_jpeg</Name>
+        <Title>PDOK-achtergrond luchtfoto (jpg)</Title>
+        <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:4326" minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+        <ScaleHint min="0.565685424949"/>
+      </Layer>
+      <Layer>
+        <Name>luchtfoto_png</Name>
+        <Title>PDOK-achtergrond luchtfoto (png)</Title>
+        <LatLonBoundingBox minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
+        <BoundingBox SRS="EPSG:4326" minx="-1.65729082579" miny="48.0405022699" maxx="12.4317265799" maxy="56.1105892748"/>
         <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
         <ScaleHint min="0.565685424949"/>
       </Layer>
