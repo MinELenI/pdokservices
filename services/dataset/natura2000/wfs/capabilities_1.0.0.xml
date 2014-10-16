@@ -1,24 +1,26 @@
-<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:nok2013="http://nok2013.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
+<WFS_Capabilities xmlns="http://www.opengis.net/wfs" xmlns:natura2000="http://natura2000.geonovum.nl" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.0.0/WFS-capabilities.xsd">
   <Service>
     <Name>WFS</Name>
-    <Title>Natuurmeting Op Kaart 2013 WFS</Title>
-    <Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
-    <Keywords>Natuur, Wettelijke begrenzing (beleid)</Keywords>
-    <OnlineResource>http://geodata.nationaalgeoregister.nl/nok2013/wfs</OnlineResource>
-    <Fees>NONE</Fees>
-    <AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
+    <Title>Natura2000 WFS</Title>
+    <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
+    <Keywords>Natuur, Habitatrichtlijn, Vogelrichtlijn, Natuurmonumenten, Natura2000</Keywords>
+    <OnlineResource>http://geodata.nationaalgeoregister.nl/natura2000/wfs</OnlineResource>
+    <Fees>FEES APPLY</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
   </Service>
   <Capability>
     <Request>
       <GetCapabilities>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=GetCapabilities"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs?request=GetCapabilities"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
           </HTTP>
         </DCPType>
       </GetCapabilities>
@@ -28,12 +30,12 @@
         </SchemaDescriptionLanguage>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=DescribeFeatureType"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs?request=DescribeFeatureType"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
           </HTTP>
         </DCPType>
       </DescribeFeatureType>
@@ -47,12 +49,12 @@
         </ResultFormat>
         <DCPType>
           <HTTP>
-            <Get onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs?request=GetFeature"/>
+            <Get onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs?request=GetFeature"/>
           </HTTP>
         </DCPType>
         <DCPType>
           <HTTP>
-            <Post onlineResource="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+            <Post onlineResource="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
           </HTTP>
         </DCPType>
       </GetFeature>
@@ -63,40 +65,12 @@
       <Query/>
     </Operations>
     <FeatureType>
-      <Name>nok2013:beheer</Name>
-      <Title>Beheer</Title>
-      <Abstract>De dataset Beheer is samengesteld uit het bestand Beheer_RODS dat de eindbeheerder voor de begrensde RodS weergeeft en wordt aangeleverd door de provincies en Beheer_DR dat het type beheer voor de EHS weergeeft en wordt aangeleverd door DR.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
-      <Keywords>features, beheer</Keywords>
+      <Name>natura2000:natura2000</Name>
+      <Title>natura2000</Title>
+      <Abstract>Natura2000 Beschermde gebieden</Abstract>
+      <Keywords>Beschermde gebieden</Keywords>
       <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.2627399209981434" miny="50.73552601275698" maxx="7.241310567806656" maxy="53.55619801539111"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:planologischeehs</Name>
-      <Title>Planologische EHS</Title>
-      <Abstract>De Planologische EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
-      <Keywords>planologischeehs, features</Keywords>
-      <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.2674087513666508" miny="50.73554821590326" maxx="7.241427162611707" maxy="53.55835638906398"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:verwervinginrichting</Name>
-      <Title>Verwerving inrichting</Title>
-      <Abstract>De status van de verwerving en inrichting van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Opgenomen zijn alle concreet begrensde rijksdoelen aangevuld met verworven en/of ingerichte gronden binnen zoekgebieden (exclusief zoekgebied bufferzone).&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit is de vereenvoudigde versie ten behoeve van de mapservices.</Abstract>
-      <Keywords>verwervinginrichting, features</Keywords>
-      <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.277694742764297" miny="50.73563690808754" maxx="7.23713290426836" maxy="53.460797724702644"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:begrenzing</Name>
-      <Title>begrenzing</Title>
-      <Abstract>De begrenzing van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Zowel concrete begrenzingen als zoekgebieden zijn opgenomen voor nieuwe natuur, Recreatie om de Stad (RodS), Robuuste Ecologische VerbindingsZones (REVZ) en bufferzones.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
-      <Keywords>begrenzing, features</Keywords>
-      <SRS>EPSG:28992</SRS>
-      <LatLongBoundingBox minx="3.273177427360282" miny="50.73555903683857" maxx="7.2369672521062" maxy="53.45503123037789"/>
+      <LatLongBoundingBox minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -150,7 +124,7 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
             <ogc:Function_Name nArgs="3">bufferWithSegments</ogc:Function_Name>
             <ogc:Function_Name nArgs="7">Categorize</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">ceil</ogc:Function_Name>
-            <ogc:Function_Name nArgs="1">centroid</ogc:Function_Name>
+            <ogc:Function_Name nArgs="1">Centroid</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">classify</ogc:Function_Name>
             <ogc:Function_Name nArgs="2">Clip</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">CollectGeometries</ogc:Function_Name>
@@ -284,7 +258,7 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
             <ogc:Function_Name nArgs="2">Quantile</ogc:Function_Name>
             <ogc:Function_Name nArgs="3">Query</ogc:Function_Name>
             <ogc:Function_Name nArgs="0">random</ogc:Function_Name>
-            <ogc:Function_Name nArgs="3">RangeLookup</ogc:Function_Name>
+            <ogc:Function_Name nArgs="5">RangeLookup</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">RasterAsPointCollection</ogc:Function_Name>
             <ogc:Function_Name nArgs="4">RasterZonalStatistics</ogc:Function_Name>
             <ogc:Function_Name nArgs="5">Recode</ogc:Function_Name>

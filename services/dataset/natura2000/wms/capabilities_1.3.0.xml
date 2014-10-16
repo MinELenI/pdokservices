@@ -1,0 +1,198 @@
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1915" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>Natura2000 WMS</Title>
+    <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
+    <KeywordList>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Habitatrichtlijn</Keyword>
+      <Keyword>Vogelrichtlijn</Keyword>
+      <Keyword>Natuurmonumenten</Keyword>
+      <Keyword>Natura2000</Keyword>
+      <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/pdf</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <inspire_vs:ExtendedCapabilities>
+      <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+        <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/eng/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=9c80458b-12c6-4d38-8f6d-387ab6e4ed21</inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>dut</inspire_common:Language>
+        </inspire_common:DefaultLanguage>
+        <inspire_common:SupportedLanguage>
+          <inspire_common:Language>dut</inspire_common:Language>
+        </inspire_common:SupportedLanguage>
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:Language>dut</inspire_common:Language>
+      </inspire_common:ResponseLanguage>
+    </inspire_vs:ExtendedCapabilities>
+    <Layer>
+      <Title>Natura2000 WMS</Title>
+      <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:25831</CRS>
+      <CRS>EPSG:25832</CRS>
+      <CRS>EPSG:28992</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3035</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>2.682</westBoundLongitude>
+        <eastBoundLongitude>7.321</eastBoundLongitude>
+        <southBoundLatitude>50.729</southBoundLatitude>
+        <northBoundLatitude>55.657</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
+      <BoundingBox CRS="EPSG:4326" minx="50.729" miny="2.682" maxx="55.657" maxy="7.321"/>
+      <BoundingBox CRS="EPSG:4258" minx="50.729000000924124" miny="2.682" maxx="55.65700000087817" maxy="7.321"/>
+      <BoundingBox CRS="EPSG:3035" minx="3072056.3294705013" miny="3805279.3760754582" maxx="3640356.8680129587" maxy="4152320.139953281"/>
+      <BoundingBox CRS="EPSG:3034" minx="2666757.824873553" miny="3501883.5991769265" maxx="3215743.051947954" maxy="3836607.7199226664"/>
+      <BoundingBox CRS="EPSG:3857" minx="298558.8743075597" miny="6573496.236399547" maxx="814969.9920975558" maxy="7490434.883683602"/>
+      <BoundingBox CRS="EPSG:28992" minx="-36060.55048287631" miny="304385.19724080816" maxx="291460.8404590412" maxy="856083.5716055873"/>
+      <BoundingBox CRS="EPSG:25831" minx="477556.3570533596" miny="5619737.584901198" maxx="804908.2828521158" maxy="6176373.972045114"/>
+      <BoundingBox CRS="EPSG:25832" minx="54271.23543800134" miny="5621033.6501302095" maxx="394364.40110238147" maxy="6186019.074751386"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xlink:type="simple" xlink:href="http://www.pdok.nl"/>
+      </AuthorityURL>
+      <Layer queryable="1">
+        <Name>natura2000</Name>
+        <Title>natura2000</Title>
+        <Abstract>Natura2000 Beschermde gebieden</Abstract>
+        <KeywordList>
+          <Keyword>Beschermde gebieden</Keyword>
+        </KeywordList>
+        <CRS>EPSG:28992</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>2.682</westBoundLongitude>
+          <eastBoundLongitude>7.321</eastBoundLongitude>
+          <southBoundLatitude>50.729</southBoundLatitude>
+          <northBoundLatitude>55.657</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
+        <BoundingBox CRS="EPSG:28992" minx="-15585.196" miny="307159.281" maxx="276784.781" maxy="852877.107"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72910459107384" miny="2.680870793153438" maxx="55.656643409110124" maxy="7.319863432627679"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.72910459199797" miny="2.680870793153438" maxx="55.656643409988305" maxy="7.319863432627679"/>
+        <BoundingBox CRS="EPSG:3035" minx="3074004.8863005317" miny="3825575.5220606006" maxx="3637153.4478565603" maxy="4152186.2669919203"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668634.2652653153" miny="3521497.592888306" maxx="3212637.4753265316" maxy="3836481.0472357003"/>
+        <BoundingBox CRS="EPSG:3857" minx="298433.1715764002" miny="6573514.6301409025" maxx="814843.4699964168" maxy="7490364.520081558"/>
+        <BoundingBox CRS="EPSG:25831" minx="479905.8973526369" miny="5619701.398344907" maxx="790124.4029269028" maxy="6174739.024707775"/>
+        <BoundingBox CRS="EPSG:25832" minx="74647.49329636461" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
+        <AuthorityURL name="ELenI">
+          <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/eleni"/>
+        </AuthorityURL>
+        <Identifier authority="ELenI">nl.eleni.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=8829e5dd-c861-4639-a6c8-fdbb6e3440d2"/>
+        </MetadataURL>
+        <Style>
+          <Name>lnv_natura2000</Name>
+          <Title>Natura 2000</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=natura2000"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>inspire_common_DEFAULT</Name>
+          <Title>INSPIRE common default style</Title>
+          <Abstract>INSPIRE common default style</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=natura2000&amp;style=inspire_common_DEFAULT"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

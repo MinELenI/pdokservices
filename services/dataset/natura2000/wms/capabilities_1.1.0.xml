@@ -1,0 +1,243 @@
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="1915">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>Natura2000 WMS</Title>
+    <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
+    <KeywordList>
+      <Keyword>Natuur</Keyword>
+      <Keyword>Habitatrichtlijn</Keyword>
+      <Keyword>Vogelrichtlijn</Keyword>
+      <Keyword>Natuurmonumenten</Keyword>
+      <Keyword>Natura2000</Keyword>
+      <Keyword>infoMapAccessService</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>KlantContactCenter PDOK</ContactPerson>
+        <ContactOrganization>PDOK</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>pointOfContact</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City/>
+        <StateOrProvince/>
+        <PostCode/>
+        <Country>Nederland</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>BeheerPDOK@kadaster.nl</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer queryable="0" opaque="0" noSubsets="0">
+      <Title>Natura2000 WMS</Title>
+      <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:25831</SRS>
+      <SRS>EPSG:25832</SRS>
+      <SRS>EPSG:28992</SRS>
+      <SRS>EPSG:3034</SRS>
+      <SRS>EPSG:3035</SRS>
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4258</SRS>
+      <SRS>EPSG:4326</SRS>
+      <LatLonBoundingBox minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
+      <BoundingBox SRS="EPSG:4326" minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
+      <BoundingBox SRS="EPSG:4258" minx="2.682" miny="50.729000000924124" maxx="7.321" maxy="55.65700000087817"/>
+      <BoundingBox SRS="EPSG:3035" minx="3805279.3760754582" miny="3072056.3294705013" maxx="4152320.139953281" maxy="3640356.8680129587"/>
+      <BoundingBox SRS="EPSG:3034" minx="3501883.5991769265" miny="2666757.824873553" maxx="3836607.7199226664" maxy="3215743.051947954"/>
+      <BoundingBox SRS="EPSG:3857" minx="298558.8743075597" miny="6573496.236399547" maxx="814969.9920975558" maxy="7490434.883683602"/>
+      <BoundingBox SRS="EPSG:28992" minx="-36060.55048287631" miny="304385.19724080816" maxx="291460.8404590412" maxy="856083.5716055873"/>
+      <BoundingBox SRS="EPSG:25831" minx="477556.3570533596" miny="5619737.584901198" maxx="804908.2828521158" maxy="6176373.972045114"/>
+      <BoundingBox SRS="EPSG:25832" minx="54271.23543800134" miny="5621033.6501302095" maxx="394364.40110238147" maxy="6186019.074751386"/>
+      <AuthorityURL name="PDOK">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+      </AuthorityURL>
+      <!--WKT definition of this CRS:
+PROJCS["Amersfoort / RD New", 
+  GEOGCS["Amersfoort", 
+    DATUM["Amersfoort", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[565.2369, 50.0087, 465.658, -0.40685733032239757, -0.3507326765425626, 1.8703473836067959, 4.0812], 
+      AUTHORITY["EPSG","6289"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4289"]], 
+  PROJECTION["Oblique_Stereographic", AUTHORITY["EPSG","9809"]], 
+  PARAMETER["central_meridian", 5.387638888888891], 
+  PARAMETER["latitude_of_origin", 52.15616055555556], 
+  PARAMETER["scale_factor", 0.9999079], 
+  PARAMETER["false_easting", 155000.0], 
+  PARAMETER["false_northing", 463000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","28992"]]-->
+      <Layer queryable="1" opaque="0" noSubsets="0">
+        <Name>natura2000</Name>
+        <Title>natura2000</Title>
+        <Abstract>Natura2000 Beschermde gebieden</Abstract>
+        <KeywordList>
+          <Keyword>Beschermde gebieden</Keyword>
+        </KeywordList>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
+        <BoundingBox SRS="EPSG:28992" minx="-15585.196" miny="307159.281" maxx="276784.781" maxy="852877.107"/>
+        <BoundingBox SRS="EPSG:4326" minx="2.680870793153438" miny="50.72910459107384" maxx="7.319863432627679" maxy="55.656643409110124"/>
+        <BoundingBox SRS="EPSG:4258" minx="2.680870793153438" miny="50.72910459199797" maxx="7.319863432627679" maxy="55.656643409988305"/>
+        <BoundingBox SRS="EPSG:3035" minx="3825575.5220606006" miny="3074004.8863005317" maxx="4152186.2669919203" maxy="3637153.4478565603"/>
+        <BoundingBox SRS="EPSG:3034" minx="3521497.592888306" miny="2668634.2652653153" maxx="3836481.0472357003" maxy="3212637.4753265316"/>
+        <BoundingBox SRS="EPSG:3857" minx="298433.1715764002" miny="6573514.6301409025" maxx="814843.4699964168" maxy="7490364.520081558"/>
+        <BoundingBox SRS="EPSG:25831" minx="479905.8973526369" miny="5619701.398344907" maxx="790124.4029269028" maxy="6174739.024707775"/>
+        <BoundingBox SRS="EPSG:25832" minx="74647.49329636461" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
+        <AuthorityURL name="ELenI">
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/eleni" xlink:type="simple"/>
+        </AuthorityURL>
+        <Identifier authority="ELenI">nl.eleni.1</Identifier>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=8829e5dd-c861-4639-a6c8-fdbb6e3440d2"/>
+        </MetadataURL>
+        <Style>
+          <Name>lnv_natura2000</Name>
+          <Title>Natura 2000</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=natura2000"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>inspire_common_DEFAULT</Name>
+          <Title>INSPIRE common default style</Title>
+          <Abstract>INSPIRE common default style</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=natura2000&amp;style=inspire_common_DEFAULT"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

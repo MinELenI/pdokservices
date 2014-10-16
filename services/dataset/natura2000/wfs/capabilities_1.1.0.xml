@@ -1,15 +1,20 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:nok2012="http://nok2012.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://schemas.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:natura2000="http://natura2000.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1915">
   <ows:ServiceIdentification>
-    <ows:Title>Natuurmeting Op Kaart 2012 WFS</ows:Title>
-    <ows:Abstract>De Natuurmeting Op Kaart 2012 (NOK2012) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2012. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2012 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</ows:Abstract>
+    <ows:Title>Natura2000 WFS</ows:Title>
+    <ows:Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</ows:Abstract>
     <ows:Keywords>
       <ows:Keyword>Natuur</ows:Keyword>
-      <ows:Keyword>Wettelijke begrenzing (beleid)</ows:Keyword>
+      <ows:Keyword>Habitatrichtlijn</ows:Keyword>
+      <ows:Keyword>Vogelrichtlijn</ows:Keyword>
+      <ows:Keyword>Natuurmonumenten</ows:Keyword>
+      <ows:Keyword>Natura2000</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
-    <ows:Fees>NONE</ows:Fees>
-    <ows:AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</ows:AccessConstraints>
+    <ows:Fees>FEES APPLY</ows:Fees>
+    <ows:AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -34,8 +39,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="AcceptVersions">
@@ -49,8 +54,8 @@
     <ows:Operation name="DescribeFeatureType">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -60,8 +65,8 @@
     <ows:Operation name="GetFeature">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -88,71 +93,48 @@
     <ows:Operation name="GetGmlObject">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2012/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
+    <ows:ExtendedCapabilities>
+      <inspire_dls:ExtendedCapabilities>
+        <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+          <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=32b1eb9e-c54f-4598-92d2-328eb77fa0d3</inspire_common:URL>
+          <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+          <inspire_common:DefaultLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+          </inspire_common:DefaultLanguage>
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+          <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>32b1eb9e-c54f-4598-92d2-328eb77fa0d3</inspire_common:Code>
+        </inspire_dls:SpatialDataSetIdentifier>
+      </inspire_dls:ExtendedCapabilities>
+    </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
   <FeatureTypeList>
     <Operations>
       <Operation>Query</Operation>
     </Operations>
     <FeatureType>
-      <Name>nok2012:begrenzing</Name>
-      <Title>begrenzing</Title>
-      <Abstract/>
+      <Name>natura2000:natura2000</Name>
+      <Title>natura2000</Title>
+      <Abstract>Natura2000 Beschermde gebieden</Abstract>
       <ows:Keywords>
-        <ows:Keyword>begrenzing</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
+        <ows:Keyword>Beschermde gebieden</ows:Keyword>
       </ows:Keywords>
       <DefaultSRS>urn:x-ogc:def:crs:EPSG:28992</DefaultSRS>
       <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.273177427249599 50.73555903908458</ows:LowerCorner>
-        <ows:UpperCorner>7.236967252202821 53.45503123262401</ows:UpperCorner>
+        <ows:LowerCorner>2.682 50.729</ows:LowerCorner>
+        <ows:UpperCorner>7.321 55.657</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2012:beheer</Name>
-      <Title>beheer</Title>
-      <Abstract/>
-      <ows:Keywords>
-        <ows:Keyword>features</ows:Keyword>
-        <ows:Keyword>beheer</ows:Keyword>
-      </ows:Keywords>
-      <DefaultSRS>urn:x-ogc:def:crs:EPSG:28992</DefaultSRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.262790613120794 50.73631719272513</ows:LowerCorner>
-        <ows:UpperCorner>7.24126635685729 53.55517643185978</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2012:planologischeehs</Name>
-      <Title>planologischeehs</Title>
-      <Abstract/>
-      <ows:Keywords>
-        <ows:Keyword>planologischeehs</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
-      </ows:Keywords>
-      <DefaultSRS>urn:x-ogc:def:crs:EPSG:28992</DefaultSRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.267408751366541 50.7355482159032</ows:LowerCorner>
-        <ows:UpperCorner>7.241427162611644 53.558356389063924</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2012:verwervinginrichting</Name>
-      <Title>verwervinginrichting</Title>
-      <Abstract/>
-      <ows:Keywords>
-        <ows:Keyword>verwervinginrichting</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
-      </ows:Keywords>
-      <DefaultSRS>urn:x-ogc:def:crs:EPSG:28992</DefaultSRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.2776947559244047 50.736003797859254</ows:LowerCorner>
-        <ows:UpperCorner>7.237132902387805 53.460797724708684</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
+      <MetadataURL type="TC211" format="text/plain">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=8829e5dd-c861-4639-a6c8-fdbb6e3440d2</MetadataURL>
     </FeatureType>
   </FeatureTypeList>
   <ogc:Filter_Capabilities>
@@ -217,7 +199,7 @@
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>
@@ -351,7 +333,7 @@
             <ogc:FunctionName nArgs="2">Quantile</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">Query</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">random</ogc:FunctionName>
-            <ogc:FunctionName nArgs="3">RangeLookup</ogc:FunctionName>
+            <ogc:FunctionName nArgs="5">RangeLookup</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">RasterAsPointCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="4">RasterZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="5">Recode</ogc:FunctionName>

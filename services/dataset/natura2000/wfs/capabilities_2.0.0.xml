@@ -1,15 +1,20 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nok2013="http://nok2013.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://schemas.opengis.net/gml" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:natura2000="http://natura2000.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1921">
   <ows:ServiceIdentification>
-    <ows:Title>Natuurmeting Op Kaart 2013 WFS</ows:Title>
-    <ows:Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</ows:Abstract>
+    <ows:Title>Natura2000 WFS</ows:Title>
+    <ows:Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
+Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</ows:Abstract>
     <ows:Keywords>
       <ows:Keyword>Natuur</ows:Keyword>
-      <ows:Keyword>Wettelijke begrenzing (beleid)</ows:Keyword>
+      <ows:Keyword>Habitatrichtlijn</ows:Keyword>
+      <ows:Keyword>Vogelrichtlijn</ows:Keyword>
+      <ows:Keyword>Natuurmonumenten</ows:Keyword>
+      <ows:Keyword>Natura2000</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>WFS</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
-    <ows:Fees>NONE</ows:Fees>
-    <ows:AccessConstraints>Begrenzing -&gt; Bron: Provincies / Provinciale begrenzingen zijn een-op-een overgenomen. Er komen overlaps voor binnen provincies en tussen provincies.Beheer -&gt; Bron: DR / Staatsbosbeheer: Niet gecheckt op overlappende polygonen.Planologische EHS -&gt; Bron: Provincies / Alleen bij benadering te gebruiken als buitengrens van de EHS (aangezien voor enkele provincies ook (deels) beheergebieden zijn opgenomen)Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</ows:AccessConstraints>
+    <ows:Fees>FEES APPLY</ows:Fees>
+    <ows:AccessConstraints>otherRestrictions;
+        http://creativecommons.org/publicdomain/mark/1.0/deed.nl; Geen beperkingen</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>PDOK</ows:ProviderName>
@@ -34,8 +39,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="AcceptVersions">
@@ -54,8 +59,8 @@
     <ows:Operation name="DescribeFeatureType">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -67,8 +72,8 @@
     <ows:Operation name="GetFeature">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -104,8 +109,8 @@
     <ows:Operation name="GetPropertyValue">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resolve">
@@ -117,31 +122,31 @@
     <ows:Operation name="ListStoredQueries">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="DescribeStoredQueries">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="CreateStoredQuery">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="DropStoredQuery">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
-          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/nok2013/wfs"/>
+          <ows:Get xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
+          <ows:Post xlink:href="http://geodata.nationaalgeoregister.nl/natura2000/wfs"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
@@ -211,71 +216,40 @@
         <ows:Value>wfs:StoredQuery</ows:Value>
       </ows:AllowedValues>
     </ows:Constraint>
+    <ows:ExtendedCapabilities>
+      <inspire_dls:ExtendedCapabilities>
+        <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+          <inspire_common:URL>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=32b1eb9e-c54f-4598-92d2-328eb77fa0d3</inspire_common:URL>
+          <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+          <inspire_common:DefaultLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+          </inspire_common:DefaultLanguage>
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+          <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>32b1eb9e-c54f-4598-92d2-328eb77fa0d3</inspire_common:Code>
+        </inspire_dls:SpatialDataSetIdentifier>
+      </inspire_dls:ExtendedCapabilities>
+    </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
   <FeatureTypeList>
     <FeatureType>
-      <Name>nok2013:beheer</Name>
-      <Title>Beheer</Title>
-      <Abstract>De dataset Beheer is samengesteld uit het bestand Beheer_RODS dat de eindbeheerder voor de begrensde RodS weergeeft en wordt aangeleverd door de provincies en Beheer_DR dat het type beheer voor de EHS weergeeft en wordt aangeleverd door DR.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
+      <Name>natura2000:natura2000</Name>
+      <Title>natura2000</Title>
+      <Abstract>Natura2000 Beschermde gebieden</Abstract>
       <ows:Keywords>
-        <ows:Keyword>features</ows:Keyword>
-        <ows:Keyword>beheer</ows:Keyword>
+        <ows:Keyword>Beschermde gebieden</ows:Keyword>
       </ows:Keywords>
       <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
       <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.2627399209981434 50.73552601275698</ows:LowerCorner>
-        <ows:UpperCorner>7.241310567806656 53.55619801539111</ows:UpperCorner>
+        <ows:LowerCorner>2.682 50.729</ows:LowerCorner>
+        <ows:UpperCorner>7.321 55.657</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=E8C96F1E-B0BD-48B6-BDC2-987D0EF952EF"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:planologischeehs</Name>
-      <Title>Planologische EHS</Title>
-      <Abstract>De Planologische EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
-      <ows:Keywords>
-        <ows:Keyword>planologischeehs</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
-      </ows:Keywords>
-      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.2674087513666508 50.73554821590326</ows:LowerCorner>
-        <ows:UpperCorner>7.241427162611707 53.55835638906398</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=E8C96F1E-B0BD-48B6-BDC2-987D0EF952EG"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:verwervinginrichting</Name>
-      <Title>Verwerving inrichting</Title>
-      <Abstract>De status van de verwerving en inrichting van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Opgenomen zijn alle concreet begrensde rijksdoelen aangevuld met verworven en/of ingerichte gronden binnen zoekgebieden (exclusief zoekgebied bufferzone).&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit is de vereenvoudigde versie ten behoeve van de mapservices.</Abstract>
-      <ows:Keywords>
-        <ows:Keyword>verwervinginrichting</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
-      </ows:Keywords>
-      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.277694742764297 50.73563690808754</ows:LowerCorner>
-        <ows:UpperCorner>7.23713290426836 53.460797724702644</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=92884061-83C7-4252-85CC-0C4A47D17141"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>nok2013:begrenzing</Name>
-      <Title>begrenzing</Title>
-      <Abstract>De begrenzing van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Zowel concrete begrenzingen als zoekgebieden zijn opgenomen voor nieuwe natuur, Recreatie om de Stad (RodS), Robuuste Ecologische VerbindingsZones (REVZ) en bufferzones.&#13;
-In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving dat de voortgang van de verwerving, functieverandering en inrichting van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) per 1 januari 2007 beschrijft. Nulmeting op Kaart (NOK) gaat over de uitgangssituatie bij inwerkingtreding van het ILG. In 2010, 2011, 2012 en 2013 zijn er updates gemaakt van dit bestand: Natuurmeting Op Kaart. Dit bestand is de uitkomst van de Natuurmeting Op Kaart 2013. Dit bestand is de vereenvoudigde weergave van de data ten behoeve van de mapservices.</Abstract>
-      <ows:Keywords>
-        <ows:Keyword>begrenzing</ows:Keyword>
-        <ows:Keyword>features</ows:Keyword>
-      </ows:Keywords>
-      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
-      <ows:WGS84BoundingBox>
-        <ows:LowerCorner>3.273177427360282 50.73555903683857</ows:LowerCorner>
-        <ows:UpperCorner>7.2369672521062 53.45503123037789</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=93BBF464-ADD3-40E3-BFA2-6E02DE1F04FE"/>
+      <MetadataURL xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=8829e5dd-c861-4639-a6c8-fdbb6e3440d2"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
@@ -679,11 +653,11 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="centroid">
+      <fes:Function name="Centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="geometry">
-            <fes:Type>gml:AbstractGeometryType</fes:Type>
+          <fes:Argument name="features">
+            <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -2236,13 +2210,19 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
       <fes:Function name="RangeLookup">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="arg0">
+          <fes:Argument name="coverage">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="arg1">
+          <fes:Argument name="band">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="arg2">
+          <fes:Argument name="ranges">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="outputPixelValues">
+            <fes:Type>xs:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="noData">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>
