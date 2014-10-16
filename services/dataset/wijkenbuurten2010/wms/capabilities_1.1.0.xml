@@ -149,7 +149,7 @@
       <Format>application/vnd.ogc.se_inimage</Format>
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>CBS Wijken en Buurten 2010 versie 3 WMS</Title>
       <Abstract>Het Bestand Wijk- en Buurtkaart 2010 bevat geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit het TOPgrenzen bestand van het Kadaster. Deze derde versie bevat het maximale aantal attributen en zal hierna niet meer geupdate worden. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/C51D26F7-3938-4175-8510-
 8BE74D2EDB0F/0/20132010b68pub.pdf</Abstract>
@@ -166,14 +166,30 @@
       <BoundingBox SRS="EPSG:4326" minx="3.255" miny="50.735" maxx="7.244" maxy="53.56"/>
       <BoundingBox SRS="EPSG:4258" minx="3.255" miny="50.73500000092408" maxx="7.244000000000001" maxy="53.56000000090099"/>
       <BoundingBox SRS="EPSG:3035" minx="3845583.7579432707" miny="3072925.1384922056" maxx="4138401.4269782915" maxy="3404373.163236711"/>
-      <BoundingBox SRS="EPSG:3034" minx="3540831.897141325" miny="2667594.911674993" maxx="3823489.460013404" maxy="2987441.709023733"/>
+      <BoundingBox SRS="EPSG:3034" minx="3540831.897141325" miny="2667594.911674994" maxx="3823489.460013404" maxy="2987441.709023733"/>
       <BoundingBox SRS="EPSG:3857" minx="362344.94253210543" miny="6574551.4831717545" maxx="806398.3913064738" maxy="7087262.070540835"/>
       <BoundingBox SRS="EPSG:28992" minx="4403.5500490654085" miny="304989.9414108776" maxx="286008.16637993825" maxy="621404.2200086052"/>
       <BoundingBox SRS="EPSG:25831" minx="516890.8833708092" miny="5620387.562994036" maxx="799438.5219724628" maxy="5942948.945330169"/>
       <BoundingBox SRS="EPSG:25832" minx="94719.1269888375" miny="5621826.920487525" maxx="383689.97535031725" maxy="5949931.403131658"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
+      <Layer queryable="1">
+        <Name>kadastralekaart</Name>
+        <Title>kadastralekaart</Title>
+        <Abstract>Layer-Group type layer: kadastralekaart</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="2.9609458583862094" miny="47.97373997284293" maxx="7.253017497834058" maxy="53.7606665567902"/>
+        <BoundingBox SRS="EPSG:28992" minx="-5170.993" miny="10.1" maxx="278026.09" maxy="641678.643"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bagviewer</Name>
+        <Title>bagviewer</Title>
+        <Abstract>Layer-Group type layer: bagviewer</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.062149684923958" miny="50.71350312543268" maxx="7.367689629919523" maxy="53.602590516077726"/>
+        <BoundingBox SRS="EPSG:28992" minx="941.794" miny="304882.174" maxx="286081.572" maxy="624060.854"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -196,7 +212,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>cbs_buurten_2010</Name>
         <Title>cbs_buurten_2010</Title>
         <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -221,7 +237,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25831" minx="516846.81948996545" miny="5620292.025655001" maxx="791351.1093051168" maxy="5941330.059744595"/>
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -899,7 +915,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>cbs_wijken_2010</Name>
         <Title>cbs_wijken_2010</Title>
         <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -924,7 +940,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25831" minx="516846.81948996545" miny="5620292.025655001" maxx="791351.1093051168" maxy="5941330.059744595"/>
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.2</Identifier>
         <MetadataURL type="TC211">
@@ -1602,7 +1618,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>gemeenten2010</Name>
         <Title>gemeenten2010</Title>
         <Abstract>De wijk- en buurtkaart 2010 (12Mb) bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten. Ook zijn de kerncijfers van de buurten en de geaggreggeerde kerncijfers van de wijken en gemeenten aan de kaart toegevoegd. Op 16 januari 2012 is het aantal kerncijfers aanzienlijk uitgebreid.&#13;
@@ -1627,7 +1643,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
         <BoundingBox SRS="EPSG:25831" minx="516846.81948996545" miny="5620292.025655001" maxx="791351.1093051168" maxy="5941330.059744595"/>
         <BoundingBox SRS="EPSG:25832" minx="103823.3545337891" miny="5622359.237953541" maxx="383569.90234028467" maxy="5947813.772511864"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.3</Identifier>
         <MetadataURL type="TC211">

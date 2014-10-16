@@ -2954,19 +2954,13 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
       <fes:Function name="RangeLookup">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="coverage">
+          <fes:Argument name="arg0">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="band">
+          <fes:Argument name="arg1">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="ranges">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="outputPixelValues">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="noData">
+          <fes:Argument name="arg2">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>

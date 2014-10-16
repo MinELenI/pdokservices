@@ -165,7 +165,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
       <Format>application/vnd.ogc.se_inimage</Format>
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>Vierkanten 100m x 100m WMS</Title>
       <Abstract>Het bestand CBS vierkanten 100m bevat statistische gegevens per 100m x 100m vierkant.
 Met ingang van 24 juli 2012 is het aantal kerncijfers aanzienlijk uitgebreid.
@@ -200,8 +200,24 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
       <BoundingBox SRS="EPSG:25831" minx="511179.2766712596" miny="5546345.342376264" maxx="809652.4047372118" maxy="6017253.155046095"/>
       <BoundingBox SRS="EPSG:25832" minx="83014.04335696332" miny="5547670.742962485" maxx="390976.18385886564" maxy="6024299.15249266"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
+      <Layer queryable="1">
+        <Name>kadastralekaart</Name>
+        <Title>kadastralekaart</Title>
+        <Abstract>Layer-Group type layer: kadastralekaart</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="2.9609458583862094" miny="47.97373997284293" maxx="7.253017497834058" maxy="53.7606665567902"/>
+        <BoundingBox SRS="EPSG:28992" minx="-5170.993" miny="10.1" maxx="278026.09" maxy="641678.643"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bagviewer</Name>
+        <Title>bagviewer</Title>
+        <Abstract>Layer-Group type layer: bagviewer</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.062149684923958" miny="50.71350312543268" maxx="7.367689629919523" maxy="53.602590516077726"/>
+        <BoundingBox SRS="EPSG:28992" minx="941.794" miny="304882.174" maxx="286081.572" maxy="624060.854"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -224,7 +240,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>autochtonen_2011</Name>
         <Title>autochtonen_2011</Title>
         <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
@@ -243,7 +259,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -282,7 +298,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>autochtonen_2012</Name>
         <Title>autochtonen_2012</Title>
         <Abstract>Het aandeel personen van wie de beide ouders in Nederland zijn geboren, ongeacht het eigen geboorteland.</Abstract>
@@ -301,7 +317,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -340,7 +356,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>gem_woz_waarde_woningen_2011</Name>
         <Title>gem_woz_waarde_woningen_2011</Title>
         <Abstract>De gemiddelde waarde van alle woningen 2011 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2011 is 1 januari 2010.</Abstract>
@@ -359,7 +375,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -398,7 +414,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>gem_woz_waarde_woningen_2012</Name>
         <Title>gem_woz_waarde_woningen_2012</Title>
         <Abstract>De gemiddelde waarde van alle woningen 2012 met een bekende WOZ-waarde. De peildatum van WOZ-waarde van 1 januari 2012 is 1 januari 2011.</Abstract>
@@ -417,7 +433,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -456,7 +472,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2000</Name>
         <Title>inwoners_2000</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -475,7 +491,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -514,7 +530,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2001</Name>
         <Title>inwoners_2001</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -533,7 +549,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -572,7 +588,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2002</Name>
         <Title>inwoners_2002</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -591,7 +607,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -630,7 +646,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2003</Name>
         <Title>inwoners_2003</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -649,7 +665,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -688,7 +704,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2004</Name>
         <Title>inwoners_2004</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -707,7 +723,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -746,7 +762,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2005</Name>
         <Title>inwoners_2005</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -765,7 +781,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -804,7 +820,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2006</Name>
         <Title>inwoners_2006</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -823,7 +839,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -862,7 +878,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2007</Name>
         <Title>inwoners_2007</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -881,7 +897,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -920,7 +936,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2008</Name>
         <Title>inwoners_2008</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -939,7 +955,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -978,7 +994,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2009</Name>
         <Title>inwoners_2009</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -997,7 +1013,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1036,7 +1052,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2010</Name>
         <Title>inwoners_2010</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1055,7 +1071,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1094,7 +1110,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011</Name>
         <Title>inwoners_2011</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1113,7 +1129,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1152,7 +1168,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011_15_tot_25_jaar</Name>
         <Title>inwoners_2011_15_tot_25_jaar</Title>
         <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2011.</Abstract>
@@ -1171,7 +1187,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1210,7 +1226,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011_25_tot_45_jaar</Name>
         <Title>inwoners_2011_25_tot_45_jaar</Title>
         <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2011.</Abstract>
@@ -1229,7 +1245,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1268,7 +1284,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011_45_tot_65_jaar</Name>
         <Title>inwoners_2011_45_tot_65_jaar</Title>
         <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2011.</Abstract>
@@ -1287,7 +1303,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1326,7 +1342,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011_65_plus_jaar</Name>
         <Title>inwoners_2011_65_plus_jaar</Title>
         <Abstract>Het aantal inwoners van 65 jaar of ouder op 1 januari 2011.</Abstract>
@@ -1345,7 +1361,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1384,7 +1400,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2011_tot_15_jaar</Name>
         <Title>inwoners_2011_tot_15_jaar</Title>
         <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2011.</Abstract>
@@ -1403,7 +1419,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1442,7 +1458,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012</Name>
         <Title>inwoners_2012</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1461,7 +1477,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1500,7 +1516,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012_15_tot_25_jaar</Name>
         <Title>inwoners_2012_15_tot_25_jaar</Title>
         <Abstract>Het aantal inwoners van 15 tot 25 jaar op 1 januari 2012.</Abstract>
@@ -1519,7 +1535,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1558,7 +1574,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012_25_tot_45_jaar</Name>
         <Title>inwoners_2012_25_tot_45_jaar</Title>
         <Abstract>Het aantal inwoners van 25 tot 45 jaar op 1 januari 2012.</Abstract>
@@ -1577,7 +1593,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1616,7 +1632,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012_45_tot_65_jaar</Name>
         <Title>inwoners_2012_45_tot_65_jaar</Title>
         <Abstract>Het aantal inwoners van 45 tot 65 jaar op 1 januari 2012.</Abstract>
@@ -1635,7 +1651,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1674,7 +1690,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012_65_plus_jaar</Name>
         <Title>inwoners_2012_65_plus_jaar</Title>
         <Abstract>Het aantal inwoners van 65 en ouder op 1 januari 2012.</Abstract>
@@ -1693,7 +1709,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1732,7 +1748,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2012_tot_15_jaar</Name>
         <Title>inwoners_2012_tot_15_jaar</Title>
         <Abstract>Het aantal inwoners tot 15 jaar op 1 januari 2012.</Abstract>
@@ -1751,7 +1767,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1790,7 +1806,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>inwoners_2013</Name>
         <Title>inwoners_2013</Title>
         <Abstract>Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -1809,7 +1825,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1848,7 +1864,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>mannen_2011</Name>
         <Title>mannen_2011</Title>
         <Abstract>Het aantal mannen op 1 januari 2011.</Abstract>
@@ -1867,7 +1883,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1906,7 +1922,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>mannen_2012</Name>
         <Title>mannen_2012</Title>
         <Abstract>Het aantal mannen op 1 januari 2012.</Abstract>
@@ -1925,7 +1941,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -1964,10 +1980,10 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
-        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#195;&#171; (exclusief Indonesi&#195;&#171; en Japan) of Turkije op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -1983,7 +1999,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2022,10 +2038,10 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2012</Name>
         <Title>niet_westerse_allochtonen_2012</Title>
-        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#195;&#171; (exclusief Indonesi&#195;&#171; en Japan) of Turkije op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2041,7 +2057,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2080,7 +2096,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>toename_inwoners_2000_2010</Name>
         <Title>toename_inwoners_2000_2010</Title>
         <Abstract>Toename in het aantal inwoners in de periode van 1 januari 2000 tot en met 1 januari 2010. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA).</Abstract>
@@ -2099,7 +2115,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2138,7 +2154,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>vrouwen_2011</Name>
         <Title>vrouwen_2011</Title>
         <Abstract>Het aantal vrouwen op 1 januari 2011.</Abstract>
@@ -2157,7 +2173,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2196,7 +2212,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>vrouwen_2012</Name>
         <Title>vrouwen_2012</Title>
         <Abstract>Het aantal vrouwen op 1 januari 2012.</Abstract>
@@ -2215,7 +2231,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2254,10 +2270,10 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
-        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
+        <Abstract>Het aandeel personen van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#195;&#171;, Indonesi&#195;&#171; of Japan op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -2273,7 +2289,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2312,10 +2328,10 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>westerse_allochtonen_2012</Name>
         <Title>westerse_allochtonen_2012</Title>
-        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
+        <Abstract>Het aandeel personen van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#195;&#171;, Indonesi&#195;&#171; of Japan op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>westerse_allochtonen_2012</Keyword>
@@ -2331,7 +2347,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2370,7 +2386,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2000</Name>
         <Title>woningen_2000</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2389,7 +2405,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2428,7 +2444,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2001</Name>
         <Title>woningen_2001</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2447,7 +2463,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2486,7 +2502,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2002</Name>
         <Title>woningen_2002</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2505,7 +2521,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2544,7 +2560,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2003</Name>
         <Title>woningen_2003</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2563,7 +2579,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2602,7 +2618,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2004</Name>
         <Title>woningen_2004</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2621,7 +2637,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2660,7 +2676,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2005</Name>
         <Title>woningen_2005</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2679,7 +2695,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2718,7 +2734,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2006</Name>
         <Title>woningen_2006</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2737,7 +2753,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2776,7 +2792,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2007</Name>
         <Title>woningen_2007</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2795,7 +2811,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2834,7 +2850,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2008</Name>
         <Title>woningen_2008</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2853,7 +2869,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2892,7 +2908,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2009</Name>
         <Title>woningen_2009</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2911,7 +2927,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -2950,7 +2966,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2010</Name>
         <Title>woningen_2010</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -2969,7 +2985,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -3008,7 +3024,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2011</Name>
         <Title>woningen_2011</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -3027,7 +3043,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -3066,7 +3082,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>woningen_2012</Name>
         <Title>woningen_2012</Title>
         <Abstract>Het totaal aantal woningen op 1 januari. Dit gegeven is onttrokken aan het Woningregister van het CBS.</Abstract>
@@ -3085,7 +3101,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="516640.4025375882" miny="5620185.634680217" maxx="791554.3110424071" maxy="5941536.786802169"/>
         <BoundingBox SRS="EPSG:25832" minx="103618.45357658411" miny="5622249.586345634" maxx="383779.6599447417" maxy="5948023.974078982"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">

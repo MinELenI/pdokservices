@@ -662,7 +662,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
             <ogc:Function_Name nArgs="2">Quantile</ogc:Function_Name>
             <ogc:Function_Name nArgs="3">Query</ogc:Function_Name>
             <ogc:Function_Name nArgs="0">random</ogc:Function_Name>
-            <ogc:Function_Name nArgs="5">RangeLookup</ogc:Function_Name>
+            <ogc:Function_Name nArgs="3">RangeLookup</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">RasterAsPointCollection</ogc:Function_Name>
             <ogc:Function_Name nArgs="4">RasterZonalStatistics</ogc:Function_Name>
             <ogc:Function_Name nArgs="5">Recode</ogc:Function_Name>

@@ -2236,19 +2236,13 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
       <fes:Function name="RangeLookup">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="coverage">
+          <fes:Argument name="arg0">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="band">
+          <fes:Argument name="arg1">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="ranges">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="outputPixelValues">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="noData">
+          <fes:Argument name="arg2">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>

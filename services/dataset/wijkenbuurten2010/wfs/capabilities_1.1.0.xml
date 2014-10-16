@@ -382,7 +382,7 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
             <ogc:FunctionName nArgs="2">Quantile</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">Query</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">random</ogc:FunctionName>
-            <ogc:FunctionName nArgs="5">RangeLookup</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">RangeLookup</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">RasterAsPointCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="4">RasterZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="5">Recode</ogc:FunctionName>

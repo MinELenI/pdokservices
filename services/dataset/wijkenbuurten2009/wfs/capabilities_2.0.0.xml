@@ -682,11 +682,11 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -2239,19 +2239,13 @@ De wijk- en buurtkaart is samengesteld uit drie bronnen. De gemeentegrenzen op l
       <fes:Function name="RangeLookup">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="coverage">
+          <fes:Argument name="arg0">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="band">
+          <fes:Argument name="arg1">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="ranges">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="outputPixelValues">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="noData">
+          <fes:Argument name="arg2">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>

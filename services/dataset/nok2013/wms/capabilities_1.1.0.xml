@@ -146,7 +146,7 @@ Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>Natuurmeting Op Kaart 2013 WMS</Title>
       <Abstract>De Natuurmeting Op Kaart 2013 (NOK2013) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) en Recreatie om de Stad (RodS) op 1 januari 2013. Het betreft realisatie van de begrenzing, verwerving, inrichting en beheer. De NOK2013 bestaat uit vier onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen), en 4) Status van het eindbeheer van de EHS en RodS.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -168,8 +168,96 @@ Verwerving en Inrichting -&gt; Geen gebruiksbeperkingen</AccessConstraints>
       <BoundingBox SRS="EPSG:25831" minx="517404.2396519984" miny="5620447.965442482" maxx="799253.7030232509" maxy="5942756.075041205"/>
       <BoundingBox SRS="EPSG:25832" minx="95269.31774617138" miny="5621889.719259063" maxx="383515.06140214135" maxy="5949707.4141161265"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
+      <Layer queryable="1">
+        <Name>nok2011</Name>
+        <Title>nok2011</Title>
+        <Abstract>Layer-Group type layer: nok2011</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.267408749259828" miny="50.73554821587269" maxx="7.241427162806071" maxy="53.558356393555066"/>
+        <BoundingBox SRS="EPSG:28992" minx="14400.0" miny="306952.66" maxx="277842.938" maxy="619131.813"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>top50vector</Name>
+        <Title>top50vector</Title>
+        <Abstract>Layer-Group type layer: top50vector</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.0501047023181873" miny="50.65152921647827" maxx="7.405862943303404" maxy="53.63091892790642"/>
+        <BoundingBox SRS="EPSG:28992" minx="245.988" miny="298004.244" maxx="288522.484" maxy="627211.959"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>brkgeo</Name>
+        <Title>brkgeo</Title>
+        <Abstract>Layer-Group type layer: brkgeo</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.2755083256339637" miny="50.75156941597959" maxx="7.225543125526836" maxy="53.48675834810634"/>
+        <BoundingBox SRS="EPSG:28992" minx="14703.091" miny="308727.656" maxx="276993.188" maxy="611163.312"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bgtlijngericht</Name>
+        <Title>bgtlijngericht</Title>
+        <Abstract>Layer-Group type layer: bgtlijngericht</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.8369097722414915" miny="51.443828766845506" maxx="6.145070632404372" maxy="51.572747420614796"/>
+        <BoundingBox SRS="EPSG:28992" minx="186189.76482512592" miny="384109.6074517284" maxx="207467.23239503853" maxy="398276.71845088335"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>gbkn</Name>
+        <Title>gbkn</Title>
+        <Abstract>Layer-Group type layer: gbkn</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.122315996154196" miny="50.715369138736875" maxx="7.358612532473003" maxy="53.518874328760276"/>
+        <BoundingBox SRS="EPSG:28992" minx="4635.706416599394" miny="304981.20833028" maxx="285735.74870020465" maxy="614739.1790913643"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>brtachtergrondkaart</Name>
+        <Title>brtachtergrondkaart</Title>
+        <Abstract>Layer-Group type layer: brtachtergrondkaart</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="-1.6562609441953906" miny="48.04069281762555" maxx="12.432827837825775" maxy="56.11078318203799"/>
+        <BoundingBox SRS="EPSG:28992" minx="-285401.92" miny="22598.08" maxx="595401.92" maxy="903401.92"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bgtomtrekgericht</Name>
+        <Title>bgtomtrekgericht</Title>
+        <Abstract>Layer-Group type layer: bgtomtrekgericht</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.231582653515971" miny="50.81213645168505" maxx="5.7097728333512805" maxy="52.166433226868726"/>
+        <BoundingBox SRS="EPSG:28992" minx="144280.193" miny="313609.061" maxx="176996.675" maxy="464231.35"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>brtachtergrondkaartgrijstijdelijk</Name>
+        <Title>BRT achtergrondkaart Grijs tijdelijk</Title>
+        <Abstract>Layer-Group type layer: brtachtergrondkaartgrijstijdelijk</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="-2.515569233091625" miny="48.07461500980887" maxx="13.667407319104775" maxy="56.2731295551848"/>
+        <BoundingBox SRS="EPSG:28992" minx="-337571.0309986633" miny="32926.910190036986" maxx="671196.1660122878" maxy="921515.1592079261"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bgtachtergrond</Name>
+        <Title>bgtachtergrond</Title>
+        <Abstract>Layer-Group type layer: bgtachtergrond</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.8369097722414915" miny="51.443828766845506" maxx="6.145070632404372" maxy="51.572747420614796"/>
+        <BoundingBox SRS="EPSG:28992" minx="186189.76482512592" miny="384109.6074517284" maxx="207467.23239503853" maxy="398276.71845088335"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>brtachtergrondkaarttijdelijk</Name>
+        <Title>BRT achtergrondkaart tijdelijk</Title>
+        <Abstract>Layer-Group type layer: brtachtergrondkaarttijdelijk</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="-2.515569233091625" miny="48.07461500980887" maxx="13.667407319104775" maxy="56.2731295551848"/>
+        <BoundingBox SRS="EPSG:28992" minx="-337571.0309986633" miny="32926.910190036986" maxx="671196.1660122878" maxy="921515.1592079261"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bgtstandaard</Name>
+        <Title>bgtstandaard</Title>
+        <Abstract>Layer-Group type layer: bgtstandaard</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="5.2268310597799506" miny="50.80973813725341" maxx="6.1552218536096195" maxy="52.17304232459722"/>
+        <BoundingBox SRS="EPSG:28992" minx="143956.73608235776" miny="313562.1381838475" maxx="207467.23239503853" maxy="464966.6982832086"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -192,7 +280,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>begrenzing</Name>
         <Title>begrenzing</Title>
         <Abstract>De begrenzing van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Zowel concrete begrenzingen als zoekgebieden zijn opgenomen voor nieuwe natuur, Recreatie om de Stad (RodS), Robuuste Ecologische VerbindingsZones (REVZ) en bufferzones.&#13;
@@ -247,7 +335,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>beheer</Name>
         <Title>Beheer</Title>
         <Abstract>De dataset Beheer is samengesteld uit het bestand Beheer_RODS dat de eindbeheerder voor de begrensde RodS weergeeft en wordt aangeleverd door de provincies en Beheer_DR dat het type beheer voor de EHS weergeeft en wordt aangeleverd door DR.&#13;
@@ -298,7 +386,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>planologischeehs</Name>
         <Title>Planologische EHS</Title>
         <Abstract>De Planologische EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013.&#13;
@@ -353,7 +441,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>verwervinginrichting</Name>
         <Title>Verwerving inrichting</Title>
         <Abstract>De status van de verwerving en inrichting van de EHS (1-1-2013) zoals aangeleverd door de provincies als onderdeel van de NOK2013. Opgenomen zijn alle concreet begrensde rijksdoelen aangevuld met verworven en/of ingerichte gronden binnen zoekgebieden (exclusief zoekgebied bufferzone).&#13;
@@ -368,7 +456,7 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
         <BoundingBox SRS="EPSG:4326" minx="3.2766408960422826" miny="50.73544268258243" maxx="7.236061096270614" maxy="53.460604092403294"/>
         <BoundingBox SRS="EPSG:4258" minx="3.2766408960422826" miny="50.735442683506506" maxx="7.236061096270614" maxy="53.46060409330524"/>
         <BoundingBox SRS="EPSG:3035" minx="3855825.145109051" miny="3073732.420945695" maxx="4137388.613339409" maxy="3391178.5472030593"/>
-        <BoundingBox SRS="EPSG:3034" minx="3550727.946139425" miny="2668371.555590073" maxx="3822524.541631437" maxy="2974693.0539017413"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550727.946139425" miny="2668371.555590073" maxx="3822524.541631437" maxy="2974693.053901741"/>
         <BoundingBox SRS="EPSG:3857" minx="364753.99605984247" miny="6574629.3450872945" maxx="805514.6365858616" maxy="7068655.860431863"/>
         <BoundingBox SRS="EPSG:25831" minx="518375.2169960921" miny="5620482.338677217" maxx="791183.6727637757" maxy="5930299.185746405"/>
         <BoundingBox SRS="EPSG:25832" minx="104994.50591965695" miny="5622519.631742124" maxx="382851.58512243925" maxy="5936728.496931945"/>

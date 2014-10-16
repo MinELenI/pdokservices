@@ -1077,7 +1077,7 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
             <ogc:FunctionName nArgs="2">Quantile</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">Query</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">random</ogc:FunctionName>
-            <ogc:FunctionName nArgs="5">RangeLookup</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">RangeLookup</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">RasterAsPointCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="4">RasterZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="5">Recode</ogc:FunctionName>

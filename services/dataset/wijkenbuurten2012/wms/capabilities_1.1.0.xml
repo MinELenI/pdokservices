@@ -149,7 +149,7 @@ FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
       <Format>application/vnd.ogc.se_inimage</Format>
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>CBS Wijken en Buurten 2012 versie 2 WMS</Title>
       <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-
 FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
@@ -172,8 +172,24 @@ FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
       <BoundingBox SRS="EPSG:25831" minx="513653.4580631115" miny="5620221.943715373" maxx="799536.1757768362" maxy="5945508.295954037"/>
       <BoundingBox SRS="EPSG:25832" minx="91269.3073332127" miny="5621669.93220358" maxx="383836.3267228448" maxy="5952746.127465228"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
+      <Layer queryable="1">
+        <Name>kadastralekaart</Name>
+        <Title>kadastralekaart</Title>
+        <Abstract>Layer-Group type layer: kadastralekaart</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="2.9609458583862094" miny="47.97373997284293" maxx="7.253017497834058" maxy="53.7606665567902"/>
+        <BoundingBox SRS="EPSG:28992" minx="-5170.993" miny="10.1" maxx="278026.09" maxy="641678.643"/>
+      </Layer>
+      <Layer queryable="1">
+        <Name>bagviewer</Name>
+        <Title>bagviewer</Title>
+        <Abstract>Layer-Group type layer: bagviewer</Abstract>
+        <SRS>EPSG:28992</SRS>
+        <LatLonBoundingBox minx="3.062149684923958" miny="50.71350312543268" maxx="7.367689629919523" maxy="53.602590516077726"/>
+        <BoundingBox SRS="EPSG:28992" minx="941.794" miny="304882.174" maxx="286081.572" maxy="624060.854"/>
+      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -196,7 +212,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>cbs_buurten_2012</Name>
         <Title>cbs_buurten_2012</Title>
         <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
@@ -215,7 +231,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.1</Identifier>
         <MetadataURL type="TC211">
@@ -695,7 +711,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>cbs_wijken_2012</Name>
         <Title>cbs_wijken_2012</Title>
         <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
@@ -714,7 +730,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="513590.0555653253" miny="5620234.963471747" maxx="791375.7271484403" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198354" miny="5622404.086999423" maxx="383725.9442422808" maxy="5950552.139851025"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.2</Identifier>
         <MetadataURL type="TC211">
@@ -1194,7 +1210,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>gemeenten2012</Name>
         <Title>gemeenten2012</Title>
         <Abstract>Het Bestand Wijk- en Buurtkaart 2012 bevat de geometrie van alle gemeenten, wijken en buurten in Nederland met als attribuut een aantal statistische kerncijfers. De begrenzingen van wijken en buurten zijn voor een groot deel gebaseerd op wat de gemeenten aan het CBS doorgeven. De gemeentegrens is afkomstig uit de BRK van het Kadaster. Deze eerste versie bevat een deel van de kerncijfers. Begin 2014 wordt een tweede versie gepubliceerd. Lees voor meer informatie het volgende pdf ducument: http://www.cbs.nl/NR/rdonlyres/FE45D7DF-24E8-4DAD-98A3-FA9CCB17D4DB/0/20132012b68pub.pdf</Abstract>
@@ -1213,7 +1229,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:25831" minx="513590.05556532455" miny="5620234.963471749" maxx="791375.7271484411" maxy="5943906.8368886635"/>
         <BoundingBox SRS="EPSG:25832" minx="100650.25568198296" miny="5622404.086999423" maxx="383725.9442422818" maxy="5950552.139851025"/>
         <AuthorityURL name="EZ">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/ez"/>
         </AuthorityURL>
         <Identifier authority="EZ">nl.ez.3</Identifier>
         <MetadataURL type="TC211">
