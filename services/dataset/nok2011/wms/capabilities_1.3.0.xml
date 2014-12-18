@@ -137,13 +137,13 @@ en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de 
         </EX_GeographicBoundingBox>
         <BoundingBox CRS="CRS:84" minx="3.273" miny="50.736" maxx="7.237" maxy="53.455"/>
         <BoundingBox CRS="EPSG:28992" minx="14444.32" miny="306952.66" maxx="277842.938" maxy="607631.5"/>
-        <BoundingBox CRS="EPSG:4326" minx="50.735364814887284" miny="3.272123614398444" maxx="53.45483735451247" maxy="7.235895441306095"/>
-        <BoundingBox CRS="EPSG:4258" minx="50.73536481581136" miny="3.272123614398444" maxx="53.454837355414476" maxy="7.235895441306095"/>
-        <BoundingBox CRS="EPSG:3035" minx="3073732.0761505202" miny="3855506.811698889" maxx="3390558.298597485" maxy="4137352.897810525"/>
-        <BoundingBox CRS="EPSG:3034" minx="2668371.2245975905" miny="3550420.353578056" maxx="2974093.196235634" maxy="3822490.723337997"/>
-        <BoundingBox CRS="EPSG:3857" minx="364251.1345674806" miny="6574615.649153107" maxx="805496.195959564" maxy="7067577.70576097"/>
-        <BoundingBox CRS="EPSG:25831" minx="518077.64866575436" miny="5620471.962855652" maxx="791189.155860249" maxy="5929657.906704008"/>
-        <BoundingBox CRS="EPSG:25832" minx="104675.23969394062" miny="5622519.363271415" maxx="382824.72493275267" maxy="5936103.295720217"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73536481488726" miny="3.272123614398444" maxx="53.4548373545125" maxy="7.235895441306095"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73536481581135" miny="3.272123614398444" maxx="53.454837355414504" maxy="7.235895441306095"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073732.0761505202" miny="3855506.8116988884" maxx="3390558.298597485" maxy="4137352.897810525"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668371.224597591" miny="3550420.353578056" maxx="2974093.196235634" maxy="3822490.723337997"/>
+        <BoundingBox CRS="EPSG:3857" minx="364251.1345674806" miny="6574615.649153101" maxx="805496.195959564" maxy="7067577.705760974"/>
+        <BoundingBox CRS="EPSG:25831" minx="518077.64866575436" miny="5620471.96285565" maxx="791189.155860249" maxy="5929657.906704008"/>
+        <BoundingBox CRS="EPSG:25832" minx="104675.23969394056" miny="5622519.363271415" maxx="382824.72493275267" maxy="5936103.295720217"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=7e9beee4-c085-45e5-9dc6-b2a21a3e00f6"/>
@@ -173,13 +173,13 @@ en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de 
         </EX_GeographicBoundingBox>
         <BoundingBox CRS="CRS:84" minx="3.267" miny="50.736" maxx="7.241" maxy="53.558"/>
         <BoundingBox CRS="EPSG:28992" minx="14400.0" miny="306952.66" maxx="277842.938" maxy="619131.813"/>
-        <BoundingBox CRS="EPSG:4326" minx="50.73535398933383" miny="3.266354896695223" maxx="53.55816276456033" maxy="7.2403552184369655"/>
-        <BoundingBox CRS="EPSG:4258" minx="50.73535399025791" miny="3.266354896695223" maxx="53.55816276546133" maxy="7.2403552184369655"/>
-        <BoundingBox CRS="EPSG:3035" minx="3073732.0761505202" miny="3855462.614513423" maxx="3402041.7967859562" maxy="4138091.5144958715"/>
-        <BoundingBox CRS="EPSG:3034" minx="2668371.2245975905" miny="3550377.6476216447" maxx="2985189.8769341805" maxy="3823191.8820414324"/>
-        <BoundingBox CRS="EPSG:3857" minx="363608.96385022794" miny="6574613.745078161" maxx="805992.6560788241" maxy="7086917.756853318"/>
-        <BoundingBox CRS="EPSG:25831" minx="517651.5019109344" miny="5620470.522216213" maxx="791189.155860249" maxy="5941156.591937738"/>
-        <BoundingBox CRS="EPSG:25832" minx="104630.9128962406" miny="5622519.363271415" maxx="383404.6162289063" maxy="5947604.7122247955"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73535398933387" miny="3.266354896695223" maxx="53.55816276456033" maxy="7.2403552184369655"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73535399025795" miny="3.266354896695223" maxx="53.55816276546133" maxy="7.2403552184369655"/>
+        <BoundingBox CRS="EPSG:3035" minx="3073732.0761505202" miny="3855462.6145134233" maxx="3402041.7967859562" maxy="4138091.5144958715"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668371.224597591" miny="3550377.6476216447" maxx="2985189.8769341796" maxy="3823191.8820414324"/>
+        <BoundingBox CRS="EPSG:3857" minx="363608.96385022794" miny="6574613.74507817" maxx="805992.6560788241" maxy="7086917.756853318"/>
+        <BoundingBox CRS="EPSG:25831" minx="517651.5019109344" miny="5620470.522216217" maxx="791189.155860249" maxy="5941156.591937738"/>
+        <BoundingBox CRS="EPSG:25832" minx="104630.91289624089" miny="5622519.363271415" maxx="383404.6162289063" maxy="5947604.7122247955"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=ce9b07f5-e89a-4d70-9865-ac39a250d794"/>
@@ -209,11 +209,11 @@ en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de 
         </EX_GeographicBoundingBox>
         <BoundingBox CRS="CRS:84" minx="3.276" miny="50.736" maxx="7.237" maxy="53.461"/>
         <BoundingBox CRS="EPSG:28992" minx="14618.48" miny="306958.813" maxx="277837.455" maxy="608273.047"/>
-        <BoundingBox CRS="EPSG:4326" minx="50.73546260283725" miny="3.274459203612281" maxx="53.46060290224506" maxy="7.236061100031441"/>
-        <BoundingBox CRS="EPSG:4258" minx="50.73546260376133" miny="3.274459203612281" maxx="53.460602903147006" maxy="7.236061100031441"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.73546260283725" miny="3.274459203612281" maxx="53.46060290224502" maxy="7.236061100031441"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.73546260376133" miny="3.274459203612281" maxx="53.46060290314697" maxy="7.236061100031441"/>
         <BoundingBox CRS="EPSG:3035" minx="3073738.5617243056" miny="3855680.8730708277" maxx="3391187.7334890636" maxy="4137388.6135888575"/>
         <BoundingBox CRS="EPSG:3034" minx="2668377.484863287" miny="3550588.540273237" maxx="2974701.690745186" maxy="3822524.541872579"/>
-        <BoundingBox CRS="EPSG:3857" minx="364511.13116946723" miny="6574632.848809641" maxx="805514.6370045152" maxy="7068655.637903669"/>
+        <BoundingBox CRS="EPSG:3857" minx="364511.13116946723" miny="6574632.848809641" maxx="805514.6370045152" maxy="7068655.63790366"/>
         <BoundingBox CRS="EPSG:25831" minx="518230.31993463764" miny="5620483.770192016" maxx="791183.475686097" maxy="5930299.185754833"/>
         <BoundingBox CRS="EPSG:25832" minx="104849.72585019964" miny="5622525.775618333" maxx="382851.5853720252" maxy="5936735.8994939"/>
         <MetadataURL type="TC211">

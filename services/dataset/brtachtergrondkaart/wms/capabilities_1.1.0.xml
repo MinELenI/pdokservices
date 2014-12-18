@@ -142,7 +142,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>brtachtergrondkaart WMS</Title>
       <Abstract>Basis Registratie Topografie voor gebruik als achtergrondkaart. Gebruik het WMTS koppelvlak indien mogelijk, omdat die veel sneller is.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -162,7 +162,7 @@
       <BoundingBox SRS="EPSG:25831" minx="-7.33122310327588E7" miny="-2.3137063867654845E8" maxx="3.3507829313169056E8" maxy="2.3137063867654845E8"/>
       <BoundingBox SRS="EPSG:25832" minx="-5.318367795483098E7" miny="-1.871761339237531E8" maxx="2.7481200945404786E8" maxy="1.871761339237531E8"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -186,7 +186,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>annotaties</Name>
         <Title>annotaties</Title>
         <Abstract/>
@@ -237,7 +237,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>borders</Name>
         <Title>borders</Title>
         <Abstract/>
@@ -285,7 +285,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>builtup_areas</Name>
         <Title>builtup_areas</Title>
         <Abstract/>
@@ -333,7 +333,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>countries</Name>
         <Title>countries</Title>
         <Abstract/>
@@ -343,11 +343,11 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:28992" minx="-2.8700604255E7" miny="-3.7411303513E7" maxx="7.8155078123E7" maxy="7.0827315855E7"/>
         <BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
         <BoundingBox SRS="EPSG:4258" minx="-180.0" miny="-90.0" maxx="180.0" maxy="90.0"/>
-        <BoundingBox SRS="EPSG:3035" minx="-7468224.492677091" miny="-8665737.59114627" maxx="1.6795876441078395E7" maxy="1.5749619866511587E7"/>
+        <BoundingBox SRS="EPSG:3035" minx="-7468224.492677091" miny="-8665737.59114627" maxx="1.6795876441078395E7" maxy="1.5749619866511585E7"/>
         <BoundingBox SRS="EPSG:3034" minx="-7.021189960314354E7" miny="-1.517963886406225E7" maxx="1.0822189440662846E8" maxy="2.1013375559438933E7"/>
         <BoundingBox SRS="EPSG:3857" minx="-1.96981865081144E7" miny="-1.8615979712690413E7" maxx="1.9786772760657664E7" maxy="-1958613.3239333825"/>
         <BoundingBox SRS="EPSG:25831" minx="-9.017768377593645E7" miny="-1.9576832421206355E8" maxx="1.0423526600630055E8" maxy="6306906.954326645"/>
-        <BoundingBox SRS="EPSG:25832" minx="-7.802091351493695E7" miny="-1.8943600476381454E8" maxx="1.0582535126644278E8" maxy="-202059.28453449756"/>
+        <BoundingBox SRS="EPSG:25832" minx="-7.802091351493695E7" miny="-1.8943600476381454E8" maxx="1.0582535126644282E8" maxy="-202059.28453449756"/>
         <Style>
           <Name>brt-osm_landnamen</Name>
           <Title>Default polygon style</Title>
@@ -381,7 +381,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>gemeentenamen</Name>
         <Title>gemeentenamen</Title>
         <Abstract>Bestuurlijkegrenzen gemeentenamen Administratieve eenheden</Abstract>
@@ -443,7 +443,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>lijnen</Name>
         <Title>lijnen</Title>
         <Abstract/>
@@ -494,7 +494,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>lines</Name>
         <Title>lines</Title>
         <Abstract/>
@@ -504,11 +504,11 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:28992" minx="11363.492" miny="306865.217" maxx="277967.084" maxy="626691.125"/>
         <BoundingBox SRS="EPSG:4326" minx="3.2171409333452026" miny="50.733818574848904" maxx="7.24517494409415" maxy="53.62605158678816"/>
         <BoundingBox SRS="EPSG:4258" minx="3.2171409333452026" miny="50.733818575772986" maxx="7.24517494409415" maxy="53.626051587688494"/>
-        <BoundingBox SRS="EPSG:3035" minx="3852429.0868688244" miny="3073636.997008558" maxx="4138701.2423314983" maxy="3409780.3051689155"/>
-        <BoundingBox SRS="EPSG:3034" minx="3547446.4837387707" miny="2668279.4638438467" maxx="3823772.6684211767" maxy="2992663.222251442"/>
+        <BoundingBox SRS="EPSG:3035" minx="3852429.0868688244" miny="3073636.997008558" maxx="4138701.2423314983" maxy="3409780.3051689137"/>
+        <BoundingBox SRS="EPSG:3034" minx="3547446.4837387707" miny="2668279.4638438467" maxx="3823772.6684211767" maxy="2992663.2222514376"/>
         <BoundingBox SRS="EPSG:3857" minx="358130.4905101848" miny="6574343.689971492" maxx="806529.1854847451" maxy="7099650.650300958"/>
         <BoundingBox SRS="EPSG:25831" minx="514367.3165990003" miny="5620284.464723702" maxx="791316.1028018091" maxy="5948718.866900014"/>
-        <BoundingBox SRS="EPSG:25832" minx="101589.64408428821" miny="5622425.968219551" maxx="383910.0310727318" maxy="5955318.455694002"/>
+        <BoundingBox SRS="EPSG:25832" minx="101589.64408428821" miny="5622425.968219551" maxx="383910.0310727318" maxy="5955318.455693998"/>
         <Style>
           <Name>brt-osm_roads</Name>
           <Title>A boring default style</Title>
@@ -542,7 +542,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>ondergrond</Name>
         <Title>ondergrond</Title>
         <Abstract/>
@@ -589,7 +589,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>points</Name>
         <Title>points</Title>
         <Abstract/>
@@ -637,7 +637,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>polygons</Name>
         <Title>polygons</Title>
         <Abstract/>
@@ -685,7 +685,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>punten</Name>
         <Title>punten</Title>
         <Abstract/>
@@ -736,7 +736,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>shorelines</Name>
         <Title>shorelines</Title>
         <Abstract/>
@@ -746,7 +746,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:28992" minx="-2975926.309" miny="-1605673.339" maxx="4964447.209" maxy="3175889.274"/>
         <BoundingBox SRS="EPSG:4326" minx="-61.02391786311317" miny="22.985728384811686" maxx="83.09627023460004" maxy="75.57396287416367"/>
         <BoundingBox SRS="EPSG:4258" minx="-61.02391786311317" miny="22.985728385490674" maxx="83.09627023460004" maxy="75.57396287461816"/>
-        <BoundingBox SRS="EPSG:3035" minx="903811.7832479528" miny="1054000.6295351726" maxx="8608065.11978281" maxy="6012159.0742388945"/>
+        <BoundingBox SRS="EPSG:3035" minx="903811.7832479533" miny="1054000.6295351726" maxx="8608065.11978281" maxy="6012159.0742388945"/>
         <BoundingBox SRS="EPSG:3034" minx="546058.4051151732" miny="713043.2692792474" maxx="8317816.757031235" maxy="5538372.993795501"/>
         <BoundingBox SRS="EPSG:3857" minx="-6793151.462732309" miny="2630292.8183644614" maxx="9250234.489335932" maxy="1.3183844998629164E7"/>
         <BoundingBox SRS="EPSG:25831" minx="-2528593.0533356997" miny="3527439.329445566" maxx="5798398.3479760215" maxy="9080678.198999865"/>
@@ -784,7 +784,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nl_geolabels</Name>
         <Title>top10nl_geolabels</Title>
         <Abstract/>
@@ -835,7 +835,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlfunctioneelgebiedlabels</Name>
         <Title>top10nlfunctioneelgebiedlabels</Title>
         <Abstract/>
@@ -846,7 +846,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:4326" minx="3.2600458208450873" miny="50.72970758987201" maxx="7.241890193348277" maxy="53.49212868684508"/>
         <BoundingBox SRS="EPSG:4258" minx="3.2600458208450873" miny="50.72970759079613" maxx="7.241890193348277" maxy="53.49212868774672"/>
         <BoundingBox SRS="EPSG:3035" minx="3854790.2176913167" miny="3073103.839994274" maxx="4137910.243038021" maxy="3394745.249446016"/>
-        <BoundingBox SRS="EPSG:3034" minx="3549728.107613526" miny="2667764.7286420213" maxx="3823024.9154314646" maxy="2978137.8706510887"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549728.107613526" miny="2667764.7286420213" maxx="3823024.9154314646" maxy="2978137.870651089"/>
         <BoundingBox SRS="EPSG:3857" minx="362906.64073921466" miny="6573620.676357753" maxx="806163.5287043316" maxy="7074552.317738787"/>
         <BoundingBox SRS="EPSG:25831" minx="517260.25404999114" miny="5619839.382401268" maxx="791500.2093656822" maxy="5933818.083991308"/>
         <BoundingBox SRS="EPSG:25832" minx="103965.02656437573" miny="5621894.876995568" maxx="383324.9493424169" maxy="5940288.550124411"/>
@@ -883,7 +883,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlgebouwen</Name>
         <Title>top10nlgebouwen</Title>
         <Abstract/>
@@ -931,7 +931,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlgeografischgebiedlabels</Name>
         <Title>top10nlgeografischgebiedlabels</Title>
         <Abstract/>
@@ -979,7 +979,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlnationalegrenzen</Name>
         <Title>top10nlnationalegrenzen</Title>
         <Abstract/>
@@ -1027,7 +1027,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlprovinciegrenzen</Name>
         <Title>top10nlprovinciegrenzen</Title>
         <Abstract/>
@@ -1035,11 +1035,11 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.709" miny="51.21" maxx="7.121" maxy="53.544"/>
         <BoundingBox SRS="EPSG:28992" minx="43662.62" miny="359068.914" maxx="269918.65" maxy="617500.0"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.7081283192616334" miny="51.209358115978574" maxx="7.120274824777215" maxy="53.54357287939158"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.7081283192616334" miny="51.2093581168994" maxx="7.120274824777215" maxy="53.54357288029272"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.7081283192616334" miny="51.209358115978574" maxx="7.120274824777215" maxy="53.54357287939155"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.7081283192616334" miny="51.2093581168994" maxx="7.120274824777215" maxy="53.54357288029269"/>
         <BoundingBox SRS="EPSG:3035" minx="3887908.3657256113" miny="3126244.488621887" maxx="4130079.768858619" maxy="3398558.5736064436"/>
         <BoundingBox SRS="EPSG:3034" minx="3581703.373916619" miny="2719071.3258687365" maxx="3815448.2573018423" maxy="2981871.422457943"/>
-        <BoundingBox SRS="EPSG:3857" minx="412786.95629632234" miny="6658410.636604299" maxx="792625.3678023648" maxy="7084184.017863223"/>
+        <BoundingBox SRS="EPSG:3857" minx="412786.95629632234" miny="6658410.636604299" maxx="792625.3678023648" maxy="7084184.017863215"/>
         <BoundingBox SRS="EPSG:25831" minx="546936.3192859209" miny="5673485.9954142645" maxx="781585.7783084171" maxy="5939257.429908137"/>
         <BoundingBox SRS="EPSG:25832" minx="136444.26836291293" miny="5674947.526051624" maxx="375410.9961850936" maxy="5944478.892828104"/>
         <Style>
@@ -1075,7 +1075,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlspoorbaandeellijnen</Name>
         <Title>top10nlspoorbaandeellijnen</Title>
         <Abstract/>
@@ -1123,7 +1123,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlwaterdeellijnen</Name>
         <Title>top10nlwaterdeellijnen</Title>
         <Abstract/>
@@ -1131,13 +1131,13 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.247" miny="50.729" maxx="7.247" maxy="53.549"/>
         <BoundingBox SRS="EPSG:28992" minx="12999.999" miny="306250.0" maxx="278250.022" maxy="618088.353"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.2457197865326015" miny="50.728697384409664" maxx="7.246086146593772" maxy="53.548779319161426"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.2457197865326015" miny="50.72869738533379" maxx="7.246086146593772" maxy="53.54877932006252"/>
-        <BoundingBox SRS="EPSG:3035" minx="3854022.660249063" miny="3073005.228311761" maxx="4138430.6607257393" maxy="3401088.807443506"/>
-        <BoundingBox SRS="EPSG:3034" minx="3548986.471181498" miny="2667669.5538095105" maxx="3823520.9420901295" maxy="2984266.577128226"/>
-        <BoundingBox SRS="EPSG:3857" minx="361311.8738944618" miny="6573443.017625665" maxx="806630.6200830125" maxy="7085159.451823527"/>
-        <BoundingBox SRS="EPSG:25831" minx="516287.74136083067" miny="5619723.129159085" maxx="791618.7610200408" maxy="5940127.044216381"/>
-        <BoundingBox SRS="EPSG:25832" minx="103196.4788536327" miny="5621797.828767127" maxx="383758.38673640916" maxy="5946632.923311109"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2457197865326015" miny="50.72869738440963" maxx="7.246086146593772" maxy="53.548779319161426"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2457197865326015" miny="50.72869738533375" maxx="7.246086146593772" maxy="53.54877932006252"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854022.6602490623" miny="3073005.228311761" maxx="4138430.6607257393" maxy="3401088.807443506"/>
+        <BoundingBox SRS="EPSG:3034" minx="3548986.4711814974" miny="2667669.5538095105" maxx="3823520.9420901295" maxy="2984266.577128226"/>
+        <BoundingBox SRS="EPSG:3857" minx="361311.8738944618" miny="6573443.017625661" maxx="806630.6200830125" maxy="7085159.451823527"/>
+        <BoundingBox SRS="EPSG:25831" minx="516287.74136083067" miny="5619723.129159082" maxx="791618.7610200408" maxy="5940127.044216381"/>
+        <BoundingBox SRS="EPSG:25832" minx="103196.47885363235" miny="5621797.828767127" maxx="383758.38673640916" maxy="5946632.923311109"/>
         <Style>
           <Name>brt-top10nl_waterdeel_lijn</Name>
           <Title>Waterdeellijn</Title>
@@ -1171,7 +1171,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top10nlwaterdeelvlakken</Name>
         <Title>top10nlwaterdeelvlakken</Title>
         <Abstract/>
@@ -1179,13 +1179,13 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.244" miny="50.729" maxx="7.25" maxy="53.611"/>
         <BoundingBox SRS="EPSG:28992" minx="12999.999" miny="306250.0" maxx="278250.0" maxy="625000.0"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.2426107560693676" miny="50.728697384409664" maxx="7.248785536992009" maxy="53.61087600380252"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.2426107560693676" miny="50.72869738533379" maxx="7.248785536992009" maxy="53.61087600470301"/>
-        <BoundingBox SRS="EPSG:3035" minx="3854022.660249063" miny="3073005.229696608" maxx="4138874.818405754" maxy="3407988.4762021066"/>
-        <BoundingBox SRS="EPSG:3034" minx="3548986.471181498" miny="2667669.5551389656" maxx="3823942.4421502044" maxy="2990934.356106556"/>
-        <BoundingBox SRS="EPSG:3857" minx="360965.7782064338" miny="6573443.017625665" maxx="806931.1148475965" maxy="7096802.6165709635"/>
-        <BoundingBox SRS="EPSG:25831" minx="516058.1368036829" miny="5619723.129159085" maxx="791618.7390205807" maxy="5947037.59718339"/>
-        <BoundingBox SRS="EPSG:25832" minx="103196.4788536327" miny="5621797.829845733" maxx="384107.1110984123" maxy="5953543.791216533"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.2426107560693676" miny="50.72869738440963" maxx="7.248785536992009" maxy="53.61087600380252"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.2426107560693676" miny="50.72869738533375" maxx="7.248785536992009" maxy="53.61087600470301"/>
+        <BoundingBox SRS="EPSG:3035" minx="3854022.6602490623" miny="3073005.229696608" maxx="4138874.818405754" maxy="3407988.4762021066"/>
+        <BoundingBox SRS="EPSG:3034" minx="3548986.4711814974" miny="2667669.5551389656" maxx="3823942.4421502044" maxy="2990934.356106557"/>
+        <BoundingBox SRS="EPSG:3857" minx="360965.7782064338" miny="6573443.017625661" maxx="806931.1148475965" maxy="7096802.6165709635"/>
+        <BoundingBox SRS="EPSG:25831" minx="516058.1368036829" miny="5619723.129159082" maxx="791618.7390205807" maxy="5947037.59718339"/>
+        <BoundingBox SRS="EPSG:25832" minx="103196.47885363235" miny="5621797.829845733" maxx="384107.1110984123" maxy="5953543.791216533"/>
         <Style>
           <Name>brt-top10nl_waterdeel_vlak</Name>
           <Title>Waterdeelvlak</Title>
@@ -1219,7 +1219,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top250nllijnen</Name>
         <Title>top250nllijnen</Title>
         <Abstract/>
@@ -1267,7 +1267,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>top250nlvlakken</Name>
         <Title>top250nlvlakken</Title>
         <Abstract/>
@@ -1315,7 +1315,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>vlakken</Name>
         <Title>vlakken</Title>
         <Abstract/>

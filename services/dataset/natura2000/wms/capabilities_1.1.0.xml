@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1915">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="2371">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>Natura2000 WMS</Title>
@@ -147,7 +147,7 @@ Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van za
       <Format>application/vnd.ogc.se_inimage</Format>
     </Exception>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>Natura2000 WMS</Title>
       <Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
 Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van zaken 4 juni 2013) en de grenzen conform het ontwerp-besluit van de meeste overige gebieden. Een gebied is voorlopig aangewezen (Spanjaards Duin). Voor twee Habitatrichtlijngebieden op land en twee mariene Habitatrichtlijngebieden buiten de territoriale wateren (EEZ) waarvoor nog geen ontwerp-besluiten zijn gepubliceerd, bevat deze dataset de grenzen zoals die aan de Europese Commissie gemeld zijn.</Abstract>
@@ -170,7 +170,7 @@ Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van za
       <BoundingBox SRS="EPSG:25831" minx="477556.3570533596" miny="5619737.584901198" maxx="804908.2828521158" maxy="6176373.972045114"/>
       <BoundingBox SRS="EPSG:25832" minx="54271.23543800134" miny="5621033.6501302095" maxx="394364.40110238147" maxy="6186019.074751386"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -194,7 +194,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>natura2000</Name>
         <Title>natura2000</Title>
         <Abstract>Natura2000 Beschermde gebieden</Abstract>
@@ -204,15 +204,15 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
         <BoundingBox SRS="EPSG:28992" minx="-15585.196" miny="307159.281" maxx="276784.781" maxy="852877.107"/>
-        <BoundingBox SRS="EPSG:4326" minx="2.680870793153438" miny="50.72910459107384" maxx="7.319863432627679" maxy="55.656643409110124"/>
-        <BoundingBox SRS="EPSG:4258" minx="2.680870793153438" miny="50.72910459199797" maxx="7.319863432627679" maxy="55.656643409988305"/>
+        <BoundingBox SRS="EPSG:4326" minx="2.680870793153438" miny="50.72910459107388" maxx="7.319863432627679" maxy="55.656643409110124"/>
+        <BoundingBox SRS="EPSG:4258" minx="2.680870793153438" miny="50.729104591997995" maxx="7.319863432627679" maxy="55.656643409988305"/>
         <BoundingBox SRS="EPSG:3035" minx="3825575.5220606006" miny="3074004.8863005317" maxx="4152186.2669919203" maxy="3637153.4478565603"/>
-        <BoundingBox SRS="EPSG:3034" minx="3521497.592888306" miny="2668634.2652653153" maxx="3836481.0472357003" maxy="3212637.4753265316"/>
-        <BoundingBox SRS="EPSG:3857" minx="298433.1715764002" miny="6573514.6301409025" maxx="814843.4699964168" maxy="7490364.520081558"/>
-        <BoundingBox SRS="EPSG:25831" minx="479905.8973526369" miny="5619701.398344907" maxx="790124.4029269028" maxy="6174739.024707775"/>
-        <BoundingBox SRS="EPSG:25832" minx="74647.49329636461" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
+        <BoundingBox SRS="EPSG:3034" minx="3521497.592888306" miny="2668634.2652653153" maxx="3836481.0472357003" maxy="3212637.4753265325"/>
+        <BoundingBox SRS="EPSG:3857" minx="298433.1715764002" miny="6573514.630140908" maxx="814843.4699964168" maxy="7490364.520081558"/>
+        <BoundingBox SRS="EPSG:25831" minx="479905.8973526369" miny="5619701.39834491" maxx="790124.4029269028" maxy="6174739.024707775"/>
+        <BoundingBox SRS="EPSG:25832" minx="74647.4932963649" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
         <AuthorityURL name="ELenI">
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/eleni" xlink:type="simple"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rijksoverheid.nl/ministeries/eleni"/>
         </AuthorityURL>
         <Identifier authority="ELenI">nl.eleni.1</Identifier>
         <MetadataURL type="TC211">

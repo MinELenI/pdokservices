@@ -145,7 +145,7 @@ en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de 
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>Natuurmeting Op Kaart 2011 WMS</Title>
       <Abstract>De Natuurmeting Op Kaart 2011 (NOK2011) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) 
 en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de begrenzing, verwerving en inrichting. De NOK2011-kaart bestaat uit drie onderdelen: 1) De begrenzing van de planologische EHS, 2) De concrete begrenzingen van de EHS, Robuuste verbindingen en Recreatie om de Stad, en 3) Verwervings- en inrichtingsstatus van de concrete begrenzingen (aangevuld met BBL-bezit buiten de concrete begrenzingen).</Abstract>
@@ -168,7 +168,7 @@ en Recreatie om de Stad (RodS) op 1 januari 2011. Het betreft realisatie van de 
       <BoundingBox SRS="EPSG:25831" minx="517686.58095868817" miny="5620501.748090641" maxx="799220.5511318953" maxy="5942714.771279588"/>
       <BoundingBox SRS="EPSG:25832" minx="95573.7328717435" miny="5621943.137681146" maxx="383485.7900781712" maxy="5949645.057822962"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -192,7 +192,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>begrenzing</Name>
         <Title>begrenzing</Title>
         <Abstract/>
@@ -200,13 +200,13 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.273" miny="50.736" maxx="7.237" maxy="53.455"/>
         <BoundingBox SRS="EPSG:28992" minx="14444.32" miny="306952.66" maxx="277842.938" maxy="607631.5"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.272123614398444" miny="50.735364814887284" maxx="7.235895441306095" maxy="53.45483735451247"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.272123614398444" miny="50.73536481581136" maxx="7.235895441306095" maxy="53.454837355414476"/>
-        <BoundingBox SRS="EPSG:3035" minx="3855506.811698889" miny="3073732.0761505202" maxx="4137352.897810525" maxy="3390558.298597485"/>
-        <BoundingBox SRS="EPSG:3034" minx="3550420.353578056" miny="2668371.2245975905" maxx="3822490.723337997" maxy="2974093.196235634"/>
-        <BoundingBox SRS="EPSG:3857" minx="364251.1345674806" miny="6574615.649153107" maxx="805496.195959564" maxy="7067577.70576097"/>
-        <BoundingBox SRS="EPSG:25831" minx="518077.64866575436" miny="5620471.962855652" maxx="791189.155860249" maxy="5929657.906704008"/>
-        <BoundingBox SRS="EPSG:25832" minx="104675.23969394062" miny="5622519.363271415" maxx="382824.72493275267" maxy="5936103.295720217"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.272123614398444" miny="50.73536481488726" maxx="7.235895441306095" maxy="53.4548373545125"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.272123614398444" miny="50.73536481581135" maxx="7.235895441306095" maxy="53.454837355414504"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855506.8116988884" miny="3073732.0761505202" maxx="4137352.897810525" maxy="3390558.298597485"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550420.353578056" miny="2668371.224597591" maxx="3822490.723337997" maxy="2974093.196235634"/>
+        <BoundingBox SRS="EPSG:3857" minx="364251.1345674806" miny="6574615.649153101" maxx="805496.195959564" maxy="7067577.705760974"/>
+        <BoundingBox SRS="EPSG:25831" minx="518077.64866575436" miny="5620471.96285565" maxx="791189.155860249" maxy="5929657.906704008"/>
+        <BoundingBox SRS="EPSG:25832" minx="104675.23969394056" miny="5622519.363271415" maxx="382824.72493275267" maxy="5936103.295720217"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=7e9beee4-c085-45e5-9dc6-b2a21a3e00f6"/>
@@ -243,7 +243,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>planologischeehs</Name>
         <Title>planologischeehs</Title>
         <Abstract/>
@@ -251,13 +251,13 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.267" miny="50.736" maxx="7.241" maxy="53.558"/>
         <BoundingBox SRS="EPSG:28992" minx="14400.0" miny="306952.66" maxx="277842.938" maxy="619131.813"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.266354896695223" miny="50.73535398933383" maxx="7.2403552184369655" maxy="53.55816276456033"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.266354896695223" miny="50.73535399025791" maxx="7.2403552184369655" maxy="53.55816276546133"/>
-        <BoundingBox SRS="EPSG:3035" minx="3855462.614513423" miny="3073732.0761505202" maxx="4138091.5144958715" maxy="3402041.7967859562"/>
-        <BoundingBox SRS="EPSG:3034" minx="3550377.6476216447" miny="2668371.2245975905" maxx="3823191.8820414324" maxy="2985189.8769341805"/>
-        <BoundingBox SRS="EPSG:3857" minx="363608.96385022794" miny="6574613.745078161" maxx="805992.6560788241" maxy="7086917.756853318"/>
-        <BoundingBox SRS="EPSG:25831" minx="517651.5019109344" miny="5620470.522216213" maxx="791189.155860249" maxy="5941156.591937738"/>
-        <BoundingBox SRS="EPSG:25832" minx="104630.9128962406" miny="5622519.363271415" maxx="383404.6162289063" maxy="5947604.7122247955"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.266354896695223" miny="50.73535398933387" maxx="7.2403552184369655" maxy="53.55816276456033"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.266354896695223" miny="50.73535399025795" maxx="7.2403552184369655" maxy="53.55816276546133"/>
+        <BoundingBox SRS="EPSG:3035" minx="3855462.6145134233" miny="3073732.0761505202" maxx="4138091.5144958715" maxy="3402041.7967859562"/>
+        <BoundingBox SRS="EPSG:3034" minx="3550377.6476216447" miny="2668371.224597591" maxx="3823191.8820414324" maxy="2985189.8769341796"/>
+        <BoundingBox SRS="EPSG:3857" minx="363608.96385022794" miny="6574613.74507817" maxx="805992.6560788241" maxy="7086917.756853318"/>
+        <BoundingBox SRS="EPSG:25831" minx="517651.5019109344" miny="5620470.522216217" maxx="791189.155860249" maxy="5941156.591937738"/>
+        <BoundingBox SRS="EPSG:25832" minx="104630.91289624089" miny="5622519.363271415" maxx="383404.6162289063" maxy="5947604.7122247955"/>
         <MetadataURL type="TC211">
           <Format>text/plain</Format>
           <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=ce9b07f5-e89a-4d70-9865-ac39a250d794"/>
@@ -294,7 +294,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>verwervinginrichting</Name>
         <Title>verwervinginrichting</Title>
         <Abstract/>
@@ -302,11 +302,11 @@ PROJCS["Amersfoort / RD New",
         <SRS>EPSG:28992</SRS>
         <LatLonBoundingBox minx="3.276" miny="50.736" maxx="7.237" maxy="53.461"/>
         <BoundingBox SRS="EPSG:28992" minx="14618.48" miny="306958.813" maxx="277837.455" maxy="608273.047"/>
-        <BoundingBox SRS="EPSG:4326" minx="3.274459203612281" miny="50.73546260283725" maxx="7.236061100031441" maxy="53.46060290224506"/>
-        <BoundingBox SRS="EPSG:4258" minx="3.274459203612281" miny="50.73546260376133" maxx="7.236061100031441" maxy="53.460602903147006"/>
+        <BoundingBox SRS="EPSG:4326" minx="3.274459203612281" miny="50.73546260283725" maxx="7.236061100031441" maxy="53.46060290224502"/>
+        <BoundingBox SRS="EPSG:4258" minx="3.274459203612281" miny="50.73546260376133" maxx="7.236061100031441" maxy="53.46060290314697"/>
         <BoundingBox SRS="EPSG:3035" minx="3855680.8730708277" miny="3073738.5617243056" maxx="4137388.6135888575" maxy="3391187.7334890636"/>
         <BoundingBox SRS="EPSG:3034" minx="3550588.540273237" miny="2668377.484863287" maxx="3822524.541872579" maxy="2974701.690745186"/>
-        <BoundingBox SRS="EPSG:3857" minx="364511.13116946723" miny="6574632.848809641" maxx="805514.6370045152" maxy="7068655.637903669"/>
+        <BoundingBox SRS="EPSG:3857" minx="364511.13116946723" miny="6574632.848809641" maxx="805514.6370045152" maxy="7068655.63790366"/>
         <BoundingBox SRS="EPSG:25831" minx="518230.31993463764" miny="5620483.770192016" maxx="791183.475686097" maxy="5930299.185754833"/>
         <BoundingBox SRS="EPSG:25832" minx="104849.72585019964" miny="5622525.775618333" maxx="382851.5853720252" maxy="5936735.8994939"/>
         <MetadataURL type="TC211">

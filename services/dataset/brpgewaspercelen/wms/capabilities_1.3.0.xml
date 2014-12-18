@@ -1,4 +1,4 @@
-<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1913" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1917" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
   <Service>
     <Name>WMS</Name>
     <Title>BRP Gewaspercelen WMS</Title>
@@ -114,7 +114,7 @@
       <BoundingBox CRS="EPSG:4326" minx="50.73446149153095" miny="3.259159432380033" maxx="53.498235483266065" maxy="7.238658240062288"/>
       <BoundingBox CRS="EPSG:4258" minx="50.73446149245504" miny="3.259159432380033" maxx="53.49823548416766" maxy="7.238658240062288"/>
       <BoundingBox CRS="EPSG:3035" minx="3072879.478685106" miny="3845870.503871323" maxx="3397499.893299665" maxy="4137782.838831544"/>
-      <BoundingBox CRS="EPSG:3034" minx="2667550.6975217047" miny="3541108.9961390556" maxx="2980799.770894588" maxy="3822899.230358444"/>
+      <BoundingBox CRS="EPSG:3034" minx="2667550.6975217056" miny="3541108.996139056" maxx="2980799.7708945884" maxy="3822899.230358444"/>
       <BoundingBox CRS="EPSG:3857" minx="362807.9684266398" miny="6574456.767762981" maxx="805803.7493102677" maxy="7075695.058473216"/>
       <BoundingBox CRS="EPSG:28992" minx="4695.385788983724" miny="304930.1113375046" maxx="285632.626732214" maxy="614523.6689985131"/>
       <BoundingBox CRS="EPSG:25831" minx="517191.3923377342" miny="5620328.701348684" maxx="799065.2016757512" maxy="5936061.972204409"/>
@@ -143,7 +143,7 @@
         <BoundingBox CRS="EPSG:4326" minx="50.734267262844824" miny="3.258105649970169" maxx="53.49804184995758" maxy="7.237586380354994"/>
         <BoundingBox CRS="EPSG:4258" minx="50.7342672637689" miny="3.258105649970169" maxx="53.49804185085917" maxy="7.237586380354994"/>
         <BoundingBox CRS="EPSG:3035" minx="3073632.3624610007" miny="3854712.966845098" maxx="3395409.5938745695" maxy="4137650.366295038"/>
-        <BoundingBox CRS="EPSG:3034" minx="2668274.9413265204" miny="3549653.3207991235" maxx="2978779.6499642213" maxy="3822772.9512544856"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668274.9413265204" miny="3549653.3207991235" maxx="2978779.649964222" maxy="3822772.951254486"/>
         <BoundingBox CRS="EPSG:3857" minx="362690.6619053668" miny="6574422.606173023" maxx="805684.4304334498" maxy="7075658.822109208"/>
         <BoundingBox CRS="EPSG:25831" minx="517129.10773970303" miny="5620345.766960139" maxx="791181.0163074794" maxy="5934466.308596458"/>
         <BoundingBox CRS="EPSG:25832" minx="103880.46029699151" miny="5622419.440750335" maxx="383055.81849209295" maxy="5940952.612034925"/>

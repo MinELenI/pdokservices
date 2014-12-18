@@ -146,7 +146,7 @@
     </Exception>
     <VendorSpecificCapabilities/>
     <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
-    <Layer queryable="0" opaque="0" noSubsets="0">
+    <Layer>
       <Title>BRP Gewaspercelen WMS</Title>
       <Abstract>BRP Gewaspercelen bestaat uit de locatie van landbouwpercelen met daaraan gekoppeld het geteelde gewas. Het bestand is een selectie van informatie uit de Basisregistratie Percelen (BRP) van Dienst Regelingen. De omgrenzingen van de landbouwpercelen zijn gebaseerd op de Top10vector. De gebruiker van het perceel dient aan te geven welk gewas wordt geteeld op het betreffende perceel.</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -162,13 +162,13 @@
       <BoundingBox SRS="EPSG:4326" minx="3.259159432380033" miny="50.73446149153095" maxx="7.238658240062288" maxy="53.498235483266065"/>
       <BoundingBox SRS="EPSG:4258" minx="3.259159432380033" miny="50.73446149245504" maxx="7.238658240062288" maxy="53.49823548416766"/>
       <BoundingBox SRS="EPSG:3035" minx="3845870.503871323" miny="3072879.478685106" maxx="4137782.838831544" maxy="3397499.893299665"/>
-      <BoundingBox SRS="EPSG:3034" minx="3541108.9961390556" miny="2667550.6975217047" maxx="3822899.230358444" maxy="2980799.770894588"/>
+      <BoundingBox SRS="EPSG:3034" minx="3541108.996139056" miny="2667550.6975217056" maxx="3822899.230358444" maxy="2980799.7708945884"/>
       <BoundingBox SRS="EPSG:3857" minx="362807.9684266398" miny="6574456.767762981" maxx="805803.7493102677" maxy="7075695.058473216"/>
       <BoundingBox SRS="EPSG:28992" minx="4695.385788983724" miny="304930.1113375046" maxx="285632.626732214" maxy="614523.6689985131"/>
       <BoundingBox SRS="EPSG:25831" minx="517191.3923377342" miny="5620328.701348684" maxx="799065.2016757512" maxy="5936061.972204409"/>
       <BoundingBox SRS="EPSG:25832" minx="95007.70029518794" miny="5621776.004942803" maxx="383166.29543784173" maxy="5943047.916923694"/>
       <AuthorityURL name="PDOK">
-        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl" xlink:type="simple"/>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
@@ -192,7 +192,7 @@ PROJCS["Amersfoort / RD New",
   AXIS["Easting", EAST], 
   AXIS["Northing", NORTH], 
   AUTHORITY["EPSG","28992"]]-->
-      <Layer queryable="1" opaque="0" noSubsets="0">
+      <Layer queryable="1">
         <Name>brpgewaspercelen</Name>
         <Title>brpgewaspercelen</Title>
         <Abstract/>
@@ -206,7 +206,7 @@ PROJCS["Amersfoort / RD New",
         <BoundingBox SRS="EPSG:4326" minx="3.258105649970169" miny="50.734267262844824" maxx="7.237586380354994" maxy="53.49804184995758"/>
         <BoundingBox SRS="EPSG:4258" minx="3.258105649970169" miny="50.7342672637689" maxx="7.237586380354994" maxy="53.49804185085917"/>
         <BoundingBox SRS="EPSG:3035" minx="3854712.966845098" miny="3073632.3624610007" maxx="4137650.366295038" maxy="3395409.5938745695"/>
-        <BoundingBox SRS="EPSG:3034" minx="3549653.3207991235" miny="2668274.9413265204" maxx="3822772.9512544856" maxy="2978779.6499642213"/>
+        <BoundingBox SRS="EPSG:3034" minx="3549653.3207991235" miny="2668274.9413265204" maxx="3822772.951254486" maxy="2978779.649964222"/>
         <BoundingBox SRS="EPSG:3857" minx="362690.6619053668" miny="6574422.606173023" maxx="805684.4304334498" maxy="7075658.822109208"/>
         <BoundingBox SRS="EPSG:25831" minx="517129.10773970303" miny="5620345.766960139" maxx="791181.0163074794" maxy="5934466.308596458"/>
         <BoundingBox SRS="EPSG:25832" minx="103880.46029699151" miny="5622419.440750335" maxx="383055.81849209295" maxy="5940952.612034925"/>

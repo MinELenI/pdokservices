@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="2283">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>CBS Wijken en Buurten 2011 versie 3 WMS</Title>
@@ -174,22 +174,6 @@
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
-      <Layer queryable="1">
-        <Name>kadastralekaart</Name>
-        <Title>kadastralekaart</Title>
-        <Abstract>Layer-Group type layer: kadastralekaart</Abstract>
-        <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="2.9609458583862094" miny="47.97373997284293" maxx="7.253017497834058" maxy="53.7606665567902"/>
-        <BoundingBox SRS="EPSG:28992" minx="-5170.993" miny="10.1" maxx="278026.09" maxy="641678.643"/>
-      </Layer>
-      <Layer queryable="1">
-        <Name>bagviewer</Name>
-        <Title>bagviewer</Title>
-        <Abstract>Layer-Group type layer: bagviewer</Abstract>
-        <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="3.062149684923958" miny="50.71350312543268" maxx="7.367689629919523" maxy="53.602590516077726"/>
-        <BoundingBox SRS="EPSG:28992" minx="941.794" miny="304882.174" maxx="286081.572" maxy="624060.854"/>
-      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 

@@ -14,5 +14,3 @@ Services are listed at: https://www.pdok.nl/nl/producten/pdok-services/overzicht
   * OWSlib
   * lxml
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MinELenI/pdokservices/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

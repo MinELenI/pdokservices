@@ -1,5 +1,5 @@
 <!DOCTYPE WMT_MS_Capabilities SYSTEM "http://geodata.nationaalgeoregister.nl/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
-<WMT_MS_Capabilities version="1.1.1" updateSequence="1913">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="2371">
   <Service>
     <Name>OGC:WMS</Name>
     <Title>Vierkanten 500m x 500m WMS</Title>
@@ -205,22 +205,6 @@ http://www.cbs.nl/NR/rdonlyres/5DDE29CD-0BDB-443D-AF4D-A1A7A3144390/0/2012b73upd
       <AuthorityURL name="PDOK">
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pdok.nl"/>
       </AuthorityURL>
-      <Layer queryable="1">
-        <Name>kadastralekaart</Name>
-        <Title>kadastralekaart</Title>
-        <Abstract>Layer-Group type layer: kadastralekaart</Abstract>
-        <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="2.9609458583862094" miny="47.97373997284293" maxx="7.253017497834058" maxy="53.7606665567902"/>
-        <BoundingBox SRS="EPSG:28992" minx="-5170.993" miny="10.1" maxx="278026.09" maxy="641678.643"/>
-      </Layer>
-      <Layer queryable="1">
-        <Name>bagviewer</Name>
-        <Title>bagviewer</Title>
-        <Abstract>Layer-Group type layer: bagviewer</Abstract>
-        <SRS>EPSG:28992</SRS>
-        <LatLonBoundingBox minx="3.062149684923958" miny="50.71350312543268" maxx="7.367689629919523" maxy="53.602590516077726"/>
-        <BoundingBox SRS="EPSG:28992" minx="941.794" miny="304882.174" maxx="286081.572" maxy="624060.854"/>
-      </Layer>
       <!--WKT definition of this CRS:
 PROJCS["Amersfoort / RD New", 
   GEOGCS["Amersfoort", 
@@ -1986,7 +1970,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2011</Name>
         <Title>niet_westerse_allochtonen_2011</Title>
-        <Abstract>Het aandeel personen in de kern van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#195;&#171; (exclusief Indonesi&#195;&#171; en Japan) of Turkije op 1 januari 2011.</Abstract>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -2044,7 +2028,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1">
         <Name>niet_westerse_allochtonen_2012</Name>
         <Title>niet_westerse_allochtonen_2012</Title>
-        <Abstract>Het aandeel personen in de kern van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#195;&#171; (exclusief Indonesi&#195;&#171; en Japan) of Turkije op 1 januari 2012.</Abstract>
+        <Abstract>Het aandeel personen in de kern van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Afrika, Latijns-Amerika, Azi&#235; (exclusief Indonesi&#235; en Japan) of Turkije op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>niet_westerse_allochtonen_2012</Keyword>
           <Keyword>features</Keyword>
@@ -2276,7 +2260,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1">
         <Name>omgevings_adres_dichtheid_2003</Name>
         <Title>omgevings_adres_dichtheid_2003</Title>
-        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van &#195;&#169;&#195;&#169;n kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok.</Abstract>
+        <Abstract>De omgevingsadressendichtheid van een adres is het aantal adressen binnen een cirkel van &#233;&#233;n kilometer rond dat adres. Per blok van 500 bij 500 meter wordt de OAD uitgerekend voor een (mogelijk fictief) adres in het midden van dat blok, en vervolgens toegekend aan alle adressen in dat hele blok.</Abstract>
         <KeywordList>
           <Keyword>omgevings_adres_dichtheid_2003</Keyword>
           <Keyword>features</Keyword>
@@ -3978,7 +3962,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1">
         <Name>westerse_allochtonen_2011</Name>
         <Title>westerse_allochtonen_2011</Title>
-        <Abstract>Het aandeel personen van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#195;&#171;, Indonesi&#195;&#171; of Japan op 1 januari 2011.</Abstract>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2011.</Abstract>
         <KeywordList>
           <Keyword>westerse_allochtonen_2011</Keyword>
           <Keyword>features</Keyword>
@@ -4036,7 +4020,7 @@ PROJCS["Amersfoort / RD New",
       <Layer queryable="1">
         <Name>westerse_allochtonen_2012</Name>
         <Title>westerse_allochtonen_2012</Title>
-        <Abstract>Het aandeel personen van wie ten minste &#195;&#169;&#195;&#169;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#195;&#171;, Indonesi&#195;&#171; of Japan op 1 januari 2012.</Abstract>
+        <Abstract>Het aandeel personen van wie ten minste &#233;&#233;n ouder in het buitenland is geboren met als herkomstgroepering Europa (exclusief Turkije), Noord-Amerika, Oceani&#235;, Indonesi&#235; of Japan op 1 januari 2012.</Abstract>
         <KeywordList>
           <Keyword>features</Keyword>
           <Keyword>westerse_allochtonen_2012</Keyword>

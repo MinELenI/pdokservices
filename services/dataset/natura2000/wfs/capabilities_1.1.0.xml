@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://schemas.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:natura2000="http://natura2000.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="1915">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:gml="http://schemas.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:natura2000="http://natura2000.geonovum.nl" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://geodata.nationaalgeoregister.nl/schemas/wfs/1.1.0/wfs.xsd http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd" updateSequence="2283">
   <ows:ServiceIdentification>
     <ows:Title>Natura2000 WFS</ows:Title>
     <ows:Abstract>Samenvatting: Natura 2000 het samenhangend netwerk van beschermde natuurgebieden in de Europese Unie bestaande uit Vogelrichtlijn- en Habitatrichtlijngebieden. Natura 2000-gebieden zijn een samenvoeging van beide en de daarin gelegen beschermde natuurmonumenten. In totaal gaat het om 163 gebieden waarvan drie mariene gebieden in de Exclusieve Economische Zone (EEZ) op de Noordzee (incl. een voorgenomen Vogelrichtlijngebied in de EEZ). De Vogelrichtlijngebieden zijn merendeels aangewezen in de periode 1986-2000. De Habitatrichtlijngebieden worden aangewezen met de aanwijzing van de betreffende Natura 2000-gebieden. De aanwijzing van deze gebieden is begonnen in 2008 en wordt naar verwachting grotendeels voltooid in 2013. Op 4 juni 2013 waren in totaal 121 Natura 2000-gebieden definitief aangewezen.
@@ -199,7 +199,7 @@ Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van za
             <ogc:FunctionName nArgs="3">bufferWithSegments</ogc:FunctionName>
             <ogc:FunctionName nArgs="7">Categorize</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">ceil</ogc:FunctionName>
-            <ogc:FunctionName nArgs="1">centroid</ogc:FunctionName>
+            <ogc:FunctionName nArgs="1">Centroid</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">classify</ogc:FunctionName>
             <ogc:FunctionName nArgs="2">Clip</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">CollectGeometries</ogc:FunctionName>
@@ -333,7 +333,7 @@ Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van za
             <ogc:FunctionName nArgs="2">Quantile</ogc:FunctionName>
             <ogc:FunctionName nArgs="3">Query</ogc:FunctionName>
             <ogc:FunctionName nArgs="0">random</ogc:FunctionName>
-            <ogc:FunctionName nArgs="5">RangeLookup</ogc:FunctionName>
+            <ogc:FunctionName nArgs="3">RangeLookup</ogc:FunctionName>
             <ogc:FunctionName nArgs="1">RasterAsPointCollection</ogc:FunctionName>
             <ogc:FunctionName nArgs="4">RasterZonalStatistics</ogc:FunctionName>
             <ogc:FunctionName nArgs="5">Recode</ogc:FunctionName>

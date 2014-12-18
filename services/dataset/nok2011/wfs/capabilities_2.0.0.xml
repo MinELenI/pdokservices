@@ -1,4 +1,4 @@
-<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nok2011="http://nok2011.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1913">
+<wfs:WFS_Capabilities xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nok2011="http://nok2011.geonovum.nl" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://geodata.nationaalgeoregister.nl/schemas/wfs/2.0/wfs.xsd" updateSequence="1917">
   <ows:ServiceIdentification>
     <ows:Title>Natuurmeting Op Kaart 2011 WFS</ows:Title>
     <ows:Abstract>De Natuurmeting Op Kaart 2011 (NOK2011) geeft een landelijk beeld van de realisatie van de Ecologische Hoofdstructuur (EHS) 
@@ -650,11 +650,11 @@
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
-      <fes:Function name="Centroid">
+      <fes:Function name="centroid">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="features">
-            <fes:Type>xs:string</fes:Type>
+          <fes:Argument name="geometry">
+            <fes:Type>gml:AbstractGeometryType</fes:Type>
           </fes:Argument>
         </fes:Arguments>
       </fes:Function>
@@ -2207,19 +2207,13 @@
       <fes:Function name="RangeLookup">
         <fes:Returns>xs:string</fes:Returns>
         <fes:Arguments>
-          <fes:Argument name="coverage">
+          <fes:Argument name="arg0">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="band">
+          <fes:Argument name="arg1">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
-          <fes:Argument name="ranges">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="outputPixelValues">
-            <fes:Type>xs:string</fes:Type>
-          </fes:Argument>
-          <fes:Argument name="noData">
+          <fes:Argument name="arg2">
             <fes:Type>xs:string</fes:Type>
           </fes:Argument>
         </fes:Arguments>

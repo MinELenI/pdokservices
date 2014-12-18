@@ -284,7 +284,7 @@ In 2009 is er een Nulmeting Op Kaart gemaakt dat de voortgang van de verwerving 
             <ogc:Function_Name nArgs="2">Quantile</ogc:Function_Name>
             <ogc:Function_Name nArgs="3">Query</ogc:Function_Name>
             <ogc:Function_Name nArgs="0">random</ogc:Function_Name>
-            <ogc:Function_Name nArgs="3">RangeLookup</ogc:Function_Name>
+            <ogc:Function_Name nArgs="5">RangeLookup</ogc:Function_Name>
             <ogc:Function_Name nArgs="1">RasterAsPointCollection</ogc:Function_Name>
             <ogc:Function_Name nArgs="4">RasterZonalStatistics</ogc:Function_Name>
             <ogc:Function_Name nArgs="5">Recode</ogc:Function_Name>

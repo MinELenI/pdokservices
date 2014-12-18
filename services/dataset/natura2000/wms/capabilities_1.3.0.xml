@@ -1,4 +1,4 @@
-<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="1915" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd" xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd" xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:gml="http://schemas.opengis.net/gml" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" updateSequence="2283" xsi:schemaLocation="http://www.opengis.net/wms http://geodata.nationaalgeoregister.nl/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
   <Service>
     <Name>WMS</Name>
     <Title>Natura2000 WMS</Title>
@@ -159,13 +159,13 @@ Dit bestand bevat de grenzen van de definitief aangewezen gebieden (stand van za
         </EX_GeographicBoundingBox>
         <BoundingBox CRS="CRS:84" minx="2.682" miny="50.729" maxx="7.321" maxy="55.657"/>
         <BoundingBox CRS="EPSG:28992" minx="-15585.196" miny="307159.281" maxx="276784.781" maxy="852877.107"/>
-        <BoundingBox CRS="EPSG:4326" minx="50.72910459107384" miny="2.680870793153438" maxx="55.656643409110124" maxy="7.319863432627679"/>
-        <BoundingBox CRS="EPSG:4258" minx="50.72910459199797" miny="2.680870793153438" maxx="55.656643409988305" maxy="7.319863432627679"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.72910459107388" miny="2.680870793153438" maxx="55.656643409110124" maxy="7.319863432627679"/>
+        <BoundingBox CRS="EPSG:4258" minx="50.729104591997995" miny="2.680870793153438" maxx="55.656643409988305" maxy="7.319863432627679"/>
         <BoundingBox CRS="EPSG:3035" minx="3074004.8863005317" miny="3825575.5220606006" maxx="3637153.4478565603" maxy="4152186.2669919203"/>
-        <BoundingBox CRS="EPSG:3034" minx="2668634.2652653153" miny="3521497.592888306" maxx="3212637.4753265316" maxy="3836481.0472357003"/>
-        <BoundingBox CRS="EPSG:3857" minx="298433.1715764002" miny="6573514.6301409025" maxx="814843.4699964168" maxy="7490364.520081558"/>
-        <BoundingBox CRS="EPSG:25831" minx="479905.8973526369" miny="5619701.398344907" maxx="790124.4029269028" maxy="6174739.024707775"/>
-        <BoundingBox CRS="EPSG:25832" minx="74647.49329636461" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
+        <BoundingBox CRS="EPSG:3034" minx="2668634.2652653153" miny="3521497.592888306" maxx="3212637.4753265325" maxy="3836481.0472357003"/>
+        <BoundingBox CRS="EPSG:3857" minx="298433.1715764002" miny="6573514.630140908" maxx="814843.4699964168" maxy="7490364.520081558"/>
+        <BoundingBox CRS="EPSG:25831" minx="479905.8973526369" miny="5619701.39834491" maxx="790124.4029269028" maxy="6174739.024707775"/>
+        <BoundingBox CRS="EPSG:25832" minx="74647.4932963649" miny="5622777.547666477" maxx="394253.3804071863" maxy="6182806.7149152355"/>
         <AuthorityURL name="ELenI">
           <OnlineResource xlink:type="simple" xlink:href="http://www.rijksoverheid.nl/ministeries/eleni"/>
         </AuthorityURL>
